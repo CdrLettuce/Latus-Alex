@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 23, 2017, 2:28:20 PM
+    Author     : scottbutler
+*/
+
+
+.container { border: 1px solid #6c3483; }
+.pagefooter { text-align: center ;}
+.header { padding-bottom: 5px;  background-color: #3366cc; color: #fff;}
+.footer { height: 30px; line-height: 30px; color: #fff;  text-align: center; border-top: 1px solid; margin-top: 20px; background-color: #336699;}
+.menu-item {display: inline-block; float: left; width: 100px; }
+.content {min-height: 400px; }
+.a-menu {color: #fff;}
+.a-menu:hover { color: #eee; }
+#item-desc {min-height: 200px; background-color: #f0f0f0; padding: 10px;  margin-bottom: 10px;}
+#outer-box {border: 1px solid;}
+.link{ color: blue;  cursor: pointer}
+.link:hover {text-decoration: underline}
+#banner { width: 100%; }
+#sign-in{height: 30px; color: #000;}
+#lg-box { color: #000;}
+#main { margin: 0; padding: 0;}
+#customer-name, #acc-info { display: none;}
+#sign-in, #sign-out {color: #fff; margin-left: 20px; cursor: pointer; text-decoration: underline;}
+input.log-info { border-radius: 5px; height: 20px;}

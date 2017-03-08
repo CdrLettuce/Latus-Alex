@@ -16,12 +16,12 @@
     define('DS', DIRECTORY_SEPARATOR);
 
     /*  Define the host  */
-    define('HOSTNAME', 'http://washington.uww.edu');
+    define('HOSTNAME', 'http://recruitchute.io');
 
     /*  URL rewriting rule changes the way server handles requests.
         Use the relative URL of the application folder as the base URL for templates and scripts
     */
-    define("HOME", HOSTNAME.DS.'cs482/butlersj02/Engineering/PhpProject1/');
+    define("HOME", HOSTNAME.DS.'PhpProject1/');
 
     // Include database connection
     require_once(BASE_DIR.DS.'config.php');

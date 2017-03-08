@@ -18,7 +18,7 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Jumbotron Template for Bootstrap</title>
-
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 

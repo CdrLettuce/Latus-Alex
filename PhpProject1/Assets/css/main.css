@@ -32,9 +32,26 @@ input.log-info { border-radius: 5px; height: 20px;}
 
 /* Styles for the splash page */
 
-.col-md-6 h2, .col-md-6 p{
+.col-md-6 h2, .col-md-6 p, .col-md-12 h2{
     text-align: center;
 }
+.col-md-12 h2{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
 .jumbotron{
     background-color: #e5f3ff;
+}
+.icon{
+    text-align: center;
+}
+#signup{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+}
+#learnMore{
+    margin-top: 10%;
+    border-top: 1px solid #eee;
 }

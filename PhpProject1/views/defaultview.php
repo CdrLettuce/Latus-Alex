@@ -5,22 +5,22 @@ include('Assets/pageHeader.php');
     <div class="jumbotron">
       <div class="container">
         <h1>Get recruited, fast</h1>
-        <p>The world's best college recruiting software. Period.</p>
+        <p>The world's best college sports recruiting network. Period.</p>
         <p><a class="btn btn-primary btn-lg" href="#learnMore" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
 
-    <div class="container">
+    <div id="signup" class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-6">
-          <h2>I'm a Player</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>Recruit Chute for Players</h2>
+          <p>Find your perfect college team for you. Create a profile and show off your skills by adding pictures, videos, and stats.</p>
           <p><a class="btn btn-default" href="#" role="button">Player Sign Up &raquo;</a></p>
         </div>
         <div class="col-md-6">
-          <h2>I'm a Coach</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>Recruit Chute for Coaches</h2>
+          <p>Find the best players for your college team. Search for players based on location, skill, and academic performance. </p>
           <p><a class="btn btn-default" href="#" role="button">Coach Sign Up &raquo;</a></p>
        </div>
       </div>
@@ -29,20 +29,23 @@ include('Assets/pageHeader.php');
     <div id="learnMore" class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-12 icon">
+            <h2>How it works</h2>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
+        <div class="col-md-4 icon">
+          <span class="glyphicon glyphicon-thumbs-up"></span>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+        </div>
+        <div class="col-md-4 icon">
+          <span class="glyphicon glyphicon-education"></span>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
+        <div class="col-md-4 icon">
+          <span class="glyphicon glyphicon-plane"></span>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
       </div>
 <?php include('Assets/pageFooter.php');

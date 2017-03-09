@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : scottbutler
 */
 
-
+/*
 .container { border: 1px solid #6c3483; }
 .pagefooter { text-align: center ;}
 .header { padding-bottom: 5px;  background-color: #3366cc; color: #fff;}
@@ -28,3 +28,13 @@ and open the template in the editor.
 #customer-name, #acc-info { display: none;}
 #sign-in, #sign-out {color: #fff; margin-left: 20px; cursor: pointer; text-decoration: underline;}
 input.log-info { border-radius: 5px; height: 20px;}
+*/
+
+/* Styles for the splash page */
+
+.col-md-6 h2, .col-md-6 p{
+    text-align: center;
+}
+.jumbotron{
+    background-color: #e5f3ff;
+}

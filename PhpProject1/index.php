@@ -21,7 +21,7 @@
     /*  URL rewriting rule changes the way server handles requests.
         Use the relative URL of the application folder as the base URL for templates and scripts
     */
-    define("HOME", HOSTNAME.DS.'/');
+    define("HOME", HOSTNAME.DS);
 
     // Include database connection
     require_once(BASE_DIR.DS.'config.php');

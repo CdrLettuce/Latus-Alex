@@ -14,7 +14,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <!-- Link to main css document for the site -->
-    <link rel="stylesheet" href="Assets/css/main.css"
+    <link rel="stylesheet" href="Assets/css/main.css">
+    <!--<link rel="stylesheet" href="<?php echo HOME.DS; ?>Assets/css/main.css">-->
+    <!--<link rel-"stylesheet" href="http://recruitchute.io//Assets/css/main.css">-->
   </head>
 
   <body>
@@ -28,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Recruit Chute</a>
+          <a class="navbar-brand" href="http://recruitchute.io/index.php">Recruit Chute</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">

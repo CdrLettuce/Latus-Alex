@@ -14,14 +14,14 @@ include('Assets/pageHeader.php');
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-6">
-          <h2>Recruit Chute for Players</h2>
+          <h2>Players</h2>
           <p>Find your perfect college team for you. Create a profile and show off your skills by adding pictures, videos, and stats.</p>
-          <p><a class="btn btn-default" href="#" role="button">Player Sign Up &raquo;</a></p>
+          <p><a class="btn btn-primary" href="views/betaPlayerSignup.php" role="button">Player Sign Up &raquo;</a></p>
         </div>
         <div class="col-md-6">
-          <h2>Recruit Chute for Coaches</h2>
+          <h2>Coaches</h2>
           <p>Find the best players for your college team. Search for players based on location, skill, and academic performance. </p>
-          <p><a class="btn btn-default" href="#" role="button">Coach Sign Up &raquo;</a></p>
+          <p><a class="btn btn-primary" href="views/betaCoachSignup.php" role="button">Coach Sign Up &raquo;</a></p>
        </div>
       </div>
     </div>
@@ -33,19 +33,20 @@ include('Assets/pageHeader.php');
             <h2>How it works</h2>
         </div>
         <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-thumbs-up"></span>
+          <span class="glyphicon glyphicon-thumbs-up logo"></span>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-education"></span>
+          <span class="glyphicon glyphicon-education logo"></span>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
        </div>
         <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-plane"></span>
+          <span class="glyphicon glyphicon-plane logo"></span>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
       </div>
+    </div>
 <?php include('Assets/pageFooter.php');

@@ -16,12 +16,13 @@ include('Assets/pageHeader.php');
         <div class="col-md-6">
           <h2>Players</h2>
           <p>Find your perfect college team for you. Create a profile and show off your skills by adding pictures, videos, and stats.</p>
-          <p><a class="btn btn-primary" href="views/betaPlayerSignup.php" role="button">Player Sign Up &raquo;</a></p>
+          <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>pp/playerSignup" role="button">Player Sign Up &raquo;</a></p>
+          <p><span class = 'btn btn-primary' id='playersignup'>Player Sign Up</span></p>
         </div>
         <div class="col-md-6">
           <h2>Coaches</h2>
           <p>Find the best players for your college team. Search for players based on location, skill, and academic performance. </p>
-          <p><a class="btn btn-primary" href="views/betaCoachSignup.php" role="button">Coach Sign Up &raquo;</a></p>
+          <p><a class="btn btn-primary" id="playersignup" href="#" role="button">Coach Sign Up &raquo;</a></p>
        </div>
       </div>
     </div>

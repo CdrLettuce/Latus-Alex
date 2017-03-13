@@ -1,5 +1,5 @@
 <?php
-include('../Assets/pageHeader.php');
+include('Assets/pageHeader.php');
 ?>
 
 <div  class="container topDiv center" style="margin-top: 70px; margin-bottom: 50px; padding-bottom: 35px; text-align: center; max-width: 80%; border-bottom: 1px solid #eee; ">
@@ -47,4 +47,4 @@ include('../Assets/pageHeader.php');
     	</div>
     </div>
 
-<?php include('../Assets/pageFooter.php');
+<?php include('Assets/pageFooter.php');

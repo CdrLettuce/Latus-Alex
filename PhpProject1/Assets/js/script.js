@@ -7,8 +7,9 @@
 'use strict';
 $(document).ready(function(){
 	// define base url
-	var base_url = 'http://washington.uww.edu/cs482/butlersj02/week5example2/';
-
+	// var base_url = 'http://washington.uww.edu/cs482/butlersj02/week5example2/';
+        var base_url = 'http://recruitchute.io/';
+        
 	$('#sign-in').on('click', function(){
 		// read username and pwd
 		var username = $('#username').val();
@@ -45,4 +46,20 @@ $(document).ready(function(){
 		$('#pwd').val('');
 	});
 
+        $('#playersignup').on('click', function(){
+                console.log("HELLO!");
+                $.ajax({
+                        method : 'get',
+                        url : base_url+'pp/playerSignup',
+                        dataType: 'JSON',
+                        success: function(response){
+                                console.log("hello");
+                                console.log(response);
+                        }, error: function(err){
+                                console.log(err);
+                        }
+                });
+
+        });
+        
 });

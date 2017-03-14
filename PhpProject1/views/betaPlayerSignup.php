@@ -38,7 +38,7 @@ include('Assets/pageHeader.php');
 			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
                                                 </div>
 			    			
-			    			<input type="submit" value="Register" class="btn btn-info btn-block">
+			    			<input type="submit" value="Register" class="btn btn-primary btn-block">
 			    		
 			    		</form>
 			    	</div>

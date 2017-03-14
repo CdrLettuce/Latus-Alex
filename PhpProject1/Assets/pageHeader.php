@@ -46,6 +46,8 @@
               <input type="password" placeholder="Password" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
+            <!--<button type="submit" class="btn btn-danger">Sign up</button>-->
+            <a class="btn btn-danger" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Sign Up</a>
           </form>
         </div><!--/.navbar-collapse -->
       </div>

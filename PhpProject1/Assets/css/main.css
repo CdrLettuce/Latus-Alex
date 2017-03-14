@@ -48,15 +48,15 @@ input.log-info { border-radius: 5px; height: 20px;}
     text-align: center;
 }
 #signup{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 #signup p, #signup h2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
 #learnMore{
-    margin-top: 10%;
+    margin-top: 5%;
     border-top: 1px solid #eee;
 }
 #learnMore p{
@@ -68,4 +68,5 @@ input.log-info { border-radius: 5px; height: 20px;}
 .logo{
     font-size: 80px;
 }
+
 

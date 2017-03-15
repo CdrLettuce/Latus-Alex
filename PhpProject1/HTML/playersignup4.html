@@ -9,7 +9,7 @@
 	<meta name="description" content="Player Sign-up Page #4">
 	<meta name="author" content="">
 	<link rel="icon" href="../../favicon.ico">
-	<title>RecruitChute player sign-up page 4</title>
+	<title>RecuitChute player sign-up page 4</title>
 	<!-- Bootstrap core CSS -->
 	<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -27,54 +27,95 @@
 </head>
 
 <body>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-		<div class="container">
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<div class="container text-center">
 			<h1>Signing up as a player!</h1>
-			<p>You must finish the sign up process & make changes to your profile for it to go live</p> 
+			<p>You must finish the sign up process & make changes to your profile for it to go live</p>
 		</div>
-    </div>
+	</div>
+	<!-- Progress Bar(Optional)
+	<div class="container">
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">60%</div>
+		</div>
+	</div>
+	 -->	
+	<!-- Navigation Bar -->
 	<nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">RecuitChute</a>
-		</div>
+	<div class="container-fluid col-lg-8 col-lg-offset-2">
 		<ul class="nav navbar-nav">
-			<li><a href="playersignup1.html">About You</a></li>
-			<li><a href="playersignup2.html">Where are you from</a></li>
-			<li><a href="playersignup3.html">School and position</a></li>
-			<li class="active"><a href="#">Collage Experience</a></li>
-			<li><a href="playersignup5.html">Account info</a></li>
-			<p class="navbar-text">Finished!</p>
+			<li><a href="playersignup1.html">Account info</a></li>
+			<li><a href="playersignup2.html">About you</a></li>
+			<li><a href="playersignup3.html">Where are you from</a></li>
+			<li class="active"><a href="#">School and position</a></li>
+			<li><a href="playersignup5.html">College Experience</a></li>
+			<li><a href="#">Finish!</a></li>
 		</ul>
 	</div>
 	</nav>
 	<div class="container">
-		<form class="form-horizontal">
-			<fieldset>
-				<div class="row">
-					<!-- Form Name -->
-					<legend>What is your ideal college experience?</legend>
-					<!-- Select Basic -->
-					<!-- Textarea -->
-					<div class="form-group">
-						<div class="col-md-12">                
-							<textarea class="form-control" rows="3" id="your_question" name="your_question" placeholder="Enter your answer"></textarea>
+		<form class="" method="post" action="#">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Please enter the following information</div>
+				<div class="panel-body">
+					<!-- Position select -->
+					<div class="form-group form-group-lg">
+						<label class="cols-sm-2 control-label" for="position">Main Position (You can add more later!)</label>
+						<div class="cols-sm-10">
+							<div class="input-group">	
+								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<select id="position" name="position" class="form-control">
+									<option value="0">Select position</option>
+									<option value="1">Goalkeeper</option>
+									<option value="2">Right Back</option>
+									<option value="3">Left Back</option>
+									<option value="4">Sweeper</option>
+									<option value="5">Stopper</option>
+									<option value="6">Right Midfielder</option>
+									<option value="7">Left Midfielder</option>
+									<option value="8">Defensive Midfielder</option>
+									<option value="9">Striker</option>
+									<option value="10">Forward</option>				
+								</select>
+							</div>			
+						</div>					
+					</div>
+					<!-- High School input -->
+					<div class="form-group form-group-lg">
+						<label for="school" class="cols-sm-2 control-label">High School</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="school" id="school"  placeholder="Enter your School"/>
+							</div>
 						</div>
 					</div>
-				</fieldset>
-				<hr>
-				<div class="form-group ">
-					<a href="playersignup5.html" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Next</a>
+					<!-- Graduation Date input (mm/yyyy-->
+					<div class="form-group form-group-lg">
+						<label for="grad" class="cols-sm-2 control-label">Graduation Date</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="grad" id="grad"  placeholder="Expected Graduation Date mm/yyyy"/>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<!-- Next Button -->
+					<div class="form-group">
+						<a href="playersignup5.html" type="button" id="button" class="btn btn-primary btn-lg btn-block">Next</a>
+					</div>
 				</div>
 			</div>
 		</form>
 	</div>
-    <hr>
-    <footer>
-		<p>&copy; 2016 Recruit Chute, Inc.</p>
-    </footer>
-	<hr>
+	<hr>	
+	<div class="container">
+		<footer>
+			<p>&copy; 2017 Recruit Chute, Inc.</p>
+		</footer>		
+	</div>
 	<!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
@@ -89,5 +130,5 @@
 	<script src="../../dist/js/bootstrap.min.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
- </body>
+</body>
 </html>

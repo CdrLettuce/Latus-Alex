@@ -26,6 +26,9 @@ include('Assets/pageHeader.php');
 <!-- Body -->
 <div class="container">
         <form class="" method="post" action="#">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Please enter the following information</div>
+                <div class="panel-body">
                 <!-- Phone number input -->
                 <div class="form-group">
                         <label for="phone" class="cols-sm-2 control-label">Phone Number</label>
@@ -52,7 +55,7 @@ include('Assets/pageHeader.php');
                         <div class="cols-sm-10">
                                 <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" name="password" id="password"  placeholder="Enter a password"/>
+                                        <input type="password" class="form-control" name="password" id="password"  placeholder="Enter a password"/>
                                 </div>
                         </div>	
                 </div>
@@ -62,7 +65,7 @@ include('Assets/pageHeader.php');
                         <div class="cols-sm-10">
                                 <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" name="verify" id="verify"  placeholder="Re-type password"/>
+                                        <input type="password" class="form-control" name="verify" id="verify"  placeholder="Re-type password"/>
                                 </div>
                         </div>	
                 </div>
@@ -70,7 +73,9 @@ include('Assets/pageHeader.php');
                 <hr>
                 <div class="form-group ">
                         <a href="<?php echo HOME;?>signup/coachSignup2" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Next</a>
-                </div>	
+                </div>
+                </div>
+            </div>
         </form>
 </div>
 

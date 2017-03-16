@@ -4,8 +4,8 @@ include('Assets/pageHeader.php');
 	<!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Get recruited, fast</h1>
-        <p>The world's best college sports recruiting network. Period.</p>
+        <h1>Step Up, Be Noticed, Get Recruited</h1>
+        <p>Your recruitment journey begins here</p>
         <p><a class="btn btn-primary btn-lg" href="#learnMore" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
@@ -13,13 +13,22 @@ include('Assets/pageHeader.php');
     <div id="signup" class="container">
       <!-- Example row of columns -->
       <div class="row">
+        <div class="col-md-12">
+            <h1>Sign Up </h1>
+        </div>
         <div class="col-md-6">
+          <!--<span class="glyphicon glyphicon-thumbs-up logo"></span>-->
           <h2>Players</h2>
-          <p>Find your perfect college team for you. Create a profile and show off your skills by adding pictures, videos, and stats.</p>
+          <img src="../Assets/images/player.jpg"  alt="Player" height="200" width="200">
+          
+          <p>Find the perfect college team for you. Create a profile and show off your skills by adding pictures, videos, and stats.</p>
           <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>pp/playerSignup" role="button">Player Sign Up &raquo;</a></p>
         </div>
         <div class="col-md-6">
-          <h2>Coaches</h2>
+          <!--<span class="glyphicon glyphicon-thumbs-up logo"></span>-->
+            <h2>Coaches</h2>
+          <img src="../Assets/images/coach.jpg" alt="Coach" height="200" width="200">
+          
           <p>Find the best players for your college team. Search for players based on location, skill, and academic performance. </p>
           <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>pp/coachSignup" role="button">Coach Sign Up &raquo;</a></p>
        </div>

@@ -13,7 +13,16 @@ class Model
     {
         $this->_sql = $sql; 
     }
-
+    public function setAll($data = null)
+    {
+        if (!$this->_sql)
+        {
+            throw new Exception("No SQL query defined!");
+        }
+        $stm = $this->_db->prepare($this->_sql);
+        $stm->execute($data);
+        return 0; 
+    }
     public  function getAll($data = null)
     {
 /* Define a method to set SQL statement. This method accepts an associative array, $data, as an argument

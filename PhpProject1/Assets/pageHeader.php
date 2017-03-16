@@ -22,6 +22,10 @@
     <!--<link rel="stylesheet" href="<?php echo HOME.DS; ?>Assets/css/main.css">-->
     <!--<link rel-"stylesheet" href="http://recruitchute.io//Assets/css/main.css">-->
     
+    <!-- Link to the two main fonts used in the site-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
   </head>
 
   <body>
@@ -39,11 +43,19 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+            <div id='customer-name'>
+                <span id='user'>
+                    <?php if (isset($_SESSION['customer_id'])){
+                        echo $_SESSION['name'] ;
+                    }?>
+                </span>
+                <span id='sign-out'>Sign out</span>
             </div>
             <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+              <input type="text" placeholder="Email" id="username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" id="pwd" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
             <!--<button type="submit" class="btn btn-danger">Sign up</button>-->

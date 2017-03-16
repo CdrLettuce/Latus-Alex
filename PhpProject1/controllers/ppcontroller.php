@@ -14,6 +14,16 @@ class PPController extends Controller
                 $this->view->output();         
         }
         
+        public function addBetaPlayer(){
+                $data = array();
+                $data = $this->model->addBetaPlayer();
+                // define template
+                $this->setView('views/betaPlayerConfirmation.php');
+                // display output
+                $this->view->setData($data);
+                $this->view->output();         
+        }
+        
         public function coachSignup(){
                 //$data = array();
                 //$data = $this->model->coachSignup();
@@ -25,18 +35,7 @@ class PPController extends Controller
                 //$this->view->setData($data);
                 $this->view->output();         
         }
-        
-        public function coachSignup1(){
-                //$data = array();
-                //$data = $this->model->playerSignup();
-                
-                // define template
-                $this->setView('views/coach1.php');
-                // display output
-            
-                //$this->view->setData($data);
-                $this->view->output();         
-        }
+
 }
 
 

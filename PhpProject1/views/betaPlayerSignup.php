@@ -6,7 +6,7 @@ include('Assets/pageHeader.php');
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
-          <h2>Recruit Chute is under construction</h2>
+          <h2>Recruit Chute is coming soon!</h2>
           <p>Fill out the form below if you would like to be notified when Recruit Chute is ready.</p>
         </div>
       </div>
@@ -20,11 +20,11 @@ include('Assets/pageHeader.php');
 			    		<h3 class="panel-title">I'm a Player, notify me when Recruit Chute is ready!</h3>
 			 			</div>
 			 			<div class="panel-body">
-			    		<form role="form">
+			    		<form role="form"  method="post" action="<?php echo HOME;?>pp/addBetaPlayer">
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+                                                                        <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 col-sm-6 col-md-6">

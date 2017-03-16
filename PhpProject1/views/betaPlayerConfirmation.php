@@ -6,18 +6,17 @@ include('Assets/pageHeader.php');
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
-          <h2>Recruit Chute is coming soon!</h2>
-          <p>Fill out the form below if you would like to be notified when Recruit Chute is ready.</p>
+          <h2>Thank you <?php echo $_POST['first_name']; ?>for signing up for the beta!</h2>
         </div>
       </div>
 </div>
-
+<!--
 <div class="container">
         <div class="row centered-form">
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
         	<div class="panel panel-default">
         		<div class="panel-heading">
-			    		<h3 class="panel-title">I'm a Coach, notify me when Recruit Chute is ready!</h3>
+			    		<h3 class="panel-title">I'm a Player, notify me when Recruit Chute is ready!</h3>
 			 			</div>
 			 			<div class="panel-body">
 			    		<form role="form">
@@ -46,5 +45,5 @@ include('Assets/pageHeader.php');
     		</div>
     	</div>
     </div>
-
+-->
 <?php include('Assets/pageFooter.php');

@@ -8,6 +8,7 @@ include('Assets/pageHeader.php');
         <div class="col-md-12">
           <h2>Thank you <?php echo ucfirst($_POST['first_name']); ?>!</h2>
           <p>We will notify you when the Recruit Chute beta is ready for use.</p>
+          <p><a class="btn btn-primary btn-lg" href="recruitchute.io" role="button">Return home&raquo;</a></p>
         </div>
       </div>
 </div>

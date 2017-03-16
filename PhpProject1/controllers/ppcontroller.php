@@ -45,6 +45,18 @@ class PPController extends Controller
                 $this->view->setData($data);
                 $this->view->output();         
         }
+        
+        public function bothSignup(){
+                //$data = array();
+                //$data = $this->model->coachSignup();
+                
+                // define template
+                $this->setView('views/betaBothSignup.php');
+                // display output
+            
+                //$this->view->setData($data);
+                $this->view->output();         
+        }
 
 }
 

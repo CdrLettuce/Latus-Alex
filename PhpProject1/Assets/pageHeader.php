@@ -18,7 +18,7 @@
     <script src='<?php echo HOME.DS; ?>Assets/js/script.js'></script>
     
     <!-- Link to main css document for the site -->
-    <link rel="stylesheet" href="Assets/css/main.css">
+    <link rel="stylesheet" href="<?php echo HOME.DS; ?>Assets/css/main.css">
     <!--<link rel="stylesheet" href="<?php echo HOME.DS; ?>Assets/css/main.css">-->
     <!--<link rel-"stylesheet" href="http://recruitchute.io//Assets/css/main.css">-->
     
@@ -42,7 +42,7 @@
           <a class="navbar-brand" href="http://recruitchute.io/index.php">Recruit Chute</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
+          <form class="navbar-form navbar-right" method="post">
             <div id='customer-name'>
                 <span id='user'>
                     <?php if (isset($_SESSION['customer_id'])){
@@ -59,7 +59,7 @@
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
             <!--<button type="submit" class="btn btn-danger">Sign up</button>-->
-            <a class="btn btn-danger" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Sign Up</a>
+            <a class="btn btn-danger" id="" href="<?php echo HOME;?>pp/bothSignup" role="button">Sign Up</a>
           </form>
         </div><!--/.navbar-collapse -->
       </div>

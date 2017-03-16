@@ -9,6 +9,7 @@ $(document).ready(function(){
 	// define base url
 	// var base_url = 'http://washington.uww.edu/cs482/butlersj02/week5example2/';
         var base_url = 'http://recruitchute.io/';
+        $('#customer-name').hide();
         
 	$('#sign-in').on('click', function(){
 		// read username and pwd

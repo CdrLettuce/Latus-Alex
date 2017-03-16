@@ -81,20 +81,20 @@ include('Assets/pageHeader.php');
             <h1>The Recruit Chute Difference</h1>
         </div>
         <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-thumbs-up logo"></span>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <span class="glyphicon glyphicon-education logo"></span>
+          <p>We give high school athletes the opportunity to gain an education while competing in the sport they love. </p>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+        </div>
+	 <div class="col-md-4 icon">
+          <span class="glyphicon glyphicon-phone logo"></span>
+          <p>Access your profile, message other players and coaches, and upload new content all while on the go! Recruit Chute is mobile-friendly and available anywhere you go.</p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-education logo"></span>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <span class="glyphicon glyphicon-usd logo"></span>
+          <p>Recruit Chute keeps players and coaches connected to their communities. One percent of all revenue is donated to local youth sports programs. </p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
        </div>
-        <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-plane logo"></span>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-        </div>
       </div>
     </div>
 <?php include('Assets/pageFooter.php');

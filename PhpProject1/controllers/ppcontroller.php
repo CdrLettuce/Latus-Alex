@@ -35,6 +35,16 @@ class PPController extends Controller
                 //$this->view->setData($data);
                 $this->view->output();         
         }
+        
+        public function addBetaCoach(){
+                $data = array();
+                $data = $this->model->addBetaCoach();
+                // define template
+                $this->setView('views/betaCoachConfirmation.php');
+                // display output
+                $this->view->setData($data);
+                $this->view->output();         
+        }
 
 }
 

@@ -32,11 +32,27 @@ input.log-info { border-radius: 5px; height: 20px;}
 
 /* Styles for the splash page */
 
-body h1, body h2, body h3{
-    font-family: 'Montserrat', sans-serif;
+.gray{
+    background-color: #f7f7f7;
+    margin-left:0px;
+    margin-right:0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    
+}
+.minheight{
+    min-height: 500px;
+    padding-top: 100px;
+}
+
+h1, h2, h3{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 body p{
     font-family: 'Roboto', sans-serif;
+    color: #555555;
 }
 
 
@@ -62,10 +78,17 @@ body p{
 .jumbotron{
     margin-top: 4%;
     background-image: url("../images/soccer.jpg");
+    background-repeat: no-repeat;
     color: white;
 }
 .jumbotron h1{
     font-size: 280%;
+}
+.jumbotron p{
+    color: white;
+}
+.jumbotron .container{
+    margin-top: 100px;
 }
 .icon{
     text-align: center;
@@ -83,10 +106,6 @@ body p{
     font-size: 120%;
 }
 
-#learnMore{
-    margin-top: 5%;
-    border-top: 1px solid #eee;
-}
 #learnMore p{
     padding-top:20px;
 }
@@ -96,6 +115,10 @@ body p{
 .logo{
     font-size: 80px;
 }
+.logoBig{
+    font-size: 300px;
+}
+
 
 
 

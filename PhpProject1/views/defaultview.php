@@ -49,7 +49,8 @@ include('Assets/pageHeader.php');
 			<li>Current coaches and teams</li>
 			<li>Club teams</li>
 			<li>College coaches</li>
-		</ul>          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+		</ul>          
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
        </div>
       </div>
     </div>

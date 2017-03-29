@@ -80,18 +80,19 @@ include('Assets/pageHeader.php');
         <div class="col-md-12 icon">
             <h1>The Recruit Chute Difference</h1>
         </div>
-        <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-education logo"></span>
-          <p>We give high school athletes the opportunity to gain an education while competing in the sport they love. </p>
-          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-        </div>
+        
 	 <div class="col-md-4 icon">
           <span class="glyphicon glyphicon-phone logo"></span>
           <p>Access your profile, message other players and coaches, and upload new content all while on the go! Recruit Chute is mobile-friendly and available anywhere you go.</p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-usd logo"></span>
+          <span class="glyphicon glyphicon-education logo"></span>
+          <p>We give high school athletes the opportunity to gain an education while competing in the sport they love. </p>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+        </div>
+        <div class="col-md-4 icon">
+          <span class="glyphicon glyphicon-piggy-bank logo"></span>
           <p>Recruit Chute keeps players and coaches connected to their communities. One percent of all revenue is donated to local youth sports programs. </p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
        </div>

@@ -143,6 +143,18 @@ body p{
     text-align: center;
 }
 
+/* Styles for the signup processes */
+
+.rightAlign{
+    text-align: right;
+}
+.leftAlign{
+    text-align: left;
+}
+#coachConfirmation table{
+    margin-bottom: 500px;
+}
+
 
 
 

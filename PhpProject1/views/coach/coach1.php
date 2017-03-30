@@ -79,7 +79,44 @@ include('Assets/pageHeader.php');
 				<div class="cols-sm-10">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="school" id="school"  placeholder="Enter name of school or club"/>
+						<select id="level" name="level" class="form-control">
+                                                    <option value="1">Alverno College</option>
+                                                    <option value="2">Beloit College</option>
+                                                    <option value="3">Cardinal Stritch College</option>
+                                                    <option value="4">Carroll College</option>
+                                                    <option value="5">Carthage College</option>
+                                                    <option value="6">Concordia University-Wisconsin</option>
+                                                    <option value="7">Edgewood College</option>
+                                                    <option value="8">Lakeland College</option>
+                                                    <option value="9">Lawrence University</option>
+                                                    <option value="10">Maranatha Baptist Bible College</option>
+                                                    <option value="11">Marian College of Fond du Lac</option>
+                                                    <option value="12">Marquette University</option>
+                                                    <option value="13">Medical College of Wisconsin</option>
+                                                    <option value="14">Milwaukee School of Engineering</option>
+                                                    <option value="15">Mount Mary College</option>
+                                                    <option value="16">Mount Senario College</option>
+                                                    <option value="17">Northland College</option>
+                                                    <option value="18">Ripon College</option>
+                                                    <option value="19">St. Norbert College</option>
+                                                    <option value="20">Silver Lake College</option>
+                                                    <option value="21">University of Wisconsin Eau Claire</option>
+                                                    <option value="22">University of Wisconsin Green Bay</option>
+                                                    <option value="23">University of Wisconsin LaCrosse</option>
+                                                    <option value="24">University of Wisconsin Madison</option>
+                                                    <option value="25">University of Wisconsin Milwaukee</option>
+                                                    <option value="26">University of Wisconsin Oshkosh</option>
+                                                    <option value="27">University of Wisconsin Parkside</option>
+                                                    <option value="28">University of Wisconsin Platteville</option>
+                                                    <option value="29">University of Wisconsin River Falls</option>
+                                                    <option value="30">University of Wisconsin Stevens Point</option>
+                                                    <option value="31">University of Wisconsin Stout</option>
+                                                    <option value="32">University of Wisconsin Superior</option>
+                                                    <option value="33">University of Wisconsin Whitewater</option>
+                                                    <option value="34">Viterbo College</option>
+                                                    <option value="35">Wisconsin Lutheran College</option>
+                                                    <option value="36">Wisconsin School of Professional Psychology</option> 
+                                                </select>
 					</div>
 				</div>
                         </div>

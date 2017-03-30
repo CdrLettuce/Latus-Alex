@@ -24,9 +24,9 @@ include('Assets/pageHeader.php');
 	</nav>
         -->
 	<div class="container">
-		<form class="" method="post" action="<?php echo HOME;?>signup/coachSignupFinal">		
+		<form class="" method="post" action="<?php echo HOME;?>signup/playerSignupFinal">		
 		<!-- Position select -->
-		<div class="form-group form-group-lg">
+		<div class="form-group ">
                     <label class="cols-sm-2 control-label" for="position">Main Position (You can add more later!)</label>
                     <div class="cols-sm-10">
                         <div class="input-group">	
@@ -45,10 +45,10 @@ include('Assets/pageHeader.php');
 				<option value="10">Forward</option>				
 			</select>
 			</div>			
-						</div>					
+                                </div>					
 					</div>
 					<!-- High School input -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label for="school" class="cols-sm-2 control-label">High School</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -58,7 +58,7 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- Graduation Date input (mm/yyyy-->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label for="grad" class="cols-sm-2 control-label">Graduation Date</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -68,7 +68,7 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- First name input -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label for="firstName" class="control-label">First Name</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -76,7 +76,7 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- Last name input -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label for="lastName" class="control-label">Last Name</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -84,7 +84,7 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- Gender input -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label class="control-label" for="gender">Gender</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -96,7 +96,7 @@ include('Assets/pageHeader.php');
 						</div>				
 					</div>	
 					<!-- State Selection -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label class="cols-sm-2 control-label" for="state">Select your state</label>
 						<div class="cols-sm-10">
 							<div class="input-group">		
@@ -158,7 +158,7 @@ include('Assets/pageHeader.php');
 						</div>					
 					</div>
 					<!-- City Input -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label for="city" class="cols-sm-2 control-label">City</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -168,7 +168,7 @@ include('Assets/pageHeader.php');
 						</div>	
 					</div>
 					<!-- Zip code input -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label for="zip" class="cols-sm-2 control-label">Zip Code</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -180,11 +180,11 @@ include('Assets/pageHeader.php');
 					<!-- Name -->
 					<legend>What is your ideal college experience?</legend>
 					<!-- Textarea -->
-					<div class="form-group form-group-lg">            
+					<div class="form-group ">            
 						<textarea class="form-control" rows="3" id="answer" name="answer" placeholder="Enter your answer"></textarea>
 					</div>
 					<!-- Email(username) -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label for="email" class="cols-sm-2 control-label">Your Email</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -194,7 +194,7 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- Password input -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label for="password" class="cols-sm-2 control-label">Password</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -204,7 +204,7 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- Confirm password -->
-					<div class="form-group form-group-lg">
+					<div class="form-group ">
 						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
 						<div class="cols-sm-10">
 							<div class="input-group">

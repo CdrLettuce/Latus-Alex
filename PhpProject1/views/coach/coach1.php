@@ -25,17 +25,6 @@ include('Assets/pageHeader.php');
         -->
 	<div class="container">
 		<form class="" method="post" action="<?php echo HOME;?>signup/coachSignupFinal">		
-			<!-- School input -->
-			<div class="form-group">
-				<label for="school" class="cols-sm-2 control-label">Name of School or Club</label>
-				<div class="cols-sm-10">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="school" id="school"  placeholder="Enter name of school or club"/>
-					</div>
-				</div>
-			</div>
-                        <hr>
                         <!-- First name and Last name inputs -->
 			<div class="form-group">
 				<label for="firstName" class="cols-sm-2 control-label">First Name</label>
@@ -55,7 +44,45 @@ include('Assets/pageHeader.php');
 					</div>
 				</div>	
 			</div>
+			<div class="form-group">
+				<label for="email" class="cols-sm-2 control-label">Email</label>
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+						<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your email address"/>
+					</div>
+				</div>	
+			</div>
+                        
+			<div class="form-group">
+				<label for="email" class="cols-sm-2 control-label">Password</label>
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+						<input type="text" class="form-control" name="password" id="password"  placeholder="Enter a password"/>
+					</div>
+				</div>	
+			</div>
+			<div class="form-group">
+				<label for="email" class="cols-sm-2 control-label">Password Verification</label>
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+						<input type="text" class="form-control" name="verify" id="verify"  placeholder="Re-type password"/>
+					</div>
+				</div>	
+			</div>
                         <hr>
+                        <!-- School input -->
+			<div class="form-group">
+				<label for="school" class="cols-sm-2 control-label">Name of School or Club</label>
+				<div class="cols-sm-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+						<input type="text" class="form-control" name="school" id="school"  placeholder="Enter name of school or club"/>
+					</div>
+				</div>
+                        </div>
 			<div class="form-group">
   				<label class="cols-sm-2 control-label" for="state">What level do you coach?</label>
 		  		<div class="cols-sm-10">
@@ -163,7 +190,7 @@ include('Assets/pageHeader.php');
 				<div class="cols-sm-10">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="zip" id="zip"  placeholder="Enter your Zip Code"/>
+						<input type="text" class="form-control" name="zip" id="zip"  placeholder="Ex: 55555" pattern="\d{5}"/>
 					</div>
 				</div>
 			</div>
@@ -172,39 +199,11 @@ include('Assets/pageHeader.php');
 				<div class="cols-sm-10">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="phone" id="phone"  placeholder="555-555-5555" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
+						<input type="text" class="form-control" name="phone" id="phone"  placeholder="Ex: 555-555-5555" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
 					</div>
 				</div>
 			</div>
-                        <hr>
-			<div class="form-group">
-				<label for="email" class="cols-sm-2 control-label">Email</label>
-				<div class="cols-sm-10">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your email address"/>
-					</div>
-				</div>	
-			</div>
                         
-			<div class="form-group">
-				<label for="email" class="cols-sm-2 control-label">Password</label>
-				<div class="cols-sm-10">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="password" id="password"  placeholder="Enter a password"/>
-					</div>
-				</div>	
-			</div>
-			<div class="form-group">
-				<label for="email" class="cols-sm-2 control-label">Password Verification</label>
-				<div class="cols-sm-10">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="verify" id="verify"  placeholder="Re-type password"/>
-					</div>
-				</div>	
-			</div>
                         
 			<hr>
 			<!-- Next Button -->

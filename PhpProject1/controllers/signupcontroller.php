@@ -29,60 +29,24 @@ class signupController extends Controller
                 //$data = $this->model->playerSignup();
                 
                 // define template
-                $this->setView('views/player/player1.php');
+                $this->setView('views/player/Player1.php');
                 // display output
             
                 //$this->view->setData($data);
                 $this->view->output();         
         }
         
-        public function playerSignup2(){
-                //$data = array();
-                //$data = $this->model->playerSignup();
-                
+        public function playerSignupFinal(){
+                $data = array();
+                $data = $this->model->addPlayer();
                 // define template
-                $this->setView('views/player/player2.php');
+                $this->setView('views/coach/playerConfirmation.php');
                 // display output
-            
-                //$this->view->setData($data);
+                $this->view->setData($data);
                 $this->view->output();         
-        }
+        } 
+
         
-        public function playerSignup3(){
-                //$data = array();
-                //$data = $this->model->playerSignup();
-                
-                // define template
-                $this->setView('views/player/player3.php');
-                // display output
-            
-                //$this->view->setData($data);
-                $this->view->output();         
-        }
-        
-        public function playerSignup4(){
-                //$data = array();
-                //$data = $this->model->playerSignup();
-                
-                // define template
-                $this->setView('views/player/player4.php');
-                // display output
-            
-                //$this->view->setData($data);
-                $this->view->output();         
-        }
-        
-        public function playerSignup5(){
-                //$data = array();
-                //$data = $this->model->playerSignup();
-                
-                // define template
-                $this->setView('views/player/player5.php');
-                // display output
-            
-                //$this->view->setData($data);
-                $this->view->output();         
-        }
 }
 
 ?>

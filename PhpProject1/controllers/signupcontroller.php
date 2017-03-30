@@ -14,41 +14,15 @@ class signupController extends Controller
                 $this->view->output();         
         }
         
-        public function coachSignup2(){
-                //$data = array();
-                //$data = $this->model->playerSignup();
-                
+        public function coachSignupFinal(){
+                $data = array();
+                $data = $this->model->addCoach();
                 // define template
-                $this->setView('views/coach/coach2.php');
+                $this->setView('views/coach/coachConfirmation.php');
                 // display output
-            
-                //$this->view->setData($data);
+                $this->view->setData($data);
                 $this->view->output();         
-        }   
-        
-        public function coachSignup3(){
-                //$data = array();
-                //$data = $this->model->playerSignup();
-                
-                // define template
-                $this->setView('views/coach/coach3.php');
-                // display output
-            
-                //$this->view->setData($data);
-                $this->view->output();         
-        }
-        
-        public function coachSignup4(){
-                //$data = array();
-                //$data = $this->model->playerSignup();
-                
-                // define template
-                $this->setView('views/coach/coach4.php');
-                // display output
-            
-                //$this->view->setData($data);
-                $this->view->output();         
-        }
+        }  
         
         public function playerSignup1(){
                 //$data = array();

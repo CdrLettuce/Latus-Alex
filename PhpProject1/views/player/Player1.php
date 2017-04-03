@@ -58,7 +58,7 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-								<input type="password" class="form-control" name="password" id="password"  placeholder="Enter a Password"/>
+								<input type="password" class="form-control" name="password" id="password"  placeholder="Enter a password"/>
 							</div>
 						</div>
 					</div>

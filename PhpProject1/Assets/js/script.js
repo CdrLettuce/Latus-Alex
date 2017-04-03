@@ -11,31 +11,33 @@ $(document).ready(function(){
         var base_url = 'http://recruitchute.io/';
         $('#customer-name').hide();
         
-	$('#sign-in').on('click', function(){
-		// read username and pwd
-		var username = $('#username').val();
-		var pwd = $('#pwd').val();
-		// send a request to authenticate the user
-		$.ajax({
-			method : 'post',
-			url : base_url+'login/checkLogin',
-			dataType: 'JSON',
-			data : {username: username, pwd: pwd},
-			success: function(response){
-				console.log(response);
-				var customer_name = response.last_name +', '+ response.first_name;
-				// display customer's name
-				$('#user').text(customer_name);
-				$('#customer-name').show();
-				// login information
-				$('#lg-box').hide();
-				// display the 'sign out' link
-				$('#sign-out').show();
-			}, error : function(err){
-				console.log(err);
-			}	
-		});
-	});
+	        $('#sign-in').on('click', function(){
+                // read username and pwd
+                console.log("HEY man");
+                var username = $('#username').val();
+                var pwd = $('#pwd').val();
+                // send a request to authenticate the user
+                $.ajax({
+                        method : 'post',
+                        url : base_url+'login/checkLogin',
+                        dataType: 'JSON',
+                        data : {username: username, pwd: pwd},
+                        success: function(response){
+                                console.log("HEY man");
+                                console.log(response);
+                                var customer_name = response.last_name +', '+ response.first_name
+                                // display customer's name
+                                $('#user').text(customer_name);
+                                $('#customer-name').show();
+                                // login information
+                                $('#lg-box').hide();
+                                // display the 'sign out' link
+                                $('#sign-out').show();
+                        }, error : function(err){
+                                console.log(err);
+                        }
+                });
+        });
 	
 	$('#sign-out').on('click', function(){
 		// hide user name

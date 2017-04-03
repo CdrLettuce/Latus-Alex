@@ -64,11 +64,11 @@ include('Assets/pageHeader.php');
 				</div>	
 			</div>
 			<div class="form-group">
-				<label for="email" class="cols-sm-2 control-label">Password Verification</label>
+				<label for="email" class="cols-sm-2 control-label">Confirm Password</label>
 				<div class="cols-sm-10">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="verify" id="verify"  placeholder="Re-type password"/>
+						<input type="text" class="form-control" name="verify" id="verify"  placeholder="Re-type your password"/>
 					</div>
 				</div>	
 			</div>

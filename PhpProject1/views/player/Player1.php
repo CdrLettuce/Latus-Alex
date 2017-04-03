@@ -25,48 +25,7 @@ include('Assets/pageHeader.php');
         -->
 	<div class="container">
 		<form class="" method="post" action="<?php echo HOME;?>signup/playerSignupFinal">		
-		<!-- Position select -->
-		<div class="form-group ">
-                    <label class="cols-sm-2 control-label" for="position">Main Position (You can add more later!)</label>
-                    <div class="cols-sm-10">
-                        <div class="input-group">	
-			<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                            <select id="position" name="position" class="form-control">
-				<option value="0">Select position</option>
-				<option value="1">Goalkeeper</option>
-				<option value="2">Right Back</option>
-				<option value="3">Left Back</option>
-				<option value="4">Sweeper</option>
-				<option value="5">Stopper</option>
-				<option value="6">Right Midfielder</option>
-				<option value="7">Left Midfielder</option>
-				<option value="8">Defensive Midfielder</option>
-				<option value="9">Striker</option>
-				<option value="10">Forward</option>				
-			</select>
-			</div>			
-                                </div>					
-					</div>
-					<!-- High School input -->
-					<div class="form-group ">
-						<label for="school" class="cols-sm-2 control-label">High School</label>
-						<div class="cols-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="school" id="school"  placeholder="Enter your School"/>
-							</div>
-						</div>
-					</div>
-					<!-- Graduation Date input (mm/yyyy-->
-					<div class="form-group ">
-						<label for="grad" class="cols-sm-2 control-label">Graduation Date</label>
-						<div class="cols-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="grad" id="grad"  placeholder="Expected Graduation Date mm/yyyy"/>
-							</div>
-						</div>
-					</div>
+		
 					<!-- First name input -->
 					<div class="form-group ">
 						<label for="firstName" class="control-label">First Name</label>
@@ -83,6 +42,37 @@ include('Assets/pageHeader.php');
 							<input type="text" class="form-control" name="lname" id="lname"  placeholder="Enter your Last Name"/>
 						</div>
 					</div>
+                                        <!-- Email(username) -->
+					<div class="form-group ">
+						<label for="email" class="cols-sm-2 control-label">Your Email</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+							</div>
+						</div>
+					</div>
+					<!-- Password input -->
+					<div class="form-group ">
+						<label for="password" class="cols-sm-2 control-label">Password</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+								<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+							</div>
+						</div>
+					</div>
+					<!-- Confirm password -->
+					<div class="form-group ">
+						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+								<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Re-type your password"/>
+							</div>
+						</div>
+					</div>
+                                        <hr>
 					<!-- Gender input -->
 					<div class="form-group ">
 						<label class="control-label" for="gender">Gender</label>
@@ -177,44 +167,49 @@ include('Assets/pageHeader.php');
 							</div>
 						</div>
 					</div>
-					<!-- Name -->
-					<legend>What is your ideal college experience?</legend>
-					<!-- Textarea -->
-					<div class="form-group ">            
-						<textarea class="form-control" rows="3" id="answer" name="answer" placeholder="Enter your answer"></textarea>
+                                        <!-- Position select -->
+		<div class="form-group ">
+                    <label class="cols-sm-2 control-label" for="position">Primary Position (You can add more later!)</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">	
+			<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <select id="position" name="position" class="form-control">
+				<option value="0">Select position</option>
+				<option value="1">Goalkeeper</option>
+				<option value="2">Right Back</option>
+				<option value="3">Left Back</option>
+				<option value="4">Sweeper</option>
+				<option value="5">Stopper</option>
+				<option value="6">Right Midfielder</option>
+				<option value="7">Left Midfielder</option>
+				<option value="8">Defensive Midfielder</option>
+				<option value="9">Striker</option>
+				<option value="10">Forward</option>				
+			</select>
+			</div>			
+                                </div>					
 					</div>
-					<!-- Email(username) -->
+					<!-- High School input -->
 					<div class="form-group ">
-						<label for="email" class="cols-sm-2 control-label">Your Email</label>
+						<label for="school" class="cols-sm-2 control-label">High School</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="school" id="school"  placeholder="Enter your School"/>
 							</div>
 						</div>
 					</div>
-					<!-- Password input -->
+					<!-- Graduation Date input (mm/yyyy-->
 					<div class="form-group ">
-						<label for="password" class="cols-sm-2 control-label">Password</label>
+						<label for="grad" class="cols-sm-2 control-label">Graduation Date</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-								<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="grad" id="grad"  placeholder="Expected Graduation Date mm/yyyy"/>
 							</div>
 						</div>
 					</div>
-					<!-- Confirm password -->
-					<div class="form-group ">
-						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
-						<div class="cols-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-								<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
-							</div>
-						</div>
-					</div>	
-                    
-                        
+					
 			<hr>
 			<!-- Next Button -->
 			<div class="form-group">

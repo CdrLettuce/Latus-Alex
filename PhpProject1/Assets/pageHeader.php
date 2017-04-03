@@ -8,7 +8,7 @@
     
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Recruit Chute</title>
+    <title>RecruitChute</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://recruitchute.io/index.php">Recruit Chute</a>
+          <a class="navbar-brand" href="http://recruitchute.io/index.php">RecruitChute</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" method="post">
@@ -62,7 +62,7 @@
             <div class="form-group">
               <input type="password" placeholder="Password" id="pwd" class="form-control">
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
+            <button type="submit" id='sign-in' class="btn btn-success">Sign in</button>
             <!--<button type="submit" class="btn btn-danger">Sign up</button>-->
             <a class="btn btn-danger" id="" href="<?php echo HOME;?>pp/bothSignup" role="button">Sign Up</a>
           </form>

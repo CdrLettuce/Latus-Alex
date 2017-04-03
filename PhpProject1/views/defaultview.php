@@ -19,13 +19,13 @@ include('Assets/pageHeader.php');
         <div class="col-md-6 icon">
           <h2>Players</h2>
           <span class="glyphicon glyphicon-user logo"></span>
-          <p>Find the perfect college team for you. Create a profile and show off your skills by adding pictures, videos, and stats.</p>
+          <p>Find the perfect college team for YOU. Create a profile, upload video highlights, pictures and stats, then connect with college coaches across the nation to show why their team needs YOU!</p>
           <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>pp/playerSignup" role="button">Player Sign Up &raquo;</a></p>
         </div>
         <div class="col-md-6 icon">
           <h2>Coaches</h2>
           <span class="glyphicon glyphicon-list-alt logo"></span>
-          <p>Find the best players for your college team. Search for players based on location, skill, and academic performance. </p>
+          <p>Find the perfect players for your college team. Search the nation for specific players base on age, location, position, academic performance, and much more! </p>
           <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>pp/coachSignup" role="button">Coach Sign Up &raquo;</a></p>
        </div>
       </div>
@@ -78,12 +78,12 @@ include('Assets/pageHeader.php');
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12 icon">
-            <h1>The Recruit Chute Difference</h1>
+            <h1>The RecruitChute Difference</h1>
         </div>
         
 	 <div class="col-md-4 icon">
           <span class="glyphicon glyphicon-phone logo"></span>
-          <p>Access your profile, message other players and coaches, and upload new content all while on the go! Recruit Chute is mobile-friendly and available anywhere you go.</p>
+          <p>Access your profile, message other players and coaches, and upload new content all while on the go! RecruitChute is mobile-friendly and available anywhere you go.</p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-md-4 icon">
@@ -93,7 +93,7 @@ include('Assets/pageHeader.php');
         </div>
         <div class="col-md-4 icon">
           <span class="glyphicon glyphicon-piggy-bank logo"></span>
-          <p>Recruit Chute keeps players and coaches connected to their communities. One percent of all revenue is donated to local youth sports programs. </p>
+          <p>RecruitChute keeps players and coaches connected to their communities. One percent of all revenue is donated to local youth sports programs. </p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
        </div>
       </div>

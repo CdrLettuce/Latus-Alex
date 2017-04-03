@@ -12,8 +12,8 @@ class signupModel extends Model{
     
     public function addCoach(){
             console.log("Hello");
-            $sql = 'INSERT INTO users (first_name, last_name, email, city, state, zip, phone)
-                    values (:first_name, :last_name, :email, :city, :state, :zip, :phone)';
+            $sql = 'INSERT INTO users (first_name, last_name, email, city, state, zip, phone, role_id)
+                    values (:first_name, :last_name, :email, :city, :state, :zip, :phone, :role_id)';
             $this->SetSql($sql);
             $values = array(':first_name'=>$_POST['fname'],
                             ':last_name'=>$_POST['lname'],
@@ -21,7 +21,8 @@ class signupModel extends Model{
                             ':city'=>$_POST['city'],
                             ':state'=>$_POST['state'],
                             ':zip'=>$_POST['zip'],
-                            ':phone'=>$_POST['phone']);
+                            ':phone'=>$_POST['phone'],
+                            ':role_id'=>'1');
             return $this->setAll($values);
         }
         public function addPlayer(){

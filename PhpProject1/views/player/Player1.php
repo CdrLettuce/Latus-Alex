@@ -68,9 +68,9 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-			<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Re-type your password" oninput ="passwordConfirm()"/>
+			<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Re-type your password" onblur ="passwordConfirm()"/>
 								<p id="message"></p>
-								<script>
+								<script type = "text/javascript">
 									function passwordConfirm(){
 									var pass = document.getElementById("password").value;
 									var conf = document.getElementById("confirm").value;

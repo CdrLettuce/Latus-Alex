@@ -69,21 +69,7 @@ include('Assets/pageHeader.php');
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
 			<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Re-type your password" onblur ="passwordConfirm()"/>
-								<p id="message"></p>
-								<script type = "text/javascript">
-									function passwordConfirm(){
-									var pass = document.getElementById("password").value;
-									var conf = document.getElementById("confirm").value;
-										if(pass != conf){
-											document.getElementById("message").innerHTML = "Passwords Do Not Match";
-											document.getElementById("confirm").style.borderColor = "#E34234";
-										}
-										else {
-											document.getElementById("message").innerHTML ="";
-											document.getElementById("confirm").style.borderColor = "#4CC417";
-										}
-									}
-								</script>
+								
 											
 							</div>
 						</div>

@@ -68,7 +68,8 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-								<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Re-type your password"/>
+								<input oninput="passFunction()" type="password" class="form-control" name="confirm" id="confirm"  placeholder="Re-type your password"/>
+								<p id="wrong"></p>
 							</div>
 						</div>
 					</div>
@@ -217,7 +218,18 @@ include('Assets/pageHeader.php');
                         </div>
 		</form>
 	</div>
-
+<script>
+	var password = document.getElementById("password"), confirmation = document.getElementById("confirm");
+	
+	function passFunction(){
+		
+	if(password.value != confirm.value){
+		document.getElementById("wrong").innerHTML = ("Passwords do not match");
+	} else {
+		document.getElementById("wrong").innerHTML = ("");
+		}
+	}
+</script>
 <?php include('Assets/pageFooter.php');
 
 

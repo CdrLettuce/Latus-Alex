@@ -80,8 +80,8 @@ include('Assets/pageHeader.php');
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 							<select id="gender" name="gender" class="form-control">
 								<option value="0">Select gender</option>
-								<option value="male">Male</option>
-								<option value="female">Female</option>
+                                                                <option value="female">Female</option>
+								<option value="male">Male</option>							
 							</select>
 						</div>				
 					</div>	
@@ -153,7 +153,7 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="city" id="city"  placeholder="Enter your City"/>
+								<input type="text" class="form-control" name="city" id="city"  placeholder="Enter city"/>
 							</div>
 						</div>	
 					</div>
@@ -163,7 +163,7 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="zip" id="zip"  placeholder="Enter your Zip Code"/>
+								<input type="text" class="form-control" name="zip" id="zip"  placeholder="Ex: 55555" pattern="\d{5}"/>
 							</div>
 						</div>
 					</div>
@@ -195,17 +195,17 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="school" id="school"  placeholder="Enter your School"/>
+								<input type="text" class="form-control" name="school" id="school"  placeholder="Enter school"/>
 							</div>
 						</div>
 					</div>
 					<!-- Graduation Date input (mm/yyyy-->
 					<div class="form-group ">
-						<label for="grad" class="cols-sm-2 control-label">Graduation Date</label>
+						<label for="grad" class="cols-sm-2 control-label">Expected Graduation Date</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="grad" id="grad"  placeholder="Expected Graduation Date mm/yyyy"/>
+								<input type="text" class="form-control" name="grad" id="grad"  placeholder="Ex: 12/9999"/>
 							</div>
 						</div>
 					</div>

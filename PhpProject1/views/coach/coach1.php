@@ -272,9 +272,9 @@ include('Assets/pageHeader.php');
 						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 	 					<select id="level" name="level" class="form-control">
 							<option value="1">Select level</option>
-							<option value="2">High School</option>
+							<option value="2">Club</option>
 							<option value="3">College</option>
-							<option value="4">Club</option>				
+							<option value="4">High School</option>				
 						</select>
 					</div>
 				</div>
@@ -301,7 +301,7 @@ include('Assets/pageHeader.php');
 				<div class="cols-sm-10">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="city" id="city"  placeholder="Enter your City"/>
+						<input type="text" class="form-control" name="city" id="city"  placeholder="Enter city"/>
 					</div>
 				</div>	
 			</div>

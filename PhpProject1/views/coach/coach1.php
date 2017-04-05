@@ -71,24 +71,7 @@ include('Assets/pageHeader.php');
 						<input type="text" class="form-control" name="verify" id="verify"  placeholder="Re-type your password" oninput = "validation()"/>
 						<p  style= "color:red;" id = "message"></p>
 					</div>
-					<script type ="text/javascript">
-            			function validation(){
-           				 var pass = document.getElementById("password").value;
-           				 var valid = document.getElementById("verify").value;
-            
-           			 if(pass > valid){
-               				 document.getElementById("verify").style.borderColor ="#ff0000";
-                			document.getElementById("message").innerHTML = "Passwords Do Not Match";
-          			  }
-            			else if(pass < valid){
-                			document.getElementById("verify").style.borderColor ="#ff0000";
-               				 document.getElementById("message").innerHTML = "Passwords Do Not Match";
-           		 }else{ 
-				 document.getElementById("message").innerHTML = "";
-                   		 document.getElementById("verify").style.borderColor ="#3fdd13";
-              		  }
-           		 }
-                    </script>
+					
 				</div>	
 			</div>
                         <hr>

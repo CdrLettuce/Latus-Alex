@@ -1,0 +1,59 @@
+<!doctype html>
+  <html >
+    <head>
+<meta charset="utf-8">
+ <!-- Set the viewport so this responsive site displays correctly on mobile devices -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Include bootstrap CSS -->
+ <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <title>RecruitChute App</title>
+       <script src="http://code.angularjs.org/1.4.8/angular.min.js"></script>
+      <!-- include the angular-route.js to make the ngRoute module available -->
+       <script src="http://code.angularjs.org/1.4.8/angular-route.js"></script>
+      <link rel="stylesheet" href='styles.css' />
+    </head>
+    <body ng-app='myApp'>     
+        
+<!-- use the ng-view directive to include HTML templates  -->
+                                <div ng-view></div>
+        
+	<!-- define routing -->
+	<script>
+		var myApp = angular .module('myApp', ['ngRoute']);
+        myApp.config(['$routeProvider', function($routeProvider){
+            $routeProvider
+            .when('/', {
+                controller: 'homeController',
+                templateUrl: 'home.php',
+                controllerAs : 'hc'
+            })
+    .when('/products', {
+                controller: 'productsController',
+                templateUrl: 'products.html',
+                controllerAs: 'pc'
+            })
+    .when('/login', {
+                 controller : 'loginController',
+                templateUrl : 'login.php',
+                controllerAs : 'lc'
+        })
+	.when('/profile', {
+		controller : 'profileController',
+		templateUrl : 'profile.php',
+		controllerAs : 'cc'
+	})
+            .otherwise({ redirectTo: '/login' });
+           }]);
+    </script>
+    <script src='productscontroller.js'></script>
+    <script src='logincontroller.js'></script>
+    <script src='customercontroller.js'></script>
+    <script src='homecontroller.js'></script>
+    <script src='dataservice.js'></script>
+    <div id="footer" class="container">
+      <footer>
+        <p>&copy; 2017 RecruitChute, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+  </body>
+</html>

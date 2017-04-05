@@ -31,6 +31,9 @@ input.log-info { border-radius: 5px; height: 20px;}
 */
 
 /* Styles for the splash page */
+.top-marg{
+     margin-top:80px;
+ }
 
 .gray{
     background-color: #f7f7f7;
@@ -87,8 +90,8 @@ body p{
 }
 
 .jumbotron{
-    margin-top: 4%;
-    background-image: url("../images/soccerdude.jpg");
+    margin-top: 20px;
+    background-image: url("../images/soccerdude2.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     color: white;

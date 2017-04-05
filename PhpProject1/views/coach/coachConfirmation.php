@@ -7,7 +7,7 @@ include('Assets/pageHeader.php');
       <div class="row">
         <div class="col-md-12">
           <h2>Thank you <?php echo ucfirst($_POST['first_name']); ?>!</h2>
-          <p><a class="btn btn-primary btn-lg" href="recruitchute.io" role="button">Take me to my profile &raquo;</a></p>
+          <p><a class="btn btn-primary btn-lg" href="<?php echo HOME;?>App/router.html#/login" role="button">Log in to my profile &raquo;</a></p>
         </div>
       </div>
 </div>

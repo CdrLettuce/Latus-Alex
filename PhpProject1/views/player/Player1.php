@@ -82,8 +82,8 @@ include('Assets/pageHeader.php');
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 							<select id="gender" name="gender" class="form-control">
 								<option value="0">Select gender</option>
-                                                                <option value="female">Female</option>
-								<option value="male">Male</option>							
+                                                                <option value="1">Female</option>
+								<option value="2">Male</option>							
 							</select>
 						</div>				
 					</div>	

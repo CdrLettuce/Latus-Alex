@@ -40,7 +40,7 @@ class signupController extends Controller
                 $data = array();
                 $data = $this->model->addPlayer();
                 // define template
-                $this->setView('views/coach/playerConfirmation.php');
+                $this->setView('views/player/playerConfirmation.php');
                 // display output
                 $this->view->setData($data);
                 $this->view->output();         

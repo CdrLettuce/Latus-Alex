@@ -1,0 +1,12 @@
+.images{max-width: 150px; max-height: 200px;}
+
+.success-message { color: green; font-weight: bold;
+    border : 1px solid green;
+    padding: 5px;
+    margin: 10px;
+ }
+ 
+.top-marg{
+     margin-top:80px;
+ }
+

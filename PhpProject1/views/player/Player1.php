@@ -68,8 +68,8 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-			<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Re-type your password" onblur ="passwordConfirm()"/>
-								
+			<input type="password" class="form-control" name="verify" id="verify"  placeholder="Re-type your password"/>
+								<p style = "color:red;" id = "message"></p>
 											
 							</div>
 						</div>

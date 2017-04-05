@@ -20,13 +20,13 @@ include('Assets/pageHeader.php');
           <h2>Players</h2>
           <span class="glyphicon glyphicon-user logo"></span>
           <p>Find the perfect college team for YOU. Create a profile, upload video highlights, pictures and stats, then connect with college coaches across the nation to show why their team needs YOU!</p>
-          <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>signup/playerSignup1" role="button">Player Sign Up &raquo;</a></p>
+          <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>pp/playerSignup" role="button">Player Sign Up &raquo;</a></p>
         </div>
         <div class="col-md-6 icon">
           <h2>Coaches</h2>
           <span class="glyphicon glyphicon-list-alt logo"></span>
           <p>Find the perfect players for your college team. Search the nation for specific players base on age, location, position, academic performance, and much more! </p>
-          <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Coach Sign Up &raquo;</a></p>
+          <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>pp/coachSignup" role="button">Coach Sign Up &raquo;</a></p>
        </div>
       </div>
     </div>
@@ -92,7 +92,7 @@ include('Assets/pageHeader.php');
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-piggy-bank logo"></span>
+          <i class="fa fa-globe" aria-hidden="true"></i>
           <p>RecruitChute keeps players and coaches connected to their communities. One percent of all revenue is donated to local youth sports programs. </p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
        </div>

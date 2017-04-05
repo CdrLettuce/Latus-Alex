@@ -1,4 +1,5 @@
 <?php
+session_start();
 /*  NOTE: URL rewriting rule changes the way server handles requests.
           The include() or require() method requires the correct path of each file.
           Use the absolute path of the base folder as the reference point.

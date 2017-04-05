@@ -68,7 +68,9 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-								<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Re-type your password"/>
+			<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Re-type your password" onblur ="passwordConfirm()"/>
+								
+											
 							</div>
 						</div>
 					</div>
@@ -80,8 +82,8 @@ include('Assets/pageHeader.php');
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 							<select id="gender" name="gender" class="form-control">
 								<option value="0">Select gender</option>
-                                                                <option value="female">Female</option>
-								<option value="male">Male</option>							
+                                                                <option value="1">Female</option>
+								<option value="2">Male</option>							
 							</select>
 						</div>				
 					</div>	

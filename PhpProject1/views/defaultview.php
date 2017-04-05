@@ -92,7 +92,7 @@ include('Assets/pageHeader.php');
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-piggy-bank logo"></span>
+          <i class="fa fa-globe" aria-hidden="true"></i>
           <p>RecruitChute keeps players and coaches connected to their communities. One percent of all revenue is donated to local youth sports programs. </p>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
        </div>

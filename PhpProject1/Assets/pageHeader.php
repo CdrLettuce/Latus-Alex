@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,6 +26,7 @@
     <!-- Link to the two main fonts used in the site-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/6c92e23d2c.js"></script>
     
     <!-- start session -->
     <?php
@@ -47,22 +49,9 @@
           <a class="navbar-brand" href="http://recruitchute.io/index.php">RecruitChute</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" method="post">
-            <div id='customer-name'>
-                <span id='user'>
-                    <?php if (isset($_SESSION['customer_id'])){
-                        echo $_SESSION['name'] ;
-                    }?>
-                </span>
-                <span id='sign-out'>Sign out</span>
-            </div>
-            <div class="form-group">
-              <input type="text" placeholder="Email" id="username" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" id="pwd" class="form-control">
-            </div>
-            <button type="submit" id='sign-in' class="btn btn-success">Sign in</button>
+          <form class="navbar-form navbar-right" action="<?php echo HOME;?>login/checkLogin" method="post">
+            <!--<button type="submit" id='sign-in' class="btn btn-success">Sign in</button>-->
+            <a class="btn btn-success" id="" href="<?php echo HOME;?>App/router.html#/login" role="button">Sign In</a>
             <!--<button type="submit" class="btn btn-danger">Sign up</button>-->
             <a class="btn btn-danger" id="" href="<?php echo HOME;?>pp/bothSignup" role="button">Sign Up</a>
           </form>

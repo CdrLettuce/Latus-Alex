@@ -26,8 +26,13 @@
     <!-- Link to the two main fonts used in the site-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-
+    <script src="https://use.fontawesome.com/6c92e23d2c.js"></script>
+    
+    <!-- start session -->
+    <?php
+        session_start();
+    ?>
+    
   </head>
 
   <body>

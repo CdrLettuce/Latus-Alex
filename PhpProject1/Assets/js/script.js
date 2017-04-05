@@ -67,4 +67,20 @@ $(document).ready(function(){
 
         });
         
+	function validation(){
+           				 var pass = document.getElementById("password").value;
+           				 var valid = document.getElementById("verify").value;
+            
+           			 if(pass > valid){
+               				 document.getElementById("verify").style.borderColor ="#ff0000";
+                			document.getElementById("message").innerHTML = "Passwords Do Not Match";
+          			  }
+            			else if(pass < valid){
+                			document.getElementById("verify").style.borderColor ="#ff0000";
+               				 document.getElementById("message").innerHTML = "Passwords Do Not Match";
+           		 }else{ 
+				 document.getElementById("message").innerHTML = "";
+                   		 document.getElementById("verify").style.borderColor ="#3fdd13";
+              		  }
+           		 }
 });

@@ -67,20 +67,21 @@ $(document).ready(function(){
 
         });
         
-	$('#verify').on('keyup', function() {
-           				 var pass = $("#password").value;
-           				 var valid = $("#verify").value;
+        
+	$('#verify').on("keyup", function validate() {
+           				 var pass = $("#password").val();
+           				 var valid = $("#verify").val();
             
            			 if(pass > valid){
-               				$("#verify").style.borderColor ="#ff0000";
-                			$("#message").innerHTML = "Passwords Do Not Match";
+               				$("#verify").css("borderColor", "#ff0000");
+                			$("#message").html("Passwords Do Not Match");
           			  }
             			else if(pass < valid){
-                			$("#verify").style.borderColor ="#ff0000";
-               				$("#message").innerHTML = "Passwords Do Not Match";
+                			$("#verify").css("borderColor", "#ff0000");
+               				$("#message").html("Passwords Do Not Match");
            		 }else{ 
-				$("#message").innerHTML = "";
-                   		 $("#verify").style.borderColor ="#3fdd13";
+				$("#message").html("");
+                   		 $("#verify").css("borderColor", "#3fdd13");
               		  }
            		 });
 });

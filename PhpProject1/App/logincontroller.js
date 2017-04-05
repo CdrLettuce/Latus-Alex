@@ -25,7 +25,6 @@ myApp.controller('loginController',['$http','DataService','$location', function(
 
         function login(){
         // use $http service to obtain data
-        console.log("Login being called");
                 $http.post(base_url + 'login/checkLogin', lc.user).then(function(response){
                         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
 

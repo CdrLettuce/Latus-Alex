@@ -3,7 +3,7 @@ class LoginModel extends Model
 {
         public function checkLogin(){
                 $sql = "SELECT user_id, first_name, last_name 
-                        FROM testUsers 
+                        FROM `users`  
                         WHERE email = :username and password = :pwd";
                 $this->setSql($sql);
         $data = json_decode(file_get_contents('php://input'));

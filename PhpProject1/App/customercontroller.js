@@ -19,6 +19,7 @@ cc.getCustomerPurchases();
 
 function getCustomerPurchases(){
 	var userID = cc.currentUser.customer_id;
+        
       // use $http service to obtain data
 	$http.get('http://washington.uww.edu/cs482/butlersj02/midterm/product/getCustomerPurchases/'+userID ).then(function(response){
 		cc.purchases = response.data;

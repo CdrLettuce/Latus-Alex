@@ -1,5 +1,5 @@
 'use strict'
-myApp.controller('customerController',['$http', 'DataService','$location', function($http, DataService, $location){
+myApp.controller('profileController',['$http', 'DataService','$location', function($http, DataService, $location){
   var cc = this;
  cc.currentUser = {};
         init();
@@ -7,25 +7,29 @@ myApp.controller('customerController',['$http', 'DataService','$location', funct
         function init(){
                 // obtain name form the data service
                 cc.currentUser = DataService.getCurrentUser();
-                if (cc.currentUser.customer_id == -1){
+                if (cc.currentUser.user_id == -1){
                         // Invalid user. Display login page
                         $location.path('/login');
                 }
         }
 
-cc.purchases = [];
-cc.getCustomerPurchases = getCustomerPurchases;
-cc.getCustomerPurchases();
+cc.info = [];
+cc.getPlayerInfo = getPlayerInfo;
+cc.getPlayerInfo();
 
-function getCustomerPurchases(){
-	var userID = cc.currentUser.customer_id;
+function getPlayerInfo(){
+        var userID = cc.currentUser.user_id;
+        console.log("HEY THERE HOWS IT GOIN?");
+        console.log(userID);
       // use $http service to obtain data
-	$http.get('http://washington.uww.edu/cs482/butlersj02/midterm/product/getCustomerPurchases/'+userID ).then(function(response){
-		cc.purchases = response.data;
+        $http.get('http://recruitchute.io/playerinfo/getPlayerInfo/'+userID ).then(function(response){
+                console.log(response.data);
+                cc.info = response.data;
         },
-        	function(err) { console.log(err);
-     	});
+                function(err) { console.log(err);
+        });
 }
+
 
 
 }]);

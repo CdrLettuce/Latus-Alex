@@ -82,5 +82,5 @@ $(document).ready(function(){
 				$("#message").innerHTML = "";
                    		 $("#verify").style.borderColor ="#3fdd13";
               		  }
-           		 }
+           		 });
 });

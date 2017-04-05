@@ -68,7 +68,7 @@ include('Assets/pageHeader.php');
 				<div class="cols-sm-10">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" name="verify" id="verify"  placeholder="Re-type your password" oninput = "validation()"/>
+						<input type="text" class="form-control" name="verify" id="verify"  placeholder="Re-type your password" />
 						<p  style= "color:red;" id = "message"></p>
 					</div>
 					

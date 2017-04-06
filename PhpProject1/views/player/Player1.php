@@ -169,7 +169,7 @@ include('Assets/pageHeader.php');
 							</div>
 						</div>
 					</div>
-                                        <!-- Position select -->
+                                        <!-- Position select
 		<div class="form-group ">
                     <label class="cols-sm-2 control-label" for="position">Primary Position (You can add more later!)</label>
                     <div class="cols-sm-10">
@@ -191,7 +191,7 @@ include('Assets/pageHeader.php');
 			</div>			
                                 </div>					
 					</div>
-					<!-- High School input -->
+					<!-- High School input
 					<div class="form-group ">
 						<label for="school" class="cols-sm-2 control-label">High School</label>
 						<div class="cols-sm-10">
@@ -201,7 +201,7 @@ include('Assets/pageHeader.php');
 							</div>
 						</div>
 					</div>
-					<!-- Graduation Date input (mm/yyyy-->
+					<!-- Graduation Date input (mm/yyyy)
 					<div class="form-group ">
 						<label for="grad" class="cols-sm-2 control-label">Expected Graduation Date</label>
 						<div class="cols-sm-10">
@@ -211,7 +211,7 @@ include('Assets/pageHeader.php');
 							</div>
 						</div>
 					</div>
-					
+					-->
 			<hr>
 			<!-- Next Button -->
 			<div class="form-group">

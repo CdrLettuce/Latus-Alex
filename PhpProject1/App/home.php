@@ -112,7 +112,15 @@ include('appHeader2.php');
                                     <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
                                     <textarea  class="form-control" name="bio" id="bio" ng-model='ex.item.bio' placeholder="Tell us more about yourself!"></textarea>
                             </div>
-                    </div>        
+                    </div>     
+                    <!-- Video input -->
+                    <div class="form-group ">
+                            <label for="video" class="control-label">Video</label>
+                            <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="video" id="video" ng-model='ex.item.video' placeholder="Enter a youtube video url (Ex: https://youtube.com/watch?2aa-7ks9 )"/>
+                            </div>
+                    </div>
                     <!-- Height input -->
                     <div class="form-group ">
                             <label for="height" class="control-label">Height</label>

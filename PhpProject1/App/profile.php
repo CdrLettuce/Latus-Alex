@@ -15,11 +15,17 @@ include('appHeader2.php');
         <div class="col-lg-6">
             <div class="sample-container">
                 <h3>Videos</h3>
+                <iframe width="300" height="200"
+                    src="{{ex.info2.youtube_urls}}">
+                </iframe>   
             </div>
         </div>
         <div class="col-lg-3">
             <div class="sample-container">
                 <h3>Stats</h3>
+                <p>Height: {{ex.info2.height}}</p>
+                <p>Weight: {{ex.info2.weight}}</p>
+                
             </div>
         </div>
     </div>
@@ -34,12 +40,16 @@ include('appHeader2.php');
         </div>
         <div class="col-lg-6">
             <div class="sample-container">
-                <h3>Upcoming Dates</h3>
+                <h3>About Me</h3>
+                <p>{{ex.info2.bio}}</p>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="sample-container">
-                <h3>Awards</h3>
+                <h3>High School Info</h3>
+                <p>High School: {{ex.info2.h_school}}</p>
+                <p>GPA: {{ex.info2.gpa}}</p>
+                <p>Expected Grad Date: {{ex.info2.graduation_date}}</p>
             </div>
         </div>
     </div>

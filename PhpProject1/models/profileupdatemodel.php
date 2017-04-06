@@ -4,7 +4,7 @@
 class profileupdateModel extends Model
 {
 
-        public function addNewPurchase(){
+        public function updateProfile(){
                 $table = 'player_profile';
 
                 //obtain data
@@ -25,7 +25,8 @@ class profileupdateModel extends Model
                                 'weight'=>$values->weight,
                                 'h_school'=>$values->school,
                                 'gpa'=>$values->gpa,
-                                'graduation_date'=>$values->grad);
+                                'graduation_date'=>$values->grad,
+                                'youtube_urls'=>$values->videourl);
                 // insert new record
                 $this->insertRecord($table,$data);
                 return 1;

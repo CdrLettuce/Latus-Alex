@@ -73,7 +73,7 @@ include('appHeader2.php');
             </div>
         </div>
     </div>
-    <div id="hprofile" class="collapse"class='row container-fluid'>
+    <div id="hprofile" class="collapse" class='row container-fluid'>
         <div class="col-lg-2">
             <div class=" no-show">
                

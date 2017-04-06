@@ -13,23 +13,26 @@ myApp.controller('profileController',['$http', 'DataService','$location', functi
                 }
         }
 
+var base_url = 'http://recruitchute.io/';
 cc.info = [];
 cc.getPlayerInfo = getPlayerInfo;
 cc.getPlayerInfo();
 
+console.log("HEY");
 function getPlayerInfo(){
-        var userID = cc.currentUser.user_id;
-        console.log("HEY THERE HOWS IT GOIN?");
-        console.log(userID);
-      // use $http service to obtain data
-        $http.get('http://recruitchute.io/playerinfo/getPlayerInfo/'+userID ).then(function(response){
-                console.log(response.data);
-                cc.info = response.data;
-        },
-                function(err) { console.log(err);
-        });
-}
-
+        // use $http service to obtain data
+                $http.post(base_url + 'playerinfo/getPlayerInfo', cc.currentUser).then(function(response){
+                        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+                                // set current user
+                                console.log("Wassup");
+                                console.log(response.data);
+                                cc.info = response.data;
+                                console.log(cc.info);
+                         }
+                   },
+                   function(err) { console.log(err);
+                });
+        }
 
 
 }]);

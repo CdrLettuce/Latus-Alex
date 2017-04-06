@@ -1,14 +1,14 @@
 <?php
 include('appHeader2.php');
 ?>
-<div class="top-marg" ng-controller='homeController as hc'>
+<div class="top-marg" ng-controller='profileController as ex'>
     <div class='row container-fluid'>
         <div class='col-lg-12'>
                 <h2>Recruit Chute Application Profile</h2>
         </div>
         <div class="col-lg-3">
             <div class="sample-container">
-                <h3> {{hc.currentUser.first_name}} {{hc.currentUser.last_name}} </h3>
+                <h3> {{ex.currentUser.first_name}} {{ex.currentUser.last_name}} </h3>
                 <span class="glyphicon glyphicon-user logomedium"></span>
             </div>
         </div>
@@ -27,8 +27,8 @@ include('appHeader2.php');
         <div class="col-lg-3">
             <div class="sample-container">
                 <h3>Location</h3>
-                <p>City: {{hc.info.city}}</p>
-                <p>State: {{hc.info.state}}</p>
+                <p>City: {{ex.info.city}}</p>
+                <p>State: {{ex.info.state_name}}</p>
                 
             </div>
         </div>

@@ -12,7 +12,7 @@ class signupModel extends Model{
     
     public function addCoach(){
            
-            $sql = 'INSERT INTO users (first_name, last_name, email, city, state, zip, phone, role_id, sport_id, password)
+            $sql = 'INSERT INTO users (first_name, last_name, email, city, state_id, zip, phone, role_id, sport_id, password)
                     values (:first_name, :last_name, :email, :city, :state, :zip, :phone, :role_id, :sport_id, :password)';
             $this->SetSql($sql);
             $values = array(':first_name'=>$_POST['fname'],
@@ -29,7 +29,7 @@ class signupModel extends Model{
         }
         public function addPlayer(){
             
-            $sql = 'INSERT INTO users (first_name, last_name, email, city, state, zip, phone, role_id, sport_id, gender, password)
+            $sql = 'INSERT INTO users (first_name, last_name, email, city, state_id, zip, phone, role_id, sport_id, gender, password)
                     values (:first_name, :last_name, :email, :city, :state, :zip, :phone, :role_id, :sport_id, :gender, :password)';
             $this->SetSql($sql);
             $values = array(':first_name'=>$_POST['fname'],
@@ -41,7 +41,7 @@ class signupModel extends Model{
                             ':phone'=>$_POST['phone'],
                             ':gender'=>$_POST['gender'],
                             ':password'=>$_POST['password'],
-                            ':role_id'=>'1',
+                            ':role_id'=>'2',
                             ':sport_id'=>'1');
             return $this->setAll($values);
         }

@@ -29,12 +29,7 @@
                 templateUrl: 'home.php',
                 controllerAs : 'hc'
             })
-    .when('/products', {
-                controller: 'productsController',
-                templateUrl: 'products.html',
-                controllerAs: 'pc'
-            })
-    .when('/login', {
+        .when('/login', {
                  controller : 'loginController',
                 templateUrl : 'login.php',
                 controllerAs : 'lc'
@@ -47,7 +42,6 @@
             .otherwise({ redirectTo: '/login' });
            }]);
     </script>
-    <script src='productscontroller.js'></script>
     <script src='logincontroller.js'></script>
     <script src='profilecontroller.js'></script>
     <script src='homecontroller.js'></script>

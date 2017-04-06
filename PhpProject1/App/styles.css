@@ -25,3 +25,27 @@
  .logomedium{
      font-size: 200px;
  }
+ 
+ .center-text{
+     text-align: center;
+ }
+ .no-show{
+     width: 100%;
+     background-color: white;
+ }
+ .home-container{
+     width: 100%;
+     margin: 10px 0px;
+     height: 40px;
+     background-color: #eeeeee;
+     text-align: center;
+     padding:0px;
+ }
+ .data-container{
+     width: 100%;
+     margin: 10px 0px;
+     background-color: #eeeeee;
+     text-align: center;
+     padding:0px;
+ }
+ 

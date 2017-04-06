@@ -1,20 +1,21 @@
 <?php
-
 class PlayerInfoModel extends Model
 {
-
-        public function getPlayerInfo($parameter){
-                // define SQL statement
-                $sql = "SELECT city, state
-                        FROM `users`
-                        WHERE user_id = :userId";
-                // set model's SQL
-                $this->SetSql($sql);
-                // define values for the parameters
-                $values = array(':userId'=>$parameter);
-                // obtain and return data
-                return $this->getAll($values);
+        public function getPlayerInfo(){
+                $sql = "SELECT u.city, s.state_name 
+                        FROM `users` as u, `states` as s  
+                        WHERE u.state_id = s.state_id
+                        AND user_id = :userId";
+                $this->setSql($sql);
+        $data = json_decode(file_get_contents('php://input'));
+                $values = array(':userId'=>$data->user_id);
+                $result = $this->getOne($values);
+                /* if the user is not found then return -1 */
+                if (!$result)
+                        $result = -1;
+                return $result;
         }
 
-
 }
+
+?>

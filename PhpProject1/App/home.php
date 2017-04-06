@@ -172,6 +172,15 @@ include('appHeader2.php');
                
             </div>
         </div>
+        <!--update profile success message -->
+        <div class='row container-fluid success-message' ng-show='ex.displaySuccessMessage'>
+            <div class='col-xs-11' >
+                    {{ex.success_message}}
+            </div>
+            <div class='col-xs-1'>
+                    <span class="glyphicon glyphicon-remove-circle" ng-click="ex.displaySuccessMessage=false"></span>
+            </div>
+        </div>
     </div>
     <div class='row container-fluid'>
         <div class="col-lg-2">

@@ -137,7 +137,7 @@ include('Assets/pageHeader.php');
 					</div>			
 				</div>					
 			</div>
-                        <!-- School input -->
+                        <!-- School input
 			<div class="form-group">
 				<label for="school" class="cols-sm-2 control-label">Name of School or Club</label>
 				<div class="cols-sm-10">
@@ -296,7 +296,7 @@ include('Assets/pageHeader.php');
 					</div>
 				</div>
 			</div>
-						
+			-->
 			<!-- City Input -->
 			<div class="form-group">
 				<label for="city" class="cols-sm-2 control-label">City</label>

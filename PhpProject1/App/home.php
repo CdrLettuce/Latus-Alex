@@ -12,9 +12,9 @@ include('appHeader2.php');
             </div>
         </div>
         <div class="col-lg-8">
-            <div class="home-container">
+            <div data-toggle="collapse" data-target="#hsearch" class="home-container">
                 <h3>Search
-                    <span id="search" data-toggle="collapse" data-target="#hsearch" class="glyphicon glyphicon-plus"></span>
+                    <span id="search" class="glyphicon glyphicon-plus"></span>
                 </h3>
             </div>
         </div>
@@ -61,9 +61,9 @@ include('appHeader2.php');
             </div>
         </div>
         <div class="col-lg-8">
-            <div class="home-container">
+            <div data-toggle="collapse" data-target="#hprofile" class="home-container">
                 <h3>Complete your profile
-                     <span id="complete-profile" data-toggle="collapse" data-target="#hprofile" class="glyphicon glyphicon-plus"></span>
+                     <span id="complete-profile" class="glyphicon glyphicon-plus"></span>
                 </h3>
             </div>
         </div>
@@ -190,9 +190,9 @@ include('appHeader2.php');
             </div>
         </div>
         <div class="col-lg-8">
-            <div class="home-container">
+            <div data-toggle="collapse" data-target="#hnews" class="home-container">
                 <h3>Recruit Chute News
-                    <span id="news" data-toggle="collapse" data-target="#hnews" class="glyphicon glyphicon-plus"></span>
+                    <span id="news" class="glyphicon glyphicon-plus"></span>
                 </h3>
             </div>
         </div>

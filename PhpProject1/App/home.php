@@ -14,7 +14,7 @@ include('appHeader2.php');
         <div class="col-lg-8">
             <div class="home-container">
                 <h3>Search
-                    <span id="search" class="glyphicon glyphicon-plus"></span>
+                    <a href="#hsearch" data-toggle="collapse"><span id="search" class="glyphicon glyphicon-plus"></span></a>
                 </h3>
             </div>
         </div>
@@ -24,7 +24,7 @@ include('appHeader2.php');
             </div>
         </div>
     </div>
-    <div class='row container-fluid'>
+    <div id="hsearch" class="collapse" class='row container-fluid'>
         <div class="col-lg-2">
             <div class=" no-show">
                
@@ -63,7 +63,7 @@ include('appHeader2.php');
         <div class="col-lg-8">
             <div class="home-container">
                 <h3>Complete your profile
-                    <span id="complete-profile" class="glyphicon glyphicon-plus"></span>
+                     <a href="#hprofile" data-toggle="collapse"><span id="complete-profile" class="glyphicon glyphicon-plus"></span></a>
                 </h3>
             </div>
         </div>
@@ -73,7 +73,7 @@ include('appHeader2.php');
             </div>
         </div>
     </div>
-    <div class='row container-fluid'>
+    <div id="hprofile" class="collapse" class='row container-fluid'>
         <div class="col-lg-2">
             <div class=" no-show">
                
@@ -183,7 +183,7 @@ include('appHeader2.php');
         <div class="col-lg-8">
             <div class="home-container">
                 <h3>Recruit Chute News
-                    <span  id="news" class="glyphicon glyphicon-plus"></span>
+                    <a href="#hnews" data-toggle="collapse"><span id="news" class="glyphicon glyphicon-plus"></span></a>
                 </h3>
             </div>
         </div>
@@ -193,7 +193,7 @@ include('appHeader2.php');
             </div>
         </div>
     </div>
-    <div class='row container-fluid'>
+    <div id="hnews" class="collapse" class='row container-fluid'>
         <div class="col-lg-2">
             <div class=" no-show">
                

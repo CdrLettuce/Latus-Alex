@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="coach Sign-up">
+	<meta name="author" content="">
+    <script src="https://use.fontawesome.com/6c92e23d2c.js"></script>
+	<title>RecuitChute</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	</head>
+	<body>
+      <div class="jumbotron head-img">
+		<div class="container text-center">
+			<h1>Signing up as a player!</h1>
+			<p>You must finish the sign up process & make changes to your profile for it to go live</p>
+		</div>
+	</div>
+	
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://recruitchute.io/index.php">RecruitChute</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" action="<?php echo HOME;?>login/checkLogin" method="post">
+            <!--<button type="submit" id='sign-in' class="btn btn-success">Sign in</button>-->
+            <a class="btn btn-success" id="" href="<?php echo HOME;?>App/router.html#/login" role="button">Sign In</a>
+            <!--<button type="submit" class="btn btn-danger">Sign up</button>-->
+            <a class="btn btn-danger" id="" href="<?php echo HOME;?>pp/bothSignup" role="button">Sign Up</a>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+<div class="container c">
+		<form class="" method="post" action="#">
+		<div class="row">
+			<!-- First name input -->
+			<div class="col-xs-4">
+					<div class="form-group">
+						<label for="firstName" class="control-label">First Name</label>
+						<div class="input-group">
+							<span class="input-group-addon input-primary"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+							<input type="text" class="form-control form-primary" name="fname" id="fname"  placeholder="Enter your First Name"/>
+						</div>
+					</div>
+			</div>
+					<!-- Last name input -->
+			<div class="col-xs-4">
+					<div class="form-group ">
+						<label for="lastName" class="control-label">Last Name</label>
+						<div class="input-group">
+							<span class="input-group-addon input-primary"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+							<input type="text" class="form-control form-primary" name="lname" id="lname"  placeholder="Enter your Last Name"/>
+						</div>
+					</div>
+			</div>
+				<!-- Gender input -->
+				<div class="col-xs-4">
+					<div class="form-group ">
+						<label class="control-label" for="gender">Gender</label>
+						<div class="input-group">
+							<span class="input-group-addon input-primary"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+							<select id="gender" name="gender" class="form-control form-primary">
+								<option value="0">Select gender</option>
+                                                                <option value="1">Female</option>
+								<option value="2">Male</option>							
+							</select>
+						</div>				
+					</div>
+				</div>
+		</div>
+		<div class="row">
+            <!-- Email(username) -->
+			<div class="col-xs-6">
+					<div class="form-group ">
+						<label for="email" class="cols-sm-2 control-label">Email</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon input-primary"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control form-primary" name="email" id="email"  placeholder="Enter your Email"/>
+							</div>
+						</div>
+					</div>
+			</div>
+			<!-- Email(username) -->
+			<div class="col-xs-6">
+					<div class="form-group ">
+						<label for="cemail" class="cols-sm-2 control-label">Re-enter Email</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon input-primary"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control form-primary" name="everify" id="everify"  placeholder="Re-enter your Email"/>
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon input-primary no-show"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+								<p style = "color:red;" id = "emessage"></p>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+					<!-- Password input -->
+			<div class="col-xs-6">
+					<div class="form-group ">
+						<label for="password" class="cols-sm-2 control-label">Password</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon input-primary"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+								<input type="password" class="form-control form-primary" name="password" id="password"  placeholder="Enter a password"/>
+							</div>
+						</div>
+					</div>
+			</div>
+					<!-- Confirm password -->
+			<div class="col-xs-6">
+					<div class="form-group ">
+						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon input-primary"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+			<input type="password" class="form-control form-primary" name="verify" id="verify"  placeholder="Re-type your password"/>
+							</div>
+							<div class="input-group">
+							<span class="input-group-addon input-primary no-show"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+							<p style = "color:red;" id = "message"></p>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+        <hr>
+		<div class="row">
+					<!-- State Selection -->
+				<div class="col-xs-4">
+					<div class="form-group ">
+						<label class="cols-sm-2 control-label" for="state">Select your state</label>
+						<div class="cols-sm-10">
+							<div class="input-group">		
+								<span class="input-group-addon input-primary"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<select id="state" name="state" class="form-control form-primary">
+									<option value="0">Select state</option>
+									<option value="1">Alabama</option>
+									<option value="2">Alaska</option>
+									<option value="3">Arizona</option>
+									<option value="4">Arkansas</option>
+									<option value="5">California</option>
+									<option value="6">Colorado</option>
+									<option value="7">Connecticut</option>
+									<option value="8">Delaware</option>
+									<option value="9">Florida</option>
+									<option value="10">Georgia</option>
+									<option value="11">Hawaii</option>
+									<option value="12">Idaho</option>
+									<option value="13">Illinois</option>
+									<option value="14">Indiana</option>
+									<option value="15">Iowa</option>
+									<option value="16">Kansas</option>
+									<option value="17">Kentucky</option>
+									<option value="18">Louisiana</option>
+									<option value="19">Maine</option>
+									<option value="20">Maryland</option>
+									<option value="21">Massachusetts</option>
+									<option value="22">Michigan</option>
+									<option value="23">Minnesota</option>
+									<option value="24">Mississippi</option>
+									<option value="25">Missouri</option>
+									<option value="26">Montana</option>
+									<option value="27">Nebraska</option>
+									<option value="28">Nevada</option>
+									<option value="29">New Hampshire</option>
+									<option value="30">New Jersey</option>
+									<option value="31">New Mexico</option>
+									<option value="32">New York</option>
+									<option value="33">North Carolina</option>
+									<option value="34">North Dakota</option>
+									<option value="35">Ohio</option>
+									<option value="36">Oklahoma</option>
+									<option value="37">Oregon</option>
+									<option value="38">Pennsylvania</option>
+									<option value="39">Rhode Island</option>
+									<option value="40">South Carolina</option>
+									<option value="41">South Dakota</option>
+									<option value="42">Tennessee</option>
+									<option value="43">Texas</option>
+									<option value="44">Utah</option>
+									<option value="45">Vermont</option>
+									<option value="46">Virginia</option>
+									<option value="47">Washington</option>
+									<option value="48">West Virginia</option>
+									<option value="49">Wisconsin</option>
+									<option value="50">Wyoming</option>
+								</select>
+							</div>			
+						</div>					
+					</div>
+				</div>
+					<!-- City Input -->
+				<div class="col-xs-4">
+					<div class="form-group ">
+						<label for="city" class="cols-sm-2 control-label">City</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon input-primary"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control form-primary" name="city" id="city"  placeholder="Enter city"/>
+							</div>
+						</div>	
+					</div>
+				</div>
+					<!-- Zip code input -->
+				<div class="col-xs-4">
+					<div class="form-group ">
+						<label for="zip" class="cols-sm-2 control-label">Zip Code</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon input-primary"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control form-primary" name="zip" id="zip"  placeholder="Ex: 55555" pattern="\d{5}"/>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+			<hr>
+			<div class="form-group ">
+				<a href="" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Next</a>
+			</div>	
+		</form>
+</div>
+	
+	<hr>
+    <div id="footer" class="container">
+      <footer>
+        <p>&copy; 2017 RecruitChute, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="../../dist/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="../../dist/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

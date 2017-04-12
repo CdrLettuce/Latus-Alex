@@ -31,7 +31,7 @@ include('Assets/pageHeader.php');
 						<label for="firstName" class="control-label">First Name</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-							<input type="text" class="form-control" name="fname" id="fname"  placeholder="Enter your First Name"/>
+							<input type="text" class="form-control" name="fname" id="fname"  placeholder="Enter your First Name" required/>
 						</div>
 					</div>
 					<!-- Last name input -->
@@ -39,7 +39,7 @@ include('Assets/pageHeader.php');
 						<label for="lastName" class="control-label">Last Name</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-							<input type="text" class="form-control" name="lname" id="lname"  placeholder="Enter your Last Name"/>
+							<input type="text" class="form-control" name="lname" id="lname"  placeholder="Enter your Last Name" required/>
 						</div>
 					</div>
                                         <!-- Email(username) -->
@@ -48,7 +48,7 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+								<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email" required/>
 							</div>
 						</div>
 					</div>
@@ -58,7 +58,7 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-								<input type="password" class="form-control" name="password" id="password"  placeholder="Enter a password"/>
+								<input type="password" class="form-control" name="password" id="password"  placeholder="Enter a password" required/>
 							</div>
 						</div>
 					</div>
@@ -68,7 +68,7 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-			<input type="password" class="form-control" name="verify" id="verify"  placeholder="Re-type your password"/>
+			<input type="password" class="form-control" name="verify" id="verify"  placeholder="Re-type your password" required/>
 								<p style = "color:red;" id = "message"></p>
 											
 							</div>
@@ -167,7 +167,7 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="city" id="city"  placeholder="Enter city"/>
+								<input type="text" class="form-control" name="city" id="city"  placeholder="Enter city" required/>
 							</div>
 						</div>	
 					</div>
@@ -177,7 +177,7 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="zip" id="zip"  placeholder="Ex: 55555" pattern="\d{5}"/>
+								<input type="text" class="form-control" name="zip" id="zip"  placeholder="Ex: 55555" pattern="\d{5}" required/>
 							</div>
 						</div>
 					</div>

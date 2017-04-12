@@ -27,7 +27,7 @@ include('Assets/pageHeader.php');
 		<form class="" method="post" action="<?php echo HOME;?>signup/playerSignupFinal">		
 		
 					<!-- First name input -->
-					<div class="form-group ">
+					<div class="form-group col-sm-3 col-sm-offset-3">
 						<label for="firstName" class="control-label">First Name</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -35,7 +35,7 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- Last name input -->
-					<div class="form-group ">
+					<div class="form-group col-sm-3">
 						<label for="lastName" class="control-label">Last Name</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -43,17 +43,17 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
                                         <!-- Email(username) -->
-					<div class="form-group ">
+					<div class="form-group col-sm-6 col-sm-offset-3">
 						<label for="email" class="cols-sm-2 control-label">Email</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email" required/>
+								<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required/>
 							</div>
 						</div>
 					</div>
 					<!-- Password input -->
-					<div class="form-group ">
+					<div class="form-group col-sm-3 col-sm-offset-3">
 						<label for="password" class="cols-sm-2 control-label">Password</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -63,34 +63,34 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- Confirm password -->
-					<div class="form-group ">
+					<div class="form-group col-sm-3">
 						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-			<input type="password" class="form-control" name="verify" id="verify"  placeholder="Re-type your password" required/>
-								<p style = "color:red;" id = "message"></p>
-											
+                                                                <input type="password" class="form-control" name="verify" id="verify"  placeholder="Re-type your password" required/>
+                                                                </div>
+							<div class="input-group">
+							<span class="input-group-addon input-primary" style="visibility:hidden;"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+							<p style = "color:red;" id = "message"></p>											
 							</div>
 						</div>
 					</div>
-                                        <hr>
 					<!-- Gender input -->
-					<!--<div class="form-group ">
+					<div class="form-group col-sm-3 col-sm-offset-3">
 						<label class="control-label" for="gender">Gender</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-							<select id="gender" name="gender" class="form-control">
-								<option value="0">Select gender</option>
+							<select required id="gender" name="gender" class="form-control">
+								<option value="">Select gender</option>
                                                                 <option value="1">Female</option>
 								<option value="2">Male</option>							
 							</select>
 						</div>				
-					</div>	-->
-                                        <div class="form-group ">
+					</div>
+                                        <!--<div class="form-group col-sm-6 col-sm-offset-3">
                                                 <label class="control-label" for="gender">Gender</label>
-                                                <div class="input-group">
-                                                        <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                <div class="input-group">                                                        
                                                         <label class="radio-inline">
                                                                 <input type="radio" name="gender" id="gender" value="1" required> Female
                                                         </label>
@@ -98,9 +98,9 @@ include('Assets/pageHeader.php');
                                                                 <input type="radio" name="gender" id="gender" value="2"> Male
                                                         </label>
                                                 </div>
-                                        </div>
+                                        </div>-->
 					<!-- State Selection -->
-					<div class="form-group ">
+					<div class="form-group col-sm-3">
 						<label class="cols-sm-2 control-label" for="state">Select your state</label>
 						<div class="cols-sm-10">
 							<div class="input-group">		
@@ -162,7 +162,7 @@ include('Assets/pageHeader.php');
 						</div>					
 					</div>
 					<!-- City Input -->
-					<div class="form-group ">
+					<div class="form-group col-sm-3 col-sm-offset-3">
 						<label for="city" class="cols-sm-2 control-label">City</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -172,7 +172,7 @@ include('Assets/pageHeader.php');
 						</div>	
 					</div>
 					<!-- Zip code input -->
-					<div class="form-group ">
+					<div class="form-group col-sm-3">
 						<label for="zip" class="cols-sm-2 control-label">Zip Code</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -224,9 +224,8 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					-->
-			<hr>
 			<!-- Next Button -->
-			<div class="form-group">
+			<div class="form-group col-sm-6 col-sm-offset-3">
                             <input type="submit" name="Submit" value="Submit" class="btn btn-primary btn-lg btn-block login-button">
                         </div>
 		</form>

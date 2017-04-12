@@ -92,7 +92,7 @@ include('Assets/pageHeader.php');
                                                 <div class="input-group">
                                                         <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
                                                         <label class="radio-inline">
-                                                                <input type="radio" name="gender" id="gender" value="1"> Female
+                                                                <input type="radio" name="gender" id="gender" value="1" required> Female
                                                         </label>
                                                         <label class="radio-inline">
                                                                 <input type="radio" name="gender" id="gender" value="2"> Male
@@ -105,8 +105,8 @@ include('Assets/pageHeader.php');
 						<div class="cols-sm-10">
 							<div class="input-group">		
 								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<select id="state" name="state" class="form-control">
-									<option value="0">Select state</option>
+								<select required id="state" name="state" class="form-control">
+									<option value="">Select state</option>
 									<option value="1">Alabama</option>
 									<option value="2">Alaska</option>
 									<option value="3">Arizona</option>

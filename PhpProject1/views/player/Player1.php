@@ -76,7 +76,7 @@ include('Assets/pageHeader.php');
 					</div>
                                         <hr>
 					<!-- Gender input -->
-					<div class="form-group ">
+					<!--<div class="form-group ">
 						<label class="control-label" for="gender">Gender</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -86,7 +86,17 @@ include('Assets/pageHeader.php');
 								<option value="2">Male</option>							
 							</select>
 						</div>				
-					</div>	
+					</div>	-->
+                                        <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gender" id="gender" value="Female"> Female
+                                                </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                                <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gender" id="gender" value="Male"> Male
+                                                </label>
+                                        </div>
 					<!-- State Selection -->
 					<div class="form-group ">
 						<label class="cols-sm-2 control-label" for="state">Select your state</label>

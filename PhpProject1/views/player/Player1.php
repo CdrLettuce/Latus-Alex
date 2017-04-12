@@ -87,15 +87,17 @@ include('Assets/pageHeader.php');
 							</select>
 						</div>				
 					</div>	-->
-                                        <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                        <input class="form-check-input" type="radio" name="gender" id="gender" value="Female"> Female
-                                                </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                                <label class="form-check-label">
-                                                        <input class="form-check-input" type="radio" name="gender" id="gender" value="Male"> Male
-                                                </label>
+                                        <div class="form-group ">
+                                                <label class="control-label" for="gender">Gender</label>
+                                                <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                        <label class="radio-inline">
+                                                                <input type="radio" name="gender" id="gender" value="1"> Female
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                                <input type="radio" name="gender" id="gender" value="2"> Male
+                                                        </label>
+                                                </div>
                                         </div>
 					<!-- State Selection -->
 					<div class="form-group ">

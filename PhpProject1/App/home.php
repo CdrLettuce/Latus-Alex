@@ -6,39 +6,23 @@ include('appHeader2.php');
         <div class='col-lg-12 center-text'>
                 <h2>Recruit Chute Application Home</h2>
         </div>
-        <div class="col-lg-2">
-            <div class=" no-show">
-                
-            </div>
-        </div>
-        <div class="col-lg-8">
+        <div class="col-sm-8 col-sm-offset-2">
             <div data-toggle="collapse" data-target="#hsearch" class="home-container">
                 <h3>Search
                     <span id="search" class="glyphicon glyphicon-plus"></span>
                 </h3>
             </div>
         </div>
-        <div class="col-lg-2">
-            <div class=" no-show">
-                
-            </div>
-        </div>
     </div>
     <div id="hsearch" class="collapse" class='row container-fluid'>
-        <div class="col-lg-2">
-            <div class=" no-show">
-               
-                
-            </div>
-        </div>
-        <div class="col-lg-8">
+        <div class="col-sm-8 col-sm-offset-2">
             <div class="data-container">
                 <form class="" method="post" action="<?php echo HOME;?>signup/playerSignupFinal">		
                     <!-- Search input -->
                     <div class="form-group ">
                             <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="search" id="search"  placeholder="Type a players first and last name to search"/>
+                                    <input type="text" class="form-control" name="search" id="search"  placeholder="Type a player's first and last name to search"/>
                             </div>
                     </div>
                     <div class="form-group">
@@ -47,45 +31,23 @@ include('appHeader2.php');
                 </form>   
             </div>
         </div>
-        <div class="col-lg-2">
-            <div class=" no-show">
-               
-            </div>
-        </div>
     </div>
     <div class='row container-fluid'>
-        <div class="col-lg-2">
-            <div class=" no-show">
-               
-                
-            </div>
-        </div>
-        <div class="col-lg-8">
+        <div class="col-sm-8 col-sm-offset-2">
             <div data-toggle="collapse" data-target="#hprofile" class="home-container">
                 <h3>Complete your profile
                      <span id="complete-profile" class="glyphicon glyphicon-plus"></span>
                 </h3>
             </div>
         </div>
-        <div class="col-lg-2">
-            <div class=" no-show">
-               
-            </div>
-        </div>
     </div>
     <div id="hprofile" class="collapse" class='row container-fluid'>
-        <div class="col-lg-2">
-            <div class=" no-show">
-               
-                
-            </div>
-        </div>
-        <div class="col-lg-8">
+        <div class="col-sm-8 col-sm-offset-2">
             <div class="data-container">
                 <form class="" method="post" action="<?php echo HOME;?>signup/playerSignupFinal">
                     <!-- Position select -->
-                    <div class="form-group ">
-                        <label class="cols-sm-2 control-label" for="position">Primary Position (You can add more later!)</label>
+                    <div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
+                        <label class="cols-sm-2 control-label" for="position">Primary Position <!--(You can add more later!)--></label>
                         <div class="cols-sm-10">
                             <div class="input-group">	
                             <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
@@ -106,23 +68,15 @@ include('appHeader2.php');
                         </div>					
                     </div>
                     <!-- Profile Picture input -->
-                    <div class="form-group ">
+                    <div class="form-group col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
                             <label for="Bio" class="control-label">Profile picture</label>
                             <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
                                     <input type="text" class="form-control" name="profile-picture" id="profile-picture" ng-model='ex.item.picture' />
                             </div>
                     </div> 
-                    <!-- Bio input -->
-                    <div class="form-group ">
-                            <label for="Bio" class="control-label">Bio</label>
-                            <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                    <textarea  class="form-control" name="bio" id="bio" ng-model='ex.item.bio' placeholder="Tell us more about yourself!"></textarea>
-                            </div>
-                    </div>     
                     <!-- Video input -->
-                    <div class="form-group ">
+                    <div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
                             <label for="video" class="control-label">Video</label>
                             <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
@@ -130,7 +84,7 @@ include('appHeader2.php');
                             </div>
                     </div>
                     <!-- Height input -->
-                    <div class="form-group ">
+                    <div class="form-group col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
                             <label for="height" class="control-label">Height</label>
                             <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
@@ -138,16 +92,15 @@ include('appHeader2.php');
                             </div>
                     </div>
                     <!-- Weight input -->
-                    <div class="form-group ">
+                    <div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
                             <label for="weight" class="control-label">Weight</label>
                             <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
                                     <input type="text" class="form-control" name="weight" id="weight" ng-model='ex.item.weight' placeholder="Enter your weight"/>
                             </div>
                     </div>
-                    <hr>
                     <!-- High School input -->
-                    <div class="form-group ">
+                    <div class="form-group col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
                             <label for="school" class="cols-sm-2 control-label">High School</label>
                             <div class="cols-sm-10">
                                     <div class="input-group">
@@ -157,7 +110,7 @@ include('appHeader2.php');
                             </div>
                     </div>
                     <!-- GPA input -->
-                    <div class="form-group ">
+                    <div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
                             <label for="gpa" class="control-label">GPA</label>
                             <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-graduation-cap fa" aria-hidden="true"></i></span>
@@ -165,7 +118,7 @@ include('appHeader2.php');
                             </div>
                     </div>
                     <!-- Graduation Date input (mm/yyyy)-->
-                    <div class="form-group ">
+                    <div class="form-group col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
                             <label for="grad" class="cols-sm-2 control-label">Expected Graduation Date</label>
                             <div class="cols-sm-10">
                                     <div class="input-group">
@@ -174,6 +127,14 @@ include('appHeader2.php');
                                     </div>
                             </div>
                     </div>
+                    <!-- Bio input -->
+                    <div class="form-group col-md-8 col-md-offset-2">
+                            <label for="Bio" class="control-label">Bio</label>
+                            <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                    <textarea  class="form-control" name="bio" id="bio" ng-model='ex.item.bio' placeholder="Tell us more about yourself!"></textarea>
+                            </div>
+                    </div>                    
                     <!-- School input
                     <div class="form-group">
                             <label for="school" class="cols-sm-2 control-label">Name of School or Club</label>
@@ -328,11 +289,6 @@ include('appHeader2.php');
 		</form>
             </div>
         </div>
-        <div class="col-lg-2">
-            <div class=" no-show">
-               
-            </div>
-        </div>
         <!--update profile success message -->
         <div class='row container-fluid success-message' ng-show='ex.displaySuccessMessage'>
             <div class='col-xs-11' >
@@ -344,42 +300,20 @@ include('appHeader2.php');
         </div>
     </div>
     <div class='row container-fluid'>
-        <div class="col-lg-2">
-            <div class=" no-show">
-               
-                
-            </div>
-        </div>
-        <div class="col-lg-8">
+        <div class="col-sm-8 col-sm-offset-2">
             <div data-toggle="collapse" data-target="#hnews" class="home-container">
                 <h3>Recruit Chute News
                     <span id="news" class="glyphicon glyphicon-plus"></span>
                 </h3>
             </div>
         </div>
-        <div class="col-lg-2">
-            <div class="no-show">
-                
-            </div>
-        </div>
     </div>
     <div id="hnews" class="collapse" class='row container-fluid'>
-        <div class="col-lg-2">
-            <div class=" no-show">
-               
-                
-            </div>
-        </div>
-        <div class="col-lg-8">
+        <div class="col-sm-8 col-sm-offset-2">
             <div class="data-container">
                 <h3>There is no news! 
                     
                 </h3>
-            </div>
-        </div>
-        <div class="col-lg-2">
-            <div class=" no-show">
-               
             </div>
         </div>
     </div>

@@ -69,6 +69,21 @@ include('Assets/pageHeader.php');
 						<p style = "color:red;" id = "message"></p>
 					</div>					
 				</div>	
+			</div>
+                        <!-- Level select input -->
+                        <div class="form-group col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
+  				<label class="cols-sm-2 control-label" for="state">What level do you coach?</label>
+		  		<div class="cols-sm-10">
+					<div class="input-group">	
+						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+	 					<select required id="level" name="level" class="form-control">
+							<option value="">Select level</option>
+							<option value="1">Club</option>
+							<option value="2">College</option>
+							<option value="3">High School</option>				
+						</select>
+					</div>
+				</div>
 			</div>                      
                         <!--Bio Input-->
                         <div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
@@ -131,21 +146,6 @@ include('Assets/pageHeader.php');
 						</select>
 					</div>			
 				</div>					
-			</div>
-                        <!-- Level select input -->
-                        <div class="form-group col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
-  				<label class="cols-sm-2 control-label" for="state">What level do you coach?</label>
-		  		<div class="cols-sm-10">
-					<div class="input-group">	
-						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-	 					<select required id="level" name="level" class="form-control">
-							<option value="">Select level</option>
-							<option value="1">Club</option>
-							<option value="2">College</option>
-							<option value="3">High School</option>				
-						</select>
-					</div>
-				</div>
 			</div>
 			<!-- City Input -->
 			<div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">

@@ -39,9 +39,13 @@ include('Assets/pageHeader.php');
         <div class="col-sm-offset-3 col-sm-6 playerInfo">
           
           <p>RecruitChute helps expand your network and makes you more visible to college and club recuiters. Once you create a profile, you can add stats, videos, and a calendar of upcoming games. All of your connections can see your profile and if a coach likes what they see, they may recruit you!! </p>
-                  
-          
+        
        </div>
+          
+          <div class="col-md-12">
+              <h2> Be proactive and connect with: </h2>
+              
+          </div>
       </div>
     </div>
     <div id="coachInfo" class="container minheight">

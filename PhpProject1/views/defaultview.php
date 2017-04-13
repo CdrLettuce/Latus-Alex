@@ -35,23 +35,17 @@ include('Assets/pageHeader.php');
       <div class="row">
         <div class="col-md-12">
              <b><h1>How it works</h1></b>
-        </div>
-        <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-user logoBig"></span>
-          <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-        </div>
-        <div class="col-md-8 howitworks icon">
-          <h1>Get Recruited</h1>
-          <p>Recuitchute helps expand your network and makes you more visible to college and club recuiters. Once you create a profile, you can add stats, videos, and a calendar of upcoming games. All of your connections can see your profile and if a coach likes what they see, they may recruit you!! </p>
-          <p>Connect with:</p>
-		<ul>
-			<li>Current coaches and teams</li>
-			<li>Club teams</li>
-			<li>College coaches</li>
-		</ul>          
-          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+        </div>              
+        <div class="col-sm-offset-3 col-sm-6 playerInfo">
+          
+          <p>RecruitChute helps expand your network and makes you more visible to college and club recuiters. Once you create a profile, you can add stats, videos, and a calendar of upcoming games. All of your connections can see your profile and if a coach likes what they see, they may recruit you!! </p>
+        
        </div>
+          
+          <div class="col-md-12">
+              <h2> Be proactive and connect with: </h2>
+              
+          </div>
       </div>
     </div>
     <div id="coachInfo" class="container minheight">

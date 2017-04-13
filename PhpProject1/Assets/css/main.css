@@ -59,7 +59,7 @@ body p{
 }
 
 
-.col-md-6 h2, .col-md-12 h2, .col-md-12 h1 {
+.col-md-6 h2, .col-md-12 h2, .col-md-12 h1{
     text-align: center;
 }
 .signup img{
@@ -78,6 +78,15 @@ body p{
 #playerInfo{
     padding-top: 30px;
 }
+
+
+
+.playerInfo p{
+    text-align: center;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
 .howitworks p, .howitworks ul{
     text-align: left;   
 }

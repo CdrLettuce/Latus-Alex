@@ -31,7 +31,7 @@ include('Assets/pageHeader.php');
       </div>
     </div>
     <div id="playerInfo" class="container minheight gray">
-      <!-- Example row of columns -->
+      
       <div class="row">
         <div class="col-md-12">
              <b><h1>How it works</h1></b>
@@ -43,9 +43,22 @@ include('Assets/pageHeader.php');
        </div>
           
           <div class="col-md-12">
-              <h2> Be proactive and connect with: </h2>
-              
+              <h2> Be proactive and connect with: </h2>           
           </div>
+          <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-2">
+                        <h3>College Coaches</h3>
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-2">
+                        <h3>High School Coaches</h3>
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-2">                
+                        <i class="fa fa-futbol-o"></i>
+                        <h3>Teammates</h3>
+                    </div>
+                </div>
+</div>
       </div>
     </div>
     <div id="coachInfo" class="container minheight">

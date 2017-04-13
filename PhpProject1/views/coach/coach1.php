@@ -168,7 +168,7 @@ include('Assets/pageHeader.php');
 				</div>
 			</div>                                               
 			<!-- Next Button -->
-			<div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
+			<div class="form-group col-sm-4 col-sm-offset-4">
                             <input type="submit" name="Submit" value="Submit" class="btn btn-primary btn-lg btn-block login-button">
                         </div>
 		</form>

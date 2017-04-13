@@ -26,15 +26,14 @@ include('Assets/pageHeader.php');
 	<div class="container">
 		<form class="" method="post" action="<?php echo HOME;?>signup/playerSignupFinal">		
 		
-					<!-- First name input -->
+					<!-- First name and Last name inputs -->
 					<div class="form-group col-sm-3 col-sm-offset-3">
 						<label for="firstName" class="control-label">First Name</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 							<input type="text" class="form-control" name="fname" id="fname"  placeholder="Enter your First Name" required/>
 						</div>
-					</div>
-					<!-- Last name input -->
+					</div>				
 					<div class="form-group col-sm-3">
 						<label for="lastName" class="control-label">Last Name</label>
 						<div class="input-group">
@@ -69,10 +68,10 @@ include('Assets/pageHeader.php');
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
                                                                 <input type="password" class="form-control" name="verify" id="verify"  placeholder="Re-type your password" required/>
-                                                                </div>
+                                                        </div>
 							<div class="input-group">
-							<span class="input-group-addon input-primary" style="visibility:hidden;"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-							<p style = "color:red;" id = "message"></p>											
+                                                                <span class="input-group-addon input-primary" style="visibility:hidden;"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                                <p style = "color:red;" id = "message"></p>											
 							</div>
 						</div>
 					</div>
@@ -88,7 +87,7 @@ include('Assets/pageHeader.php');
 							</select>
 						</div>				
 					</div>
-                                        <!--<div class="form-group col-sm-6 col-sm-offset-3">
+                                        <!--<div class="form-group col-sm-3 col-sm-offset-3">
                                                 <label class="control-label" for="gender">Gender</label>
                                                 <div class="input-group">                                                        
                                                         <label class="radio-inline">
@@ -181,6 +180,15 @@ include('Assets/pageHeader.php');
 							</div>
 						</div>
 					</div>
+                                        <div class="form-group">
+                                                <label for="phone" class="cols-sm-2 control-label">Phone Number (Not Required)</label>
+                                                <div class="cols-sm-10">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                                <input type="text" class="form-control" name="phone" id="phone"  placeholder="Ex: 555-555-5555" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
+                                                        </div>
+                                                </div>
+                                        </div>
                                         <!-- Position select
 		<div class="form-group ">
                     <label class="cols-sm-2 control-label" for="position">Primary Position (You can add more later!)</label>

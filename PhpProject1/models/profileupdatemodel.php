@@ -26,7 +26,8 @@ class profileupdateModel extends Model
                                 'h_school'=>$values->school,
                                 'gpa'=>$values->gpa,
                                 'graduation_date'=>$values->grad,
-                                'youtube_urls'=>$values->videourl);
+                                'youtube_urls'=>$values->videourl,
+                                'image'=>$values->picture);
                 // insert new record
                 $this->insertRecord($table,$data);
                 return 1;

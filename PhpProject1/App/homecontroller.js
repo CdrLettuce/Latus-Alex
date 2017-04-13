@@ -13,7 +13,6 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
                         $location.path('/login');
                 }
         }
-console.log("HELLOOOOO");
 hc.item =  {};
 
 hc.addPlayerInfo = addPlayerInfo;
@@ -23,7 +22,7 @@ hc.addPlayerInfo = addPlayerInfo;
                 console.log(item);
 		var currentUser = hc.currentUser;
 		// var quan = pc.quantity.quantity;
-		var data_object = {userID : currentUser.user_id, position : item.position, bio : item.bio, height : item.height, weight : item.weight, school : item.school, gpa : item.gpa, grad : item.grad, videourl : item.video}; 
+		var data_object = {userID : currentUser.user_id, position : item.position, bio : item.bio, height : item.height, weight : item.weight, school : item.school, gpa : item.gpa, grad : item.grad, videourl : item.video, picture : item.picture}; 
                 console.log(data_object);
 		$http.post('http://recruitchute.io/profileupdate/updateProfile', data_object ).then(function(response){
 			hc.success_message = "Thank you " + hc.currentUser.first_name + ", your profile has been updated.";

@@ -27,14 +27,14 @@ include('Assets/pageHeader.php');
 		<form class="" method="post" action="<?php echo HOME;?>signup/playerSignupFinal">		
 		
 					<!-- First name and Last name inputs -->
-					<div class="form-group col-sm-3 col-sm-offset-3">
+					<div class="form-group col-md-3 col-sm-6 col-sm-offset-3">
 						<label for="firstName" class="control-label">First Name</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 							<input type="text" class="form-control" name="fname" id="fname"  placeholder="Enter your First Name" required/>
 						</div>
 					</div>				
-					<div class="form-group col-sm-3">
+					<div class="form-group col-md-3 col-sm-6 col-md-offset-0 col-sm-offset-3">
 						<label for="lastName" class="control-label">Last Name</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -42,7 +42,7 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
                                         <!-- Email(username) -->
-					<div class="form-group col-sm-6 col-sm-offset-3">
+					<div class="form-group col-md-3 col-sm-6 col-sm-offset-3">
 						<label for="email" class="cols-sm-2 control-label">Email</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -51,8 +51,18 @@ include('Assets/pageHeader.php');
 							</div>
 						</div>
 					</div>
+                                        <!-- Phone input -->
+                                        <div class="form-group col-md-3 col-sm-6 col-md-offset-0 col-sm-offset-3">
+                                                <label for="phone" class="cols-sm-2 control-label">Phone Number (Not Required)</label>
+                                                <div class="cols-sm-10">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+                                                                <input type="text" class="form-control" name="phone" id="phone"  placeholder="Ex: 555-555-5555" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
+                                                        </div>
+                                                </div>
+                                        </div>
 					<!-- Password input -->
-					<div class="form-group col-sm-3 col-sm-offset-3">
+					<div class="form-group col-md-3 col-sm-6 col-sm-offset-3">
 						<label for="password" class="cols-sm-2 control-label">Password</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
@@ -62,12 +72,12 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- Confirm password -->
-					<div class="form-group col-sm-3">
+					<div class="form-group col-md-3 col-sm-6 col-md-offset-0 col-sm-offset-3">
 						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                                                <input type="password" class="form-control" name="verify" id="verify"  placeholder="Re-type your password" required/>
+                                                                <input type="password" class="form-control" name="verify" id="verify"  placeholder="Re-type password" required/>
                                                         </div>
 							<div class="input-group">
                                                                 <span class="input-group-addon input-primary" style="visibility:hidden;"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
@@ -76,7 +86,7 @@ include('Assets/pageHeader.php');
 						</div>
 					</div>
 					<!-- Gender input -->
-					<div class="form-group col-sm-3 col-sm-offset-3">
+					<div class="form-group col-md-3 col-sm-6 col-sm-offset-3">
 						<label class="control-label" for="gender">Gender</label>
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -99,11 +109,11 @@ include('Assets/pageHeader.php');
                                                 </div>
                                         </div>-->
 					<!-- State Selection -->
-					<div class="form-group col-sm-3">
+					<div class="form-group col-md-3 col-sm-6 col-md-offset-0 col-sm-offset-3">
 						<label class="cols-sm-2 control-label" for="state">Select your state</label>
 						<div class="cols-sm-10">
 							<div class="input-group">		
-								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<span class="input-group-addon"><i class="fa fa-map-marker fa" aria-hidden="true"></i></span>
 								<select required id="state" name="state" class="form-control">
 									<option value="">Select state</option>
 									<option value="1">Alabama</option>
@@ -161,34 +171,25 @@ include('Assets/pageHeader.php');
 						</div>					
 					</div>
 					<!-- City Input -->
-					<div class="form-group col-sm-3 col-sm-offset-3">
+					<div class="form-group col-md-3 col-sm-6 col-sm-offset-3">
 						<label for="city" class="cols-sm-2 control-label">City</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<span class="input-group-addon"><i class="fa fa-map-marker fa" aria-hidden="true"></i></span>
 								<input type="text" class="form-control" name="city" id="city"  placeholder="Enter city" required/>
 							</div>
 						</div>	
 					</div>
 					<!-- Zip code input -->
-					<div class="form-group col-sm-3">
+					<div class="form-group col-md-3 col-sm-6 col-md-offset-0 col-sm-offset-3">
 						<label for="zip" class="cols-sm-2 control-label">Zip Code</label>
 						<div class="cols-sm-10">
 							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<span class="input-group-addon"><i class="fa fa-map-marker fa" aria-hidden="true"></i></span>
 								<input type="text" class="form-control" name="zip" id="zip"  placeholder="Ex: 55555" pattern="\d{5}" required/>
 							</div>
 						</div>
-					</div>
-                                        <div class="form-group">
-                                                <label for="phone" class="cols-sm-2 control-label">Phone Number (Not Required)</label>
-                                                <div class="cols-sm-10">
-                                                        <div class="input-group">
-                                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                                                <input type="text" class="form-control" name="phone" id="phone"  placeholder="Ex: 555-555-5555" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
-                                                        </div>
-                                                </div>
-                                        </div>
+					</div>                                        
                                         <!-- Position select
 		<div class="form-group ">
                     <label class="cols-sm-2 control-label" for="position">Primary Position (You can add more later!)</label>

@@ -12,7 +12,7 @@ include('appHeader2.php');
         <div class="col-lg-6">
             <div class="sample-container">
                 <h3>Videos</h3>
-                <div class="video-container"><iframe width="640" height="352"
+                <div class="video-container"><iframe width="320" height="212"
                     src="https://www.youtube.com/embed/kp1kuo6xkbE" frameborder="0" allowfullscreen>
                     </iframe></div>   
             </div>

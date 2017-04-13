@@ -14,7 +14,7 @@
                 <!--<button type="submit" id='sign-in' class="btn btn-success">Sign in</button>-->
                 <a class="btn btn-success" id="" href="<?php echo HOME;?>App/router.html#/login" role="button">Sign In</a>
                 <!--<button type="submit" class="btn btn-danger">Sign up</button>-->
-                <a class="btn btn-danger" id="" href="<?php echo HOME;?>pp/bothSignup" role="button">Sign Up</a>
+                <a class="btn btn-danger" id="" href="../pp/bothSignup" role="button">Sign Up</a>
               </form>
             </div><!--/.navbar-collapse -->
           </div>

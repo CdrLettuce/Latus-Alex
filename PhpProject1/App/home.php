@@ -105,6 +105,14 @@ include('appHeader2.php');
                             </div>			
                         </div>					
                     </div>
+                    <!-- Profile Picture input -->
+                    <div class="form-group ">
+                            <label for="Bio" class="control-label">Profile picture</label>
+                            <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="profile-picture" id="profile-picture" ng-model='ex.item.picture' />
+                            </div>
+                    </div> 
                     <!-- Bio input -->
                     <div class="form-group ">
                             <label for="Bio" class="control-label">Bio</label>

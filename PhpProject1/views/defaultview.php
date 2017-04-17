@@ -30,7 +30,7 @@ include('Assets/pageHeader.php');
        </div>
       </div>
     </div>
-    <div id="playerInfo" class="container minheight player">
+    <div id="playerInfo" class="minheight player">
       
       <div class="row">
         <div class="col-md-12">

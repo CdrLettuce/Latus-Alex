@@ -52,6 +52,7 @@ input.log-info { border-radius: 5px; height: 20px;}
 h1, h2, h3{
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: bold;
+    color: black;
 }
 body p{
     font-family: 'Roboto', sans-serif;
@@ -77,6 +78,8 @@ body p{
 }
 #playerInfo{
     padding-top: 30px;
+    background-image: url("../images/Picture5.jpg");
+    background-size: cover;
 }
 
 
@@ -85,7 +88,9 @@ body p{
     text-align: center;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-weight: bold;
+    color: black;
 }
+
 
 .howitworks p, .howitworks ul{
     text-align: left;   

@@ -60,23 +60,14 @@ include('Assets/pageHeader.php');
 </div>
       </div>
     </div>
-    <div id="coachInfo" class="container minheight">
+    <div id="coachInfo" class="minheight">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-8 howitworks icon">
-            <h1>Find Recruits</h1>
+            <h1>Looking For Your Next Superstar?</h1>
                 <p>Save time, money, and travel expenses by viewing player profiles before seeing them in person. Survey player calendars to see the next time they are competing in your area. Analyze videos and stats to narrow down your list of potential recruits. </p>
- 		<p>Search by:</p>
- 		<ul>
- 			<li>Position</li>
- 			<li>Location</li>
- 			<li>Graduation date</li>
- 		</ul>            
+                <h2>RecruitChute Services</h2>           
         </div>
-        <div class="col-md-4 icon">
-          <span class="glyphicon glyphicon-list-alt logoBig"></span>
-          
-       </div>
       </div>
     </div>
     <div id="learnMore" class="container gray">

@@ -92,8 +92,9 @@ body p{
 }
 
 
-.howitworks p, .howitworks ul{
-    text-align: left;   
+.howitworks p{
+    text-align: left;
+    color: #ffffff;
 }
 .howitworks{
     padding-right: 3%;
@@ -101,6 +102,7 @@ body p{
 }
 .howitworks h1{
     margin-bottom: 9%;
+    color: #ffffff;
 }
 
 .jumbotron{
@@ -182,5 +184,10 @@ body p{
 
 .orange{
     color: #ff9933;
+}
+
+#coachInfo{
+    background-image: url("../images/soccerdude2.jpg");
+    background-size: cover; 
 }
 

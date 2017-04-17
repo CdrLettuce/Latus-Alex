@@ -93,7 +93,7 @@ body p{
 
 
 .howitworks p{
-    text-align: left;
+    text-align: center;
     color: #ffffff;
 }
 .howitworks{
@@ -101,6 +101,14 @@ body p{
     padding-left: 12%;
 }
 .howitworks h1{
+    text-align: center;
+    margin-bottom: 9%;
+    color: #ffffff;
+    font-size: 400%;
+}
+
+.howitworks h2{
+    text-align: center;
     margin-bottom: 9%;
     color: #ffffff;
 }

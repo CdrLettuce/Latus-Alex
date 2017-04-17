@@ -63,7 +63,7 @@ include('Assets/pageHeader.php');
     <div id="coachInfo" class="minheight">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-8 howitworks icon">
+        <div class="col-sm-offset-3 col-sm-6 howitworks icon">
             <h1>Looking For Your Next Superstar?</h1>
                 <p>Save time, money, and travel expenses by viewing player profiles before seeing them in person. Survey player calendars to see the next time they are competing in your area. Analyze videos and stats to narrow down your list of potential recruits. </p>
                 <h2>RecruitChute Services</h2>           

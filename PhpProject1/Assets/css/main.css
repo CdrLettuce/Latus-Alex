@@ -103,11 +103,6 @@ body p{
     margin-bottom: 9%;
 }
 
-.player{
-    
-    background-image: url("../images/DarkSoccer3.png");
-}
-
 .jumbotron{
     margin-top: 20px;
     background-image: url("../images/SoccerNet4.jpg");
@@ -145,6 +140,8 @@ body p{
 #learnMore{
     padding-top: 30px;
     padding-bottom: 30px;
+    background-image: url("../images/field.png");
+    background-size: cover;
 }
 .topDiv{
     margin-top: 100px;

@@ -54,7 +54,6 @@ include('Assets/pageHeader.php');
                         <h3>High School Coaches</h3>
                     </div>
                     <div class="col-sm-offset-1 col-sm-2">                
-                        <i class="fa fa-futbol-o"></i>
                         <h3>Teammates</h3>
                     </div>
                 </div>
@@ -72,12 +71,11 @@ include('Assets/pageHeader.php');
  			<li>Position</li>
  			<li>Location</li>
  			<li>Graduation date</li>
- 		</ul>            <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+ 		</ul>            
         </div>
         <div class="col-md-4 icon">
           <span class="glyphicon glyphicon-list-alt logoBig"></span>
-          <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+          
        </div>
       </div>
     </div>

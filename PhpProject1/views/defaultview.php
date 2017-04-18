@@ -38,7 +38,7 @@ include('Assets/pageHeader.php');
         </div>              
         <div class="col-sm-offset-3 col-sm-6 playerInfo">
           
-          <p>RecruitChute helps expand your network and makes you more visible to college and club recuiters. Once you create a profile, you can add stats, videos, and a calendar of upcoming games. All of your connections can see your profile and if a coach likes what they see, they may recruit you!! </p>
+          <h4>RecruitChute helps expand your network and makes you more visible to college and club recuiters. Once you create a profile, you can add stats, videos, and a calendar of upcoming games. All of your connections can see your profile and if a coach likes what they see, they may recruit you!!</h4>
         
        </div>
           
@@ -67,7 +67,7 @@ include('Assets/pageHeader.php');
             <h1>LOOKING FOR YOUR NEXT SUPERSTAR?</h1>
                 <div class="row howitworks">
                     <div class="col-sm-offset-3 col-sm-6">
-                        <p>RecruitChute allows you to recruit whilst on the go! Have instant access to the tools that will allow you to search the nation for your next recruit based on position, stats, GPA, and much more. Save time and money by being able to view player profiles, analyze highlight tapes, synch calendars and discover new talent all at the touch of your fingertips</p>
+                        <h4>RecruitChute allows you to recruit whilst on the go! Have instant access to the tools that will allow you to search the nation for your next recruit based on position, stats, GPA, and much more. Save time and money by being able to view player profiles, analyze highlight tapes, synch calendars and discover new talent all at the touch of your fingertips</h4>
                     </div>
                 </div>
             <h2>RecruitChute Services</h2>           

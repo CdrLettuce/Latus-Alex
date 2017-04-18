@@ -6,8 +6,8 @@
     margin: 10px;
  }
  
-.top-marg{
-     margin-top:80px;
+.top-pad{
+     padding-top:60px;
  }
 
  .sample-container{
@@ -23,8 +23,8 @@
  .sample-container h3{
      text-decoration: underline;
  }
- #profile-container{
-     background: #f1f1f1;
+ #profile-container, #homeContainer{
+     background-color: #eeeeee;
  }
  
  .logomedium{
@@ -38,13 +38,18 @@
      width: 100%;
      background-color: white;
  }
- .home-container{
+
+ .home-container{ 
      width: 100%;
      margin: 10px 0px;
-     height: 40px;
-     background-color: #eeeeee;
+     background-color: white;
+     border-top: 2px solid #28AFE0;
      text-align: center;
-     padding:0px;
+     padding:10px;
+     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+ }
+ .home-container h3{
+     text-align: left;
  }
  .data-container{
      width: 100%;

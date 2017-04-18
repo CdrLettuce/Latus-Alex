@@ -1,7 +1,7 @@
 <?php
 include('appHeader2.php');
 ?>
-<div id="profile-container" class="top-marg" ng-controller='profileController as ex'>
+<div id="profile-container" class="top-pad" ng-controller='profileController as ex'>
     <div class='row container-fluid'>
         <div class="col-lg-3">
             <div class="sample-container">

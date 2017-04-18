@@ -31,5 +31,19 @@ hc.addPlayerInfo = addPlayerInfo;
 		function(err) { console.log(err);
 		});	
 	}
+        
+hc.searchForPlayer = searchForPlayer;
+
+function searchForPlayer(item){
+    console.log("function is being called");
+    console.log(item);
+    var data_object = {firstname : item.searchfirst, lastname: item.searchlast};
+    $http.post('http://recruitchute.io/search/searchPlayer', data_object ).then(function(response){
+            console.log(response);
+    },
+    function(err) { console.log(err);
+    });
+      
+}
 
 }]);

@@ -96,10 +96,7 @@ body p{
     text-align: center;
     color: #ffffff;
 }
-.howitworks{
-    padding-right: 3%;
-    padding-left: 12%;
-}
+
 .howitworks h1{
     text-align: center;
     margin-bottom: 9%;
@@ -199,3 +196,12 @@ body p{
     background-size: cover; 
 }
 
+.services{
+    color: white;
+    text-align: center;
+}
+
+.backFour h4{
+    color: black;
+    text-align: center;
+}

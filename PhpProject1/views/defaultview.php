@@ -63,21 +63,25 @@ include('Assets/pageHeader.php');
     <div id="coachInfo" class="minheight">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-12 howitworks icon">
+        <div class="col-md-12 container howitworks icon">
             <h1>LOOKING FOR YOUR NEXT SUPERSTAR?</h1>
-                <p>RecruitChute allows you to recruit whilst on the go! Have instant access to the tools that will allow you to search the nation for your next recruit based on position, stats, GPA, and much more. Save time and money by being able to view player profiles, analyze highlight tapes, synch calendars and discover new talent all at the touch of your fingertips</p>
-                <h2>RecruitChute Services</h2>           
+                <div class="row howitworks">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <p>RecruitChute allows you to recruit whilst on the go! Have instant access to the tools that will allow you to search the nation for your next recruit based on position, stats, GPA, and much more. Save time and money by being able to view player profiles, analyze highlight tapes, synch calendars and discover new talent all at the touch of your fingertips</p>
+                    </div>
+                </div>
+            <h2>RecruitChute Services</h2>           
         </div>
-          <div class="container">
+          <div class="container services">
                 <div class="row">
                     <div class="col-sm-offset-2 col-sm-2">
-                        <h3>Narrow down your recruit targets with advanced search</h3>
+                        <h4>Narrow down your recruit targets with advanced search</h4>
                     </div>
                     <div class="col-sm-offset-1 col-sm-2">
-                        <h3>Increase time efficiency by viewing player profiles before visits</h3>
+                        <h4>Increase time efficiency by viewing player profiles before visits</h4>
                     </div>
                     <div class="col-sm-offset-1 col-sm-2">                
-                        <h3>Recruit Smarter, Not Harder</h3>
+                        <h4>Recruit Smarter, Not Harder</h4>
                     </div>
                 </div>
            </div>
@@ -87,24 +91,31 @@ include('Assets/pageHeader.php');
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12 icon">
-            <h1>The RecruitChute Difference</h1>
+            <h1>THE RECRUITCHUTE DIFFERENCE</h1>
+            <h2>Our back four...</h1>
         </div>
         
-	 <div class="col-md-4 icon">
+        
+	 <div class="col-sm-offset-0 col-sm-3 backFour icon">
           <i class="fa fa-mobile-phone fa-5x blue" aria-hidden="true"></i>
-          <p>Access your profile, message other players and coaches, and upload new content all while on the go! RecruitChute is mobile-friendly and available anywhere you go.</p>
+          <h4>Take RecruitChute with you, we're mobile friendly!</h4>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
-        <div class="col-md-4 icon">
+        <div class="col-sm-offset-0 col-sm-3 backFour icon">
           <i class="fa fa-graduation-cap fa-5x blue" aria-hidden="true"></i>
-          <p>We give high school athletes the opportunity to gain an education while competing in the sport they love. </p>
+          <h4>Gain the ability to search the nation for unseen talent and rising stars</h4>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
-        <div class="col-md-4 icon">
+        <div class="col-sm-offset-0 col-sm-3 backFour icon">
           <i class="fa fa-globe fa-5x blue" aria-hidden="true"></i>
-          <p>RecruitChute keeps players and coaches connected to their communities. One percent of all revenue is donated to local youth sports programs. </p>
+          <h4>We give high school athletes the encouragement and opportunity to gain an education because of the sport they love</h4>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-       </div>
+        </div>
+        <div class="col-sm-offset-0 col-sm-3 backFour icon">
+          <i class="fa fa-globe fa-5x blue" aria-hidden="true"></i>
+          <h4>We're supporting the growth of soccer in the United States</h4>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+       </div>  
       </div>
     </div>
 <?php include('Assets/pageFooter.php');

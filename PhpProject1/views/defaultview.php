@@ -57,17 +57,30 @@ include('Assets/pageHeader.php');
                         <h3>Teammates</h3>
                     </div>
                 </div>
-</div>
+           </div>
       </div>
     </div>
     <div id="coachInfo" class="minheight">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-sm-offset-3 col-sm-6 howitworks icon">
-            <h1>Looking For Your Next Superstar?</h1>
-                <p>Save time, money, and travel expenses by viewing player profiles before seeing them in person. Survey player calendars to see the next time they are competing in your area. Analyze videos and stats to narrow down your list of potential recruits. </p>
+        <div class="col-md-12 howitworks icon">
+            <h1>LOOKING FOR YOUR NEXT SUPERSTAR?</h1>
+                <p>RecruitChute allows you to recruit whilst on the go! Have instant access to the tools that will allow you to search the nation for your next recruit based on position, stats, GPA, and much more. Save time and money by being able to view player profiles, analyze highlight tapes, synch calendars and discover new talent all at the touch of your fingertips</p>
                 <h2>RecruitChute Services</h2>           
         </div>
+          <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-2">
+                        <h3>Narrow down your recruit targets with advanced search</h3>
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-2">
+                        <h3>Increase time efficiency by viewing player profiles before visits</h3>
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-2">                
+                        <h3>Recruit Smarter, Not Harder</h3>
+                    </div>
+                </div>
+           </div>
       </div>
     </div>
     <div id="learnMore" class="container gray">

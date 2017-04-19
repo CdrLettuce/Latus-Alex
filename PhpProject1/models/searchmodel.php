@@ -6,15 +6,11 @@ class SearchModel extends Model
                         FROM `users`
                         WHERE `first_name` LIKE CONCAT('%', :first_name, '%')
                         OR `last_name` LIKE CONCAT('%', :last_name, '%') ";
-                /*
-                $sql = "SELECT * 
-                        FROM  `users`
-                        WHERE first_name = :first_name";
-                
-                 */
+               
                 $this->setSql($sql);
                 $data = json_decode(file_get_contents('php://input'));
-                $values = array(':first_name'=>$data->firstname);
+                $values = array(':first_name'=>$data->firstname,
+                                ':last_name'=>$data->lastname );
                 $result = $this->getAll($values);
                 /* if the user is not found then return -1 */
                 if (!$result)

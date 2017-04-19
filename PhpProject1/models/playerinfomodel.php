@@ -18,7 +18,7 @@ class PlayerInfoModel extends Model
         
         public function getPlayerInfo2(){
                 $sql = "SELECT youtube_urls, height, weight, bio, gpa, h_school, graduation_date, position_1 
-                        FROM `player_profile` 
+                        FROM `player_profile` as p, `
                         WHERE user_id = :userId";
                 $this->setSql($sql);
         $data = json_decode(file_get_contents('php://input'));

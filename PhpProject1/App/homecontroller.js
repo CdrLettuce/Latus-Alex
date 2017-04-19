@@ -14,15 +14,15 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
                 }
         }
 hc.item =  {};
-
 hc.addPlayerInfo = addPlayerInfo;
 
         function addPlayerInfo(item){
-                console.log("function is being called");
+                
+                console.log("add player info is being called");
                 console.log(item);
 		var currentUser = hc.currentUser;
 		// var quan = pc.quantity.quantity;
-		var data_object = {userID : currentUser.user_id, position : item.position, bio : item.bio, height : item.height, weight : item.weight, school : item.school, gpa : item.gpa, grad : item.grad, videourl : item.video, picture : item.picture}; 
+		var data_object = {userID : currentUser.user_id, position : item.position, bio : item.bio, height : item.height, weight : item.weight, school : item.school, gpa : item.gpa, grad : item.grad, videourl : item.video}; 
                 console.log(data_object);
 		$http.post('http://recruitchute.io/profileupdate/updateProfile', data_object ).then(function(response){
 			hc.success_message = "Thank you " + hc.currentUser.first_name + ", your profile has been updated.";
@@ -33,6 +33,8 @@ hc.addPlayerInfo = addPlayerInfo;
 	}
         
 hc.searchForPlayer = searchForPlayer;
+hc.players = [];
+hc.displaySearchResults = false;
 
 function searchForPlayer(item){
     console.log("function is being called");
@@ -40,10 +42,34 @@ function searchForPlayer(item){
     var data_object = {firstname : item.searchfirst, lastname: item.searchlast};
     $http.post('http://recruitchute.io/search/searchPlayer', data_object ).then(function(response){
             console.log(response);
+            hc.players = response.data;
+            hc.displaySearchResults = true;
+            
     },
     function(err) { console.log(err);
     });
       
+}
+
+
+hc.info2 = [];
+hc.getPlayerInfo2 = getPlayerInfo2;
+hc.getPlayerInfo2();
+var base_url = 'http://recruitchute.io/';
+
+function getPlayerInfo2(){
+// use $http service to obtain data
+        $http.post('http://recruitchute.io/playerinfo/getPlayerInfo2', hc.currentUser).then(function(response){
+                if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+                        // set current user
+                        console.log("Wassup");
+                        console.log(response.data);
+                        hc.info2 = response.data;
+                        console.log(hc.info2);
+                 }
+           },
+           function(err) { console.log(err);
+        });
 }
 
 }]);

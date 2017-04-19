@@ -97,24 +97,6 @@ include('appHeader2.php');
                 </div>
 				<hr>
 				<!-- High School input -->
-                
-                <!-- Height input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="height" class="control-label">Height</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="height" id="height" ng-model='ex.item.height' value="{{ex.info2.height}}"/>
-                        </div>
-                </div>
-                <!-- Weight input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="weight" class="control-label">Weight</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="weight" id="weight" ng-model='ex.item.weight' placeholder="{{ex.info2.weight}}"/>
-                        </div>
-                </div>
-                <!-- High School input -->
                 <div class="form-group col-md-6 col-sm-6 ">
                         <label for="school" class="cols-sm-2 control-label">High School</label>
                         <div class="cols-sm-10">

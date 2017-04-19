@@ -5,11 +5,11 @@ include('appHeader2.php');
 
     <div class='row container-fluid'>
         <div class="col-lg-6 col-sm-6 col-sm-offset-1 home-container">
-            <h4>
+            <h4 data-toggle="collapse" data-target="#updateForm">
                 <span class=""><i class="fa fa-edit fa" aria-hidden="true"></i></span>
                 Update your profile
             </h4>
-            <form class="" method="" action="">
+            <form id="updateForm" class="collapse" method="" action="">
                 <!-- Position select -->
                 <div class="form-group col-md-6 col-sm-6 ">
                     <label class="cols-sm-2 control-label" for="position">Primary Position <!--(You can add more later!)--></label>

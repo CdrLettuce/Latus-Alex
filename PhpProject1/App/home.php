@@ -378,6 +378,7 @@ include('appHeader2.php');
                 <div class="form-group">
                         <p><button type='button' class='btn btn-primary btn-lg btn-block login-button' ng-click='ex.searchForPlayer(ex.item)'>Search</button></p>
                 </div>
+                <p><a href="#/search">Advanced Search</a></p>
                 <div ng-show='ex.displaySearchResults' id='searchResults'>
                     <h4>Search Results: </h4>
                     <table class='table'>

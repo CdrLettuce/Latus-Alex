@@ -134,10 +134,7 @@ body p{
 .icon{
     text-align: center;
 }
-/*#signup{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}*/
+
 .signup p, .signup h2{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -225,6 +222,16 @@ body p{
     background-size: cover;
 }
 
-.playersignup p{
+.playersignup h4{
     color: white;
+    margin-bottom: 50px;
+}
+
+.playersignup h2{
+    color: white;
+    margin-top: 50px;
+}
+
+.pmargin{
+    margin-bottom: 50px;
 }

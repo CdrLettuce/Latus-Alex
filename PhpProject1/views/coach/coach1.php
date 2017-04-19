@@ -10,7 +10,7 @@ include('Assets/pageHeader.php');
 		</div>
 	</div>
 	<div class="container">
-		<form class="" method="post" action="<?php echo HOME;?>signup/coachSignupFinal">		
+		<form class="" id="signupFormCoach" method="post" action="<?php echo HOME;?>signup/coachSignupFinal">		
                         <!-- First name and Last name inputs -->
 			<div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
 				<label for="firstName" class="control-label">First Name</label>

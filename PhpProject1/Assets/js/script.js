@@ -71,6 +71,8 @@ $(document).ready(function(){
 	$('#verify').on("keyup", function validate() {
            				 var pass = $("#password").val();
            				 var valid = $("#verify").val();
+                                         
+                                         
             
            			 if(pass > valid){
                				$("#verify").css("borderColor", "#ff0000");
@@ -84,4 +86,181 @@ $(document).ready(function(){
                    		 $("#verify").css("borderColor", "#3fdd13");
               		  }
            		 });
+       /* $('#signupFormCoach').on("sumbit", function checkFields() {
+                             var first = $('#fname').val();
+                             var last = $('#lname').val();
+                             var email = $('#email').val();
+                             var phone = $('#phone').val();
+                             var pass= $('#password').val();
+                             var vaild= $('#verify').val();
+                             var level= $('#level').val();
+                             var state= $('#state').val();
+                             var city= $('#city').val();
+                             var zip = $('#zip').val();
+                             var epattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+                             var ppattern = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+                            if(first.length()===0){
+                                alert("Enter your first name");
+                                $('#signupFormCoach').submit(function(e){
+                                    e.preventDefault();
+                                });
+                                }
+                            if(last.length()===0){
+                                alert("Enter your last name");
+                                $('#signupFormCoach').submit(function(e){
+                                    e.preventDefault();
+                                });
+                                }
+                            if(!epattern.test(email)){
+                                alert("Enter a vaild email!");
+                                $('#signupFormCoach').submit(function(e){
+                                    e.preventDefault();
+                                });
+                                
+                            }
+                            if(!ppattern.test(phone)){
+                                alert("Enter your valid phone number");
+                                $('#signupFormCoach').submit(function(e){
+                                    e.preventDefault();
+                                });
+                            }
+                            if(pass.length()===0){
+                                             alert("Enter a password");
+                                             $('#signupFormCoach').submit(function(e){
+                                             e.preventDefault();
+                                             });
+                                         }
+                            if(valid.length()===0){
+                                             alert("Verify your password");
+                                             $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                                         }
+                            if(pass > valid){
+               				alert("Your passwords do not match");
+                                        $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+          			  }
+            			else if(pass < valid){
+                			alert("Your passwords do not match");
+                                        $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                                }
+                            if(level===""){
+                                alert("Select a coaching level");
+                                $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                            }
+                            if(city.length()===0){
+                                alert("Enter your city");
+                                $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                            }
+                            if(state===""){
+                                alert("Select your state");
+                                $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                            }
+                            if(zip.length()<5){
+                                alert("Enter a vailid zip code");
+                                $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                            }
+        }); */
+    
+    
+    /* $('#signupFormPlayer').on("sumbit", function checkFields() {
+                             var first = $('#fname').val();
+                             var last = $('#lname').val();
+                             var email = $('#email').val();
+                             var phone = $('#phone').val();
+                             var pass= $('#password').val();
+                             var vaild= $('#verify').val();
+                             var gender= $('#gender').val();
+                             var state= $('#state').val();
+                             var city= $('#city').val();
+                             var zip = $('#zip').val();
+                             var epattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+                             var ppattern = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+                            if(first.length()===0){
+                                alert("Enter your first name");
+                                $('#signupFormCoach').submit(function(e){
+                                    e.preventDefault();
+                                });
+                                }
+                            if(last.length()===0){
+                                alert("Enter your last name");
+                                $('#signupFormCoach').submit(function(e){
+                                    e.preventDefault();
+                                });
+                                }
+                            if(!epattern.test(email)){
+                                alert("Enter a vaild email!");
+                                $('#signupFormCoach').submit(function(e){
+                                    e.preventDefault();
+                                });
+                                
+                            }
+                            if(!ppattern.test(phone)){
+                                alert("Enter your valid phone number");
+                                $('#signupFormCoach').submit(function(e){
+                                    e.preventDefault();
+                                });
+                            }
+                            if(pass.length()===0){
+                                             alert("Enter a password");
+                                             $('#signupFormCoach').submit(function(e){
+                                             e.preventDefault();
+                                             });
+                                         }
+                            if(valid.length()===0){
+                                             alert("Verify your password");
+                                             $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                                         }
+                            if(pass > valid){
+               				alert("Your passwords do not match");
+                                        $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+          			  }
+            			else if(pass < valid){
+                			alert("Your passwords do not match");
+                                        $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                                }
+                            if(level===""){
+                                alert("Select a coaching level");
+                                $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                            }
+                            if(city.length()===0){
+                                alert("Enter your city");
+                                $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                            }
+                            if(state===""){
+                                alert("Select your state");
+                                $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                            }
+                            if(zip.length()<5){
+                                alert("Enter a vailid zip code");
+                                $('#signupFormCoach').submit(function(e){
+                                                e.preventDefault();
+                                            });
+                            }
+        }); */
+                                
 });

@@ -46,7 +46,7 @@ class profileupdateModel extends Model
                     $user_data = json_decode(file_get_contents('php://input'));
                     //define SQL statement
                     $values = $user_data;
-                    $data = array('position_1'=>$values->position,
+                    $data = array('position_1'=>$values->position1,
                                     'bio'=>$values->bio,
                                     'height'=>$values->height,
                                     'weight'=>$values->weight,

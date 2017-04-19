@@ -10,7 +10,7 @@ include('Assets/pageHeader.php');
 		</div>
 	</div>
  	<div class="container">
-		<form class="" method="post" action="<?php echo HOME;?>signup/playerSignupFinal">		
+		<form id ="signupFormPlayer"  class="" method="post" action="<?php echo HOME;?>signup/playerSignupFinal">		
 		
                         <!-- First name and Last name inputs -->
                         <div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
@@ -39,11 +39,11 @@ include('Assets/pageHeader.php');
                         </div>
                         <!-- Phone input -->
                         <div class="form-group col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
-                                <label for="phone" class="cols-sm-2 control-label">Phone Number (Not Required)</label>
+                                <label for="phone" class="cols-sm-2 control-label">Phone Number </label>
                                 <div class="cols-sm-10">
                                         <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
-                                                <input type="text" class="form-control" name="phone" id="phone"  placeholder="Ex: 555-555-5555" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
+                                                <input type="text" class="form-control" name="phone" id="phone"  placeholder="Ex: 555-555-5555" pattern="\d{3}[\-]\d{3}[\-]\d{4}"required/>
                                         </div>
                                 </div>
                         </div>

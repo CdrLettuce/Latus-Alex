@@ -40,10 +40,8 @@ class profileupdateModel extends Model
                     $this->insertRecord($table,$data);
                     return 1;    
                 }
-                else{
-                    
+                else{                  
                     $table = 'player_profile';
-
                     //obtain data
                     $user_data = json_decode(file_get_contents('php://input'));
                     //define SQL statement
@@ -60,10 +58,7 @@ class profileupdateModel extends Model
                     $condition_values = array('user_id'=>$values->userID);
                     // insert new record
                     $this->updateRecord($table,$data, $condition, $condition_values);
-                    return 1; 
-                    
-                }
-
-                
+                    return 1;                     
+                }               
         }
 }

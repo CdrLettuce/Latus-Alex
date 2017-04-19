@@ -54,7 +54,7 @@ include('appHeader2.php');
                         <label for="height" class="control-label">Height</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="height" id="height" ng-model='ex.item.height' placeholder="{{ex.info2.height}}"/>
+                                <input type="text" class="form-control" name="height" id="height" ng-model='ex.item.height' value="{{ex.info2.height}}"/>
                         </div>
                 </div>
                 <!-- Weight input -->
@@ -278,6 +278,7 @@ include('appHeader2.php');
                 <div class="form-group">
                         <p><button type='button' class='btn btn-primary btn-lg btn-block login-button' ng-click='ex.searchForPlayer(ex.item)'>Search</button></p>
                 </div>
+                <p><a href="#/search">Advanced Search</a></p>
                 <div ng-show='ex.displaySearchResults' id='searchResults'>
                     <h4>Search Results: </h4>
                     <table class='table'>

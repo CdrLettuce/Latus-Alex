@@ -11,8 +11,27 @@ myApp.factory('DataService', [function(){
         // define 'setters'
         service.setCurrentUser = setCurrentUser;
         return service;
+        
+        service.userToView = {};
+        
+        //define 'getter'
+        service.getUserToView = getUserToView;
+        
+        // define 'setter'
+        service.setUserToView = setUserToView;
+        
+        return service;
+        
+        //private functions
+        function getUserToView(){
+                return service.userToView;
+        }
 
 
+        function setUserToView(item){
+                 service.userToView = item;
+        }
+        
         // private functions
         function getCurrentUser(){
                 return service.currentUser;

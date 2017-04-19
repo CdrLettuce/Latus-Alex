@@ -43,6 +43,17 @@
 		templateUrl : 'profile.php',
 		controllerAs : 'cc'
 	})
+        .when('/search', {
+		controller : 'advsearchController',
+		templateUrl : 'advsearch.php',
+		controllerAs : 'ac'
+	})
+        .when('/userprofile', {
+		controller : 'userprofileController',
+		templateUrl : 'userprofile.php',
+		controllerAs : 'uc'
+	})
+        
             .otherwise({ redirectTo: '/login' });
        
         }]);
@@ -56,6 +67,8 @@
     <script src='profilecontroller.js'></script>
     <script src='homecontroller.js'></script>
     <script src='dataservice.js'></script>
+    <script src='advsearchcontroller.js'></script>
+    <script src='userprofilecontroller.js'></script>
     <div id="footer" class="container">
       <footer>
         <p>&copy; 2017 RecruitChute, Inc.</p>

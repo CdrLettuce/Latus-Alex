@@ -210,3 +210,21 @@ body p{
     color: black;
     text-align: center;
 }
+
+.player{
+    text-align: center;
+}
+
+.playersignup{
+    background-image: url("../images/Player1.png");
+    background-size: cover;
+}
+
+.ball{
+    background-image: url("../images/ball2.png");
+    background-size: cover;
+}
+
+.playersignup p{
+    color: white;
+}

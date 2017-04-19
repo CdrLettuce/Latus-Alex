@@ -9,6 +9,7 @@ include('appHeader2.php');
                 <span class=""><i class="fa fa-edit fa" aria-hidden="true"></i></span>
                 Update your profile
             </h4>
+			<hr>
             <form id="updateForm" class="collapse" method="" action="">
                 <!-- Position select -->
                 <div class="form-group col-md-6 col-sm-6 ">
@@ -16,7 +17,53 @@ include('appHeader2.php');
                     <div class="cols-sm-10">
                         <div class="input-group">	
                         <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                            <select id="position" name="position" ng-model='ex.item.position' class="form-control">
+                            <select id="position1" name="position1" ng-model='ex.item.position1' class="form-control">
+                                <option value="0">Select position</option>
+                                <option value="1">Goalkeeper</option>
+                                <option value="2">Right Back</option>
+                                <option value="3">Left Back</option>
+                                <option value="4">Sweeper</option>
+                                <option value="5">Stopper</option>
+                                <option value="6">Right Midfielder</option>
+                                <option value="7">Left Midfielder</option>
+                                <option value="8">Defensive Midfielder</option>
+                                <option value="9">Striker</option>
+                                <option value="10">Forward</option>				
+                        </select>
+                        </div>			
+                    </div>					
+                </div>
+				
+				<!-- Position select -->
+                <div class="form-group col-md-6 col-sm-6 ">
+                    <label class="cols-sm-2 control-label" for="position">Secondary Position <!--(You can add more later!)--></label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">	
+                        <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                            <select id="position2" name="position2" ng-model='ex.item.position2' class="form-control">
+                                <option value="0">Select position</option>
+                                <option value="1">Goalkeeper</option>
+                                <option value="2">Right Back</option>
+                                <option value="3">Left Back</option>
+                                <option value="4">Sweeper</option>
+                                <option value="5">Stopper</option>
+                                <option value="6">Right Midfielder</option>
+                                <option value="7">Left Midfielder</option>
+                                <option value="8">Defensive Midfielder</option>
+                                <option value="9">Striker</option>
+                                <option value="10">Forward</option>				
+                        </select>
+                        </div>			
+                    </div>					
+                </div>
+				
+				<!-- Position select -->
+                <div class="form-group col-md-6 col-sm-6 ">
+                    <label class="cols-sm-2 control-label" for="position">Tertiary Position <!--(You can add more later!)--></label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">	
+                        <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                            <select id="position3" name="position3" ng-model='ex.item.position3' class="form-control">
                                 <option value="0">Select position</option>
                                 <option value="1">Goalkeeper</option>
                                 <option value="2">Right Back</option>
@@ -42,30 +89,14 @@ include('appHeader2.php');
                 </div> -->
                 <!-- Video input -->
                 <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="video" class="control-label">Video</label>
+                        <label for="video" class="control-label">Video(URL)</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
                                 <input type="text" class="form-control" name="video" id="video" ng-model='ex.item.video' placeholder='{{ex.info2.youtube_urls}}' />
                         </div>
                 </div>
-                
-                <!-- Height input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="height" class="control-label">Height</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="height" id="height" ng-model='ex.item.height' placeholder="{{ex.info2.height}}"/>
-                        </div>
-                </div>
-                <!-- Weight input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="weight" class="control-label">Weight</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="weight" id="weight" ng-model='ex.item.weight' placeholder="{{ex.info2.weight}}"/>
-                        </div>
-                </div>
-                <!-- High School input -->
+				<hr>
+				<!-- High School input -->
                 <div class="form-group col-md-6 col-sm-6 ">
                         <label for="school" class="cols-sm-2 control-label">High School</label>
                         <div class="cols-sm-10">
@@ -83,6 +114,16 @@ include('appHeader2.php');
                                 <input type="text" class="form-control" name="gpa" id="gpa" ng-model='ex.item.gpa' placeholder="{{ex.info2.gpa}}"/>
                         </div>
                 </div>
+				<!-- Birth Date input (mm/yyyy)-->
+                <div class="form-group col-md-6 col-sm-6 ">
+                        <label for="grad" class="cols-sm-2 control-label">Birth Date</label>
+                        <div class="cols-sm-10">
+                                <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-birthday-cake fa" aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" name="birth" id="birth" ng-model='ex.item.birth' placeholder="{{ex.info2.birth}}"/>
+                                </div>
+                        </div>
+                </div>
                 <!-- Graduation Date input (mm/yyyy)-->
                 <div class="form-group col-md-6 col-sm-6 ">
                         <label for="grad" class="cols-sm-2 control-label">Expected Graduation Date</label>
@@ -93,6 +134,56 @@ include('appHeader2.php');
                                 </div>
                         </div>
                 </div>
+				<hr>
+                <!-- Height input -->
+                <div class="form-group col-md-6 col-sm-6 ">
+                        <label for="height" class="control-label">Height(Feet' Inches")</label>
+                        <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="height" id="height" ng-model='ex.item.height' placeholder="{{ex.info2.height}}"/>
+                        </div>
+                </div>
+                <!-- Weight input -->
+                <div class="form-group col-md-6 col-sm-6 ">
+                        <label for="weight" class="control-label">Weight(lbs)</label>
+                        <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="weight" id="weight" ng-model='ex.item.weight' placeholder="{{ex.info2.weight}}"/>
+                        </div>
+                </div>
+                <!-- Bench Press input -->
+                <div class="form-group col-md-6 col-sm-6 ">
+                        <label for="weight" class="control-label">Bench Press(lbs)</label>
+                        <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="bench" id="bench" ng-model='ex.item.bench' placeholder="{{ex.info2.bench}}"/>
+                        </div>
+                </div>
+                <!-- Squat input -->
+                <div class="form-group col-md-6 col-sm-6 ">
+                        <label for="weight" class="control-label">Squat(lbs)</label>
+                        <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="squat" id="squat" ng-model='ex.item.squat' placeholder="{{ex.info2.squat}}"/>
+                        </div>
+                </div>
+                <!-- Weight input -->
+                <div class="form-group col-md-6 col-sm-6 ">
+                        <label for="weight" class="control-label">Mile Time(##:##)</label>
+                        <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="mile" id="mile" ng-model='ex.item.mile' placeholder="{{ex.info2.mile}}"/>
+                        </div>
+                </div>
+				<!-- Weight input -->
+                <div class="form-group col-md-6 col-sm-6 ">
+                        <label for="weight" class="control-label">40 Yard Dash(##:##)</label>
+                        <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="yard" id="yard" ng-model='ex.item.yard' placeholder="{{ex.info2.yard}}"/>
+                        </div>
+                </div>
+				<hr>
                 <!-- Bio input -->
                 <div class="form-group col-md-12">
                         <label for="Bio" class="control-label">Bio</label>
@@ -100,7 +191,8 @@ include('appHeader2.php');
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
                                 <textarea  class="form-control" name="bio" id="bio" ng-model='ex.item.bio' placeholder="{{ex.info2.bio}}"></textarea>
                         </div>
-                </div>                    
+                </div>
+				<hr>
                 <!-- School input
                 <div class="form-group">
                         <label for="school" class="cols-sm-2 control-label">Name of School or Club</label>
@@ -255,7 +347,7 @@ include('appHeader2.php');
             </form>
         </div>  
         <div class="col-sm-4 ">
-            <div class="home-container">
+            <div class="home-container search">
                 <h4>
                     <span class=""><i class="fa fa-search fa" aria-hidden="true"></i></span>
                     Search

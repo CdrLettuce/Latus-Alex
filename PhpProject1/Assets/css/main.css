@@ -105,13 +105,14 @@ body p{
 
 .howitworks h1{
     text-align: center;
-    
+    color: #ff9933;
     font-size: 400%;
 }
 
 .howitworks h2{
     text-align: center;
-    margin-bottom: 9%;
+    color: #ff9933;
+    /*margin-bottom: 9%;*/
 }
 
 .howitworks h4{

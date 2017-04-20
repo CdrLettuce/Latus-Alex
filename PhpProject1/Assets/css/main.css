@@ -70,7 +70,8 @@ body p{
 }
 .col-md-12 h1{
     font-size: 400%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 .col-md-12 h2{
     margin-top: 4%;
@@ -217,11 +218,6 @@ body p{
     background-size: cover;
 }
 
-.ball{
-    background-image: url("../images/ball2.png");
-    background-size: cover;
-}
-
 .playersignup h4{
     color: white;
     margin-bottom: 50px;
@@ -234,4 +230,22 @@ body p{
 
 .pmargin{
     margin-bottom: 50px;
+}
+
+.coachsignup{
+    background-image: url("../images/Player1.png");
+    background-size: cover;
+}
+
+.coachsignup h4{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.coachsignup h2{
+    color: white;
+    margin-top: 50px;
+}
+.difference h2{
+    font-size: 200%;
 }

@@ -13,7 +13,7 @@ include('Assets/pageHeader.php');
     <div id="signup" class="signup">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-12 ball">
+        <div class="col-md-12">
             <b><h1>Sign Up </h1></b>
         </div>      
             <div class="col-md-6 icon playersignup">
@@ -22,10 +22,10 @@ include('Assets/pageHeader.php');
               <h4>Find the perfect college team for YOU. Create a profile, upload video highlights, pictures and stats, then connect with college coaches across the nation to show why their team needs YOU!</h4>
               <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/playerSignup1" role="button">Player Sign Up &raquo;</a></p>
             </div>         
-        <div class="col-md-6 icon">
+        <div class="col-md-6 icon coachsignup">
           <h2>Coaches</h2>
-          <p>Find the perfect players for your college team. Search the nation for specific players based on age, location, position, academic performance, and much more! </p>
-          <p><a class="btn btn-primary" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Coach Sign Up &raquo;</a></p>
+          <h4>Find the perfect players for your college team. Search the nation for specific players based on age, location, position, academic performance, and much more! </h4>
+          <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Coach Sign Up &raquo;</a></p>
        </div>
       </div>
     </div>
@@ -89,9 +89,9 @@ include('Assets/pageHeader.php');
     <div id="learnMore" class="container gray">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-12 icon">
-            <h1>THE RECRUITCHUTE DIFFERENCE</h1>
-            <h2>Our back four...</h1>
+        <div class="col-xs-12 icon difference">
+            <h2>THE RECRUITCHUTE DIFFERENCE</h2>
+            <h3>Our back four...</h3>
         </div>
         
         

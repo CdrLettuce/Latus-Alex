@@ -10,19 +10,19 @@ include('Assets/pageHeader.php');
       </div>
     </div>
 
-    <div id="signup" class="signup">
+    <div id="signup" class="container signup gray">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
             <b><h1>Sign Up </h1></b>
         </div>      
-            <div class="col-md-6 icon playersignup">
+            <div class="col-sm-offset-1 col-sm-4 icon playersignup">
                
               <h2>Players</h2>
               <h4>Find the perfect college team for YOU. Create a profile, upload video highlights, pictures and stats, then connect with college coaches across the nation to show why their team needs YOU!</h4>
               <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/playerSignup1" role="button">Player Sign Up &raquo;</a></p>
             </div>         
-        <div class="col-md-6 icon coachsignup">
+        <div class="col-sm-offset-2 col-sm-4 icon coachsignup">
           <h2>Coaches</h2>
           <h4>Find the perfect players for your college team. Search the nation for specific players based on age, location, position, academic performance, and much more! </h4>
           <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Coach Sign Up &raquo;</a></p>
@@ -59,7 +59,7 @@ include('Assets/pageHeader.php');
            </div>
       </div>
     </div>
-    <div id="coachInfo" class="minheight">
+    <div id="coachInfo" class="minheight gray">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12 howitworks">

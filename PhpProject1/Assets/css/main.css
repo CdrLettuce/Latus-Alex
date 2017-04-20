@@ -95,25 +95,22 @@ body p{
 
 .howitworks p{
     text-align: center;
-    color: #ffffff;
+    
 }
 
 .howitworks h1{
     text-align: center;
-    margin-bottom: 9%;
-    color: #ffffff;
+    
     font-size: 400%;
 }
 
 .howitworks h2{
     text-align: center;
     margin-bottom: 9%;
-    color: #ffffff;
 }
 
 .howitworks h4{
     text-align: center;
-    color: white;
 }
 
 .jumbotron{
@@ -195,12 +192,12 @@ body p{
 }
 
 #coachInfo{
-    background-image: url("../images/soccerdude2.jpg");
-    background-size: cover; 
+    padding-top: 30px;
+    background-color: #f7f7f7;
 }
 
 .services h4{
-    color: white;
+    
     text-align: center;
 }
 
@@ -214,18 +211,15 @@ body p{
 }
 
 .playersignup{
-    background-image: url("../images/Player1.png");
-    background-size: cover;
+    
 }
 
 .playersignup h4{
-    color: white;
-    margin-bottom: 50px;
+    
 }
 
 .playersignup h2{
-    color: white;
-    margin-top: 50px;
+    
 }
 
 .pmargin{
@@ -233,18 +227,15 @@ body p{
 }
 
 .coachsignup{
-    background-image: url("../images/Player1.png");
-    background-size: cover;
+    
 }
 
 .coachsignup h4{
-    color: white;
-    margin-bottom: 50px;
+    
 }
 
 .coachsignup h2{
-    color: white;
-    margin-top: 50px;
+    
 }
 .difference h2{
     font-size: 200%;

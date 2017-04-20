@@ -32,8 +32,9 @@
      background-color: #eeeeee;
  }
  
- .logomedium{
-     font-size: 200px;
+ .profileImage{
+     width: 90%;
+     height: 90%;
  }
  
  .center-text{

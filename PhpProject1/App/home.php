@@ -379,16 +379,23 @@ include('appHeader2.php');
                         <p><button type='button' class='btn btn-primary btn-lg btn-block login-button' ng-click='ex.searchForPlayer(ex.item)'>Search</button></p>
                 </div>
                 <p><a href="#/search">Advanced Search</a></p>
+                <h3 class='col-xs-12' ng-show="ex.noResults">
+                    No players found!
+                </h3>
                 <div ng-show='ex.displaySearchResults' id='searchResults'>
                     <h4>Search Results: </h4>
                     <table class='table'>
                         <tr ng-repeat='item in ex.players track by $index'
                                             ng-show="item.subject==ex.subject.name">
                             <td class='col-xs-2'>
-                                <i class="fa fa-id-card fa-3x" aria-hidden="true"></i>
+                                <a ng-click='ex.viewProfile(item.user_id)'>
+                                    <i class="fa fa-id-card fa-3x" aria-hidden="true"></i>
+                                </a>
                             </td>
                            <td class='col-xs-10'>
-                                    <strong>{{item.first_name}} {{item.last_name}}</strong>
+                                    <a ng-click='ex.viewProfile(item.user_id)'>
+                                        <strong>{{item.first_name}} {{item.last_name}}</strong>
+                                    </a>
                                     <p> {{item.product_description}}</p>
                                     <p>{{item.unit_price}}</p>
                          

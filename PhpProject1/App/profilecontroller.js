@@ -43,7 +43,8 @@ cc.getPlayerInfo();
                                 console.log("Wassup");
                                 console.log(response.data);
                                 cc.info2 = response.data;
-                                console.log(cc.info);
+                                console.log("info 2 object");
+                                console.log(cc.info2);
                          }
                    },
                    function(err) { console.log(err);

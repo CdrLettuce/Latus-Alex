@@ -17,16 +17,19 @@ hc.item =  {};
 hc.addPlayerInfo = addPlayerInfo;
 
         function addPlayerInfo(item){
-                
-                console.log("add player info is being called");
+       
+                console.log("Here is the data being passed into the function");
                 console.log(item);
+                console.log("Here is item.birth");
+                console.log(item.birth);
 		var currentUser = hc.currentUser;
 		// var quan = pc.quantity.quantity;
 		var data_object = {userID : currentUser.user_id, position1 : item.position1, position2 : item.position2,
-                                    position3 : item.position3, bio : item.bio, height : item.height, weight : item.weight,
+                                    position3 : item.position3, bio : item.bio, weight : item.weight,
                                     school : item.school, gpa : item.gpa, grad : item.grad, videourl : item.video,
                                     birth : item.birth, feet : item.feet, inches : item.inches, bench : item.bench,
                                     squat : item.squat, mile : item.mile, yard : item.yard}; 
+                console.log("Here is the data in the data_object");
                 console.log(data_object);
 		$http.post('http://recruitchute.io/profileupdate/updateProfile', data_object ).then(function(response){
 			hc.success_message = "Thank you " + hc.currentUser.first_name + ", your profile has been updated.";
@@ -39,6 +42,7 @@ hc.addPlayerInfo = addPlayerInfo;
 hc.searchForPlayer = searchForPlayer;
 hc.players = [];
 hc.displaySearchResults = false;
+hc.noResults = false;
 
 function searchForPlayer(item){
     console.log("function is being called");
@@ -47,7 +51,15 @@ function searchForPlayer(item){
     $http.post('http://recruitchute.io/search/searchPlayer', data_object ).then(function(response){
             console.log(response);
             hc.players = response.data;
-            hc.displaySearchResults = true;
+            
+            if(response.data != -1){
+               hc.displaySearchResults = true;
+               hc.noResults = false;
+            }
+            if(response.data == '-1'){
+                hc.noResults = true;
+                hc.displaySearchResults = false;
+            }
             
     },
     function(err) { console.log(err);
@@ -70,10 +82,20 @@ function getPlayerInfo2(){
                         console.log(response.data);
                         hc.info2 = response.data;
                         console.log(hc.info2);
+                        
                  }
            },
            function(err) { console.log(err);
         });
+}
+
+hc.viewProfile = viewProfile;
+
+function viewProfile(item){
+    console.log("View profile being called");
+    console.log(item);
+    DataService.setUserToView(item);
+    $location.path('/userprofile');
 }
 
 }]);

@@ -51,11 +51,7 @@ function viewProfile(item){
     console.log("View profile being called");
     console.log(item);
     DataService.setUserToView(item);
-    
-    
-  
     $location.path('/userprofile');
-
 }
 
 

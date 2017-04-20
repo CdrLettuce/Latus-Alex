@@ -7,12 +7,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="http://recruitchute.io/index.php">RecruitChute</a>
+              <a class="navbar-brand" href="#/">RecruitChute</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse navbar-right">
                 <a class="navbar-brand"  href="#/">Home</a>
+                <a class="navbar-brand"  href="#/search">Search</a>
                 <a class="navbar-brand"  href="#/profile">My Profile</a>
                 <a class="navbar-brand"  href="#/login">Sign Out</a>
             </div><!--/.navbar-collapse -->
           </div>
         </nav>
+<?php
+    header('X-Frame-Options: GOFORIT'); 
+?>

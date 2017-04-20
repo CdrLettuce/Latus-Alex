@@ -194,12 +194,9 @@ body p{
 #coachInfo{
     padding-top: 30px;
     background-color: #f7f7f7;
-}
-
-.services h4{
-    
     text-align: center;
 }
+
 
 .backFour h4{
     color: black;
@@ -210,33 +207,20 @@ body p{
     text-align: center;
 }
 
-.playersignup{
-    
-}
-
-.playersignup h4{
-    
-}
-
-.playersignup h2{
-    
-}
 
 .pmargin{
     margin-bottom: 50px;
 }
 
-.coachsignup{
-    
-}
 
-.coachsignup h4{
-    
-}
-
-.coachsignup h2{
-    
-}
 .difference h2{
     font-size: 200%;
+}
+
+#signup h1{
+    color: #3399cc;
+}
+
+#signup h2{
+    color: #ff9933;
 }

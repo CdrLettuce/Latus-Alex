@@ -2,10 +2,10 @@
 include('Assets/pageHeader.php');
 ?>
 	<!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron minheight">
-      <div class="container">
-        <h1>Recruit Smarter, Not Harder</h1>
-        <p>Your recruitment journey begins here</p>
+    <div class="jumbotron minheight_1">
+      <div class="col-sm-4 container">
+        <h1>College soccer recruitment, made easy</h1>
+        <p>Whether you're a player dreaming of playing college soccer, or a coach looking to recruit your next All-American...your journey starts with RecruitChute</p>
         <p><a class="btn btn-primary btn-lg" href="#learnMore" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
@@ -52,7 +52,8 @@ include('Assets/pageHeader.php');
                     <div class="col-sm-offset-1 col-sm-2">
                         <h3>High School Coaches</h3>
                     </div>
-                    <div class="col-sm-offset-1 col-sm-2">                
+                    <div class="col-sm-offset-1 col-sm-2">  
+                        <i class="fa fa-futbol fa-5x blue" aria-hidden="true"></i>
                         <h3>Teammates</h3>
                     </div>
                 </div>
@@ -73,10 +74,12 @@ include('Assets/pageHeader.php');
         </div>
           <div class="container services">
                 <div class="row">
-                    <div class="col-sm-offset-2 col-sm-2">
+                    <div class="col-sm-offset-2 col-sm-2 icon">
+                        <i class="fa fa-bullseye fa-5x blue" aria-hidden="true"></i>
                         <h4>Narrow down your recruit targets with advanced search</h4>
                     </div>
                     <div class="col-sm-offset-1 col-sm-2">
+                        <i class="fa fa-hourglass-end fa-5x blue" aria-hidden="true"></i>
                         <h4>Increase time efficiency by viewing player profiles before visits</h4>
                     </div>
                     <div class="col-sm-offset-1 col-sm-2">                
@@ -101,12 +104,12 @@ include('Assets/pageHeader.php');
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-sm-offset-0 col-sm-3 backFour icon">
-          <i class="fa fa-graduation-cap fa-5x blue" aria-hidden="true"></i>
+          <i class="fa fa-map-o fa-5x blue" aria-hidden="true"></i>
           <h4>Gain the ability to search the nation for unseen talent and rising stars</h4>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-sm-offset-0 col-sm-3 backFour icon">
-          <i class="fa fa-globe fa-5x blue" aria-hidden="true"></i>
+          <i class="fa fa-book fa-5x blue" aria-hidden="true"></i>
           <h4>We give high school athletes the encouragement and opportunity to gain an education because of the sport they love</h4>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>

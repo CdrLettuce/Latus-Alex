@@ -49,6 +49,11 @@ input.log-info { border-radius: 5px; height: 20px;}
     padding-top: 100px;
 }
 
+.minheight_1{
+    min-height: 500px;
+    /*padding-top: 100px;*/
+}
+
 h1, h2, h3, h4{
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: bold;

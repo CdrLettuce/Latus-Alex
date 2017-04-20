@@ -18,10 +18,11 @@ include('appHeader2.php');
         </div>
         <div class="col-sm-7">
             <div class="sample-container">
-                <h4 class='title'>Videos</h4>
-                <div class="video-container"><iframe width="350" height="220"
-                    src='https://www.youtube.com/watch?v=lJTsfcmesR4' frameborder="0" allowfullscreen>
-                    </iframe></div>   
+                <h4 class='title'>Videos</h4>  
+                <div class="video-container"><iframe width="560" height="300"
+                     src="https://www.youtube.com/embed/lJTsfcmesR4" frameborder="0" allowfullscreen>
+                     </iframe>
+                </div>
             </div>
         </div>
     </div>

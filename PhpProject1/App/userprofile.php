@@ -11,7 +11,7 @@ include('appHeader2.php');
         <div class="col-sm-3 col-sm-offset-1">
             <div class="sample-container">
                 <img class='profileImage'src='../Assets/images/soccer_player_icon.jpg' />
-                <h3> {{ex.currentUser.first_name}} {{ex.currentUser.last_name}} </h3>
+                <h3> {{ex.info.first_name}} {{ex.info.last_name}} </h3>
                 <h4> {{ex.info2.position}}</h4>
                 <h4> {{ex.info.city}}, {{ex.info.state_name}} </h4>
             </div>
@@ -19,8 +19,8 @@ include('appHeader2.php');
         <div class="col-sm-7">
             <div class="sample-container">
                 <h4 class='title'>Videos</h4>
-                <div class="video-container"><iframe width="350" height="220"
-                    src='https://www.youtube.com/watch?v=lJTsfcmesR4' frameborder="0" allowfullscreen>
+                <div class="video-container"><iframe width="560" height="300"
+                    src="https://www.youtube.com/embed/lJTsfcmesR4" frameborder="0" allowfullscreen>
                     </iframe></div>   
             </div>
         </div>

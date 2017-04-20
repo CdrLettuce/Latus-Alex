@@ -16,6 +16,8 @@ function init(){
 }
 
 var base_url = 'http://recruitchute.io/';
+
+ac.item =  {searchfirst : "", searchlast : "", position : "", gradYear : "", state : "", gender : ""};
         
 ac.advsearchForPlayer = advsearchForPlayer;
 ac.players = [];
@@ -23,9 +25,30 @@ ac.displaySearchResults = false;
 ac.noResults = false;
 
 function advsearchForPlayer(item){
-    console.log("function is being called");
+    console.log("item:");
     console.log(item);
-    var data_object = {firstname : item.searchfirst, lastname: item.searchlast};
+    if(!item.searchfirst){
+        item.searchfirst = "";
+    }
+    if(!item.searchlast){
+        item.searchlast = "";
+    }
+    if(!item.position){
+        item.position = "";
+    }
+    if(!item.gradYear){
+        item.gradYear = "";
+    }
+    if(!item.state){
+        item.state = "";
+    }
+    if(!item.gender){
+        item.gender = "";
+    }
+    var data_object = {firstname : item.searchfirst, lastname : item.searchlast, position : item.position, 
+                        gradYear : item.gradYear, state : item.state, gender : item.gender};
+    console.log("Data object:");
+    console.log(data_object);
     $http.post('http://recruitchute.io/search/advsearchPlayer', data_object ).then(function(response){
             console.log(response);
             ac.players = response.data;

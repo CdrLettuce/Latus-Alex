@@ -5,10 +5,13 @@ include('appHeader2.php');
 
     <div class='row container-fluid'>
         <div class="col-lg-6 col-sm-6 col-sm-offset-1 home-container">
-            <h4 data-toggle="collapse" data-target="#updateForm">
-                <span class=""><i class="fa fa-edit fa" aria-hidden="true"></i></span>
-                Update your profile
-            </h4>
+            <div  id='update-profile-header' data-toggle="collapse" data-target="#updateForm">
+                <h4 class="col-sm-11">
+                    <span class=""><i class="fa fa-edit fa" aria-hidden="true"></i></span>
+                    Update your profile
+                </h4>
+                <h4 class="col-sm-1"><i class="fa fa-caret-square-o-down fa" aria-hidden="true"></i></h4>
+            </div>
 			<hr>
             <form id="updateForm" class="collapse" method="" action="">
                 <!-- Position select -->
@@ -16,7 +19,7 @@ include('appHeader2.php');
                     <label class="cols-sm-2 control-label" for="position">Primary Position <!--(You can add more later!)--></label>
                     <div class="cols-sm-10">
                         <div class="input-group">	
-                        <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                        <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
                             <select id="position1" name="position1" ng-model='ex.item.position1' class="form-control">
                                 <option value="0">Select position</option>
                                 <option value="1">Goalkeeper</option>
@@ -39,7 +42,7 @@ include('appHeader2.php');
                     <label class="cols-sm-2 control-label" for="position">Secondary Position <!--(You can add more later!)--></label>
                     <div class="cols-sm-10">
                         <div class="input-group">	
-                        <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                        <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
                             <select id="position2" name="position2" ng-model='ex.item.position2' class="form-control">
                                 <option value="0">Select position</option>
                                 <option value="1">Goalkeeper</option>
@@ -62,7 +65,7 @@ include('appHeader2.php');
                     <label class="cols-sm-2 control-label" for="position">Tertiary Position <!--(You can add more later!)--></label>
                     <div class="cols-sm-10">
                         <div class="input-group">	
-                        <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                        <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
                             <select id="position3" name="position3" ng-model='ex.item.position3' class="form-control">
                                 <option value="0">Select position</option>
                                 <option value="1">Goalkeeper</option>
@@ -102,7 +105,7 @@ include('appHeader2.php');
                         <div class="cols-sm-10">
                                 <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-institution fa" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.school' placeholder="{{ex.info2.h_school}}"/>
+                                        <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.school' ng-value='ex.info2.h_school' />
                                 </div>
                         </div>
                 </div>
@@ -111,7 +114,7 @@ include('appHeader2.php');
                         <label for="gpa" class="control-label">GPA</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-graduation-cap fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="gpa" id="gpa" ng-model='ex.item.gpa' placeholder="{{ex.info2.gpa}}"/>
+                                <input type="text" class="form-control" name="gpa" id="gpa" ng-model='ex.item.gpa' ng-value='ex.info2.gpa' />
                         </div>
                 </div>
 				<!-- Birth Date input (mm/yyyy)-->
@@ -130,7 +133,7 @@ include('appHeader2.php');
                         <div class="cols-sm-10">
                                 <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-graduation-cap fa" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" name="grad" id="grad" ng-model='ex.item.grad' placeholder="{{ex.info2.graduation_date}}"/>
+                                        <input type="text" class="form-control" name="grad" id="grad" ng-model='ex.item.grad' ng-value='ex.info2.graduation_date' />
                                 </div>
                         </div>
                 </div>
@@ -140,7 +143,7 @@ include('appHeader2.php');
                         <label for="feet" class="control-label">Height feet</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="feet" id="feet" ng-model='ex.item.feet' placeholder="{{ex.info2.feet}}"/>
+                                <input type="text" class="form-control" name="feet" id="feet" ng-model='ex.item.feet' ng-value='ex.info2.feet'/>
                         </div>
                 </div>
                  <!-- Height inches input -->
@@ -148,7 +151,7 @@ include('appHeader2.php');
                         <label for="feet" class="control-label">Height inches</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="inches" id="inches" ng-model='ex.item.inches' placeholder="{{ex.info2.inches}}"/>
+                                <input type="text" class="form-control" name="inches" id="inches" ng-model='ex.item.inches' ng-value='ex.info2.inches'/>
                         </div>
                 </div>
                 <!-- Weight input -->
@@ -156,7 +159,7 @@ include('appHeader2.php');
                         <label for="weight" class="control-label">Weight(lbs)</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="weight" id="weight" ng-model='ex.item.weight' placeholder="{{ex.info2.weight}}"/>
+                                <input type="text" class="form-control" name="weight" id="weight" ng-model='ex.item.weight' ng-value='ex.info2.weight' />
                         </div>
                 </div>
                 <!-- Bench Press input -->
@@ -164,7 +167,7 @@ include('appHeader2.php');
                         <label for="bench" class="control-label">Bench Press(lbs)</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="bench" id="bench" ng-model='ex.item.bench' placeholder="{{ex.info2.bench}}"/>
+                                <input type="text" class="form-control" name="bench" id="bench" ng-model='ex.item.bench' ng-value='ex.info2.bench'/>
                         </div>
                 </div>
                 <!-- Squat input -->
@@ -172,7 +175,7 @@ include('appHeader2.php');
                         <label for="squat" class="control-label">Squat(lbs)</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="squat" id="squat" ng-model='ex.item.squat' placeholder="{{ex.info2.squat}}"/>
+                                <input type="text" class="form-control" name="squat" id="squat" ng-model='ex.item.squat' ng-value='ex.info2.squat' />
                         </div>
                 </div>
                 <!-- mile input -->
@@ -180,7 +183,7 @@ include('appHeader2.php');
                         <label for="mile" class="control-label">Mile Time(##:##)</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="mile" id="mile" ng-model='ex.item.mile' placeholder="{{ex.info2.mile}}"/>
+                                <input type="text" class="form-control" name="mile" id="mile" ng-model='ex.item.mile' ng-value='ex.info2.mile'/>
                         </div>
                 </div>
 				<!-- 40 input -->
@@ -188,7 +191,7 @@ include('appHeader2.php');
                         <label for="yard" class="control-label">40 Yard Dash(##:##)</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="yard" id="yard" ng-model='ex.item.yard' placeholder="{{ex.info2.yard}}"/>
+                                <input type="text" class="form-control" name="yard" id="yard" ng-model='ex.item.yard' ng-value='ex.info2.yard'/>
                         </div>
                 </div>
 				<hr>
@@ -197,7 +200,7 @@ include('appHeader2.php');
                         <label for="Bio" class="control-label">Bio</label>
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <textarea  class="form-control" name="bio" id="bio" ng-model='ex.item.bio' placeholder="{{ex.info2.bio}}"></textarea>
+                                <textarea  class="form-control" name="bio" id="bio" ng-model='ex.item.bio' ng-value='ex.info2.bio'></textarea>
                         </div>
                 </div>
 				<hr>

@@ -2,11 +2,11 @@
 include('Assets/pageHeader.php');
 ?>
 	<!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron minheight_1">
+    <div id="splash" class="jumbotron minheight_1">
       <div class="col-sm-4 container">
         <h1>College soccer recruitment, made easy</h1>
         <p>Whether you're a player dreaming of playing college soccer, or a coach looking to recruit your next All-American...your journey starts with RecruitChute</p>
-        <p><a class="btn btn-primary btn-lg" href="#learnMore" role="button">Learn more &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" href="<?php echo HOME;?>about/aboutUs" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
 
@@ -33,7 +33,7 @@ include('Assets/pageHeader.php');
       
       <div class="row">
         <div class="col-md-12">
-             <b><h1>How it works</h1></b>
+             <b><h1>DREAMING OF PLAYING COLLEGE SOCCER</h1></b>
         </div>              
         <div class="col-sm-offset-3 col-sm-6 playerInfo">
           

@@ -51,7 +51,8 @@ input.log-info { border-radius: 5px; height: 20px;}
 
 .minheight_1{
     min-height: 500px;
-    /*padding-top: 100px;*/
+    padding-top: 5%;
+    padding-left: 5%
 }
 
 h1, h2, h3, h4{
@@ -229,4 +230,12 @@ body p{
 
 #signup h2{
     color: #ff9933;
+}
+
+#splash{
+    margin-bottom: 0px;
+}
+
+.navbar{
+    /*height: 100px;*/
 }

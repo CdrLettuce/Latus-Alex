@@ -4,38 +4,47 @@ include('Assets/pageHeader.php');
 <div class="gray about">
     <div class="container">
         <div class="row">
-            <div class="col-sm-offset-1 col-sm-5 mission">
+            <div class="col-sm-offset-1 col-sm-10 mission state">
                 <h2 class="section">RecruitChute's Mission</h2>
-                <p class="pbody">RecruitChute's mission is to provide the tools and guidance necessary to assist prospective college soccer players 
+                <h4 class="pbody">RecruitChute's mission is to provide the tools and guidance necessary to assist prospective college soccer players 
                 throughout the recruitment journey from start to finish. If you have the drive, we have the tools and don't let anyone 
                 tell you you're not good enough. Soccer is the number one growing sport in the US and for good reason - Soccer is awesome! 
                 Here at RecruitChute, we live and breathe soccer in our daily lives, all members of our team have played at least high school 
                 soccer so we like to think we know a thing or two about how this process works! 
-                </p>      
+                </h4>      
             </div>
-            <div class="col-sm-offset-0 col-sm-5 mission">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10 state">
                 <h2 class="section">RecruitChute's Philosophy</h2>
-                <p class="pbody">Here at RecruitChute we have always had the firm belief that when it comes to athletic recruiting, the more proactive you 
+                <h4 class="pbody">Here at RecruitChute we have always had the firm belief that when it comes to athletic recruiting, the more proactive you 
                 can be, the better. College coaches want to deal with athletes directly, not their parents or middle-men. The best way to 
                 market yourself effectively to college coaches is to do exactly that, market YOURSELF. We provide the tools that allow YOU to 
                 make it happen. 
-                </p>
+                </h4>
             </div>
         </div>
     </div>
     
     
     
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-5">
+                <h2 class="section">Founder</h2>
+            </div>
+        </div>
+    </div>
+    
     <div class="b">
         <div class ="container">
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-5">
-                    <h2 class="section">Founder</h2>
+            <div class="row">                
+                <div class="col-sm-offset-1 col-sm-5">                    
                     <div class="card">
-                        <div class="image-cropper">
-                            <img class="resize" src="../images/player.jpg" alt="Avatar" style="width:100%">
-                        </div>
-                        <div class="card-c">
+                        <img class="resize" src="../Assets/images/Chris.png" style="width:100%">
+                        <div class="container">
                             <h4><b>Christopher Roche</b></h4> 
                             <p>Architect & Engineer</p>
                         </div>

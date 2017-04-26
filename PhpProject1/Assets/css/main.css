@@ -252,11 +252,15 @@ About US
 .mission{
     padding-top: 10%;
 }
-.card{
-    background-image: url("../images/player.jpg");
+/*.card{
+    background-image: url("../images/soccerdude.jpg");
     background-size: cover; 
-}
+}*/
 
 .started{
     padding-bottom: 5%;
+}
+
+.about h4{
+    color: #696969;
 }

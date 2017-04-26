@@ -238,7 +238,15 @@ body p{
 }
 
 .navbar{
-    /*height: 100px;*/
+    height: 70px;
+   
+}
+.navbar-brand{
+     padding-top: 10px;
+}
+.navbar-form{
+    margin-top: 15px;
+      
 }
 
 /******************************************

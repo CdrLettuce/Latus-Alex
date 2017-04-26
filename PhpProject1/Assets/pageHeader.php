@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="http://recruitchute.io/index.php"><img src="<?php echo HOME;?>Assets/images/logo.png" alt="logo" height="30" width="100"></a>
+            <a class="navbar-brand" href="http://recruitchute.io/index.php"><img src="<?php echo HOME;?>Assets/images/logo_trans.png" alt="logo" height="55" width="160"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" action="<?php echo HOME;?>login/checkLogin" method="post">

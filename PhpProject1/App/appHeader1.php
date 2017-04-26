@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="http://recruitchute.io/index.php">RecruitChute</a>
+              <a class="navbar-brand" href="http://recruitchute.io/index.php" style='padding-top:10px;'><img src="../Assets/images/logo_trans.png" alt="logo" height="55" width="160"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <form class="navbar-form navbar-right" action="http://recruitchute.io/login/checkLogin" method="post">

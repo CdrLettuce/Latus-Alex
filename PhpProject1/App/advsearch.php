@@ -2,8 +2,8 @@
 include('appHeader2.php');
 ?>
 <div id="search-container" class="xtra-top-pad" ng-controller='advsearchController as ex'>
-    <div id='search-controls' class='row container-fluid'>
-        <div class ='col-xs-12 col-sm-10 col-sm-offset-1'>
+    <div  class='row container-fluid'>
+        <div id='search-controls' class=' col-sm-10 col-sm-offset-1'>
             <h4>
                 <span class=""><i class="fa fa-search fa" aria-hidden="true"></i></span>
                 Advanced Search
@@ -146,12 +146,12 @@ include('appHeader2.php');
             </div>
         </div>
     </div>
-    <div id='search-results' class='row container-fluid'>
-        <div class ='col-xs-12 col-sm-10 col-sm-offset-1'>
+    <div  ng-show='ex.displaySearchResults' id='searchResults' class='row container-fluid'>
+        <div  id='search-results' class ='col-sm-10 col-sm-offset-1'>
             <h3 class='col-xs-12 center-text' ng-show="ex.noResults">
                 No players found! Please modify your search and try again.
             </h3>
-            <div ng-show='ex.displaySearchResults' id='searchResults'>
+            <div >
                 <h4>Search Results: </h4>
                 <table class='table'>
                     <tr ng-repeat='item in ex.players track by $index'

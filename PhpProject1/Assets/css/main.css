@@ -86,6 +86,7 @@ body p{
 #playerInfo{
     padding-top: 30px;
     background-image: url("../images/Picture5.jpg");
+    background-color: rgba(255, 0, 0, 0.5);
     background-size: cover;
 }
 
@@ -238,4 +239,12 @@ body p{
 
 .navbar{
     /*height: 100px;*/
+}
+
+/******************************************
+About US
+******************************************/
+
+.about h2{
+    color: #ff9933;
 }

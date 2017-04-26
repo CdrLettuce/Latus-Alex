@@ -24,7 +24,7 @@ class SearchModel extends Model
                         WHERE u.first_name LIKE CONCAT('%', :first_name, '%')
                         AND u.last_name LIKE CONCAT('%', :last_name, '%')
                         AND u.gender LIKE CONCAT('%', :gender, '%')
-                        AND u.state_id LIKE CONCAT('%', :state_id, '%')
+                        AND u.state_id LIKE CONCAT('%', :state_id)
                         AND p.position_1 LIKE CONCAT('%', :position_1, '%')
                         AND p.graduation_date LIKE CONCAT('%', :graduation_date, '%')
                         AND s.state_id = u.state_id

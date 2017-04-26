@@ -148,8 +148,8 @@ include('appHeader2.php');
     </div>
     <div id='search-results' class='row container-fluid'>
         <div class ='col-xs-12 col-sm-10 col-sm-offset-1'>
-            <h3 class='col-xs-12' ng-show="ex.noResults">
-                No players found!
+            <h3 class='col-xs-12 center-text' ng-show="ex.noResults">
+                No players found! Please modify your search and try again.
             </h3>
             <div ng-show='ex.displaySearchResults' id='searchResults'>
                 <h4>Search Results: </h4>

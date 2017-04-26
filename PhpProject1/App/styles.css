@@ -40,6 +40,10 @@
  .center-text{
      text-align: center;
  }
+ .left-text p{
+     text-align: left;
+ }
+ 
  .no-show{
      width: 100%;
      background-color: white;
@@ -92,3 +96,8 @@
 #update-profile-header h4:hover{
     color: #28AFE0;
 }
+
+.blue{
+    color: #28AFE0;
+}
+

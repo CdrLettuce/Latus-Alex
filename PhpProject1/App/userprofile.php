@@ -26,51 +26,78 @@ include('appHeader2.php');
         </div>
     </div>
     <div class='row container-fluid'>
-        <div class="col-sm-3 col-sm-offset-1">
-            <div class="sample-container">
+        <div class="col-sm-5 col-sm-offset-1">
+            <div class="sample-container left-text">
                 <h4 class='title'>Stats</h4>
-                <table class='table'>
-                    <tr>
-                        <td class='col-xs-6'>
+                <div class='row container-fluid'>
+                        <div class='col-xs-6'>
                             <p><b>Height: </b>{{ex.info2.height_feet}}'{{ex.info2.height_inches}}"</p>
-                        </td>
-                       <td class='col-xs-6'>
+                        </div>
+                       <div class='col-xs-6'>
                             <p><b>Mile Time: </b>{{ex.info2.mile_time}}</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class='col-xs-6'>
+                        </div>
+                </div>
+                <div class='row container-fluid'>
+                        <div class='col-xs-6'>
                             <p><b>Weight: </b>{{ex.info2.weight}}</p>
-                        </td>
-                       <td class='col-xs-6'>
+                        </div>
+                       <div class='col-xs-6'>
                             <p><b>40-Yard Dash Time: </b>{{ex.info2.dash_time}}</p>    
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class='col-xs-6'>
+                        </div>
+                </div>
+                <div class='row container-fluid'>
+                        <div class='col-xs-6'>
                             <p><b>Primary Position:</b> {{ex.info2.position}}</p>
-                        </td>
-                       <td class='col-xs-6'>
+                        </div>
+                       <div class='col-xs-6'>
                              <p><b>Max Bench: </b>{{ex.info2.bench}}</p>   
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class='col-xs-6'>
+                        </div>
+                </div>
+                <div class='row container-fluid'>
+                        <div class='col-xs-6'>
                             <p><b>Secondary Position: </b>{{ex.info2.position_2}}</p>
-                        </td>
-                       <td class='col-xs-6'>
+                        </div>
+                       <div class='col-xs-6'>
                              <p><b>Max Squat: </b>{{ex.info2.squat}}</p>   
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                </div>
+
             </div>
         </div>
-        <div class="col-sm-7">
-            <div class="sample-container">
+        <div class="col-sm-5">
+            <div class="sample-container left-text">
                 <h4 class='title'>About</h4>
-                <p>{{ex.info2.bio}}</p>
-                <p><b>City:</b> {{ex.info.city}}</p>
-                <p><b>State:</b> {{ex.info.state_name}}</p>
+                <div class='row container-fluid'>
+                        <div class='col-xs-6'>
+                            <p><b>Hometown: </b>{{ex.info.city}}, {{ex.info.state_name}}</p>
+                        </div>
+                       <div class='col-xs-6'>
+                             <p><b>Email: </b>{{ex.info.email}}</p>   
+                        </div>
+                </div>
+                <div class='row container-fluid'>
+                        <div class='col-xs-6'>
+                            <p><b>School: </b>{{ex.info2.h_school}}</p>
+                        </div>
+                       <div class='col-xs-6'>
+                             <p><b>Phone: </b>{{ex.info.phone}}</p>   
+                        </div>
+                </div>
+                <div class='row container-fluid'>
+                        <div class='col-xs-6'>
+                            <p><b>GPA: </b>{{ex.info2.gpa}}</p>
+                        </div>
+                       <div class='col-xs-6'>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='row container-fluid'>
+        <div class='col-sm-10 col-sm-offset-1'>
+            <div class='sample-container'>
+                <h4 class='title' >Bio</h4>
+                <p>"{{ex.info2.bio}}"</p>
             </div>
         </div>
     </div>

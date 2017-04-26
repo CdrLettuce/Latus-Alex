@@ -8,7 +8,7 @@ class profileupdateModel extends Model
                 $values = $user_data;
                 $data = array(':user_id'=>$values->userID);
                 
-                $sql = "SELECT profile_id 
+                $sql = "SELECT *
                         FROM `player_profile` 
                         WHERE user_id = :user_id";
                 
@@ -54,6 +54,57 @@ class profileupdateModel extends Model
                     $user_data = json_decode(file_get_contents('php://input'));
                     //define SQL statement
                     $values = $user_data;
+                    /*
+                    if($values->position1 == ""){
+                        $values->position1 = $result->position_1;                       
+                    }
+                    if($values->position2 == ""){
+                        $values->position2 = $result->position_2;                       
+                    }
+                    if($values->position2 == ""){
+                        $values->position3 = $result->position_3;                       
+                    }
+                    if($values->bio == ""){
+                        $values->bio = $result->bio;                       
+                    }
+                    if($values->weight == ""){
+                        $values->weight = $result->weight;                       
+                    }
+                    if($values->school == ""){
+                        $values->school = $result->h_school;                       
+                    }
+                    if($values->gpa == ""){
+                        $values->gpa = $result->gpa;                       
+                    }
+                    if($values->grad == ""){
+                        $values->grad = $result->graduation_date;                       
+                    }
+                    if($values->videourl == ""){
+                        $values->videourl = $result->youtube_urls;                       
+                    }
+                    if($values->birth == ""){
+                        $values->birth = $result->dob;                       
+                    }
+                    if($values->inches == ""){
+                        $values->inches = $result->height_inches;                       
+                    }
+                    if($values->feet == ""){
+                        $values->feet = $result->height_feet;                       
+                    }
+                    if($values->bench == ""){
+                        $values->bench = $result->bench;                       
+                    }
+                    if($values->squat == ""){
+                        $values->squat = $result->squat;                       
+                    }
+                    if($values->mile == ""){
+                        $values->mile = $result->mile_time;                       
+                    }
+                    if($values->yard == ""){
+                        $values->yard = $result->dash_time;                       
+                    }
+                    
+                     */
                     $data = array('position_1'=>$values->position1,
                                     'position_2'=>$values->position2,
                                     'position_3'=>$values->position3,   
@@ -67,7 +118,7 @@ class profileupdateModel extends Model
                                     'height_feet'=>$values->feet,
                                     'height_inches'=>$values->inches,
                                     'bench'=>$values->bench,
-                                    'squat'=>$values->sqaut,    
+                                    'squat'=>$values->squat,    
                                     'mile_time'=>$values->mile,
                                     'dash_time'=>$values->yard);
                     $condition = 'user_id = :user_id ';

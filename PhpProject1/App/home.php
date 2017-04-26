@@ -14,73 +14,99 @@ include('appHeader2.php');
             </div>
 			<hr>
             <form id="updateForm" class="collapse" method="" action="">
-                <!-- Position select -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                    <label class="cols-sm-2 control-label" for="position">Primary Position <!--(You can add more later!)--></label>
-                    <div class="cols-sm-10">
-                        <div class="input-group">	
-                        <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
-                            <select id="position1" name="position1" ng-model='ex.item.position1' class="form-control">
-                                <option value="0">Select position</option>
-                                <option value="1">Goalkeeper</option>
-                                <option value="2">Right Back</option>
-                                <option value="3">Left Back</option>
-                                <option value="4">Sweeper</option>
-                                <option value="5">Stopper</option>
-                                <option value="6">Right Midfielder</option>
-                                <option value="7">Left Midfielder</option>
-                                <option value="8">Defensive Midfielder</option>
-                                <option value="9">Striker</option>
-                                <option value="10">Forward</option>				
-                        </select>
-                        </div>			
-                    </div>					
+                <!-- Position current -->
+                <div class="form-group col-md-4 col-sm-4 ">
+                    <p><b>Primary Position:</b></p>
                 </div>
-				
-				<!-- Position select -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                    <label class="cols-sm-2 control-label" for="position">Secondary Position <!--(You can add more later!)--></label>
-                    <div class="cols-sm-10">
-                        <div class="input-group">	
-                        <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
-                            <select id="position2" name="position2" ng-model='ex.item.position2' class="form-control">
-                                <option value="0">Select position</option>
-                                <option value="1">Goalkeeper</option>
-                                <option value="2">Right Back</option>
-                                <option value="3">Left Back</option>
-                                <option value="4">Sweeper</option>
-                                <option value="5">Stopper</option>
-                                <option value="6">Right Midfielder</option>
-                                <option value="7">Left Midfielder</option>
-                                <option value="8">Defensive Midfielder</option>
-                                <option value="9">Striker</option>
-                                <option value="10">Forward</option>				
-                        </select>
-                        </div>			
-                    </div>					
+                <div class="form-group col-md-3 col-sm-3 ">
+                    <p>{{ex.info2.position}}</p>
                 </div>
-				
-				<!-- Position select -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                    <label class="cols-sm-2 control-label" for="position">Tertiary Position <!--(You can add more later!)--></label>
-                    <div class="cols-sm-10">
-                        <div class="input-group">	
-                        <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
-                            <select id="position3" name="position3" ng-model='ex.item.position3' class="form-control">
-                                <option value="0">Select position</option>
-                                <option value="1">Goalkeeper</option>
-                                <option value="2">Right Back</option>
-                                <option value="3">Left Back</option>
-                                <option value="4">Sweeper</option>
-                                <option value="5">Stopper</option>
-                                <option value="6">Right Midfielder</option>
-                                <option value="7">Left Midfielder</option>
-                                <option value="8">Defensive Midfielder</option>
-                                <option value="9">Striker</option>
-                                <option value="10">Forward</option>				
-                        </select>
-                        </div>			
-                    </div>					
+                <div class='row container-fluid'>
+                    <!-- Position select -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                        <div class="cols-sm-10">
+                            <div class="input-group">	
+                            <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
+                                <select id="position1" name="position1" ng-model='ex.item.position1' class="form-control">
+                                    <option value="0">Select new position</option>
+                                    <option value="1">Goalkeeper</option>
+                                    <option value="2">Right Back</option>
+                                    <option value="3">Left Back</option>
+                                    <option value="4">Sweeper</option>
+                                    <option value="5">Stopper</option>
+                                    <option value="6">Right Midfielder</option>
+                                    <option value="7">Left Midfielder</option>
+                                    <option value="8">Defensive Midfielder</option>
+                                    <option value="9">Striker</option>
+                                    <option value="10">Forward</option>				
+                            </select>
+                            </div>			
+                        </div>					
+                    </div>
+                </div>
+                
+                <div class='row container-fluid'>
+                    <!-- Position 2 current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Secondary Position:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info3.position}}</p>
+                    </div>
+
+                    <!-- Position 2 select -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                        <div class="cols-sm-10">
+                            <div class="input-group">	
+                            <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
+                            <select id="position2" name="position2" ng-model='ex.item.position2'  class="form-control">
+                                    <option value="0">Select new position</option>
+                                    <option value="1">Goalkeeper</option>
+                                    <option value="2">Right Back</option>
+                                    <option value="3">Left Back</option>
+                                    <option value="4">Sweeper</option>
+                                    <option value="5">Stopper</option>
+                                    <option value="6">Right Midfielder</option>
+                                    <option value="7">Left Midfielder</option>
+                                    <option value="8">Defensive Midfielder</option>
+                                    <option value="9">Striker</option>
+                                    <option value="10">Forward</option>				
+                            </select>
+                            </div>			
+                        </div>					
+                    </div>
+                </div>
+                
+                <div class='row container-fluid'>
+		
+                    <!-- Position 3 current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Tertiary Position:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info4.position}}</p>
+                    </div>
+                    <!-- Position 3 select -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                        <div class="cols-sm-10">
+                            <div class="input-group">	
+                            <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
+                                <select id="position3" name="position3" ng-model='ex.item.position3' class="form-control">
+                                    <option value="0">Select position</option>
+                                    <option value="1">Goalkeeper</option>
+                                    <option value="2">Right Back</option>
+                                    <option value="3">Left Back</option>
+                                    <option value="4">Sweeper</option>
+                                    <option value="5">Stopper</option>
+                                    <option value="6">Right Midfielder</option>
+                                    <option value="7">Left Midfielder</option>
+                                    <option value="8">Defensive Midfielder</option>
+                                    <option value="9">Striker</option>
+                                    <option value="10">Forward</option>				
+                            </select>
+                            </div>			
+                        </div>					
+                    </div>
                 </div>
                 <!-- Profile Picture input 
                 <div class="form-group col-md-6 col-sm-6 ">
@@ -90,120 +116,235 @@ include('appHeader2.php');
                                 <input type="file" class="" name="picture" id="picture" ng-model='ex.item.picture' accept="image/*"/>
                         </div>
                 </div> -->
-                <!-- Video input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="video" class="control-label">Video(URL)</label>
+				
+                <hr>
+                
+                <div class='row container-fluid'>
+                    <!-- High School current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>High School:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.h_school}}</p>
+                    </div>   
+                    <!-- High School input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                            <div class="cols-sm-10">
+                                    <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-institution fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.school'/>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class='row container-fluid'>
+                    <!-- GPA current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>GPA:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.gpa}}</p>
+                    </div>
+                    <!-- GPA input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-graduation-cap fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="gpa" id="gpa" ng-model='ex.item.gpa' />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class='row container-fluid'>
+                    <!-- GPA current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Graduation Year:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.graduation_date}}</p>
+                    </div>
+                    <!-- Graduation Date input (mm/yyyy)-->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                            <div class="cols-sm-10">
+                                    <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-graduation-cap fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="grad" id="grad" ng-model='ex.item.grad'/>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <hr>              
+                
+                <div class='row container-fluid'>
+                    <!-- Birth Date  current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Birth Date:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.dob}}</p>
+                    </div>
+                    <!-- Birth Date input (mm/yyyy)-->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                            <div class="cols-sm-10">
+                                    <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-birthday-cake fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="birth" id="birth" ng-model='ex.item.birth'/>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class='row container-fluid'>
+                    <!-- Height current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Height:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.height_feet}}'{{ex.info2.height_inches}}"</p>
+                    </div>
+                    <!-- Height feet input -->
+                    <div class="form-group col-md-2 col-sm-2 ">
+                            <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="feet" id="feet" ng-model='ex.item.feet'/>
+                            </div>
+                    </div>
+                    <!-- Height inches input -->
+                    <div class="form-group col-md-2 col-sm-2 ">
                         <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="video" id="video" ng-model='ex.item.video' placeholder='{{ex.info2.youtube_urls}}' />
+                                <input type="text" class="form-control" name="inches" id="inches" ng-model='ex.item.inches'/>
                         </div>
+                    </div>      
                 </div>
-				<hr>
-				<!-- High School input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="school" class="cols-sm-2 control-label">High School</label>
-                        <div class="cols-sm-10">
-                                <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-institution fa" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.school' ng-value='ex.info2.h_school' />
-                                </div>
-                        </div>
+                
+                <div class='row container-fluid'>
+                    <!-- Weight current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Weight:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.weight}}</p>
+                    </div>
+                    <!-- Weight input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                            <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="weight" id="weight" ng-model='ex.item.weight'/>
+                            </div>
+                    </div>
                 </div>
-                <!-- GPA input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="gpa" class="control-label">GPA</label>
+                
+                <hr>
+                
+                <div class='row container-fluid'>
+                    <!-- Bench Press current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Bench Press (lbs):</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.bench}}</p>
+                    </div>
+                    <!-- Bench Press input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
                         <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-graduation-cap fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="gpa" id="gpa" ng-model='ex.item.gpa' ng-value='ex.info2.gpa' />
+                            <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="bench" id="bench" ng-model='ex.item.bench' />
                         </div>
+                    </div>
                 </div>
-				<!-- Birth Date input (mm/yyyy)-->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="grad" class="cols-sm-2 control-label">Birth Date</label>
-                        <div class="cols-sm-10">
-                                <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-birthday-cake fa" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" name="birth" id="birth" ng-model='ex.item.birth' placeholder="{{ex.info2.birth}}"/>
-                                </div>
-                        </div>
-                </div>
-                <!-- Graduation Date input (mm/yyyy)-->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="grad" class="cols-sm-2 control-label">Expected Graduation Date</label>
-                        <div class="cols-sm-10">
-                                <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-graduation-cap fa" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" name="grad" id="grad" ng-model='ex.item.grad' ng-value='ex.info2.graduation_date' />
-                                </div>
-                        </div>
-                </div>
-				<hr>
-                <!-- Height feet input -->
-                <div class="form-group col-md-3 col-sm-3 ">
-                        <label for="feet" class="control-label">Height feet</label>
+             
+                <div class='row container-fluid'>
+                    <!-- Squat current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Squat (lbs):</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.squat}}</p>
+                    </div>
+                    <!-- Squat input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
                         <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="feet" id="feet" ng-model='ex.item.feet' ng-value='ex.info2.feet'/>
+                            <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="squat" id="squat" ng-model='ex.item.squat' />
                         </div>
+                    </div>
                 </div>
-                 <!-- Height inches input -->
-                <div class="form-group col-md-3 col-sm-3 ">
-                        <label for="feet" class="control-label">Height inches</label>
+                
+                <div class='row container-fluid'>
+                    <!-- Mile current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Mile Time(Ex: 06:20:00):</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.mile_time}}</p>
+                    </div>
+                    <!-- mile input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
                         <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="inches" id="inches" ng-model='ex.item.inches' ng-value='ex.info2.inches'/>
+                                <span class="input-group-addon"><i class="fa fa-clock-o fa" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="mile" id="mile" ng-model='ex.item.mile'/>
                         </div>
+                    </div>
                 </div>
-                <!-- Weight input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="weight" class="control-label">Weight(lbs)</label>
+				
+                <div class='row container-fluid'>
+                    <!-- Bench Press current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>40 Yard Dash Time(Ex: 00:04:58):</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.dash_time}}</p>
+                    </div>
+                    <!-- 40 input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
                         <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="weight" id="weight" ng-model='ex.item.weight' ng-value='ex.info2.weight' />
+                            <span class="input-group-addon"><i class="fa fa-clock-o fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="yard" id="yard" ng-model='ex.item.yard'/>
                         </div>
+                    </div>
                 </div>
-                <!-- Bench Press input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="bench" class="control-label">Bench Press(lbs)</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="bench" id="bench" ng-model='ex.item.bench' ng-value='ex.info2.bench'/>
-                        </div>
+                
+		<hr>
+                
+                <div class='row container-fluid'>
+                    <!-- Video URL current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Video (URL):</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info2.youtube_urls}}</p>
+                    </div>
+                    <!-- Video input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                            <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-film fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="video" id="video" ng-model='ex.item.video' />
+                            </div>
+                    </div>
                 </div>
-                <!-- Squat input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="squat" class="control-label">Squat(lbs)</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="squat" id="squat" ng-model='ex.item.squat' ng-value='ex.info2.squat' />
-                        </div>
+                
+                <div class='row container-fluid'>
+                    <!-- Bio current -->
+                    <div class="form-group col-md-2 col-sm-2 ">
+                        <p><b>Biography:</b></p>
+                    </div>
+                    <div class="form-group col-md-10 col-sm-10 ">
+                        <p>{{ex.info2.bio}}</p>
+                    </div>
                 </div>
-                <!-- mile input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="mile" class="control-label">Mile Time(##:##)</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="mile" id="mile" ng-model='ex.item.mile' ng-value='ex.info2.mile'/>
-                        </div>
+                <div class='row container-fluid'>
+                    <!-- Bio input -->
+                    <div class="form-group col-md-12">
+                            <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
+                                    <textarea  class="form-control" name="bio" id="bio" ng-model='ex.item.bio'></textarea>
+                            </div>
+                    </div>
                 </div>
-				<!-- 40 input -->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="yard" class="control-label">40 Yard Dash(##:##)</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="yard" id="yard" ng-model='ex.item.yard' ng-value='ex.info2.yard'/>
-                        </div>
-                </div>
-				<hr>
-                <!-- Bio input -->
-                <div class="form-group col-md-12">
-                        <label for="Bio" class="control-label">Bio</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <textarea  class="form-control" name="bio" id="bio" ng-model='ex.item.bio' ng-value='ex.info2.bio'></textarea>
-                        </div>
-                </div>
-				<hr>
+                
+		<hr>
                 <!-- School input
                 <div class="form-group">
                         <label for="school" class="cols-sm-2 control-label">Name of School or Club</label>

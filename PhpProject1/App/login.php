@@ -9,7 +9,7 @@ include('appHeader1.php');
 
         <!--Login Module-->
         <div id = "login-holder">
-            <div id = "login-jumbotron" class = "col-sm-offset-4 col-sm-4 well">
+            <div id = "login-jumbotron" class = "col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 well">
 
                 <p>
                     <span class = "col-sm-offset-1 col-sm-10 h2">

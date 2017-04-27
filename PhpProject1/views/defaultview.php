@@ -15,19 +15,28 @@ include('Assets/pageHeader.php');
       <div class="row">
         <div class="col-md-12">
             <b><h1>Sign Up </h1></b>
-        </div>      
-            <div class="col-sm-offset-1 col-sm-4 icon playersignup">
-               
-              <h2>Players</h2>
-              <h4>Find the perfect college team for YOU. Create a profile, upload video highlights, pictures and stats, then connect with college coaches across the nation to show why their team needs YOU!</h4>
-              <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/playerSignup1" role="button">Player Sign Up &raquo;</a></p>
-            </div>         
-        <div class="col-sm-offset-2 col-sm-4 icon coachsignup">
-          <h2>Coaches</h2>
-          <h4>Find the perfect players for your college team. Search the nation for specific players based on age, location, position, academic performance, and much more! </h4>
-          <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Coach Sign Up &raquo;</a></p>
-       </div>
-      </div>
+        </div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-0 col-sm-2">
+                        <img class="resize" src="../Assets/images/girl2.png" style="width:100%; border-radius: 25px;">
+                    </div>
+                    <div class="col-sm-4 playersignup">
+                        <h2>Players</h2>
+                        <h4>Find the perfect college team for YOU. Create a profile, upload video highlights, pictures and stats, then connect with college coaches across the nation to show why their team needs YOU!</h4>
+                        <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/playerSignup1" role="button">Player Sign Up &raquo;</a></p>
+                    </div>
+                    <div class="col-sm-offset-0 col-sm-4 coachsignup">
+                        <h2>Coaches</h2>
+                        <h4>Find the perfect players for your college team. Search the nation for specific players based on age, location, position, academic performance, and much more! </h4>
+                        <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Coach Sign Up &raquo;</a></p>
+                    </div>
+                    <div class="col-sm-offset-0 col-sm-2">
+                        <img class="resize" src="../Assets/images/coach_1.jpg" style="width:100%;  border-radius: 25px;">
+                    </div>
+                </div>
+        </div>     
+    </div>
     </div>
     <div id="playerInfo" class="minheight player">
       

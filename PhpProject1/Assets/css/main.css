@@ -225,12 +225,16 @@ body p{
     font-size: 200%;
 }
 
+#signup{
+    text-align: center;
+}
+
 #signup h1{
-    color: #3399cc;
+    color: #ff9933;
 }
 
 #signup h2{
-    color: #ff9933;
+    color: #3399cc;
 }
 
 #splash{
@@ -245,8 +249,17 @@ body p{
      padding-top: 10px;
 }
 .navbar-form{
-    margin-top: 15px;
-      
+    margin-top: 15px;   
+}
+
+.playerPhoto{
+    background-image: url("../images/player.jpg");
+    background-size: cover;
+}
+
+.coachPhoto{
+    background-image: url("../images/player.jpg");
+    background-size: cover;
 }
 
 /******************************************

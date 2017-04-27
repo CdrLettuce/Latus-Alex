@@ -19,9 +19,7 @@ include('appHeader2.php');
         <div class="col-sm-7">
             <div class="sample-container">
                 <h4 class='title'>Videos</h4>
-                <div class="video-container"><iframe width="560" height="300"
-                    src="https://www.youtube.com/embed/lJTsfcmesR4" frameborder="0" allowfullscreen>
-                    </iframe></div>   
+                <div my-youtube code="code"></div>
             </div>
         </div>
     </div>

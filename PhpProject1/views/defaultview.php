@@ -38,6 +38,8 @@ include('Assets/pageHeader.php');
         </div>     
     </div>
     </div>
+        
+        
     <div id="playerInfo" class="minheight player">
       
       <div class="row">
@@ -71,6 +73,9 @@ include('Assets/pageHeader.php');
            </div>
       </div>
     </div>
+        
+        
+        
     <div id="coachInfo" class="container minheight gray">
       <!-- Example row of columns -->
       <div class="row">
@@ -101,6 +106,44 @@ include('Assets/pageHeader.php');
            </div>
       </div>
     </div>
+      
+        
+        
+    <div id="tips" class="minheight player">
+      
+        <div class="row">
+            <div class="col-md-12">
+                 <b><h1>OUR TIPS ON BECOMING THE NEXT STAR</h1></b>
+            </div>              
+            <div class="col-sm-offset-3 col-sm-6 playerInfo">       
+              <h4>At RecruitChute, we believe the best way to gain exposure is to be proactive!  The more coaches you connect with the better chance you have of being recruited.  Below are the RecruitChute 4 steps to success:</h4>    
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <i class="fa fa-university fa-5x blue" aria-hidden="true"></i>
+                        <h3>College Coaches</h3>
+                    </div>
+                    <div class="col-sm-3">
+                        <i class="fa fa-users fa-5x blue" aria-hidden="true"></i>
+                        <h3>High School Coaches</h3>
+                    </div>
+                    <div class="col-sm-3">  
+                        <i class="fa fa-soccer-ball-o fa-5x blue" aria-hidden="true"></i>
+                        <h3>Teammates</h3>
+                    </div>
+                     <div class="col-sm-3">  
+                        <i class="fa fa-soccer-ball-o fa-5x blue" aria-hidden="true"></i>
+                        <h3>Teammates</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+        
+        
+        
+        
     <div id="learnMore" class="container gray">
       <!-- Example row of columns -->
       <div class="row">

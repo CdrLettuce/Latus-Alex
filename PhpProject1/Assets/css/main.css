@@ -99,6 +99,14 @@ body p{
     color: black;
 }
 
+.player{
+    text-align: center;
+}
+
+.player h1{
+    margin-top: 2%;
+}
+
 
 .howitworks p{
     text-align: center;
@@ -208,10 +216,6 @@ body p{
 
 .backFour h4{
     color: black;
-    text-align: center;
-}
-
-.player{
     text-align: center;
 }
 

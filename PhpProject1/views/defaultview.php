@@ -41,21 +41,19 @@ include('Assets/pageHeader.php');
         
         
     <div id="playerInfo" class="minheight player">
-      
-      <div class="row">
-        <div class="col-md-12">
-             <b><h1>DREAMING OF PLAYING COLLEGE SOCCER</h1></b>
-        </div>              
-        <div class="col-sm-offset-3 col-sm-6 playerInfo">
-          
-          <h4>RecruitChute helps expand your network and makes you more visible to college and club recuiters. Once you create a profile, you can add stats, videos, and a calendar of upcoming games. All of your connections can see your profile and if a coach likes what they see, they may recruit you!!</h4>
-        
-       </div>
-          
-          <div class="col-md-12">
-              <h2> Be proactive and connect with: </h2>           
-          </div>
-          <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <b><h1>DREAMING OF PLAYING COLLEGE SOCCER</h1></b>
+                </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-8 playerInfo">          
+                <h3>RecruitChute helps expand your network and makes you more visible to college and club recuiters. Once you create a profile, you can add stats, videos, and a calendar of upcoming games. All of your connections can see your profile and if a coach likes what they see, they may recruit you!!</h3> 
+            </div>       
+            <div class="col-md-12">
+                <h2> Be proactive and connect with: </h2>           
+            </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-offset-2 col-sm-2">
                         <i class="fa fa-university fa-5x blue" aria-hidden="true"></i>
@@ -70,41 +68,43 @@ include('Assets/pageHeader.php');
                         <h3>Teammates</h3>
                     </div>
                 </div>
-           </div>
-      </div>
+            </div>
+        </div>
     </div>
         
         
         
-    <div id="coachInfo" class="container minheight gray">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-12 howitworks">
-            <h1>LOOKING FOR YOUR NEXT SUPERSTAR?</h1>
+    <div id="coachInfo" class="minheight gray">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-12 howitworks">
+                <h1>LOOKING FOR YOUR NEXT SUPERSTAR?</h1>
                 <div class="row howitworks">
-                    <div class="col-sm-offset-3 col-sm-6">
-                        <h4>RecruitChute allows you to recruit whilst on the go! Have instant access to the tools that will allow you to search the nation for your next recruit based on position, stats, GPA, and much more. Save time and money by being able to view player profiles, analyze highlight tapes, synch calendars and discover new talent all at the touch of your fingertips</h4>
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <h3>RecruitChute allows you to recruit whilst on the go! Have instant access to the tools that will allow you to search the nation for your next recruit based on position, stats, GPA, and much more. Save time and money by being able to view player profiles, analyze highlight tapes, synch calendars and discover new talent all at the touch of your fingertips</h3>
                     </div>
                 </div>
             <h2>RecruitChute Services</h2>           
         </div>
-          <div class="services">
-                <div class="row">
-                    <div class="col-sm-offset-2 col-sm-2 icon">
-                        <i class="fa fa-bullseye fa-5x blue" aria-hidden="true"></i>
-                        <h4>Narrow down your recruit targets with advanced search</h4>
-                    </div>
-                    <div class="col-sm-offset-1 col-sm-2">
-                        <i class="fa fa-hourglass-end fa-5x blue" aria-hidden="true"></i>
-                        <h4>Increase time efficiency by viewing player profiles before visits</h4>
-                    </div>
-                    <div class="col-sm-offset-1 col-sm-2">
-                        <i class="fa fa-thumbs-o-up fa-5x blue" aria-hidden="true"></i>
-                        <h4>Recruit Smarter, Not Harder</h4>
+            <div class="services">
+                <div class ="container">
+                    <div class="row">
+                        <div class="col-sm-offset-2 col-sm-2 icon">
+                            <i class="fa fa-bullseye fa-5x blue" aria-hidden="true"></i>
+                            <h4>Narrow down your recruit targets with advanced search</h4>
+                        </div>
+                        <div class="col-sm-offset-1 col-sm-2">
+                            <i class="fa fa-hourglass-end fa-5x blue" aria-hidden="true"></i>
+                            <h4>Increase time efficiency by viewing player profiles before visits</h4>
+                        </div>
+                        <div class="col-sm-offset-1 col-sm-2">
+                            <i class="fa fa-thumbs-o-up fa-5x blue" aria-hidden="true"></i>
+                            <h4>Recruit Smarter, Not Harder</h4>
+                        </div>
                     </div>
                 </div>
-           </div>
-      </div>
+            </div>
+        </div>
     </div>
       
         
@@ -121,11 +121,11 @@ include('Assets/pageHeader.php');
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3 icon">
-                        <i class="fa fa-university fa-5x white" aria-hidden="true"></i>
+                        <i class="fa fa-user-circle fa-5x black" aria-hidden="true"></i>
                         <h4>Join the network and connect with players and coaches.  Upload as much content as you have!  The more, the better!</h4>
                     </div>
                     <div class="col-sm-3 icon">
-                        <i class="fa fa-users fa-5x white" aria-hidden="true"></i>
+                        <i class="fa fa-sitemap fa-5x black" aria-hidden="true"></i>
                         <h4>Connect with as many coaches and athletes as you can.  You may find you have connections with colleges you didn't even know about!</h4>
                     </div>
                     <div class="col-sm-3 icon">  
@@ -133,7 +133,7 @@ include('Assets/pageHeader.php');
                         <h4>Start talking to coaches you are interested in.  Find out more about their program to find your perfect fit!</h4>
                     </div>
                      <div class="col-sm-3 icon">  
-                        <i class="fa fa-soccer-ball-o fa-5x black" aria-hidden="true"></i>
+                        <i class="fa fa-handshake-o fa-5x black" aria-hidden="true"></i>
                         <h4>Find your perfect team and commit to a college!  Here, your college soccer career begins.  Enjoy every second of it!</h4>
                     </div>
                 </div>

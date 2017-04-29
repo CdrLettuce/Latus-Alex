@@ -109,7 +109,7 @@ include('Assets/pageHeader.php');
       
         
         
-    <div id="tips" class="minheight player">
+    <div id="Tips" class="minheight player tips">
       
         <div class="row">
             <div class="col-md-12">
@@ -120,26 +120,64 @@ include('Assets/pageHeader.php');
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <i class="fa fa-university fa-5x blue" aria-hidden="true"></i>
-                        <h3>College Coaches</h3>
+                    <div class="col-sm-3 icon">
+                        <i class="fa fa-university fa-5x white" aria-hidden="true"></i>
+                        <p>Join the network and connect with players and coaches.  Upload as much content as you have!  The more, the better!</p>
                     </div>
-                    <div class="col-sm-3">
-                        <i class="fa fa-users fa-5x blue" aria-hidden="true"></i>
-                        <h3>High School Coaches</h3>
+                    <div class="col-sm-3 icon">
+                        <i class="fa fa-users fa-5x white" aria-hidden="true"></i>
+                        <p>Connect with as many coaches and athletes as you can.  You may find you have connections with colleges you didn't even know about!</p>
                     </div>
-                    <div class="col-sm-3">  
-                        <i class="fa fa-soccer-ball-o fa-5x blue" aria-hidden="true"></i>
-                        <h3>Teammates</h3>
+                    <div class="col-sm-3 icon">  
+                        <i class="fa fa-comment fa-5x black" aria-hidden="true"></i>
+                        <p>Start talking to coaches you are interested in.  Find out more about their program to find your perfect fit!</p>
                     </div>
-                     <div class="col-sm-3">  
-                        <i class="fa fa-soccer-ball-o fa-5x blue" aria-hidden="true"></i>
-                        <h3>Teammates</h3>
+                     <div class="col-sm-3 icon">  
+                        <i class="fa fa-soccer-ball-o fa-5x black" aria-hidden="true"></i>
+                        <p>Find your perfect team and commit to a college!  Here, your college soccer career begins.  Enjoy every second of it!</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>    
+       
+        
+        
+    <div id="join" class="minheight player join">
+      
+        <div class="row">
+            <div class="col-md-12">
+                 <b><h1>JOIN AMERICA'S SOCCER NETWORK!</h1></b>
+            </div>              
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-4">
+                        <h2>Players</h2>
+                        <ul class="checkmark">
+                            <li>Create your Profile</li>
+                            <li>Upload video highlights</li>
+                            <li>Update stats</li>
+                            <li>Connect with coaches</li>
+                            <li>Begin your recruitment journey</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-4">
+                        <h2>Coaches</h2>  
+                        <ul>
+                            <li>Create your profile</li>
+                            <li>Search for players</li>
+                            <li>View profiles</li>
+                            <li>Assess the talent</li>
+                            <li>Find your next incoming star</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>    
+        
+        
         
         
         

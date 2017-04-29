@@ -263,6 +263,55 @@ body p{
 }
 
 /******************************************
+Tips - Splash Page
+******************************************/
+.tips{
+    background-image: url("../images/Blue1.png");
+    background-size: cover;
+    color: black;
+}
+.tips p{
+    color: black;
+}
+/******************************************
+Join - Splash Page
+******************************************/
+.join h4{
+    text-align: left;
+}
+
+.join h1{
+    color: #ff9933;
+}
+
+.join h2{
+    color: #3399cc;
+}
+
+#join{
+    background-color: #f7f7f7;
+}
+
+.join{
+    background-color: #f7f7f7;
+}
+
+ul {
+    list-style: none;
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+ul li:before{
+    content: '✓'; 
+    color: #ff9933;
+}
+
+/******************************************
 About US
 ******************************************/
 

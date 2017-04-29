@@ -269,10 +269,28 @@ Tips - Splash Page
     background-image: url("../images/Blue1.png");
     background-size: cover;
     color: black;
+    text-align: center;
 }
 .tips p{
     color: black;
 }
+
+.tips h1{
+    margin-top: 2%;
+}
+
+.tips h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.tips p{
+     font-family: 'Roboto', Helvetica, Arial, sans-serif;
+     font-size: 100%;
+     margin-top: 10%;
+     font-weight: bold;
+}
+
 /******************************************
 Join - Splash Page
 ******************************************/
@@ -281,11 +299,15 @@ Join - Splash Page
 }
 
 .join h1{
+    margin-top: 2%;
     color: #ff9933;
+    text-align: center;
 }
 
 .join h2{
     color: #3399cc;
+    margin-top: 5%;
+    text-align: left;
 }
 
 #join{
@@ -294,9 +316,10 @@ Join - Splash Page
 
 .join{
     background-color: #f7f7f7;
+    text-align: center;
 }
 
-ul {
+.join ul {
     list-style: none;
     font-size: 150%;
     text-align: center;
@@ -304,6 +327,7 @@ ul {
     font-weight: bold;
     color: black;
     text-align: left;
+    margin-bottom: 10%;
 }
 
 ul li:before{

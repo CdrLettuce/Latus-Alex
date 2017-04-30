@@ -164,8 +164,7 @@ include('Assets/pageHeader.php');
        
         
         
-    <div id="join" class="join">
-      
+    <div id="join" class="join">      
         <div class="row">
             <div class="col-md-12">
                  <b><h1>JOIN AMERICA'S SOCCER NETWORK!</h1></b>

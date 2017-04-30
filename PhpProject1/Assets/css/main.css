@@ -124,9 +124,17 @@ body p{
     color: #ff9933;
     /*margin-bottom: 9%;*/
 }
+.howitworks col-md-12 h3{
+    text-align: center;
+    color: #ff9933;
+}
 
 .howitworks h4{
     text-align: center;
+}
+
+.test{
+    margin-bottom: 50px;
 }
 
 .jumbotron{
@@ -256,6 +264,11 @@ body p{
     margin-top: 15px;   
 }
 
+
+
+/******************************************
+Sign up - Splash Page
+******************************************/
 .playerPhoto{
     background-image: url("../images/player.jpg");
     background-size: cover;
@@ -264,6 +277,56 @@ body p{
 .coachPhoto{
     background-image: url("../images/player.jpg");
     background-size: cover;
+}
+
+.signup p, .signup h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.signup p{
+    font-size: 120%;
+}
+
+#signup{
+    text-align: center;
+}
+
+#signup h1{
+    color: #ff9933;
+}
+
+#signup h2{
+    color: #3399cc;
+}
+
+/******************************************
+Dreaming of playing - Splash Page
+******************************************/
+.players{
+    padding-top: 30px;
+    background-image: url("../images/wSoccer.png");
+    background-color: rgba(255, 0, 0, 0.5);
+    background-size: cover;
+}
+
+.players p{
+    text-align: center;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.players{
+    text-align: center;
+}
+
+.players h1{
+    margin-top: 2%;
+}
+
+.players h2{
+    margin-top: 4%;
+    padding-bottom: 4%;
 }
 
 /******************************************
@@ -296,6 +359,30 @@ Tips - Splash Page
 }
 
 /******************************************
+Superstar - Splash Page
+******************************************/
+.superstar{
+    background-color: #f7f7f7;
+}
+
+.howitworks p{
+    text-align: center;    
+}
+
+.superstar h1{
+    text-align: center;
+    color: #ff9933;
+    font-size: 400%;
+}
+
+.superstar h2{
+    text-align: center;
+    color: #ff9933;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+/******************************************
 Join - Splash Page
 ******************************************/
 .join h4{
@@ -311,7 +398,7 @@ Join - Splash Page
 .join h2{
     color: #3399cc;
     margin-top: 5%;
-    text-align: left;
+    text-align: center;
 }
 
 #join{
@@ -350,10 +437,6 @@ About US
 .mission{
     padding-top: 10%;
 }
-/*.card{
-    background-image: url("../images/soccerdude.jpg");
-    background-size: cover; 
-}*/
 
 .started{
     padding-bottom: 5%;

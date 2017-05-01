@@ -1,7 +1,7 @@
 <?php
 include('Assets/pageHeader.php');
 ?>
-	<!-- Main jumbotron for a primary marketing message or call to action -->
+    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="splash" class="jumbotron minheight_1">
       <div class="col-sm-4 container">
         <h1>College soccer recruitment, made easy</h1>
@@ -10,7 +10,7 @@ include('Assets/pageHeader.php');
       </div>
     </div>
 
-    <div id="signup" class="container signup gray">
+    <div id="signup" class="signup">
       <!-- Example row of columns -->
         <div class="container">
             <div class="row">
@@ -19,28 +19,60 @@ include('Assets/pageHeader.php');
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-0 col-sm-2">
+                    <img class="resize" src="../Assets/images/girl2.png" style="width:100%; border-radius: 25px;">
+                </div>
+                <div class="col-sm-4">
+                    <h2>Players</h2>
+                    <h4>Find the perfect college team for YOU. Create a profile, upload video highlights, pictures and stats, then connect with college coaches across the nation to show why their team needs YOU!</h4>
+                    <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/playerSignup1" role="button">Player Sign Up &raquo;</a></p>
+                </div>
+                <div class="col-sm-offset-0 col-sm-4">
+                    <h2>Coaches</h2>
+                    <h4>Find the perfect players for your college team. Search the nation for specific players based on age, location, position, academic performance, and much more! </h4>
+                    <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Coach Sign Up &raquo;</a></p>
+                </div>
+                <div class="col-sm-offset-0 col-sm-2">
+                    <img class="resize" src="../Assets/images/coach_1.jpg" style="width:100%;  border-radius: 25px;">
+                </div>
+            </div>
+        </div>     
+    </div>
+        
+        
+    <div id="join" class="join">      
+        <div class="row">
+            <div class="col-md-12">
+                 <b><h1>JOIN AMERICA'S SOCCER NETWORK!</h1></b>
+            </div>              
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-offset-0 col-sm-2">
-                        <img class="resize" src="../Assets/images/girl2.png" style="width:100%; border-radius: 25px;">
-                    </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-offset-1 col-sm-4">
                         <h2>Players</h2>
-                        <h4>Find the perfect college team for YOU. Create a profile, upload video highlights, pictures and stats, then connect with college coaches across the nation to show why their team needs YOU!</h4>
-                        <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/playerSignup1" role="button">Player Sign Up &raquo;</a></p>
+                        <ul class="checkmark">
+                            <li>Create your Profile</li>
+                            <li>Upload video highlights</li>
+                            <li>Update stats</li>
+                            <li>Connect with coaches</li>
+                            <li>Begin your recruitment journey</li>
+                        </ul>
                     </div>
-                    <div class="col-sm-offset-0 col-sm-4">
-                        <h2>Coaches</h2>
-                        <h4>Find the perfect players for your college team. Search the nation for specific players based on age, location, position, academic performance, and much more! </h4>
-                        <p><a class="btn btn-primary pmargin" id="" href="<?php echo HOME;?>signup/coachSignup1" role="button">Coach Sign Up &raquo;</a></p>
-                    </div>
-                    <div class="col-sm-offset-0 col-sm-2">
-                        <img class="resize" src="../Assets/images/coach_1.jpg" style="width:100%;  border-radius: 25px;">
+                    <div class="col-sm-offset-2 col-sm-4">
+                        <h2>Coaches</h2>  
+                        <ul>
+                            <li>Create your profile</li>
+                            <li>Search for players</li>
+                            <li>View profiles</li>
+                            <li>Assess the talent</li>
+                            <li>Find your next incoming star</li> 
+                        </ul>
                     </div>
                 </div>
-            </div>     
+            </div>        
         </div>
-    </div>
+    </div>      
         
         
     <div id="players" class="players">
@@ -76,8 +108,7 @@ include('Assets/pageHeader.php');
                     <h3>Teammates</h3>
                 </div>
             </div>
-        </div>
-        
+        </div>     
     </div>
         
         
@@ -161,76 +192,40 @@ include('Assets/pageHeader.php');
             </div>
         </div>      
     </div>    
-       
-        
-        
-    <div id="join" class="join">      
-        <div class="row">
-            <div class="col-md-12">
-                 <b><h1>JOIN AMERICA'S SOCCER NETWORK!</h1></b>
-            </div>              
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-offset-1 col-sm-4">
-                        <h2>Players</h2>
-                        <ul class="checkmark">
-                            <li>Create your Profile</li>
-                            <li>Upload video highlights</li>
-                            <li>Update stats</li>
-                            <li>Connect with coaches</li>
-                            <li>Begin your recruitment journey</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-offset-2 col-sm-4">
-                        <h2>Coaches</h2>  
-                        <ul>
-                            <li>Create your profile</li>
-                            <li>Search for players</li>
-                            <li>View profiles</li>
-                            <li>Assess the talent</li>
-                            <li>Find your next incoming star</li> 
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>    
+         
         
         
         
-        
-        
-        
+      
     <div id="learnMore" class="container gray">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-xs-12 icon difference">
-            <h2>THE RECRUITCHUTE DIFFERENCE</h2>
-            <h3>Our back four...</h3>
-        </div>
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-xs-12 icon difference">
+                <h2>THE RECRUITCHUTE DIFFERENCE</h2>
+                <h3>Our back four...</h3>
+            </div>
         
         
-	 <div class="col-sm-offset-0 col-sm-3 backFour icon">
-          <i class="fa fa-mobile-phone fa-5x blue" aria-hidden="true"></i>
-          <h4>Take RecruitChute with you, we're mobile friendly!</h4>
-          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+            <div class="col-sm-offset-0 col-sm-3 backFour icon">
+                <i class="fa fa-mobile-phone fa-5x blue" aria-hidden="true"></i>
+                <h4>Take RecruitChute with you, we're mobile friendly!</h4>
+                <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+            </div>
+            <div class="col-sm-offset-0 col-sm-3 backFour icon">
+                <i class="fa fa-map-o fa-5x blue" aria-hidden="true"></i>
+                <h4>Gain the ability to search the nation for unseen talent and rising stars</h4>
+                <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+            </div>
+            <div class="col-sm-offset-0 col-sm-3 backFour icon">
+                <i class="fa fa-book fa-5x blue" aria-hidden="true"></i>
+                <h4>We give high school athletes the encouragement and opportunity to gain an education because of the sport they love</h4>
+                <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+            </div>
+            <div class="col-sm-offset-0 col-sm-3 backFour icon">
+                <i class="fa fa-globe fa-5x blue" aria-hidden="true"></i>
+                <h4>We're supporting the growth of soccer in the United States</h4>
+                <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+            </div>  
         </div>
-        <div class="col-sm-offset-0 col-sm-3 backFour icon">
-          <i class="fa fa-map-o fa-5x blue" aria-hidden="true"></i>
-          <h4>Gain the ability to search the nation for unseen talent and rising stars</h4>
-          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-        </div>
-        <div class="col-sm-offset-0 col-sm-3 backFour icon">
-          <i class="fa fa-book fa-5x blue" aria-hidden="true"></i>
-          <h4>We give high school athletes the encouragement and opportunity to gain an education because of the sport they love</h4>
-          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-        </div>
-        <div class="col-sm-offset-0 col-sm-3 backFour icon">
-          <i class="fa fa-globe fa-5x blue" aria-hidden="true"></i>
-          <h4>We're supporting the growth of soccer in the United States</h4>
-          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-       </div>  
-      </div>
     </div>
 <?php include('Assets/pageFooter.php');

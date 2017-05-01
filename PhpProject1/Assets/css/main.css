@@ -228,18 +228,6 @@ body p{
     font-size: 200%;
 }
 
-#signup{
-    text-align: center;
-}
-
-#signup h1{
-    color: #ff9933;
-}
-
-#signup h2{
-    color: #3399cc;
-}
-
 #splash{
     margin-bottom: 0px;
 }
@@ -260,6 +248,8 @@ body p{
 /******************************************
 Sign up - Splash Page
 ******************************************/
+
+
 .playerPhoto{
     background-image: url("../images/player.jpg");
     background-size: cover;
@@ -279,6 +269,7 @@ Sign up - Splash Page
 }
 
 #signup{
+    background-color: #f7f7f7;
     text-align: center;
 }
 

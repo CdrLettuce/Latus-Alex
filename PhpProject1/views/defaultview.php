@@ -18,6 +18,7 @@ include('Assets/pageHeader.php');
         </div>
     </div>
 
+    
     <div id="signup" class="signup">
       <!-- Example row of columns -->
         <div class="container">
@@ -50,11 +51,14 @@ include('Assets/pageHeader.php');
     </div>
         
         
-    <div id="join" class="join">      
-        <div class="row">
-            <div class="col-md-12">
-                 <b><h1>JOIN AMERICA'S SOCCER NETWORK!</h1></b>
-            </div>              
+    <div id="join" class="join">
+        <div class= "container">
+            <div class="row">
+                <div class="col-md-12">
+                    <b><h1>JOIN AMERICA'S SOCCER NETWORK!</h1></b>
+                </div>
+            </div>
+        </div>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-offset-1 col-sm-4">
@@ -80,7 +84,7 @@ include('Assets/pageHeader.php');
                 </div>
             </div>        
         </div>
-    </div>      
+        
         
         
     <div id="players" class="players">
@@ -121,7 +125,7 @@ include('Assets/pageHeader.php');
         
         
         
-    <div id="coachInfo" class="superstar">
+    <div id="coachInfo" class="superstar container-fluid">
         <!-- Example row of columns -->
         <div class ="container">
             <div class="row">
@@ -147,15 +151,15 @@ include('Assets/pageHeader.php');
         <div class ="container">
             <div class="row">
                 <div class="col-sm-offset-2 col-sm-2">
-                    <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-bullseye fa-5x white" aria-hidden="true"></i>
                     <h4>Narrow down your recruit targets with advanced search</h4>
                 </div>
                 <div class="col-sm-offset-1 col-sm-2">
-                    <i class="fa fa-hourglass-end fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-hourglass-end fa-5x white" aria-hidden="true"></i>
                     <h4>Increase time efficiency by viewing player profiles before visits</h4>
                 </div>
                 <div class="col-sm-offset-1 col-sm-2">
-                    <i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-thumbs-o-up fa-5x white" aria-hidden="true"></i>
                     <h4>Recruit Smarter, Not Harder</h4>
                 </div>
             </div>
@@ -236,4 +240,5 @@ include('Assets/pageHeader.php');
             </div>  
         </div>
     </div>
+    
 <?php include('Assets/pageFooter.php');

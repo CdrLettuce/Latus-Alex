@@ -43,7 +43,7 @@ include('Assets/pageHeader.php');
             <div class="row">                
                 <div class="col-sm-offset-1 col-sm-5">                    
                     <div class="card">
-                        <img class="resize" src="../Assets/images/Chris.png" style="width:100%">
+                        <img class="resize" src="../Assets/images/Roche_Chris.jpg" style="width:100%">
                         <div class="container">
                             <h4><b>Christopher Roche</b></h4> 
                             <p>Architect & Engineer</p>

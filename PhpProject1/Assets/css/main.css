@@ -39,20 +39,14 @@ input.log-info { border-radius: 5px; height: 20px;}
     background-color: #f7f7f7;
     margin-left:0px;
     margin-right:0px;
-    padding-left: 10%;
-    padding-right: 10%;
+    /*padding-left: 10%;
+    padding-right: 10%;*/
     width: 100%;
     
 }
 .minheight{
     min-height: 500px;
     padding-top: 100px;
-}
-
-.minheight_1{
-    min-height: 500px;
-    padding-top: 5%;
-    padding-left: 5%
 }
 
 h1, h2, h3, h4{
@@ -133,32 +127,10 @@ body p{
     text-align: center;
 }
 
-.test{
-    margin-bottom: 50px;
-}
 
-.jumbotron{
-    text-align: center;
-    margin-top: 20px;
-    background-image: url("../images/coolField6.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-    color: white;
-}
 
-#splash .learn{
-    margin-top: 100px;
-}
 
-.jumbotron h1{
-    font-size: 280%;
-}
-.jumbotron p{
-    color: white;
-}
-.jumbotron .container{
-    margin-top: 10px;
-}
+
 .icon{
     text-align: center;
 }
@@ -234,9 +206,6 @@ body p{
     font-size: 200%;
 }
 
-#splash{
-    margin-bottom: 0px;
-}
 
 .navbar{
     height: 70px;
@@ -249,8 +218,49 @@ body p{
     margin-top: 15px;   
 }
 
+/******************************************
+Sign up - Splash Page
+******************************************/
+#splash{
+    margin-bottom: 0px;
+    height: 30%;
+}
 
+.jumbotron{
+    text-align: center;
+    margin-top: 20px;
+    background-image: url("../images/coolField6.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    color: white;
+    
+}
 
+#splash .learn{
+    padding-top:3vw;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.jumbotron h1{
+    font-size: 280%;
+    /*font-size: 2.5vw;*/
+}
+.jumbotron p{
+    color: white;
+    /*font-size: 1vw;*/
+}
+.jumbotron .container{
+    margin-top: 10px;
+}
+
+/*#splash .btn-lg{
+    height: 2vw;
+    width:  6vw;
+}
+*/
 /******************************************
 Sign up - Splash Page
 ******************************************/
@@ -387,8 +397,12 @@ Superstar - Splash Page
     color: white;
 }
 
+.white{
+    color: white;
+}
+
 /******************************************
-Join - Splash Page
+Join the network - Splash Page
 ******************************************/
 .join h4{
     text-align: left;
@@ -410,6 +424,7 @@ Join - Splash Page
     background-color: #f7f7f7;
     background-image: url("../images/wSoccer.png");
     background-size: cover;
+    background-position: bottom;
 }
 
 .join{

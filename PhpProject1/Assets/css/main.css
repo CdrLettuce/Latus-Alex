@@ -138,12 +138,18 @@ body p{
 }
 
 .jumbotron{
+    text-align: center;
     margin-top: 20px;
-    background-image: url("../images/SoccerNet4.jpg");
+    background-image: url("../images/coolField6.png");
     background-repeat: no-repeat;
     background-size:cover;
     color: white;
 }
+
+#splash .learn{
+    margin-top: 100px;
+}
+
 .jumbotron h1{
     font-size: 280%;
 }
@@ -156,11 +162,11 @@ body p{
 .icon{
     text-align: center;
 }
-
+/*
 .signup p, .signup h2{
     margin-top: 20px;
     margin-bottom: 20px;
-}
+}*/
 .signup p{
     font-size: 120%;
 }
@@ -285,10 +291,11 @@ Sign up - Splash Page
 Dreaming of playing - Splash Page
 ******************************************/
 .players{
+    background-color: #f7f7f7;
     padding-top: 30px;
-    background-image: url("../images/wSoccer.png");
+    /*background-image: url("../images/wSoccer.png");
     background-color: rgba(255, 0, 0, 0.5);
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .players p{
@@ -304,19 +311,22 @@ Dreaming of playing - Splash Page
 
 .players h1{
     margin-top: 2%;
+    color: #ff9933;
 }
 
 .players h2{
     margin-top: 4%;
     padding-bottom: 4%;
+    color: #ff9933;
 }
 
 /******************************************
 Tips - Splash Page
 ******************************************/
 .tips{
-    background-image: url("../images/Blue1.png");
-    background-size: cover;
+    /*background-image: url("../images/Blue1.png");
+    background-size: cover;*/
+    background-color: #f7f7f7;
     color: black;
     text-align: center;
 }
@@ -326,6 +336,7 @@ Tips - Splash Page
 
 .tips h1{
     margin-top: 2%;
+    color: #ff9933;
 }
 
 .tips h3{
@@ -344,7 +355,9 @@ Tips - Splash Page
 Superstar - Splash Page
 ******************************************/
 .superstar{
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
+    background-image: url("../images/Blue1.png");
+    background-size: cover;
 }
 
 .howitworks p{
@@ -353,15 +366,25 @@ Superstar - Splash Page
 
 .superstar h1{
     text-align: center;
-    color: #ff9933;
+    /*color: #ff9933;*/
     font-size: 400%;
+    color: white;
 }
 
 .superstar h2{
     text-align: center;
-    color: #ff9933;
+    /*color: #ff9933;*/
     margin-top: 4%;
     margin-bottom: 4%;
+    color: white;
+}
+
+.superstar h3{
+    
+}
+
+.superstar fa{
+    color: white;
 }
 
 /******************************************
@@ -385,6 +408,8 @@ Join - Splash Page
 
 #join{
     background-color: #f7f7f7;
+    background-image: url("../images/wSoccer.png");
+    background-size: cover;
 }
 
 .join{

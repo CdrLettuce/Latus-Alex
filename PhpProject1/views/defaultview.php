@@ -2,12 +2,20 @@
 include('Assets/pageHeader.php');
 ?>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div id="splash" class="jumbotron minheight_1">
-      <div class="col-sm-4 container">
-        <h1>College soccer recruitment, made easy</h1>
-        <p>Whether you're a player dreaming of playing college soccer, or a coach looking to recruit your next All-American...your journey starts with RecruitChute</p>
-        <p><a class="btn btn-primary btn-lg" href="<?php echo HOME;?>about/aboutUs" role="button">Learn more &raquo;</a></p>
-      </div>
+    <div id="splash" class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6">
+                    <h1>College soccer recruitment, made easy</h1>
+                    <p>Whether you're a player dreaming of playing college soccer, or a coach looking to recruit your next All-American...your journey starts with RecruitChute</p>           
+                </div>
+            </div>
+        </div>
+        <div class="container learn">
+            <div class="row">
+                <p><a class="btn btn-primary btn-lg" href="<?php echo HOME;?>about/aboutUs" role="button">Learn more &raquo;</a></p>
+            </div>      
+        </div>
     </div>
 
     <div id="signup" class="signup">
@@ -15,7 +23,7 @@ include('Assets/pageHeader.php');
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Sign Up</h1>
+                    <h1>Sign Up....it's free!</h1>
                 </div>
             </div>
         </div>
@@ -139,15 +147,15 @@ include('Assets/pageHeader.php');
         <div class ="container">
             <div class="row">
                 <div class="col-sm-offset-2 col-sm-2">
-                    <i class="fa fa-bullseye fa-5x blue" aria-hidden="true"></i>
+                    <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
                     <h4>Narrow down your recruit targets with advanced search</h4>
                 </div>
                 <div class="col-sm-offset-1 col-sm-2">
-                    <i class="fa fa-hourglass-end fa-5x blue" aria-hidden="true"></i>
+                    <i class="fa fa-hourglass-end fa-5x" aria-hidden="true"></i>
                     <h4>Increase time efficiency by viewing player profiles before visits</h4>
                 </div>
                 <div class="col-sm-offset-1 col-sm-2">
-                    <i class="fa fa-thumbs-o-up fa-5x blue" aria-hidden="true"></i>
+                    <i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i>
                     <h4>Recruit Smarter, Not Harder</h4>
                 </div>
             </div>
@@ -174,19 +182,19 @@ include('Assets/pageHeader.php');
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 icon">
-                    <i class="fa fa-user-circle fa-5x black" aria-hidden="true"></i>
+                    <i class="fa fa-user-circle fa-5x blue" aria-hidden="true"></i>
                     <h4>Join the network and connect with players and coaches.  Upload as much content as you have!  The more, the better!</h4>
                 </div>
                 <div class="col-sm-3 icon">
-                    <i class="fa fa-sitemap fa-5x black" aria-hidden="true"></i>
+                    <i class="fa fa-sitemap fa-5x blue" aria-hidden="true"></i>
                     <h4>Connect with as many coaches and athletes as you can.  You may find you have connections with colleges you didn't even know about!</h4>
                 </div>
                 <div class="col-sm-3 icon">  
-                    <i class="fa fa-comment fa-5x black" aria-hidden="true"></i>
+                    <i class="fa fa-comment fa-5x blue" aria-hidden="true"></i>
                     <h4>Start talking to coaches you are interested in.  Find out more about their program to find your perfect fit!</h4>
                 </div>
                 <div class="col-sm-3 icon">  
-                    <i class="fa fa-handshake-o fa-5x black" aria-hidden="true"></i>
+                    <i class="fa fa-handshake-o fa-5x blue" aria-hidden="true"></i>
                     <h4>Find your perfect team and commit to a college!  Here, your college soccer career begins.  Enjoy every second of it!</h4>
                 </div>
             </div>

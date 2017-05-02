@@ -43,15 +43,15 @@ include('Assets/pageHeader.php');
             <div class="row">                
                 <div class="col-sm-offset-1 col-sm-5">                    
                     <div class="card">
-                        <img class="resize" src="../Assets/images/Roche_Chris.jpg" style="width:100%">
-                        <div class="container">
+                        <img class="resize" src="../Assets/images/Chris.png" style="width:100%">
+                        <div class="container title">
                             <h4><b>Christopher Roche</b></h4> 
                             <p>Architect & Engineer</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-offset-0 col-sm-5">
-                    <blockquote cite="http://www.worldwildlife.org/who/index.html">“I have always, and will always, believe that every athlete
+                    <blockquote class = "quote" cite="http://www.worldwildlife.org/who/index.html">“I have always, and will always, believe that every athlete
                     should be given the opportunity to play college soccer as it is such a once in a lifetime experience.  I 
                     founded RecruitChute to give every soccer player in this country the best chance of living their dream out of playing 
                     college soccer – and if you get the shot, take it. To this day, I still have a strong relationship with all my old 

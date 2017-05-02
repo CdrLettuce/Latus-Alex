@@ -229,7 +229,7 @@ Sign up - Splash Page
 .jumbotron{
     text-align: center;
     margin-top: 20px;
-    background-image: url("../images/coolField6.png");
+    background-image: url("../images/coolField7.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size:cover;
@@ -379,6 +379,8 @@ Superstar - Splash Page
     /*color: #ff9933;*/
     font-size: 400%;
     color: white;
+    word-wrap: break-word;
+   
 }
 
 .superstar h2{
@@ -480,4 +482,18 @@ About US
 
 .about h4{
     color: #696969;
+}
+
+.quote{
+    font-size: 200%;
+}
+
+.title h4{
+    font-family: Wingdings;
+    color: black;
+}
+
+.title p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
 }

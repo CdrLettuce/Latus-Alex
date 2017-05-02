@@ -14,6 +14,12 @@ include('appHeader2.php');
                 <h3> {{ex.info.first_name}} {{ex.info.last_name}} </h3>
                 <h4> {{ex.info2.position}}</h4>
                 <h4> {{ex.info.city}}, {{ex.info.state_name}} </h4>
+                <a ng-click='ex.favoritePlayer(info.user_id)'>
+                    <button style="margin-bottom:10px;" class="btn btn-primary">Favorite {{ex.info.first_name}}</button>
+                </a>
+                <a ng-click=''>
+                    <button class="btn btn-primary">Send {{ex.info.first_name}} a message</button>
+                </a>
             </div>
         </div>
         <div class="col-sm-7">

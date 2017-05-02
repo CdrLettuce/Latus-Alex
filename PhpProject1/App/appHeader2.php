@@ -12,6 +12,8 @@
             <div id="navbar" class="navbar-collapse collapse navbar-right">
                 <a class="navbar-brand"  href="#/">Home</a>
                 <a class="navbar-brand"  href="#/search">Search</a>
+                <a class="navbar-brand"  href="#/network">My Network</a>
+                <a class="navbar-brand"  href="#/messages">Messages</a>
                 <a class="navbar-brand"  href="#/profile">My Profile</a>
                 <a class="navbar-brand"  href="#/login">Sign Out</a>
             </div><!--/.navbar-collapse -->

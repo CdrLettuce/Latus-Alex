@@ -77,6 +77,54 @@ function viewProfile(item){
     $location.path('/userprofile');
 }
 
+ac.favoritePlayer = favoritePlayer;
+
+function favoritePlayer(item){
+    
+    var data_object = {current_user : ac.currentUser.user_id, followed_id : item};
+    console.log("data_object");
+    console.log(data_object);
+    $http.post('http://recruitchute.io/favorite/favoritePlayer', data_object ).then(function(response){
+        console.log(response);
+        getFavoritedPlayers();
+    },
+    function(err) { console.log(err);
+    });   
+}
+
+ac.favinfo = [];
+ac.getFavoritedPlayers = getFavoritedPlayers;
+getFavoritedPlayers();
+
+function getFavoritedPlayers(){
+    // use $http service to obtain data
+    $http.post('http://recruitchute.io/favorite/getfavoritedplayers', ac.currentUser).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            // set current user
+            ac.favinfo = response.data;
+            console.log("returned list of players that the user has favorited");
+            console.log(ac.favinfo);
+        }
+    },
+    function(err) { console.log(err);
+    });
+}
+
+function getFavoritedPlayersInfo(){
+    var favorites = ac.favinfo;
+    $http.post('http://recruitchute.io/favorite/getfavoritedplayersinfo', ac.currentUser).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            // set current user
+            ac.favinfo = response.data;
+            console.log("returned list of players that the user has favorited");
+            console.log(ac.favinfo);
+        }
+    },
+    function(err) { console.log(err);
+    });
+}
+
+
 
 }]);
 

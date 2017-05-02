@@ -53,6 +53,16 @@
 		templateUrl : 'userprofile.php',
 		controllerAs : 'uc'
 	})
+        .when('/network', {
+		controller : 'networkController',
+		templateUrl : 'network.php',
+		controllerAs : 'nc'
+	})
+        .when('/messages', {
+		controller : 'messagesController',
+		templateUrl : 'messages.php',
+		controllerAs : 'mc'
+	})
         
             .otherwise({ redirectTo: '/login' });
        
@@ -65,6 +75,8 @@
     <script src='dataservice.js'></script>
     <script src='advsearchcontroller.js'></script>
     <script src='userprofilecontroller.js'></script>
+    <script src='networkcontroller.js'></script>
+    <script src='messagescontroller.js'></script>
     <div id="footer" class="container">
       <footer>
         <p>&copy; 2017 RecruitChute, Inc.</p>

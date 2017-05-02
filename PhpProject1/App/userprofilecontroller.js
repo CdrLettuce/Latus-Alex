@@ -61,5 +61,18 @@ function getPlayerInfo2(){
     });
 }
 
+function favoritePlayer(item){
+    
+    var data_object = {current_user : uc.currentUser.user_id, followed_id : item};
+    console.log("data_object");
+    console.log(data_object);
+    $http.post('http://recruitchute.io/favorite/favoritePlayer', data_object ).then(function(response){
+        console.log(response);
+        getFavoritedPlayers();
+    },
+    function(err) { console.log(err);
+    });   
+}
+
 }]);
 

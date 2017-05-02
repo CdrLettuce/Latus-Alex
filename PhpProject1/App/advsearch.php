@@ -169,7 +169,9 @@ include('appHeader2.php');
                             <p>{{item.position}}, Class of {{item.graduation_date}}</p>
                         </td>
                         <td class='col-xs-2'>
-                            <button class="btn btn-primary">Favorite</button>
+                            <a ng-click='ex.favoritePlayer(item.user_id)'>
+                                <button class="btn btn-primary">Favorite</button>
+                            </a>
                         </td>
                     </tr>
                 </table>

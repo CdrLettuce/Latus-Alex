@@ -44,7 +44,6 @@ class SearchModel extends Model
                         $result = -1;
                 return $result;
         }
-
 }
 
 ?>

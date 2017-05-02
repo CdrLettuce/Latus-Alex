@@ -91,7 +91,8 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
         $http.post('http://recruitchute.io/playerinfo/getPlayerInfo4', hc.currentUser).then(function(response){
             if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
                 // set current user
-                hc.info4 = response.data;;
+                hc.info4 = response.data;
+                console.log(hc.info4);
             }
         },
         function(err) { console.log(err);
@@ -109,7 +110,7 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
             item.position2 = hc.info3.position_2;
         }
         if(!item.position3){
-            item.position3 = hc.info3.position_3;
+            item.position3 = hc.info4.position_3;
         }
         if(!item.bio){
             item.bio = hc.info2.bio;

@@ -32,7 +32,7 @@ class PlayerInfoModel extends Model
         }
         
         public function getPlayerInfo3(){
-                $sql = "SELECT s.position
+                $sql = "SELECT s.position, p.position_2
                         FROM `player_profile` as p, `position` as s
                         WHERE p.user_id = :userId
                         AND p.position_2 = s.position_id";
@@ -47,7 +47,7 @@ class PlayerInfoModel extends Model
         }
         
         public function getPlayerInfo4(){
-                $sql = "SELECT s.position
+                $sql = "SELECT s.position, p.position_3
                         FROM `player_profile` as p, `position` as s
                         WHERE p.user_id = :userId
                         AND p.position_3 = s.position_id";

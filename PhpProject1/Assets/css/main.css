@@ -35,114 +35,11 @@ input.log-info { border-radius: 5px; height: 20px;}
      margin-top:80px;
  }
 
-.gray{
-    background-color: #f7f7f7;
-    margin-left:0px;
-    margin-right:0px;
-    /*padding-left: 10%;
-    padding-right: 10%;*/
-    width: 100%;
-    
-}
-.minheight{
-    min-height: 500px;
-    padding-top: 100px;
-}
 
-h1, h2, h3, h4{
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    color: black;
-}
 body p{
     font-family: 'Roboto', sans-serif;
     color: #555555;
 }
-
-
-.col-md-6 h2, .col-md-12 h2, .col-md-12 h1{
-    text-align: center;
-}
-.signup img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.col-md-12 h1{
-    font-size: 400%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-}
-.col-md-12 h2{
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-#playerInfo{
-    padding-top: 30px;
-    background-image: url("../images/Picture5.jpg");
-    background-color: rgba(255, 0, 0, 0.5);
-    background-size: cover;
-}
-
-
-
-.playerInfo p{
-    text-align: center;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    color: black;
-}
-
-.player{
-    text-align: center;
-}
-
-.player h1{
-    margin-top: 2%;
-}
-
-
-.howitworks p{
-    text-align: center;
-    
-}
-
-.howitworks h1{
-    text-align: center;
-    color: #ff9933;
-    font-size: 400%;
-}
-
-.howitworks h2{
-    text-align: center;
-    color: #ff9933;
-    /*margin-bottom: 9%;*/
-}
-.howitworks col-md-12 h3{
-    text-align: center;
-    color: #ff9933;
-}
-
-.howitworks h4{
-    text-align: center;
-}
-
-
-
-
-
-.icon{
-    text-align: center;
-}
-/*
-.signup p, .signup h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}*/
-.signup p{
-    font-size: 120%;
-}
-
 
 .topDiv{
     margin-top: 100px;
@@ -150,9 +47,7 @@ body p{
 .logo{
     font-size: 70px;
 }
-.logoBig{
-    font-size: 300px;
-}
+
 #footer{
     margin-right: 0px;
     margin-left: 0px;
@@ -164,48 +59,17 @@ body p{
     text-align: center;
 }
 
-/* Styles for the signup processes */
 
-.rightAlign{
-    text-align: right;
-}
-.leftAlign{
-    text-align: left;
-}
+
+
 #coachConfirmation table{
     margin-bottom: 500px;
 }
 
-.blue{
-    color: #3399cc;
-}
 
-.orange{
-    color: #ff9933;
-}
-
-#coachInfo{
-    padding-top: 30px;
-    background-color: #f7f7f7;
-    text-align: center;
-}
-
-
-.backFour h4{
-    color: black;
-    text-align: center;
-}
-
-
-.pmargin{
-    margin-bottom: 50px;
-}
-
-
-.difference h2{
-    font-size: 200%;
-}
-
+/******************************************
+Header
+******************************************/
 
 .navbar{
     height: 70px;
@@ -219,29 +83,41 @@ body p{
 }
 
 /******************************************
-Sign up - Splash Page
+Universal classes - Splash Page
+******************************************/
+.blue{
+    color: #3399cc;
+}
+.orange{
+    color: #ff9933;
+}
+.icon{
+    text-align: center;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+/******************************************
+Jumbotron - Splash Page
 ******************************************/
 #splash{
     margin-bottom: 0px;
-    height: 30%;
+    height: 60%;
 }
 
 .jumbotron{
     text-align: center;
     margin-top: 20px;
-    background-image: url("../images/coolField6.png");
+    background-image: url("../images/coolField7.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size:cover;
     overflow: hidden;
     color: white;
     
-}
-
-#splash .learn{
-    padding-top:3vw;
-    font-size: 3vw;
-    text-align: center;
 }
 
 .jumbotron h1{
@@ -256,15 +132,12 @@ Sign up - Splash Page
     margin-top: 10px;
 }
 
-/*#splash .btn-lg{
-    height: 2vw;
-    width:  6vw;
-}
-*/
 /******************************************
 Sign up - Splash Page
 ******************************************/
-
+.signup p{
+    font-size: 120%;
+}
 
 .playerPhoto{
     background-image: url("../images/player.jpg");
@@ -280,6 +153,7 @@ Sign up - Splash Page
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .signup p{
     font-size: 120%;
 }
@@ -320,8 +194,9 @@ Dreaming of playing - Splash Page
 }
 
 .players h1{
-    margin-top: 2%;
+    /*margin-top: 2%;*/
     color: #ff9933;
+    font-size: 280%;
 }
 
 .players h2{
@@ -347,6 +222,7 @@ Tips - Splash Page
 .tips h1{
     margin-top: 2%;
     color: #ff9933;
+    font-size: 280%;
 }
 
 .tips h3{
@@ -364,33 +240,37 @@ Tips - Splash Page
 /******************************************
 Superstar - Splash Page
 ******************************************/
-.superstar{
+#superstar{
     /*background-color: #f7f7f7;*/
     background-image: url("../images/Blue1.png");
     background-size: cover;
+    text-align: center;
+    color: white;
+    
 }
 
-.howitworks p{
-    text-align: center;    
-}
-
-.superstar h1{
+#superstar h1{
     text-align: center;
     /*color: #ff9933;*/
-    font-size: 400%;
+    font-size: 280%;
+    color: white;
+    word-wrap: break-word;
+}
+
+#superstar h3{
     color: white;
 }
 
-.superstar h2{
+#superstar h4{
+    color: white;
+}
+
+#superstar h2{
     text-align: center;
     /*color: #ff9933;*/
     margin-top: 4%;
     margin-bottom: 4%;
     color: white;
-}
-
-.superstar h3{
-    
 }
 
 .superstar fa{
@@ -412,6 +292,7 @@ Join the network - Splash Page
     margin-top: 2%;
     color: #ff9933;
     text-align: center;
+    font-size: 280%;
 }
 
 .join h2{
@@ -449,7 +330,7 @@ ul li:before{
 }
 
 /******************************************
-learn more - Splash page
+RecruitChute difference - Splash page
 ******************************************/
 #learnMore p{
     padding-top:20px;
@@ -461,6 +342,26 @@ learn more - Splash page
     background-image: url("../images/field2.jpg");
     background-size: cover;
 }
+
+.backFour h4{
+    color: black;
+    text-align: center;
+}
+
+.difference h2{
+    font-size: 200%;
+}
+
+.gray{
+    background-color: #f7f7f7;
+    margin-left:0px;
+    margin-right:0px;
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+    width: 100%;
+    
+}
+
 
 /******************************************
 About US
@@ -480,4 +381,18 @@ About US
 
 .about h4{
     color: #696969;
+}
+
+.quote{
+    font-size: 200%;
+}
+
+.title h4{
+    font-family: Wingdings;
+    color: black;
+}
+
+.title p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
 }

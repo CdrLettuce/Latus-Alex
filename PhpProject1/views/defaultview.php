@@ -125,7 +125,7 @@ include('Assets/pageHeader.php');
         
         
         
-    <div id="coachInfo" class="superstar container-fluid">
+    <div id="superstar" class="superstar">
         <!-- Example row of columns -->
         <div class ="container">
             <div class="row">
@@ -151,15 +151,15 @@ include('Assets/pageHeader.php');
         <div class ="container">
             <div class="row">
                 <div class="col-sm-offset-2 col-sm-2">
-                    <i class="fa fa-bullseye fa-5x white" aria-hidden="true"></i>
+                    <i class="fa fa-bullseye fa-5x orange" aria-hidden="true"></i>
                     <h4>Narrow down your recruit targets with advanced search</h4>
                 </div>
                 <div class="col-sm-offset-1 col-sm-2">
-                    <i class="fa fa-hourglass-end fa-5x white" aria-hidden="true"></i>
+                    <i class="fa fa-hourglass-end fa-5x orange" aria-hidden="true"></i>
                     <h4>Increase time efficiency by viewing player profiles before visits</h4>
                 </div>
                 <div class="col-sm-offset-1 col-sm-2">
-                    <i class="fa fa-thumbs-o-up fa-5x white" aria-hidden="true"></i>
+                    <i class="fa fa-thumbs-o-up fa-5x orange" aria-hidden="true"></i>
                     <h4>Recruit Smarter, Not Harder</h4>
                 </div>
             </div>

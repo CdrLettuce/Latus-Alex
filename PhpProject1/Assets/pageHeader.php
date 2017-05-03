@@ -32,7 +32,7 @@
 
   <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -42,7 +42,7 @@
                     </button>
                     <a class="navbar-brand" href="http://recruitchute.io/index.php"><img src="<?php echo HOME;?>Assets/images/logo_trans.png" alt="logo" height="55" width="160"></a>
                 </div>
-                <div class="container-fluid">
+                <div class="container">
                     <div id="navbar" class="navbar-collapse collapse">
                         <form class="navbar-form navbar-right" action="<?php echo HOME;?>login/checkLogin" method="post">
                             <!--<button type="submit" id='sign-in' class="btn btn-success">Sign in</button>-->

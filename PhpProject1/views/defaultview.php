@@ -125,7 +125,7 @@ include('Assets/pageHeader.php');
         
         
         
-    <div id="coachInfo" class="superstar container-fluid">
+    <div id="superstar" class="superstar container">
         <!-- Example row of columns -->
         <div class ="container">
             <div class="row">

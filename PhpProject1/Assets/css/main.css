@@ -35,11 +35,6 @@ input.log-info { border-radius: 5px; height: 20px;}
      margin-top:80px;
  }
 
-.minheight{
-    min-height: 500px;
-    padding-top: 100px;
-}
-
 
 body p{
     font-family: 'Roboto', sans-serif;
@@ -158,6 +153,7 @@ Sign up - Splash Page
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .signup p{
     font-size: 120%;
 }
@@ -198,8 +194,9 @@ Dreaming of playing - Splash Page
 }
 
 .players h1{
-    margin-top: 2%;
+    /*margin-top: 2%;*/
     color: #ff9933;
+    font-size: 280%;
 }
 
 .players h2{
@@ -225,6 +222,7 @@ Tips - Splash Page
 .tips h1{
     margin-top: 2%;
     color: #ff9933;
+    font-size: 280%;
 }
 
 .tips h3{
@@ -246,16 +244,13 @@ Superstar - Splash Page
     /*background-color: #f7f7f7;*/
     background-image: url("../images/Blue1.png");
     background-size: cover;
-}
-
-.howitworks p{
-    text-align: center;    
+    text-align: center;
 }
 
 .superstar h1{
     text-align: center;
     /*color: #ff9933;*/
-    font-size: 400%;
+    font-size: 280%;
     color: white;
     word-wrap: break-word;
    
@@ -267,10 +262,6 @@ Superstar - Splash Page
     margin-top: 4%;
     margin-bottom: 4%;
     color: white;
-}
-
-.superstar h3{
-    
 }
 
 .superstar fa{
@@ -292,6 +283,7 @@ Join the network - Splash Page
     margin-top: 2%;
     color: #ff9933;
     text-align: center;
+    font-size: 280%;
 }
 
 .join h2{
@@ -329,7 +321,7 @@ ul li:before{
 }
 
 /******************************************
-learn more - Splash page
+RecruitChute difference - Splash page
 ******************************************/
 #learnMore p{
     padding-top:20px;

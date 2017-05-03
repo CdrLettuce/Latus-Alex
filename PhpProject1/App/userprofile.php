@@ -25,7 +25,10 @@ include('appHeader2.php');
         <div class="col-sm-7">
             <div class="sample-container">
                 <h4 class='title'>Videos</h4>
-                <div my-youtube code="code"></div>
+                <div class="video-container">
+                    <iframe src="{{ex.info2.youtube_urls | trustAsResourceUrl}}" frameborder="0" allowfullscreen>                        
+                    </iframe>
+                </div>
             </div>
         </div>
     </div>

@@ -33,7 +33,7 @@ myApp.controller('profileController',['$http', 'DataService','$location', functi
     cc.info2 = [];
     cc.getPlayerInfo2 = getPlayerInfo2;
     cc.getPlayerInfo2();
-
+    
     function getPlayerInfo2(){
         // use $http service to obtain data
         $http.post(base_url + 'playerinfo/getPlayerInfo2', cc.currentUser).then(function(response){
@@ -43,27 +43,12 @@ myApp.controller('profileController',['$http', 'DataService','$location', functi
             }
         },
            function(err) { console.log(err);
-        });
+        });        
     }
-
 }]);
+myApp.filter('trustAsResourceUrl', ['$sce', function($sce) {
+            return function(val) {
+                return $sce.trustAsResourceUrl(val);
+            };
+        }])
 
-myApp.controller('MainCtrl', function($scope) {
-  $scope.code = 'trRc1_CATfo';
-});
-myApp.directive('myYoutube', function($sce) {
-  return {
-    restrict: 'EA',
-    scope: { code:'=' },
-    replace: true,
-    template: '<div style="height:400px;"><iframe width="560" height="300" src="{{url}}" frameborder="0" allowfullscreen></iframe></div>',
-    link: function (scope) {
-        console.log('here');
-        scope.$watch('code', function (newVal) {
-           if (newVal) {
-               scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + newVal);
-           }
-        });
-    }
-  };
-});

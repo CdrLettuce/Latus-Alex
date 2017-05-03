@@ -240,23 +240,32 @@ Tips - Splash Page
 /******************************************
 Superstar - Splash Page
 ******************************************/
-.superstar{
+#superstar{
     /*background-color: #f7f7f7;*/
     background-image: url("../images/Blue1.png");
     background-size: cover;
     text-align: center;
+    color: white;
+    
 }
 
-.superstar h1{
+#superstar h1{
     text-align: center;
     /*color: #ff9933;*/
     font-size: 280%;
     color: white;
     word-wrap: break-word;
-   
 }
 
-.superstar h2{
+#superstar h3{
+    color: white;
+}
+
+#superstar h4{
+    color: white;
+}
+
+#superstar h2{
     text-align: center;
     /*color: #ff9933;*/
     margin-top: 4%;

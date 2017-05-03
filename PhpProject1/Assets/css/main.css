@@ -90,9 +90,17 @@ head{
     text-align: center;
 }
 
+.navbar-brand .home{
+    position: absolute;
+    top: 5px;
+}
+
 .link p{
-    /*color: #ff9933;*/
     color: white;
+}
+
+.home{
+    font-size: 150%;
 }
 
 /******************************************

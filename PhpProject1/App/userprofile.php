@@ -17,10 +17,33 @@ include('appHeader2.php');
                 <a ng-click='ex.favoritePlayer(info.user_id)'>
                     <button style="margin-bottom:10px;" class="btn btn-primary">Favorite {{ex.info.first_name}}</button>
                 </a>
-                <a ng-click=''>
-                    <button class="btn btn-primary">Send {{ex.info.first_name}} a message</button>
-                </a>
+                <button id="msgbtn" ng-click='ex.showMessageContainer()' class="btn btn-primary">Send {{ex.info.first_name}} a message</button>
             </div>
+            <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+      <h2>Send a message</h2>
+    </div>
+	<form>
+    <div class="modal-body">
+  
+    <div class="form-group">
+      <label for="message">Enter your message</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+	
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary">Send Message</button>
+	 </div> 
+	  </form>
+  </div>
+</div>
+            
         </div>
         <div class="col-sm-7">
             <div class="sample-container">

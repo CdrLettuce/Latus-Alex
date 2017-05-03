@@ -25,8 +25,6 @@ ac.displaySearchResults = false;
 ac.noResults = false;
 
 function advsearchForPlayer(item){
-    console.log("item:");
-    console.log(item);
     if(!item.searchfirst){
         item.searchfirst = "";
     }
@@ -47,8 +45,6 @@ function advsearchForPlayer(item){
     }
     var data_object = {firstname : item.searchfirst, lastname : item.searchlast, position : item.position, 
                         gradYear : item.gradYear, state : item.state, gender : item.gender};
-    console.log("Data object:");
-    console.log(data_object);
     $http.post('http://recruitchute.io/search/advsearchPlayer', data_object ).then(function(response){
             console.log(response);
             ac.players = response.data;
@@ -79,20 +75,16 @@ function viewProfile(item){
 
 ac.favoritePlayer = favoritePlayer;
 
-function favoritePlayer(item){
-    
+function favoritePlayer(item){  
     var data_object = {current_user : ac.currentUser.user_id, followed_id : item};
-    console.log("data_object");
-    console.log(data_object);
     $http.post('http://recruitchute.io/favorite/favoritePlayer', data_object ).then(function(response){
-        console.log(response);
         getFavoritedPlayers();
     },
     function(err) { console.log(err);
     });   
 }
 
-ac.favinfo = [];
+ac.favorite_ids = [];
 ac.getFavoritedPlayers = getFavoritedPlayers;
 getFavoritedPlayers();
 
@@ -101,29 +93,28 @@ function getFavoritedPlayers(){
     $http.post('http://recruitchute.io/favorite/getfavoritedplayers', ac.currentUser).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             // set current user
-            ac.favinfo = response.data;
-            console.log("returned list of players that the user has favorited");
-            console.log(ac.favinfo);
+            ac.favorite_ids = response.data;
+            getFavoritedPlayersInfo();
         }
     },
     function(err) { console.log(err);
     });
 }
 
+ac.favinfo = [];
+ac.getFavoritedPlayersInfo = getFavoritedPlayersInfo;
+
 function getFavoritedPlayersInfo(){
-    var favorites = ac.favinfo;
-    $http.post('http://recruitchute.io/favorite/getfavoritedplayersinfo', ac.currentUser).then(function(response){
+    var data_object = {current_id : ac.currentUser, ids : ac.favorite_ids};
+    $http.post('http://recruitchute.io/favorite/getfavoritedplayersinfo', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             // set current user
             ac.favinfo = response.data;
-            console.log("returned list of players that the user has favorited");
-            console.log(ac.favinfo);
         }
     },
     function(err) { console.log(err);
     });
 }
-
 
 
 }]);

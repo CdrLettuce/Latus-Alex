@@ -109,13 +109,7 @@ include('appHeader2.php');
                     </div>
                 </div>
                 <!--Profile Picture input-->
-                <div class="form-group col-md-6 col-sm-6 ">
-                        <label for="Bio" class="control-label">Profile picture</label>
-                        <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-list fa" aria-hidden="true"></i></span>
-                                <input type="file" class="" name="picture" id="picture" ng-model='ex.item.picture' accept="image/*"/>
-                        </div>
-                </div>
+                
                 <div class='row container-fluid'>
                     <!-- High School current -->
                     <div class="form-group col-md-4 col-sm-4 ">

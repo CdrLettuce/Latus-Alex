@@ -116,14 +116,14 @@ include('appHeader2.php');
                         <p><b>Profile Picture:</b></p>
                     </div>
                     <div class="form-group col-md-3 col-sm-3 ">
-                        <p>{{ex.info2.picture}}</p>
+                        <p>{{ex.info2.Image}}</p>
                     </div>   
                     <!-- High School input -->
                     <div class="form-group col-md-5 col-sm-5 ">
                             <div class="cols-sm-10">
                                     <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-institution fa" aria-hidden="true"></i></span>
-                                            <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.picture'/>
+                                            <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.image'/>
                                     </div>
                             </div>
                     </div>

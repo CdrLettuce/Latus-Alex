@@ -151,6 +151,9 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
         if(!item.yard){
             item.yard = hc.info2.dash_time;
         }
+        if(!item.image){
+            item.image = hc.info2.Image;
+        }
         
         var currentUser = hc.currentUser;
         var data_object = {userID : currentUser.user_id, position1 : item.position1, position2 : item.position2,

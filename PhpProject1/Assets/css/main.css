@@ -82,6 +82,19 @@ Header
     margin-top: 15px;   
 }
 
+head{
+    display: inline-block;
+}
+
+.link{
+    text-align: center;
+}
+
+.link p{
+    /*color: #ff9933;*/
+    color: white;
+}
+
 /******************************************
 Universal classes - Splash Page
 ******************************************/
@@ -161,6 +174,7 @@ Sign up - Splash Page
 #signup{
     background-color: #f7f7f7;
     text-align: center;
+    padding-bottom: 2%;
 }
 
 #signup h1{

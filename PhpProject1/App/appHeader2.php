@@ -9,13 +9,14 @@
               </button>
               <a class="navbar-brand" href="http://recruitchute.io/index.php" style='padding-top:10px;'><img src="../Assets/images/logo_trans.png" alt="logo" height="55" width="160"></a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse navbar-right">
-                <a class="navbar-brand"  href="#/">Home</a>
-                <a class="navbar-brand"  href="#/search">Search</a>
-                <a class="navbar-brand"  href="#/network">My Network</a>
-                <a class="navbar-brand"  href="#/messages">Messages</a>
-                <a class="navbar-brand"  href="#/profile">My Profile</a>
-                <a class="navbar-brand"  href="#/login">Sign Out</a>
+            <div id="navbar" class="navbar-collapse collapse navbar-right link">                 
+                    <a class="navbar-brand"  href="#/" style=""><i class="fa fa-home fa-1x blue" aria-hidden="true" style=""></i><p>Home </p></a>                
+                    <a class="navbar-brand"  href="#/search"><i class="fa fa-binoculars fa-1x blue" aria-hidden="true" style=""></i><p>Search</p></a>                        
+                    <a class="navbar-brand"  href="#/network"><i class="fa fa-users fa-1x blue" aria-hidden="true" style=""></i><p>My Network</p></a>                                 
+                    <a class="navbar-brand"  href="#/messages"><i class="fa fa-comment-o fa-1x blue" aria-hidden="true" style=""></i><p>Messages</p></a>                   
+                    <a class="navbar-brand"  href="#/profile"><i class="fa fa-user-circle fa-1x blue" aria-hidden="true" style=""></i><p>My Profile</p></a>  
+                    <a class="navbar-brand"  href="#/login"><i class="fa fa-power-off fa-1x blue" aria-hidden="true" style=""></i><p>Sign Out</p></a>
+                </div>
             </div><!--/.navbar-collapse -->
           </div>
         </nav>

@@ -69,7 +69,7 @@ include('appHeader2.php');
                     <h4> message subject</h4>
                 </div>
                 <div id="the-message" class="col-sm-8">
-                    <h4>the message<h4>
+                    <h4>the message</h4>
                 </div>
             </div>  
         </div>

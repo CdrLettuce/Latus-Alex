@@ -258,10 +258,16 @@ Superstar - Splash Page
 ******************************************/
 #superstar{
     /*background-color: #f7f7f7;*/
-    background-image: url("../images/Blue1.png");
+    background-image: url("../images/WWplayer.png");
+    position: relative;
+    
     background-size: cover;
     text-align: center;
-    color: white;
+    color: white;    
+}
+
+.layer{
+    background-color: rgba(248, 247, 216, 0.7);
     
 }
 
@@ -355,7 +361,7 @@ RecruitChute difference - Splash page
 #learnMore{
     padding-top: 30px;
     padding-bottom: 30px;
-    background-image: url("../images/field2.jpg");
+    background-image: url("../images/grass2.png");
     background-size: cover;
 }
 

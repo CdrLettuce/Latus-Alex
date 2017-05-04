@@ -108,8 +108,9 @@ uc.showMessageContainer = showMessageContainer;
 function showMessageContainer(){ 
     $(window).click(function(e) {
     if(e.target.id === "myModal"){
-		if($("#comment").val() !== ""){
+		if($("#comment").val() !== "" || $("#msubject").val() !== ""){
 			$("#comment").val("");
+			$("#msubject").val("");
 		}
 		$('#myModal').css('display', 'none');
 	}

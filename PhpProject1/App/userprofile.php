@@ -24,11 +24,16 @@ include('appHeader2.php');
 
               <!-- Modal content -->
               <div class="modal-content">
+                <form> 
                 <div class="modal-header">
                   <span class="close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
-                  <h2>Send a message</h2>
+                  <h2>Send a message</h2><hr>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input id="msubject" type="text" class="form-control"></input>
+                    </div>
                 </div>
-                <form>
+                
                     <div class="modal-body">
                         <div class="form-group">
                           <label for="message">Enter your message</label>

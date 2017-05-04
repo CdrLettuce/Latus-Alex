@@ -127,6 +127,7 @@ include('Assets/pageHeader.php');
         
     <div id="superstar" class="superstar">
         <!-- Example row of columns -->
+        <div class="layer">
         <div class ="container">
             <div class="row">
                 <div class="col-md-12">
@@ -163,6 +164,7 @@ include('Assets/pageHeader.php');
                     <h4>Recruit Smarter, Not Harder</h4>
                 </div>
             </div>
+        </div>
         </div>
     </div>       
       
@@ -219,22 +221,22 @@ include('Assets/pageHeader.php');
         
         
             <div class="col-sm-offset-0 col-sm-3 backFour icon">
-                <i class="fa fa-mobile-phone fa-5x blue" aria-hidden="true"></i>
+                <i class="fa fa-mobile-phone fa-5x orange" aria-hidden="true"></i>
                 <h4>Take RecruitChute with you, we're mobile friendly!</h4>
                 <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
             </div>
             <div class="col-sm-offset-0 col-sm-3 backFour icon">
-                <i class="fa fa-map-o fa-5x blue" aria-hidden="true"></i>
+                <i class="fa fa-map-o fa-5x orange" aria-hidden="true"></i>
                 <h4>Gain the ability to search the nation for unseen talent and rising stars</h4>
                 <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
             </div>
             <div class="col-sm-offset-0 col-sm-3 backFour icon">
-                <i class="fa fa-book fa-5x blue" aria-hidden="true"></i>
+                <i class="fa fa-book fa-5x orange" aria-hidden="true"></i>
                 <h4>We give high school athletes the encouragement and opportunity to gain an education because of the sport they love</h4>
                 <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
             </div>
             <div class="col-sm-offset-0 col-sm-3 backFour icon">
-                <i class="fa fa-globe fa-5x blue" aria-hidden="true"></i>
+                <i class="fa fa-globe fa-5x orange" aria-hidden="true"></i>
                 <h4>We're supporting the growth of soccer in the United States</h4>
                 <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
             </div>  

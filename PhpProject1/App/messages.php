@@ -59,10 +59,10 @@ include('appHeader2.php');
         </div> <!--End Sidebar-->
                
         <!-- Main for displaying separate messages and  -->
-        <div  id='messages-main' class ='col-sm-8'>
+        <div  id='messages-main' class ='row-container-fluid'>
             <div id ="current-message">
                 <h4 id="LSM">Last Sent Message: </h4>
-                <div id="from-time">
+                <div id="from-time" class="col-sm-4">
                     <h4>from and time</h4>
                 </div>
                 <div id="message-subject"class="col-sm-4">

@@ -159,7 +159,7 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
                             position3 : item.position3, bio : item.bio, weight : item.weight, 
                             school : item.school, gpa : item.gpa, grad : item.grad, videourl : item.video,
                             birth : item.birth, feet : item.feet, inches : item.inches, bench : item.bench,
-                            squat : item.squat, mile : item.mile, yard : item.yard};             
+                            squat : item.squat, mile : item.mile, yard : item.yard, image : item.image};             
         $http.post('http://recruitchute.io/profileupdate/updateProfile', data_object ).then(function(response){
             hc.success_message = "Thank you " + hc.currentUser.first_name + ", your profile has been updated.";
             hc.displaySuccessMessage=true;

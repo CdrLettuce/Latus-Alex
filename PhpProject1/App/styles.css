@@ -190,3 +190,44 @@
 #fav-results-table p{
     text-align: left;
 }
+    
+    
+/* CSS for the messages page*/
+
+body, html{
+    height:100%;
+}
+
+#messages-container{
+    height: 90vh;
+    border:3px solid green;
+}
+
+#messagesResults{
+    height: 100%;
+    border:3px solid yellow;
+}
+
+#messages-sidebar{
+    height: 100%;
+    border:3px solid red;
+    background-color: white;
+}
+
+#inbox-container, #outbox-container{
+    height: 50%;
+    border:2px solid orange;
+}
+
+#messages-main{
+    height: 100%;
+    border:3px solid blue;
+}
+
+#outbox, #inbox{
+    
+    background-color: #333;
+    color: #28AFE0;
+    border: 2px solid black;
+}
+

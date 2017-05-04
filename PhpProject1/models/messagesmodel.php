@@ -56,8 +56,8 @@ class messagesModel extends Model
                 */
                 $sql = "SELECT time_sent, 
                         FROM messages
-                        WHERE receiver_id = :current_id, sender_id = :other_id
-                        OR sender_id = :current_id, receiver_id = :other_id
+                        WHERE (receiver_id = :current_id AND sender_id = :other_id)
+                        OR (sender_id = :current_id AND receiver_id = :other_id)
                         ORDER BY time_sent DESC
                         LIMIT 1";
                 $this->setSql($sql);

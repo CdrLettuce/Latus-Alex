@@ -200,32 +200,42 @@ body, html{
 
 #messages-container{
     height: 90vh;
-    border:3px solid green;
+   
 }
 
 #messagesResults{
     height: 100%;
-    border:3px solid yellow;
+    
 }
 
 #messages-sidebar{
     height: 100%;
-    border:3px solid red;
+   border:2px;
+  
     background-color: white;
 }
 
 #inbox-container, #outbox-container{
     height: 50%;
-    border:2px solid orange;
+    border:2px;
+    
+}
+
+#inbox-messages, #outbox-messages{
+    height:75%;
+    overflow-y: scroll;
+    border: 2px solid black;
+    
 }
 
 #messages-main{
     height: 100%;
-    border:3px solid blue;
+    border: 2px solid #28AFE0;
+    
+    
 }
 
 #outbox, #inbox{
-    
     background-color: #333;
     color: #28AFE0;
     border: 2px solid black;

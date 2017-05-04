@@ -10,7 +10,7 @@ include('appHeader2.php');
     <div class='row container-fluid'>
         <div class="col-sm-3 col-sm-offset-1">
             <div class="sample-container">
-                <img class='profileImage'src='../Assets/images/soccer_player_icon.jpg' />
+                <img class='profileImage'src='{{ex.info2.Image | trustAsResourceUrl}}' />
                 <h3> {{ex.info.first_name}} {{ex.info.last_name}} </h3>
                 <h4> {{ex.info2.position}}</h4>
                 <h4> {{ex.info.city}}, {{ex.info.state_name}} </h4>

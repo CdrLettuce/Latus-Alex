@@ -58,87 +58,49 @@ function sendMessage(item){
     function(err) { console.log(err);
     });
 }
-nc.messagers = [];
-nc.getMessagers = getMessagers;
-getMessagers();
 
-function getMessagers(){
-    console.log("get messagers is being called");
+nc.inboxMessages = [];
+nc.getInboxMessages = getInboxMessages;
+getInboxMessages();
+
+function getInboxMessages(){
+    console.log("get Inbox Messages is being called");
     var data_object = {user_id : nc.currentUser.user_id};
     // use $http service to obtain data
     console.log("here is the data object:");
     console.log(data_object);
-    $http.post('http://recruitchute.io/messages/getMessagers', data_object).then(function(response){
+    $http.post('http://recruitchute.io/messages/getInboxMessages', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
-            console.log("here is the response object:");
+            console.log("here is the Inbox response object:");
             console.log(response.data);
-            
-            for(var i=0; i<response.data.length; i++){
-                nc.booladdit = false;
-                for(var j=0; j<=nc.messagers.length; j++){
-                    if(response.data[i].sender_id === nc.currentUser.user_id){
-                        nc.booladdit = false;
-                        break;
-                    }
-                    if(response.data[i].sender_id === nc.messagers[j]){
-                        nc.booladdit = false;
-                        break;
-                    }else{
-                        nc.booladdit = true; 
-                    }  
-                }
-                if(nc.booladdit == true){
-                    nc.messagers.push(response.data[i].sender_id);
-                }
-            }
-            for(var i=0; i<response.data.length; i++){
-                nc.booladdit = false;
-                for(var j=0; j<=nc.messagers.length; j++){
-                    
-                    if(response.data[i].receiver_id === nc.currentUser.user_id){
-                        nc.booladdit = false;
-                        break;
-                    }
-                    if(response.data[i].receiver_id === nc.messagers[j]){
-                        nc.booladdit = false;
-                        break;
-                    }else{
-                        nc.booladdit = true; 
-                    }  
-                }
-                if(nc.booladdit == true){
-                    nc.messagers.push(response.data[i].receiver_id);
-                }
-            }
-            console.log(nc.messagers);
-            getMessagersInfo();
+            nc.inboxMessages = response.data;
         }
     },
     function(err) { console.log(err);
     }); 
 }
-nc.messagersInfo = {};
-nc.getMessagersInfo = getMessagersInfo;
 
-function getMessagersInfo(){
-    var data_object = {current_id : nc.currentUser, other_id : nc.messagers};
-    console.log("data object");
+nc.outboxMessages = [];
+nc.getOutboxMessages = getOutboxMessages;
+getOutboxMessages();
+
+function getOutboxMessages(){
+    console.log("get Outbox Messages is being called");
+    var data_object = {user_id : nc.currentUser.user_id};
+    // use $http service to obtain data
+    console.log("here is the data object:");
     console.log(data_object);
-    $http.post('http://recruitchute.io/messages/getMessagersInfo', data_object).then(function(response){
+    $http.post('http://recruitchute.io/messages/getOutboxMessagers', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
-            // set current user
-            nc.favinfo = response.data;
-            console.log("favorited player info:");
-            console.log(nc.favinfo);
-            nc.favResults = true;
-        }
-        else{
-            nc.nofavs = true;
+            console.log("here is the Outbox response object:");
+            console.log(response.data);
+            nc.outboxMessages = response.data;
         }
     },
     function(err) { console.log(err);
-    });
+    }); 
 }
+
 
 
 }]);

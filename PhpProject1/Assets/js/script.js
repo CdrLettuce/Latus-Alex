@@ -66,6 +66,12 @@ $(document).ready(function(){
                 });
 
         });
+        hc.popup="";
+    popUpFunction();
+
+
+        
+       
         
         
 	$('#verify').on("keyup", function validate() {
@@ -86,6 +92,7 @@ $(document).ready(function(){
                    		 $("#verify").css("borderColor", "#3fdd13");
               		  }
            		 });
+           
        /* $('#signupFormCoach').on("sumbit", function checkFields() {
                              var first = $('#fname').val();
                              var last = $('#lname').val();

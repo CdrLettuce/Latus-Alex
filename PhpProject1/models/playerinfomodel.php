@@ -17,7 +17,7 @@ class PlayerInfoModel extends Model
         }
         
         public function getPlayerInfo2(){
-                $sql = "SELECT p.youtube_urls, p.height_feet, p.height_inches, p.weight, p.bio, p.gpa, p.h_school, p.graduation_date, s.position, p.mile_time, p.dash_time, p.bench, p.squat, p.dob, p.position_1, p.position_2, p.position_3
+                $sql = "SELECT p.youtube_urls, p.Image, p.height_feet, p.height_inches, p.weight, p.bio, p.gpa, p.h_school, p.graduation_date, s.position, p.mile_time, p.dash_time, p.bench, p.squat, p.dob, p.position_1, p.position_2, p.position_3
                         FROM `player_profile` as p, `position` as s
                         WHERE p.user_id = :userId
                         AND p.position_1 = s.position_id";

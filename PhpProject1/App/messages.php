@@ -14,7 +14,18 @@ include('appHeader2.php');
                 <!--HERE is where you ng-repeat through the inbox messages-->
                 <div id='inbox-messages'>
                     <div>
-                        
+                        <table class='table'>
+                            <tr ng-repeat='item in ex.inboxMessages track by $index'
+                                                ng-show="item.subject==ex.subject.name">
+                                <td class='col-xs-12'>
+                                    <a ng-click='ex.displayBigMessage(item.user_id)'>
+                                        <p>From: {{//put sender here}}</p>
+                                        <p>Subject: {{//put subject here}}</p>
+                                        <p>Time: {{//put time here}}</p>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -26,9 +37,20 @@ include('appHeader2.php');
                     </h3>
                 </div>
                 <!--HERE is where you ng-repeat through the inbox messages-->
-                <div id='inbox-messages'>
+                <div id='outbox-messages'>
                     <div>
-                        
+                        <table class='table-stripped'>
+                            <tr ng-repeat='item in ex.outboxMessages track by $index'
+                                                ng-show="item.subject==ex.subject.name">
+                                <td class='col-xs-12'>
+                                    <a ng-click='ex.displayBigMessage(item.user_id)'>
+                                        <p>To: {{//put Receiver here}}</p>
+                                        <p>Subject: {{//put subject here}}</p>
+                                        <p>Time: {{//put time here}}</p>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>

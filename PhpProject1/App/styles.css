@@ -219,13 +219,18 @@ body, html{
     border:2px solid orange;
 }
 
+#inbox-messages, #outbox-messages{
+    height:75%;
+    overflow-y: scroll;
+    border:2px solid purple;
+}
+
 #messages-main{
     height: 100%;
     border:3px solid blue;
 }
 
 #outbox, #inbox{
-    
     background-color: #333;
     color: #28AFE0;
     border: 2px solid black;

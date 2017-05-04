@@ -8,7 +8,8 @@ include('appHeader2.php');
             <div id='inbox-container' >
                 <div>
                     <h3  id='inbox' class='col-xs-12 center-text'>
-                        Inbox
+                        Inbox 
+                        <i class="fa fa-envelope fa" aria-hidden="true"></i>
                     </h3>
                 </div>
                 <!--HERE is where you ng-repeat through the inbox messages-->
@@ -31,9 +32,10 @@ include('appHeader2.php');
             </div>
             
             <div id='outbox-container' >
-                <div id='outbox'>
-                    <h3 class='col-xs-12 center-text'>
+                <div>
+                    <h3 id='outbox' class='col-xs-12 center-text'>
                         Outbox
+                        <i class="fa fa-share fa" aria-hidden="true"></i>
                     </h3>
                 </div>
                 <!--HERE is where you ng-repeat through the inbox messages-->
@@ -58,8 +60,17 @@ include('appHeader2.php');
                
         <!-- Main for displaying separate messages and  -->
         <div  id='messages-main' class ='col-sm-8'>
-            <div>
-                <h4>My Favorites: </h4>
+            <div id ="current-message">
+                <h4 id="LSM">Last Sent Message: </h4>
+                <div id="from-time">
+                    <h4>from and time</h4>
+                </div>
+                <div id="message-subject"class="col-sm-4">
+                    <h4> message subject</h4>
+                </div>
+                <div id="the-message" class="col-sm-8">
+                    <h4>the message<h4>
+                </div>
             </div>  
         </div>
     </div>

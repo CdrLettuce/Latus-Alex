@@ -30,18 +30,18 @@ include('appHeader2.php');
                   <h2>Send a message</h2><hr>
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input id="msubject" type="text" class="form-control"></input>
+                        <input id="msubject" type="text" class="form-control" ng-model='ex.subject'></input>
                     </div>
                 </div>
                 
                     <div class="modal-body">
                         <div class="form-group">
                           <label for="message">Enter your message</label>
-                          <textarea class="form-control" rows="5" id="comment"></textarea>
+                          <textarea class="form-control" rows="5" id="comment" ng-model='ex.message'></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Send Message</button>
+                      <button type="button" class="btn btn-primary" ng-click='ex.sendMessage(ex.message, ex.subject)'>Send Message</button>
                     </div> 
                 </form>
               </div>
@@ -138,7 +138,7 @@ include('appHeader2.php');
             <div class='sample-container'>
                 <h4 class='title' >test messaging</h4>
                 <div class="input-group">
-                        <textarea  class="form-control" name="message" id="message" ng-model='ex.message'></textarea>
+                        <textarea  class="form-control" name="message" id="message" ></textarea>
                 </div>
                 <div class="form-group">
                     <p><button type='button' class='btn btn-primary btn-lg btn-block' ng-click='ex.sendMessage(ex.message)'>Send Message</button></p>

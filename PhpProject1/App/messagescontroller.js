@@ -72,8 +72,9 @@ function getInboxMessages(){
     $http.post('http://recruitchute.io/messages/getInboxMessages', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             console.log("here is the Inbox response object:");
-            console.log(response.data);
+            
             nc.inboxMessages = response.data;
+            console.log(nc.inboxMessages);
         }
     },
     function(err) { console.log(err);
@@ -90,11 +91,12 @@ function getOutboxMessages(){
     // use $http service to obtain data
     console.log("here is the data object:");
     console.log(data_object);
-    $http.post('http://recruitchute.io/messages/getOutboxMessagers', data_object).then(function(response){
+    $http.post('http://recruitchute.io/messages/getOutboxMessages', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             console.log("here is the Outbox response object:");
-            console.log(response.data);
+            
             nc.outboxMessages = response.data;
+            console.log(nc.outboxMessages);
         }
     },
     function(err) { console.log(err);

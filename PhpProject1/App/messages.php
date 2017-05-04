@@ -20,9 +20,9 @@ include('appHeader2.php');
                                                 ng-show="item.subject==ex.subject.name">
                                 <td class='col-xs-12'>
                                     <a ng-click='ex.displayBigMessage(item.user_id)'>
-                                        <p>From: {{//put sender here}}</p>
-                                        <p>Subject: {{//put subject here}}</p>
-                                        <p>Time: {{//put time here}}</p>
+                                        <p>From: {{}}</p>
+                                        <p>Subject: {{}}</p>
+                                        <p>Time: {{}}</p>
                                     </a>
                                 </td>
                             </tr>
@@ -46,9 +46,9 @@ include('appHeader2.php');
                                                 ng-show="item.subject==ex.subject.name">
                                 <td class='col-xs-12'>
                                     <a ng-click='ex.displayBigMessage(item.user_id)'>
-                                        <p>To: {{//put Receiver here}}</p>
-                                        <p>Subject: {{//put subject here}}</p>
-                                        <p>Time: {{//put time here}}</p>
+                                        <p>To: {{}}</p>
+                                        <p>Subject: {{}}</p>
+                                        <p>Time: {{}}</p>
                                     </a>
                                 </td>
                             </tr>

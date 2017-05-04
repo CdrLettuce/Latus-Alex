@@ -92,7 +92,6 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
             if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
                 // set current user
                 hc.info4 = response.data;
-                console.log(hc.info4);
             }
         },
         function(err) { console.log(err);

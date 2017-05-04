@@ -28,7 +28,7 @@
      text-align: left;
      margin-top: 0px;
  }
- #profile-container, #homeContainer, #search-container{
+ #profile-container, #homeContainer, #search-container, #fav-container{
      background-color: #eeeeee;
  }
  
@@ -182,3 +182,11 @@
     background-color: #5cb85c;
     color: white;
 }*/
+
+#fav-results-table, #fav-results-table tr, #fav-results-table td{
+    border: none;
+}
+
+#fav-results-table p{
+    text-align: left;
+}

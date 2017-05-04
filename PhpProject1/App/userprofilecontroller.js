@@ -61,14 +61,43 @@ function getPlayerInfo2(){
     });
 }
 
+uc.info3 = [];
+uc.getPlayerInfo3 = getPlayerInfo3;
+uc.getPlayerInfo3();
+
+function getPlayerInfo3(){
+    // use $http service to obtain data
+    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo3', uc.currentUser).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            // set current user
+            uc.info3 = response.data;
+        }
+    },
+    function(err) { console.log(err);
+    });
+}
+
+uc.info4 = [];
+uc.getPlayerInfo4 = getPlayerInfo4;
+uc.getPlayerInfo4();
+
+function getPlayerInfo4(){
+    // use $http service to obtain data
+    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo4', uc.currentUser).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            // set current user
+            uc.info4 = response.data;
+        }
+    },
+    function(err) { console.log(err);
+    });
+}
+
+uc.favoritePlayer = favoritePlayer;
+
 function favoritePlayer(item){
-    
     var data_object = {current_user : uc.currentUser.user_id, followed_id : item};
-    console.log("data_object");
-    console.log(data_object);
     $http.post('http://recruitchute.io/favorite/favoritePlayer', data_object ).then(function(response){
-        console.log(response);
-        getFavoritedPlayers();
     },
     function(err) { console.log(err);
     });   
@@ -90,19 +119,33 @@ function showMessageContainer(){
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
-    }
+    };
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
-    }
+    };
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        if (event.target == modal) {
+        if (event.target === modal) {
             modal.style.display = "none";
         }
-    }
+    };
+}
+
+uc.sendMessage = sendMessage;
+
+function sendMessage(item){
+    var data_object = {sender_id : uc.currentUser.user_id, receiver_id : uc.info.user_id, message : item, sender_fname : uc.currentUser.first_name, sender_lname : uc.currentUser.last_name, receiver_fname : uc.info.first_name, receiver_lname : uc.info.last_name };
+    // use $http service to obtain data
+    $http.post('http://recruitchute.io/messages/sendMessage', data_object).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            
+        }
+    },
+    function(err) { console.log(err);
+    });
 }
 
 }]);

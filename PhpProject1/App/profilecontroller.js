@@ -45,6 +45,38 @@ myApp.controller('profileController',['$http', 'DataService','$location', functi
            function(err) { console.log(err);
         });        
     }
+    
+    cc.info3 = [];
+    cc.getPlayerInfo3 = getPlayerInfo3;
+    cc.getPlayerInfo3();
+
+    function getPlayerInfo3(){
+        // use $http service to obtain data
+        $http.post('http://recruitchute.io/playerinfo/getPlayerInfo3', cc.currentUser).then(function(response){
+            if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+                // set current user
+                cc.info3 = response.data;
+            }
+        },
+        function(err) { console.log(err);
+        });
+    }
+
+    cc.info4 = [];
+    cc.getPlayerInfo4 = getPlayerInfo4;
+    cc.getPlayerInfo4();
+
+    function getPlayerInfo4(){
+        // use $http service to obtain data
+        $http.post('http://recruitchute.io/playerinfo/getPlayerInfo4', cc.currentUser).then(function(response){
+            if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+                // set current user
+                cc.info4 = response.data;
+            }
+        },
+        function(err) { console.log(err);
+        });
+    }
 }]);
 myApp.filter('trustAsResourceUrl', ['$sce', function($sce) {
             return function(val) {

@@ -15,6 +15,13 @@ function init(){
     }
 }
 
+nc.viewProfile = viewProfile;
+
+function viewProfile(item){
+    DataService.setUserToView(item);
+    $location.path('/userprofile');
+}
+
 var base_url = 'http://recruitchute.io/';
 
 nc.favorite_ids = [];
@@ -46,8 +53,6 @@ function getFavoritedPlayersInfo(){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             // set current user
             nc.favinfo = response.data;
-            console.log("favorited player info:");
-            console.log(nc.favinfo);
             nc.favResults = true;
         }
         else{

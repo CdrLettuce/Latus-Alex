@@ -56,7 +56,7 @@ include('appHeader2.php');
                 </div>
                 <div class='row container-fluid'>
                         <div class='col-xs-6'>
-                            <p><b>Secondary Position: </b>{{ex.info2.position_2}}</p>
+                            <p><b>Secondary Position: </b>{{ex.info3.position}}</p>
                         </div>
                        <div class='col-xs-6'>
                              <p><b>Max Squat: </b>{{ex.info2.squat}}</p>   

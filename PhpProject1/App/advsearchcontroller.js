@@ -46,7 +46,6 @@ function advsearchForPlayer(item){
     var data_object = {firstname : item.searchfirst, lastname : item.searchlast, position : item.position, 
                         gradYear : item.gradYear, state : item.state, gender : item.gender};
     $http.post('http://recruitchute.io/search/advsearchPlayer', data_object ).then(function(response){
-            console.log(response);
             ac.players = response.data;
             if(response.data != -1){
                ac.displaySearchResults = true;

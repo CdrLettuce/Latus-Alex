@@ -74,28 +74,4 @@ class favoriteModel extends Model
                 return $result;
         }
         
-        public function addItemsToSales(){
-
-                /*  This method uses a prepared SQL statement to insert multiple records into a table 
-                using an array of objects.
-                */
-                $sql = 'INSERT INTO `sales` (product_id, customer_id, quantity)
-                VALUES (:product_id, :customer_id, :quantity)';
-                $this->setSql($sql);
-                // prepare SQL statement
-                $stm = $this->_db->prepare($sql);
-                // read input
-                $data = json_decode(file_get_contents('php://input'));
-                $customer_id = $data->customer_id;
-                $products = $data->products;
-                // execute SQL statement using each product in $products array
-                for ($i=0; $i<count($products); $i++){
-                        $parameters = array(':product_id'=>$products[$i]->product_id,
-                                          ':customer_id'=>$customer_id,
-                                          ':quantity'=>$products[$i]->quantity);
-                        $stm->execute($parameters);
-                        
-                }
-                return 1;
-        }
 }

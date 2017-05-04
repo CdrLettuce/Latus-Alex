@@ -2,7 +2,7 @@
 class PlayerInfoModel extends Model
 {
         public function getPlayerInfo(){
-                $sql = "SELECT u.city, s.state_name, u.first_name, u.last_name, u.email, u.phone 
+                $sql = "SELECT u.user_id, u.city, s.state_name, u.first_name, u.last_name, u.email, u.phone 
                         FROM `users` as u, `states` as s  
                         WHERE u.state_id = s.state_id
                         AND user_id = :userId";

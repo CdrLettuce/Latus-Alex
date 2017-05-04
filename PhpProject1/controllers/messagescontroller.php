@@ -13,10 +13,10 @@ class messagesController extends Controller
                 $this->view->output();
         }
         
-        public function getMessagers(){
+        public function getInboxMessages(){
                 $data = array();
                 // authenticate the user
-                $data = $this->model->getMessagers();
+                $data = $this->model->getInboxMessages();
                 // define template
                 $this->setView('views/ajax_response.php');
                 // define data
@@ -25,23 +25,10 @@ class messagesController extends Controller
                 $this->view->output();
         }
         
-        public function getMessagersInfo(){
+        public function getOutboxMessages(){
                 $data = array();
                 // authenticate the user
-                $data = $this->model->getMessagersInfo();
-                // define template
-                $this->setView('views/ajax_response.php');
-                // define data
-                $this->view->setData($data);
-                // display output
-                $this->view->output();
-        }
-        
-        
-        public function getMessages(){
-                $data = array();
-                // authenticate the user
-                $data = $this->model->getMessages();
+                $data = $this->model->getOutboxMessages();
                 // define template
                 $this->setView('views/ajax_response.php');
                 // define data

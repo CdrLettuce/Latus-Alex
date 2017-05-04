@@ -29,17 +29,18 @@ class messagesModel extends Model
                             'sender_fname'=>$values->sender_fname,   
                             'sender_lname'=>$values->sender_lname,
                             'receiver_fname'=>$values->receiver_fname,
-                            'receiver_lname'=>$values->receiver_lname);
+                            'receiver_lname'=>$values->receiver_lname,
+                            'subject'=>$values->subject);
             // insert new record
             $this->insertRecord($table,$data);
             return 1;
         }
         
-        public function getMessagers(){
-                 $sql = "SELECT DISTINCT sender_id, receiver_id, time_sent, sender_fname, sender_lname, receiver_fname, receiver_lname
-                        FROM messages 
+        public function getInboxMessages(){
+                 $sql = "SELECT  m.sender_id, m.subject, m.receiver_id, m.time_sent, m.message, u.first_name, u.last_name
+                        FROM `messages` AS m, `users` AS u
                         WHERE receiver_id = :userId
-                        OR sender_id = :userId";
+                        AND u.user_id = m.sender_id";
                 $this->setSql($sql);
                 $data = json_decode(file_get_contents('php://input'));
                 $values = array(':userId'=>$data->user_id);
@@ -50,71 +51,11 @@ class messagesModel extends Model
                 return $result;
         }
         
-        public function getMessagersInfo(){
-                /*  This method uses a prepared SQL statement to get multiple records from a table 
-                using an array of objects.
-                */
-                $sql = "SELECT time_sent, 
-                        FROM messages
-                        WHERE (receiver_id = :current_id AND sender_id = :other_id)
-                        OR (sender_id = :current_id AND receiver_id = :other_id)
-                        ORDER BY time_sent DESC
-                        LIMIT 1";
-                $this->setSql($sql);
-                // prepare SQL statement
-                $stm = $this->_db->prepare($sql);
-                // read input
-                $data = json_decode(file_get_contents('php://input'));
-                $current = $data->current_id;
-                $other = $data->other_id;
-                // execute SQL statement using each followed person in $user_id array
-                for ($i=0; $i<count($other); $i++){
-                        $parameters = array(':current_id'=>$current->user_id,
-                                            ':other_id'=>$other[$i]);
-                        $stm->execute($parameters);
-                        $result[$i] = $stm->fetch();
-                }
-                /* if the user is not found then return -1 */
-                if (!$result)
-                        $result = -1;
-                return $result;
-        }
-        
-        
-        public function getfavoritedplayersinfo(){
-
-                /*  This method uses a prepared SQL statement to get multiple records from a table 
-                using an array of objects.
-                */
-                $sql = "SELECT u.first_name, u.last_name, u.city, s.state_name, u.user_id, p.graduation_date, o.position
-                        FROM `users` as u, `states` as s, `player_profile` as p, `position` as o
-                        WHERE u.user_id = :user_id
-                        AND u.state_id = s.state_id
-                        AND p.position_1 = o.position_id
-                        AND u.user_id = p.user_id";
-                $this->setSql($sql);
-                // prepare SQL statement
-                $stm = $this->_db->prepare($sql);
-                // read input
-                $data = json_decode(file_get_contents('php://input'));
-                $followed = $data->ids;
-                // execute SQL statement using each followed person in $user_id array
-                for ($i=0; $i<count($followed); $i++){
-                        $parameters = array(':user_id'=>$followed[$i]->followed_id);
-                        $stm->execute($parameters);
-                        $result[$i] = $stm->fetch();
-                }
-                /* if the user is not found then return -1 */
-                if (!$result)
-                        $result = -1;
-                return $result;
-        }
-        
-        public function getMessages(){
-                 $sql = "SELECT sender_id, receiver_id, message, time_sent, sender_fname, sender_lname, receiver_fname, receiver_lname
-                        FROM messages 
-                        WHERE receiver_id = :userId
-                        OR sender_id = :userId";
+        public function getOutboxMessages(){
+                 $sql = "SELECT m.sender_id, m.subject, m.receiver_id, m.time_sent, m.message, u.first_name, u.last_name
+                        FROM `messages` AS m, `users` AS u
+                        WHERE sender_id = :userId
+                        AND u.user_id = m.receiver_id";
                 $this->setSql($sql);
                 $data = json_decode(file_get_contents('php://input'));
                 $values = array(':userId'=>$data->user_id);
@@ -124,4 +65,6 @@ class messagesModel extends Model
                         $result = -1;
                 return $result;
         }
+        
+        
 }

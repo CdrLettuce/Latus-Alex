@@ -43,7 +43,8 @@ class profileupdateModel extends Model
                                     'bench'=>$values->bench,
                                     'squat'=>$values->sqaut,    
                                     'mile_time'=>$values->mile,
-                                    'dash_time'=>$values->yard);
+                                    'dash_time'=>$values->yard,
+                                    'Image'=>$values->image);
                     // insert new record
                     $this->insertRecord($table,$data);
                     return 1;    
@@ -120,7 +121,8 @@ class profileupdateModel extends Model
                                     'bench'=>$values->bench,
                                     'squat'=>$values->squat,    
                                     'mile_time'=>$values->mile,
-                                    'dash_time'=>$values->yard);
+                                    'dash_time'=>$values->yard,
+                                    'Image'=>$values->image);
                     $condition = 'user_id = :user_id ';
                     $condition_values = array('user_id'=>$values->userID);
                     // insert new record

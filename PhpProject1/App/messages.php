@@ -59,8 +59,8 @@ include('appHeader2.php');
         </div> <!--End Sidebar-->
                
         <!-- Main for displaying separate messages and  -->
-        <div  id='messages-main' class ='row-container-fluid'>
-            <div id ="current-message">
+        <div  id='messages-main' class ='col-sm-8'>
+            <div id ="current-message" class="row-container-fluid">
                 <h4 id="LSM">Last Sent Message: </h4>
                 <div id="from-time" class="col-sm-4">
                     <h4>from and time</h4>
@@ -71,7 +71,18 @@ include('appHeader2.php');
                 <div id="the-message" class="col-sm-8">
                     <h4>the message</h4>
                 </div>
-            </div>  
+            </div> 
+            <div id="message-reply" class="row-container-fluid">
+                <div id="reply-subject" class="col-sm-8">
+                    <input type="text" id="your-subject" placeholder="Subject">
+                </div>
+                <div id="your-message" class="col-sm-8">
+                    <input type="text" id="reply"placeholder="Enter your reply here">
+                </div>
+                <div class="col-sm-4">
+                    <button ng-click="" id="reply-button" class="col-sm-4">Reply</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

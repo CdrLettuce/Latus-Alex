@@ -324,14 +324,14 @@ Join the network - Splash Page
 }
 
 #join{
-    background-color: #f7f7f7;
-    background-image: url("../images/wSoccer.png");
+    /*background-image: url("../images/wSoccer.png");*/
+    background-image: url("../images/fieldBall.png");
     background-size: cover;
     background-position: bottom;
 }
 
 .join{
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
     text-align: center;
 }
 
@@ -351,6 +351,10 @@ ul li:before{
     color: #ff9933;
 }
 
+.layer3{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 /******************************************
 RecruitChute difference - Splash page
 ******************************************/
@@ -359,8 +363,8 @@ RecruitChute difference - Splash page
     color: black;
 }
 #learnMore{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    /*padding-top: 30px;
+    padding-bottom: 30px;*/
     background-image: url("../images/grass2.png");
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
@@ -381,10 +385,18 @@ RecruitChute difference - Splash page
     margin-right:0px;
     /*padding-left: 10%;
     padding-right: 10%;*/
-    width: 100%;
-    
+    width: 100%; 
 }
 
+.layer2{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.learnMore h1{
+    margin-top: 2%;
+    color: #ff9933;
+    font-size: 280%;
+}
 
 /******************************************
 About US

@@ -45,6 +45,15 @@ include('appHeader2.php');
                     </div> 
                 </form>
               </div>
+            </div>
+              <div id="modalConfirm" class="modal">
+              <!-- Modal content -->
+              <div class="modal-confirm">
+                <div class="modal-body">
+                  <span class="close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+                  <h3>Message has been sent</h3>
+                </div>
+              </div>
             </div>     
         </div>
         <div class="col-sm-7">

@@ -120,22 +120,25 @@ function showMessageContainer(){
     // When the user clicks on <span> (x), close the modal
     $(".close").click(function() {
             $('#myModal').css('display', 'none');
+            $('#modalConfirm').css('display', 'none');
     });
 }
 
 uc.sendMessage = sendMessage;
 
 function sendMessage(input_message, input_subject){
-    $('#myModal').css('display', 'none');
     var data_object = {sender_id : uc.currentUser.user_id, receiver_id : uc.info.user_id, message : input_message, subject : input_subject, sender_fname : uc.currentUser.first_name, sender_lname : uc.currentUser.last_name, receiver_fname : uc.info.first_name, receiver_lname : uc.info.last_name };
     // use $http service to obtain data
     $http.post('http://recruitchute.io/messages/sendMessage', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             
         }
+
     },
     function(err) { console.log(err);
     });
+    $('#myModal').css('display', 'none');	
+    $('#modalConfirm').css('display', 'block');  
 }
 
 }]);

@@ -133,19 +133,7 @@ include('appHeader2.php');
             </div>
         </div>
     </div>
-    <div class='row container-fluid'>
-        <div class='col-sm-10 col-sm-offset-1'>
-            <div class='sample-container'>
-                <h4 class='title' >test messaging</h4>
-                <div class="input-group">
-                        <textarea  class="form-control" name="message" id="message" ></textarea>
-                </div>
-                <div class="form-group">
-                    <p><button type='button' class='btn btn-primary btn-lg btn-block' ng-click='ex.sendMessage(ex.message)'>Send Message</button></p>
-                </div>	
-            </div>
-        </div>
-    </div>
+   
 </div>
 
 </div>

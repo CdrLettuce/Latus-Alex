@@ -15,9 +15,8 @@ include('appHeader2.php');
                 <!--HERE is where you ng-repeat through the inbox messages-->
                 <div id='inbox-messages'>
                     <div>
-                        <table class='table'>
-                            <tr ng-repeat='item in ex.inboxMessages track by $index'
-                                                ng-show="item.subject==ex.subject.name">
+                        <table class='table-striped'>
+                            <tr ng-repeat='item in ex.inboxMessages track by $index'>
                                 <td class='col-xs-12'>
                                     <a ng-click='ex.displayBigMessage(item.user_id)'>
                                         <p>From: {{item.first_name}}</p>
@@ -41,9 +40,8 @@ include('appHeader2.php');
                 <!--HERE is where you ng-repeat through the inbox messages-->
                 <div id='outbox-messages'>
                     <div>
-                        <table class='table-stripped'>
-                            <tr ng-repeat='item in ex.outboxMessages track by $index'
-                                                ng-show="item.subject==ex.subject.name">
+                        <table class='table-striped'>
+                            <tr ng-repeat='item in ex.outboxMessages track by $index'>
                                 <td class='col-xs-12'>
                                     <a ng-click='ex.displayBigMessage(item.user_id)'>
                                         <p>To: {{item.first_name}}</p>

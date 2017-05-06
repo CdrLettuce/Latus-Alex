@@ -15,6 +15,19 @@ function init(){
     }
 }
 
+
+nc.inboxMessages = [];
+nc.getInboxMessages = getInboxMessages;
+getInboxMessages();
+
+
+nc.outboxMessages = [];
+nc.getOutboxMessages = getOutboxMessages;
+getOutboxMessages();
+
+
+
+
 function getId(){
     nc.userProfileID = DataService.getUserToView();
     getPlayerInfo();
@@ -59,9 +72,6 @@ function sendMessage(item){
     });
 }
 
-nc.inboxMessages = [];
-nc.getInboxMessages = getInboxMessages;
-getInboxMessages();
 
 function getInboxMessages(){
     console.log("get Inbox Messages is being called");
@@ -81,9 +91,6 @@ function getInboxMessages(){
     }); 
 }
 
-nc.outboxMessages = [];
-nc.getOutboxMessages = getOutboxMessages;
-getOutboxMessages();
 
 function getOutboxMessages(){
     console.log("get Outbox Messages is being called");

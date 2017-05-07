@@ -2,10 +2,11 @@
 class SearchModel extends Model
 {
         public function searchPlayer(){           
-                $sql = "SELECT u.user_id, u.first_name, u.last_name, u.city, s.state_name
-                        FROM `users` as u, `states` as s
+                $sql = "SELECT u.user_id, u.first_name, u.last_name, u.city, s.state_name, p.Image
+                        FROM `users` as u, `states` as s, `player_profile` as p
                         WHERE u.first_name LIKE CONCAT('%', :first_name, '%')
                         AND u.last_name LIKE CONCAT('%', :last_name, '%')
+                        AND u.user_id = p.user_id
                         AND s.state_id = u.state_id";
                 $this->setSql($sql);
                 $data = json_decode(file_get_contents('php://input'));

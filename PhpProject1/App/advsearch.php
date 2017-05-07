@@ -158,7 +158,7 @@ include('appHeader2.php');
                                         ng-show="item.subject==ex.subject.name">
                         <td class='col-xs-2'>
                             <a ng-click='ex.viewProfile(item.user_id)'>
-                             <i class="fa fa-id-card fa-5x" aria-hidden="true"></i>
+                                <img class='searchImageLarge'src='{{item.Image | trustAsResourceUrl}}' />
                             </a>
                         </td>
                        <td class='col-xs-8'>

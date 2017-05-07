@@ -23,7 +23,7 @@ class signupModel extends Model{
                             ':zip'=>$_POST['zip'],
                             ':phone'=>$_POST['phone'],
                             ':password'=>$_POST['password'],
-                            ':role_id'=>'1',
+                            ':role_id'=>'2',
                             ':sport_id'=>'1');
             return $this->setAll($values);
         }
@@ -41,7 +41,7 @@ class signupModel extends Model{
                             ':phone'=>$_POST['phone'],
                             ':gender'=>$_POST['gender'],
                             ':password'=>$_POST['password'],
-                            ':role_id'=>'2',
+                            ':role_id'=>'1',
                             ':sport_id'=>'1');
             return $this->setAll($values);
         }

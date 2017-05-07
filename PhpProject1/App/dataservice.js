@@ -3,7 +3,7 @@
 myApp.factory('DataService', [function(){
         // define your data service(members)
         var service = {};
-        service.currentUser  = {first_name : -1, last_name : -1, user_id : -1};
+        service.currentUser  = {first_name : -1, last_name : -1, user_id : -1, role_id : -1};
 
         // define 'getters'
         service.getCurrentUser = getCurrentUser;

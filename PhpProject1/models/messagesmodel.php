@@ -26,10 +26,6 @@ class messagesModel extends Model
             $data = array('sender_id'=>$values->sender_id,
                             'receiver_id'=>$values->receiver_id,
                             'message'=>$values->message,
-                            'sender_fname'=>$values->sender_fname,   
-                            'sender_lname'=>$values->sender_lname,
-                            'receiver_fname'=>$values->receiver_fname,
-                            'receiver_lname'=>$values->receiver_lname,
                             'subject'=>$values->subject);
             // insert new record
             $this->insertRecord($table,$data);

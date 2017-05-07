@@ -10,21 +10,23 @@ include('appHeader2.php');
             <div ng-show="ex.favResults">
                 <h4>My Favorites: </h4>
                 <table id='fav-results-table' class='table'>
-                    <tr class='col-sm-6' ng-repeat='item in ex.favinfo track by $index'
-                                        ng-show="item.subject==ex.subject.name">
-                        <td class='col-sm-3 col-sm-offset-1'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
-                             <i class="fa fa-id-card fa-5x" aria-hidden="true"></i>
-                            </a>
-                        </td>
-                       <td class='col-xs-7'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
-                                <h4>{{item.first_name}} {{item.last_name}}</h4>
-                            </a>
-                            <p>{{item.city}}, {{item.state_name}}</p>
-                            <p>{{item.position}}, Class of {{item.graduation_date}}</p>
-                        </td>
-                    </tr>
+                    <div>
+                        <tr class='col-sm-6' ng-repeat='item in ex.favinfo track by $index'
+                                            ng-show="item.subject==ex.subject.name">
+                            <td class='col-sm-3 col-sm-offset-1'>
+                                <a ng-click='ex.viewProfile(item.user_id)'>
+                                 <i class="fa fa-id-card fa-5x" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                           <td class='col-xs-7'>
+                                <a ng-click='ex.viewProfile(item.user_id)'>
+                                    <h4>{{item.first_name}} {{item.last_name}}</h4>
+                                </a>
+                                <p>{{item.city}}, {{item.state_name}}</p>
+                                <p>{{item.position}}, Class of {{item.graduation_date}}</p>
+                            </td>
+                        </tr>
+                    </div>
                 </table>
             </div>  
         </div>

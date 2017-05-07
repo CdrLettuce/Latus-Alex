@@ -2,7 +2,7 @@
 class LoginModel extends Model
 {
         public function checkLogin(){
-                $sql = "SELECT user_id, first_name, last_name, city, state_id 
+                $sql = "SELECT user_id, first_name, last_name, city, state_id, role_id 
                         FROM `users`  
                         WHERE email = :username and password = :pwd";
                 $this->setSql($sql);

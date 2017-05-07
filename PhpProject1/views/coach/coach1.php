@@ -70,7 +70,7 @@ include('Assets/pageHeader.php');
 					</div>					
 				</div>	
 			</div>
-                        <!-- Level select input -->
+                        <!-- Level select input 
                         <div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
   				<label class="cols-sm-2 control-label" for="state">What level do you coach?</label>
 		  		<div class="cols-sm-10">
@@ -84,9 +84,10 @@ include('Assets/pageHeader.php');
 						</select>
 					</div>
 				</div>
-			</div>                      
+			</div>   
+                        -->
                         <!--Bio Input-->
-                        <div class="form-group col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
+                        <div class="form-group col-md-4 col-sm-6 col-md-offset-2 col-sm-offset-3">
 				<label class="cols-sm-2 control-label" for="state">Select your state</label>
 				<div class="cols-sm-10">
 					<div class="input-group">		
@@ -148,7 +149,7 @@ include('Assets/pageHeader.php');
 				</div>					
 			</div>
 			<!-- City Input -->
-			<div class="form-group col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-3">
+			<div class="form-group col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3">
 				<label for="city" class="cols-sm-2 control-label">City</label>
 				<div class="cols-sm-10">
 					<div class="input-group">
@@ -158,7 +159,7 @@ include('Assets/pageHeader.php');
 				</div>	
 			</div>
 			<!-- Zip code input -->
-			<div class="form-group col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3">
+			<div class="form-group col-md-4 col-sm-6 col-md-offset-2 col-sm-offset-3">
 				<label for="zip" class="cols-sm-2 control-label">Zip Code</label>
 				<div class="cols-sm-10">
 					<div class="input-group">

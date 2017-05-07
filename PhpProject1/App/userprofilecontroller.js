@@ -127,7 +127,7 @@ function showMessageContainer(){
 uc.sendMessage = sendMessage;
 
 function sendMessage(input_message, input_subject){
-    var data_object = {sender_id : uc.currentUser.user_id, receiver_id : uc.info.user_id, message : input_message, subject : input_subject, sender_fname : uc.currentUser.first_name, sender_lname : uc.currentUser.last_name, receiver_fname : uc.info.first_name, receiver_lname : uc.info.last_name };
+    var data_object = {sender_id : uc.currentUser.user_id, receiver_id : uc.info.user_id, message : input_message, subject : input_subject};
     // use $http service to obtain data
     $http.post('http://recruitchute.io/messages/sendMessage', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){

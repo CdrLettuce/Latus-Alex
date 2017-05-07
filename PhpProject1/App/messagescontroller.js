@@ -14,18 +14,19 @@ function init(){
         $location.path('/login');
     }
 }
+nc.bigMessage = {};
+nc.noBigMessage = true;
+nc.showBigMessage = false;
 
+nc.displayBigMessage = displayBigMessage;
 
 nc.inboxMessages = [];
 nc.getInboxMessages = getInboxMessages;
 getInboxMessages();
 
-
 nc.outboxMessages = [];
 nc.getOutboxMessages = getOutboxMessages;
 getOutboxMessages();
-
-
 
 
 function getId(){
@@ -33,11 +34,9 @@ function getId(){
     getPlayerInfo();
 }
 
-
 var base_url = 'http://recruitchute.io/';
 nc.info = [];
 nc.getPlayerInfo = getPlayerInfo;
-
 
 function getPlayerInfo(){
     // use $http service to obtain data
@@ -52,65 +51,92 @@ function getPlayerInfo(){
     });
 }
 
+nc.showMessageContainer = showMessageContainer;
 
-nc.sendMessage = sendMessage;
+function showMessageContainer(){ 
+    $(window).click(function(e) {
+    if(e.target.id === "myModal"){
+		if($("#comment").val() !== "" || $("#msubject").val() !== ""){
+			$("#comment").val("");
+			$("#msubject").val("");
+		}
+		$('#myModal').css('display', 'none');
+	}
+    });
+    $('#myModal').css('display', 'block');
 
-function sendMessage(item){
-    console.log("send message is being called");
-    console.log("here is the item being passed in:");
+    // When the user clicks on <span> (x), close the modal
+    $(".close").click(function() {
+            $('#myModal').css('display', 'none');
+            $('#modalConfirm').css('display', 'none');
+    });
+}
+
+nc.inboxReply = inboxReply;
+
+function inboxReply(item){
+    console.log("Big messsage:");
     console.log(item);
-    var data_object = {sender_id : nc.currentUser.user_id, receiver_id : nc.info.user_id, message : item, sender_fname : nc.currentUser.first_name, sender_lname : nc.currentUser.last_name, receiver_fname : nc.info.first_name, receiver_lname : nc.info.last_name };
+    var data_object = {sender_id : nc.currentUser.user_id, receiver_id : item.sender_id, message : item.replymessage, subject : item.replysubject};
     // use $http service to obtain data
-    console.log("here is the data object:");
-    console.log(data_object);
     $http.post('http://recruitchute.io/messages/sendMessage', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
-            
+            nc.noBigMessage = true;
+            nc.showBigMessage = false;
         }
     },
     function(err) { console.log(err);
     });
+    $('#modalConfirm').css('display', 'block');  
 }
 
+nc.outboxReply = outboxReply;
+
+function outboxReply(item){
+    console.log("Big messsage:");
+    console.log(item);
+    var data_object = {sender_id : nc.currentUser.user_id, receiver_id : item.sender_id, message : item.replymessage, subject : item.replysubject};
+    // use $http service to obtain data
+    $http.post('http://recruitchute.io/messages/sendMessage', data_object).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            nc.noBigMessage = true;
+            nc.showBigMessage = false;
+        }
+    },
+    function(err) { console.log(err);
+    });
+    $('#modalConfirm').css('display', 'block');  
+}
 
 function getInboxMessages(){
-    console.log("get Inbox Messages is being called");
     var data_object = {user_id : nc.currentUser.user_id};
     // use $http service to obtain data
-    console.log("here is the data object:");
-    console.log(data_object);
     $http.post('http://recruitchute.io/messages/getInboxMessages', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
-            console.log("here is the Inbox response object:");
-            
             nc.inboxMessages = response.data;
-            console.log(nc.inboxMessages);
         }
     },
     function(err) { console.log(err);
     }); 
 }
-
 
 function getOutboxMessages(){
-    console.log("get Outbox Messages is being called");
     var data_object = {user_id : nc.currentUser.user_id};
     // use $http service to obtain data
-    console.log("here is the data object:");
-    console.log(data_object);
     $http.post('http://recruitchute.io/messages/getOutboxMessages', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
-            console.log("here is the Outbox response object:");
-            
             nc.outboxMessages = response.data;
-            console.log(nc.outboxMessages);
         }
     },
     function(err) { console.log(err);
     }); 
 }
 
-
+function displayBigMessage(item){
+    nc.bigMessage = item;
+    nc.noBigMessage = false;
+    nc.showBigMessage = true;
+}
 
 }]);
 

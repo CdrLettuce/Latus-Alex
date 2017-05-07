@@ -15,6 +15,23 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
         }
     }
     
+    // after login check to see if the user is a coach or a player
+    hc.playerhome = true;
+    hc.coachhome = false;
+    
+    hc.checkRole = checkRole;
+    checkRole();
+    
+    function checkRole(){
+        console.log('check role is being called');
+        console.log(hc.currentUser.role_id);
+        if(hc.currentUser.role_id == 2){
+            console.log('in the if');
+            hc.coachhome = true;
+            hc.playerhome = false;
+        }
+    }
+    
     // a
     
     hc.thingy = "Input textaroo";

@@ -547,16 +547,13 @@ include('appHeader2.php');
                                             ng-show="item.subject==ex.subject.name">
                             <td class='col-xs-2'>
                                 <a ng-click='ex.viewProfile(item.user_id)'>
-                                    <i class="fa fa-id-card fa-3x" aria-hidden="true"></i>
+                                    <img class='searchImage'src='{{item.Image | trustAsResourceUrl}}' />
                                 </a>
                             </td>
                            <td class='col-xs-10'>
                                     <a ng-click='ex.viewProfile(item.user_id)'>
                                         <strong>{{item.first_name}} {{item.last_name}}</strong>
-                                    </a>
-                                    <p> {{item.product_description}}</p>
-                                    <p>{{item.unit_price}}</p>
-                         
+                                    </a>                         
                             </td>
                         </tr>
                     </table>
@@ -826,16 +823,13 @@ include('appHeader2.php');
                                             ng-show="item.subject==ex.subject.name">
                             <td class='col-xs-2'>
                                 <a ng-click='ex.viewProfile(item.user_id)'>
-                                    <i class="fa fa-id-card fa-3x" aria-hidden="true"></i>
+                                    <img class='searchImage'src='{{item.Image | trustAsResourceUrl}}' />
                                 </a>
                             </td>
                            <td class='col-xs-10'>
                                     <a ng-click='ex.viewProfile(item.user_id)'>
                                         <strong>{{item.first_name}} {{item.last_name}}</strong>
-                                    </a>
-                                    <p> {{item.product_description}}</p>
-                                    <p>{{item.unit_price}}</p>
-                         
+                                    </a>                         
                             </td>
                         </tr>
                     </table>

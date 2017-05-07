@@ -48,6 +48,11 @@
      height: 90%;
  }
  
+ .searchImage{
+    max-width: 50px; 
+    max-height: 50px;
+}
+ 
  .center-text{
      text-align: center;
  }

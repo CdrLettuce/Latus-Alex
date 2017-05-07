@@ -33,7 +33,5 @@ include('appHeader2.php');
     </div>
 </div>
 </div>
-
 </div>
-
 </div>

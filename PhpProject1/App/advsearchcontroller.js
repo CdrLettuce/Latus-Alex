@@ -47,6 +47,15 @@ function advsearchForPlayer(item){
                         gradYear : item.gradYear, state : item.state, gender : item.gender};
     $http.post('http://recruitchute.io/search/advsearchPlayer', data_object ).then(function(response){
             ac.players = response.data;
+            for(var i=0; i<ac.players.length; i++){
+                console.log('Your in the for loop');
+                console.log('players[i].image =');
+                console.log(ac.players[i].Image);
+                if(ac.players[i].Image == null){
+                    ac.players[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
+                }
+            }
+            
             if(response.data != -1){
                ac.displaySearchResults = true;
                ac.noResults = false;

@@ -20,7 +20,7 @@ class SearchModel extends Model
         }
         
         public function advsearchPlayer(){           
-                $sql = "SELECT u.first_name, u.last_name, u.city, s.state_name, u.user_id, p.graduation_date, o.position
+                $sql = "SELECT u.first_name, u.last_name, u.city, s.state_name, u.user_id, p.graduation_date, o.position, p.Image
                         FROM `users` as u, `states` as s, `player_profile` as p, `position` as o
                         WHERE u.first_name LIKE CONCAT('%', :first_name, '%')
                         AND u.last_name LIKE CONCAT('%', :last_name, '%')

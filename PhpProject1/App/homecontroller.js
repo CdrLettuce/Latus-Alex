@@ -52,7 +52,16 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
         }
         var data_object = {firstname : item.searchfirst, lastname: item.searchlast};
         $http.post('http://recruitchute.io/search/searchPlayer', data_object ).then(function(response){
+            
             hc.players = response.data;
+            for(var i=0; i<hc.players.length; i++){
+                console.log('Your in the for loop');
+                console.log('players[i].image =');
+                console.log(hc.players[i].Image);
+                if(hc.players[i].Image == null){
+                    hc.players[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
+                }
+            }
             if(response.data != -1){
                hc.displaySearchResults = true;
                hc.noResults = false;

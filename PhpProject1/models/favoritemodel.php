@@ -30,27 +30,13 @@ class favoriteModel extends Model
                     $result = -1;
             return $result;
         }
-        public function getfavoritedplayers2(){           
-            $sql = "SELECT followed_id
-                    FROM favorites
-                    WHERE follower_id = :userId";
-            $this->setSql($sql);
-            $data = json_decode(file_get_contents('php://input'));
-            $values = array(':userId'=>$data->user_id);
-            $objects = $this->getAll($values);
-            $ids = $objects->followed_id;
-            /* if the user is not found then return -1 */
-            if (!$ids)
-                    $ids = -1;
-            return $ids;
-        }
         
         public function getfavoritedplayersinfo(){
 
                 /*  This method uses a prepared SQL statement to get multiple records from a table 
                 using an array of objects.
                 */
-                $sql = "SELECT u.first_name, u.last_name, u.city, s.state_name, u.user_id, p.graduation_date, o.position
+                $sql = "SELECT u.first_name, u.last_name, u.city, s.state_name, u.user_id, p.graduation_date, o.position, p.Image
                         FROM `users` as u, `states` as s, `player_profile` as p, `position` as o
                         WHERE u.user_id = :user_id
                         AND u.state_id = s.state_id

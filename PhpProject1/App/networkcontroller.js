@@ -53,6 +53,14 @@ function getFavoritedPlayersInfo(){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             // set current user
             nc.favinfo = response.data;
+            for(var i=0; i<nc.favinfo.length; i++){
+                console.log('Your in the for loop');
+                console.log('players[i].image =');
+                console.log(nc.favinfo[i].Image);
+                if(nc.favinfo[i].Image == null){
+                    nc.favinfo[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
+                }
+            }
             nc.favResults = true;
         }
         else{

@@ -19,7 +19,7 @@ include('appHeader2.php');
                             <tr ng-repeat='item in ex.inboxMessages track by $index'>
                                 <td class='col-xs-12'>
                                     <a ng-click='ex.displayBigMessage(item)'>
-                                        <p>From: {{item.first_name}}</p>
+                                        <p>From: {{item.first_name}} {{item.last_name}}</p>
                                         <p>Subject: {{item.subject}}</p>
                                         <p>Time: {{item.time_sent}}</p>
                                     </a>
@@ -44,7 +44,7 @@ include('appHeader2.php');
                             <tr ng-repeat='item in ex.outboxMessages track by $index'>
                                 <td class='col-xs-12'>
                                     <a ng-click='ex.displayBigMessage(item)'>
-                                        <p>To: {{item.first_name}}</p>
+                                        <p>To: {{item.first_name}} {{item.last_name}}</p>
                                         <p>Subject: {{item.subject}}</p>
                                         <p>Time: {{item.time_sent}}</p>
                                     </a>

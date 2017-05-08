@@ -36,7 +36,8 @@ class messagesModel extends Model
                  $sql = "SELECT  m.sender_id, m.subject, m.receiver_id, m.time_sent, m.message, u.first_name, u.last_name
                         FROM `messages` AS m, `users` AS u
                         WHERE receiver_id = :userId
-                        AND u.user_id = m.sender_id";
+                        AND u.user_id = m.sender_id
+                        ORDER BY m.time_sent DESC";
                 $this->setSql($sql);
                 $data = json_decode(file_get_contents('php://input'));
                 $values = array(':userId'=>$data->user_id);
@@ -51,7 +52,8 @@ class messagesModel extends Model
                  $sql = "SELECT m.sender_id, m.subject, m.receiver_id, m.time_sent, m.message, u.first_name, u.last_name
                         FROM `messages` AS m, `users` AS u
                         WHERE sender_id = :userId
-                        AND u.user_id = m.receiver_id";
+                        AND u.user_id = m.receiver_id
+                        ORDER BY m.time_sent DESC";
                 $this->setSql($sql);
                 $data = json_decode(file_get_contents('php://input'));
                 $values = array(':userId'=>$data->user_id);

@@ -246,7 +246,7 @@ body, html{
 }
 
 #messages-container{
-    height: 90vh;  
+     
 }
 
 #messagesResults{
@@ -254,7 +254,7 @@ body, html{
 }
 
 #messages-sidebar{
-    height: 99%;
+    max-height: 85vh;
     background-color: white;
     padding:0px;
     padding-top: 26px; 
@@ -262,18 +262,19 @@ body, html{
 }
 
 #inbox-container, #outbox-container{
-    height: 50%;
+    
+    max-height: 260px;
     border:2px;   
 }
 
 #inbox-messages, #outbox-messages{
-    height:75%;
+    max-height: 260px;
     overflow-y: scroll;
     border: 1px solid white;
 }
 
 #messages-main{
-    height: 100%;
+    height: 80vh;
 }
 
 #outbox, #inbox{

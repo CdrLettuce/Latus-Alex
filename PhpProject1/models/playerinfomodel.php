@@ -61,6 +61,20 @@ class PlayerInfoModel extends Model
                 return $result;
         }
         
+        public function getCoachInfo(){
+                $sql = "SELECT c.youtube_urls, c.image, c.bio, c.college
+                        FROM `coach_profile` as c
+                        WHERE c.user_id = :userId";
+                $this->setSql($sql);
+                $data = json_decode(file_get_contents('php://input'));
+                $values = array(':userId'=>$data->user_id);
+                $result = $this->getOne($values);
+                /* if the user is not found then return -1 */
+                if (!$result)
+                        $result = -1;
+                return $result;
+        }
+        
         
 
 }

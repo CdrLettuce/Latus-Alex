@@ -88,6 +88,10 @@ function inboxReply(item){
     function(err) { console.log(err);
     });
     $('#modalConfirm').css('display', 'block');  
+    // When the user clicks on <span> (x), close the modal
+    $(".close").click(function() {
+            $('#modalConfirm').css('display', 'none');
+    });
 }
 
 nc.outboxReply = outboxReply;
@@ -105,7 +109,11 @@ function outboxReply(item){
     },
     function(err) { console.log(err);
     });
-    $('#modalConfirm').css('display', 'block');  
+    $('#modalConfirm').css('display', 'block');
+    // When the user clicks on <span> (x), close the modal
+    $(".close").click(function() {
+            $('#modalConfirm').css('display', 'none');
+    });
 }
 
 function getInboxMessages(){

@@ -4,6 +4,16 @@ include('appHeader2.php');
 <div  id='homeContainer' class="xtra-top-pad" ng-controller='homeController as ex'>
 
     <div class='row container-fluid' >
+        <!--Modal for sent confirmation-->
+        <div id="modalConfirm" class="modal">
+            <!-- Modal content -->
+            <div class="modal-confirm">
+                <div class="modal-body">
+                    <span class="close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+                    <h3>Your profile has been updated</h3>
+                </div>
+            </div>
+        </div>  
         <div class="col-lg-6 col-sm-6 col-sm-offset-1 home-container" ng-show='ex.playerhome'>
             <div  id='update-profile-header' data-toggle="collapse" data-target="#updateForm">
                 <h4 class="col-sm-11">
@@ -149,7 +159,7 @@ include('appHeader2.php');
                 </div>
                 
                 <div class='row container-fluid'>
-                    <!-- GPA current -->
+                    <!-- Graduation Year current -->
                     <div class="form-group col-md-4 col-sm-4 ">
                         <p><b>Graduation Year:</b></p>
                     </div>
@@ -373,15 +383,36 @@ include('appHeader2.php');
         COACH HOME VIEW
         -->
         <div class="col-lg-6 col-sm-6 col-sm-offset-1 home-container" ng-show='ex.coachhome'>
-            <div  id='update-profile-header' data-toggle="collapse" data-target="#updateForm">
+            <div  id='update-coach-profile-header' data-toggle="collapse" data-target="#updateCoachForm">
                 <h4 class="col-sm-11">
                     <span class=""><i class="fa fa-edit fa" aria-hidden="true"></i></span>
-                    Update your profile
+                    Update your profile COACH
                 </h4>
                 <h4 class="col-sm-1"><i class="fa fa-caret-square-o-down fa" aria-hidden="true"></i></h4>
             </div>
 			<hr>
-            <form id="updateForm" class="collapse" method="" action="">
+            <form id="updateCoachForm" class="collapse" method="" action="">
+                
+                <!--College input-->
+                <div class='row container-fluid'>
+                    <!-- College current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>College:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info5.college}}</p>
+                    </div>   
+                    <!-- College input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                            <div class="cols-sm-10">
+                                    <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-institution fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.college'/>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+                
                 <!--Profile Picture input-->
                 
                 <div class='row container-fluid'>
@@ -390,7 +421,7 @@ include('appHeader2.php');
                         <p><b>Profile Picture:</b></p>
                     </div>
                     <div class="form-group col-md-3 col-sm-3 ">
-                        <p>{{ex.info5.Image}}</p>
+                        <p>{{ex.info5.image}}</p>
                     </div>   
                     <!-- Profile Picture input -->
                     <div class="form-group col-md-5 col-sm-5 ">
@@ -415,7 +446,7 @@ include('appHeader2.php');
                     <div class="form-group col-md-5 col-sm-5 ">
                             <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-film fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="video" id="video" ng-model='ex.item.video' />
+                                    <input type="text" class="form-control" name="video" id="video" ng-model='ex.item.youtube_urls' />
                             </div>
                     </div>
                 </div>
@@ -444,7 +475,7 @@ include('appHeader2.php');
 
                 <!-- Next Button -->
                 <div class="form-group">
-                    <p><button type='button' class='btn btn-primary btn-lg btn-block' ng-click='ex.addPlayerInfo(ex.item)'>Submit</button></p>
+                    <p><button type='button' class='btn btn-primary btn-lg btn-block' ng-click='ex.addCoachInfo(ex.item)'>Submit</button></p>
                     <!--<input type="submit" name="Submit" value="Submit" class="btn btn-primary btn-lg btn-block login-button">-->
                 </div>		
             </form>

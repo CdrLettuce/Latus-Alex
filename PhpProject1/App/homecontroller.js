@@ -27,8 +27,8 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
         console.log(hc.currentUser.role_id);
         if(hc.currentUser.role_id == 2){
             console.log('in the if');
-            hc.coachhome = true;
             hc.playerhome = false;
+            hc.coachhome = true;
         }
     }
     
@@ -124,7 +124,7 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
         });
     }
     
-      hc.item =  {};
+    hc.item =  {};
     hc.addPlayerInfo = addPlayerInfo;
 
     function addPlayerInfo(item){
@@ -192,7 +192,12 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
             hc.getPlayerinfo2;
         },
         function(err) { console.log(err);
-        });	
+        });
+        $('#modalConfirm').css('display', 'block');
+        // When the user clicks on <span> (x), close the modal
+        $(".close").click(function() {
+                $('#modalConfirm').css('display', 'none');
+        });
     }
 
     hc.viewProfile = viewProfile;
@@ -200,6 +205,61 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
     function viewProfile(thing){
         DataService.setUserToView(thing);
         $location.path('/userprofile');
+    }
+    
+    hc.info5 = [];
+    hc.getCoachInfo = getCoachInfo;
+    hc.getCoachInfo();
+
+    function getCoachInfo(){
+        
+        console.log('get coach info is being called');
+        // use $http service to obtain data
+        $http.post('http://recruitchute.io/playerinfo/getCoachInfo', hc.currentUser).then(function(response){
+            console.log('here is the response.data:');
+                console.log(response.data);
+            if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+                // set current user
+                
+                hc.info5 = response.data;
+                
+            }
+        },
+        function(err) { console.log(err);
+        });
+    }
+    
+    hc.addCoachInfo = addCoachInfo;
+
+    function addCoachInfo(item){
+        if(!item.college){
+            item.college = hc.info5.college;
+        }
+        if(!item.image){
+            item.image = hc.info5.image;
+        }
+        if(!item.bio){
+            item.bio = hc.info5.bio;
+        }
+        if(!item.youtube_urls){
+            item.youtube_urls = hc.info5.youtube_urls;
+        }
+        
+        var currentUser = hc.currentUser;
+        var data_object = {userID : currentUser.user_id, bio : item.bio, youtube_urls : item.youtube_urls, 
+                            college : item.college, image : item.image};             
+        $http.post('http://recruitchute.io/profileupdate/updateCoachProfile', data_object ).then(function(response){
+            hc.success_message = "Thank you " + hc.currentUser.first_name + ", your profile has been updated.";
+            hc.displaySuccessMessage=true;
+            hc.getCoachInfo;
+        },
+        function(err) { console.log(err);
+        });
+        $('#modalConfirm').css('display', 'block');
+        // When the user clicks on <span> (x), close the modal
+        $(".close").click(function() {
+                $('#modalConfirm').css('display', 'none');
+        });
     }
 
 }]);

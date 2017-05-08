@@ -109,7 +109,10 @@ class profileupdateModel extends Model
                                     'college'=>$values->college,
                                     'image'=>$values->image,
                                     'bio'=>$values->bio,
-                                    'youtube_urls'=>$values->youtube_urls);
+                                    'youtube_urls'=>$values->youtube_urls,
+                                    'division'=>$values->division,
+                                    'head_coach'=>$values->head_coach,
+                                    'assistant_coach'=>$values->assistant_coach);
                     // insert new record
                     $this->insertRecord($table,$data);
                     return 1;    
@@ -125,7 +128,10 @@ class profileupdateModel extends Model
                                     'college'=>$values->college,
                                     'image'=>$values->image,
                                     'bio'=>$values->bio,
-                                    'youtube_urls'=>$values->youtube_urls);
+                                    'youtube_urls'=>$values->youtube_urls,
+                                    'division'=>$values->division,
+                                    'head_coach'=>$values->head_coach,
+                                    'assistant_coach'=>$values->assistant_coach);
                     $condition = 'user_id = :user_id ';
                     $condition_values = array('user_id'=>$values->userID);
                     // insert new record

@@ -28,8 +28,11 @@ nc.favorite_ids = [];
 nc.getFavoritedPlayers = getFavoritedPlayers;
 getFavoritedPlayers();
 
-nc.nofavs = false;
+nc.nofavs = true;
 nc.favResults = false;
+
+nc.noschoolfavs = true;
+nc.favSchoolResults = false;
 
 function getFavoritedPlayers(){
     // use $http service to obtain data
@@ -54,14 +57,12 @@ function getFavoritedPlayersInfo(){
             // set current user
             nc.favinfo = response.data;
             for(var i=0; i<nc.favinfo.length; i++){
-                console.log('Your in the for loop');
-                console.log('favinfo[i].image =');
-                console.log(nc.favinfo[i].Image);
                 if(nc.favinfo[i].Image == null){
                     nc.favinfo[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
                 }
             }
             nc.favResults = true;
+            nc.nofavs = false;
         }
         else{
             nc.nofavs = true;
@@ -70,6 +71,51 @@ function getFavoritedPlayersInfo(){
     function(err) { console.log(err);
     });
 }
+
+nc.favorite_school_ids = [];
+nc.getFavoritedSchools = getFavoritedSchools;
+getFavoritedSchools();
+
+
+function getFavoritedSchools(){
+    // use $http service to obtain data
+    $http.post('http://recruitchute.io/favorite/getfavoritedschools', nc.currentUser).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            // set current user
+            nc.favorite_school_ids = response.data;
+            getFavoritedSchoolsInfo();
+        }
+    },
+    function(err) { console.log(err);
+    });
+}
+
+nc.favschoolinfo = [];
+nc.getFavoritedSchoolsInfo = getFavoritedSchoolsInfo;
+
+function getFavoritedSchoolsInfo(){
+    var data_object = {current_id : nc.currentUser, ids : nc.favorite_school_ids};
+    $http.post('http://recruitchute.io/favorite/getfavoritedschoolinfo', data_object).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            // set current user
+            nc.favschoolinfo = response.data;
+            for(var i=0; i<nc.favschoolinfo.length; i++){
+                if(nc.favschoolinfo[i].image == null){
+                    nc.favschoolinfo[i].image = "http://recruitchute.io/Assets/images/School_icon.png";
+                }
+            }
+            nc.favSchoolResults = true;
+            nc.noschoolfavs = false;
+        }
+        else{
+            nc.noschoolfavs = true;
+        }
+    },
+    function(err) { console.log(err);
+    });
+}
+
+
 
 
 }]);

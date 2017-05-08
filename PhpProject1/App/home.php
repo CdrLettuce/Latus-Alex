@@ -325,7 +325,7 @@ include('appHeader2.php');
                     <div class="form-group col-md-5 col-sm-5 ">
                             <div class="cols-sm-10">
                                     <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-institution fa" aria-hidden="true"></i></span>
+                                            <span class="input-group-addon"><i class="fa fa-picture-o fa" aria-hidden="true"></i></span>
                                             <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.image'/>
                                     </div>
                             </div>
@@ -386,12 +386,54 @@ include('appHeader2.php');
             <div  id='update-coach-profile-header' data-toggle="collapse" data-target="#updateCoachForm">
                 <h4 class="col-sm-11">
                     <span class=""><i class="fa fa-edit fa" aria-hidden="true"></i></span>
-                    Update your profile COACH
+                    Update your profile 
                 </h4>
                 <h4 class="col-sm-1"><i class="fa fa-caret-square-o-down fa" aria-hidden="true"></i></h4>
             </div>
 			<hr>
             <form id="updateCoachForm" class="collapse" method="" action="">
+                
+                <!--Head Coach input-->
+                
+                <div class='row container-fluid'>
+                    <!-- Head Coach current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Head Coach:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info5.head_coach}}</p>
+                    </div>   
+                    <!-- Head Coach input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                            <div class="cols-sm-10">
+                                    <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-address-card-o fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.head_coach'/>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <!--Assistant Coach input-->
+                
+                <div class='row container-fluid'>
+                    <!-- Assistant Coach current -->
+                    <div class="form-group col-md-4 col-sm-4 ">
+                        <p><b>Assistant Coach:</b></p>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-3 ">
+                        <p>{{ex.info5.assistant_coach}}</p>
+                    </div>   
+                    <!-- Assistant Coach input -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                            <div class="cols-sm-10">
+                                    <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-address-card-o fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.assistant_coach'/>
+                                    </div>
+                            </div>
+                    </div>
+                </div>          
                 
                 <!--College input-->
                 <div class='row container-fluid'>
@@ -413,6 +455,33 @@ include('appHeader2.php');
                     </div>
                 </div>
                 
+                <!-- Division current -->
+                <div class="form-group col-md-4 col-sm-4 ">
+                    <p><b>NCAA Division:</b></p>
+                </div>
+                <div class="form-group col-md-3 col-sm-3 ">
+                    <p>{{ex.info5.division}}</p>
+                </div>
+                <div class='row container-fluid'>
+                    <!-- Position select -->
+                    <div class="form-group col-md-5 col-sm-5 ">
+                        <div class="cols-sm-10">
+                            <div class="input-group">	
+                            <span class="input-group-addon"><i class="fa fa-soccer-ball-o fa" aria-hidden="true"></i></span>
+                                <select id="division" name="division" ng-model='ex.item.division' class="form-control">
+                                    <option value="">Select A Division</option>
+                                    <option value="NCAA Division 1">NCAA Division 1</option>
+                                    <option value="NCAA Division 2">NCAA Division 2</option>
+                                    <option value="NCAA Division 3">NCAA Division 3</option>				
+                            </select>
+                            </div>			
+                        </div>					
+                    </div>
+                </div>
+                
+                
+                <hr>
+                
                 <!--Profile Picture input-->
                 
                 <div class='row container-fluid'>
@@ -427,7 +496,7 @@ include('appHeader2.php');
                     <div class="form-group col-md-5 col-sm-5 ">
                             <div class="cols-sm-10">
                                     <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-institution fa" aria-hidden="true"></i></span>
+                                            <span class="input-group-addon"><i class="fa fa-photo-o fa" aria-hidden="true"></i></span>
                                             <input type="text" class="form-control" name="school" id="school" ng-model='ex.item.image'/>
                                     </div>
                             </div>

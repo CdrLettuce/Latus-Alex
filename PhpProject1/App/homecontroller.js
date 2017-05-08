@@ -23,10 +23,7 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
     checkRole();
     
     function checkRole(){
-        console.log('check role is being called');
-        console.log(hc.currentUser.role_id);
         if(hc.currentUser.role_id == 2){
-            console.log('in the if');
             hc.playerhome = false;
             hc.coachhome = true;
         }
@@ -55,9 +52,6 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
             
             hc.players = response.data;
             for(var i=0; i<hc.players.length; i++){
-                console.log('Your in the for loop');
-                console.log('players[i].image =');
-                console.log(hc.players[i].Image);
                 if(hc.players[i].Image == null){
                     hc.players[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
                 }
@@ -213,11 +207,8 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
 
     function getCoachInfo(){
         
-        console.log('get coach info is being called');
         // use $http service to obtain data
         $http.post('http://recruitchute.io/playerinfo/getCoachInfo', hc.currentUser).then(function(response){
-            console.log('here is the response.data:');
-                console.log(response.data);
             if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
                 // set current user
                 
@@ -244,14 +235,22 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
         if(!item.youtube_urls){
             item.youtube_urls = hc.info5.youtube_urls;
         }
+        if(!item.head_coach){
+            item.head_coach = hc.info5.head_coach;
+        }
+        if(!item.assistant_coach){
+            item.assistant_coach = hc.info5.assistant_coach;
+        }
+        if(!item.division){
+            item.division = hc.info5.division;
+        }
         
         var currentUser = hc.currentUser;
         var data_object = {userID : currentUser.user_id, bio : item.bio, youtube_urls : item.youtube_urls, 
-                            college : item.college, image : item.image};             
+                            college : item.college, image : item.image, division : item.division, 
+                            head_coach : item.head_coach, assistant_coach : item.assistant_coach};             
         $http.post('http://recruitchute.io/profileupdate/updateCoachProfile', data_object ).then(function(response){
-            hc.success_message = "Thank you " + hc.currentUser.first_name + ", your profile has been updated.";
-            hc.displaySuccessMessage=true;
-            hc.getCoachInfo;
+            getCoachInfo();
         },
         function(err) { console.log(err);
         });

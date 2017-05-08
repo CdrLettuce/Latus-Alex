@@ -3,7 +3,7 @@ include('appHeader2.php');
 ?>
 <div id="homeContainer" class="xtra-top-pad " ng-controller='networkController as ex'>  
     <div id='favResults' class='row container-fluid'>
-        <div  id='fav-results' class ='col-md-5 col-md-offset-1 home-container'>
+        <div  id='fav-results' class ='col-xs-5 col-xs-offset-1 home-container'>
             <h3 class='col-xs-12 center-text' ng-show="ex.nofavs">
                 No Favorite Players Found!
             </h3>
@@ -30,7 +30,7 @@ include('appHeader2.php');
                 </table>
             </div>  
         </div>
-        <div  id='fav-school-results' class ='col-md-5 home-container'>
+        <div  id='fav-school-results' class ='col-xs-5 home-container'>
             <h3 class='col-xs-12 center-text' ng-show="ex.noschoolfavs">
                 No Favorite Schools Found!
             </h3>

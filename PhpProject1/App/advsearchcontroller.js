@@ -21,8 +21,27 @@ ac.item =  {searchfirst : "", searchlast : "", position : "", gradYear : "", sta
         
 ac.advsearchForPlayer = advsearchForPlayer;
 ac.players = [];
-ac.displaySearchResults = false;
-ac.noResults = false;
+ac.displayPlayerSearchResults = false;
+ac.noPlayerResults = false;
+ac.playerSearchInputs = true;
+ac.schoolSearchInputs = false;
+ac.displayCoachSearchResults = false;
+ac.noCoachResults = false;
+
+ac.showPlayerSearch = showPlayerSearch;
+
+function showPlayerSearch(){
+    ac.playerSearchInputs = true;
+    ac.schoolSearchInputs = false;
+}
+
+ac.showCollegeSearch = showCollegeSearch;
+
+function showCollegeSearch(){
+    ac.schoolSearchInputs = true;
+    ac.playerSearchInputs = false;
+}
+
 
 function advsearchForPlayer(item){
     if(!item.searchfirst){
@@ -48,21 +67,18 @@ function advsearchForPlayer(item){
     $http.post('http://recruitchute.io/search/advsearchPlayer', data_object ).then(function(response){
             ac.players = response.data;
             for(var i=0; i<ac.players.length; i++){
-                console.log('Your in the for loop');
-                console.log('players[i].image =');
-                console.log(ac.players[i].Image);
                 if(ac.players[i].Image == null){
                     ac.players[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
                 }
             }
             
             if(response.data != -1){
-               ac.displaySearchResults = true;
-               ac.noResults = false;
+               ac.displayPlayerSearchResults = true;
+               ac.noPlayerResults = false;
             }
             if(response.data == '-1'){
-                ac.noResults = true;
-                ac.displaySearchResults = false;
+                ac.noPlayerResults = true;
+                ac.displayPlayerSearchResults = false;
             }
                 
             

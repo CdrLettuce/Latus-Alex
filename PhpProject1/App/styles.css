@@ -134,6 +134,10 @@
     padding-top: 10px;
 }
 
+.wide-button{
+    width: 100%;
+}
+
 /**** Message pop-up ****/
 /* The Modal (background) */
 .modal {

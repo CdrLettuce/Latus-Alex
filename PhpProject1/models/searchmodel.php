@@ -45,6 +45,26 @@ class SearchModel extends Model
                         $result = -1;
                 return $result;
         }
+        
+        public function advsearchCoach(){           
+                $sql = "SELECT u.city, s.state_name, u.user_id, c.image, c.head_coach, c.division, c.college
+                        FROM `users` as u, `states` as s, `coach_profile` as c
+                        WHERE c.college LIKE CONCAT('%', :college, '%')
+                        AND u.state_id LIKE CONCAT('%', :state_id)
+                        AND c.division LIKE CONCAT('%', :division, '%')
+                        AND s.state_id = u.state_id
+                        AND c.user_id = u.user_id";
+                $this->setSql($sql);
+                $data = json_decode(file_get_contents('php://input'));
+                $values = array(':college'=>$data->school,
+                                ':division'=>$data->division,
+                                ':state_id'=>$data->state);
+                $result = $this->getAll($values);
+                /* if the user is not found then return -1 */
+                if (!$result)
+                        $result = -1;
+                return $result;
+        }
 }
 
 ?>

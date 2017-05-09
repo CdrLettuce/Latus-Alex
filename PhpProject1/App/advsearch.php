@@ -159,6 +159,7 @@ include('appHeader2.php');
                     <p><button type='button' class='btn btn-primary btn-lg btn-block login-button' ng-click='ex.advsearchForPlayer(ex.item)'>Search</button></p>
                 </div>
             </div>
+            
             <div ng-show='ex.schoolSearchInputs'>
                 <!-- Advanced Search input -->
                 <div class="form-group ">
@@ -295,22 +296,23 @@ include('appHeader2.php');
             <div >
                 <h4>Search Results: </h4>
                 <table class='table'>
-                    <tr ng-repeat='item in ex.players track by $index'
+                    <tr ng-repeat='item in ex.coaches track by $index'
                                         ng-show="item.subject==ex.subject.name">
                         <td class='col-xs-2'>
                             <a ng-click='ex.viewProfile(item.user_id)'>
-                                <img class='searchImageLarge'src='{{item.Image | trustAsResourceUrl}}' />
+                                <img class='searchImageLarge'src='{{item.image | trustAsResourceUrl}}' />
                             </a>
                         </td>
                        <td class='col-xs-8'>
                             <a ng-click='ex.viewProfile(item.user_id)'>
-                                <h4>{{item.first_name}} {{item.last_name}}</h4>
+                                <h4>{{item.school}}</h4>
                             </a>
                             <p>{{item.city}}, {{item.state_name}}</p>
-                            <p>{{item.position}}, Class of {{item.graduation_date}}</p>
+                            <p>Head Coach: {{item.head_coach}}</p>
+                            <p>{{item.division}}</p>
                         </td>
                         <td class='col-xs-2'>
-                            <a ng-click='ex.favoritePlayer(item.user_id)'>
+                            <a ng-click='ex.favoriteSchool(item.user_id)'>
                                 <button class="btn btn-primary">Favorite</button>
                             </a>
                         </td>

@@ -60,6 +60,20 @@ class favoriteModel extends Model
                 return $result;
         }
         
+        public function favoriteSchool(){
+                              
+            $table = favorite_schools;
+            //obtain data
+            $user_data = json_decode(file_get_contents('php://input'));
+            //define SQL statement
+            $values = $user_data;
+            $data = array('follower_id'=>$values->current_user,
+                            'followed_id'=>$values->followed_id);
+            // insert new record
+            $this->insertRecord($table,$data);
+            return 1;    
+        }
+        
         public function getfavoritedschools(){           
             $sql = "SELECT followed_id
                     FROM favorite_schools

@@ -21,8 +21,14 @@ getId();
 
 function getId(){
     uc.userProfileID = DataService.getUserToView();
-    getPlayerInfo();
-    getPlayerInfo2();
+    if(uc.userProfileID.role_id == 2){
+        getCoachInfo();
+    }else{
+        getPlayerInfo();
+        getPlayerInfo2();
+        getPlayerInfo3();
+        getPlayerInfo4();
+    }
 }
 
 
@@ -33,7 +39,7 @@ uc.getPlayerInfo = getPlayerInfo;
 
 function getPlayerInfo(){
     // use $http service to obtain data
-    var data_object = {user_id : uc.userProfileID};
+    var data_object = {user_id : uc.userProfileID.user_id};
     $http.post(base_url + 'playerinfo/getPlayerInfo', data_object).then(function(response){
             if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
                 // set current user
@@ -50,7 +56,7 @@ uc.getPlayerInfo2 = getPlayerInfo2;
         
 function getPlayerInfo2(){
     // use $http service to obtain data
-    var data_object = {user_id : uc.userProfileID};
+    var data_object = {user_id : uc.userProfileID.user_id};
     $http.post(base_url + 'playerinfo/getPlayerInfo2', data_object).then(function(response){
             if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
                 // set current user
@@ -63,11 +69,11 @@ function getPlayerInfo2(){
 
 uc.info3 = [];
 uc.getPlayerInfo3 = getPlayerInfo3;
-uc.getPlayerInfo3();
+
 
 function getPlayerInfo3(){
     // use $http service to obtain data
-    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo3', uc.currentUser).then(function(response){
+    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo3', uc.userProfileID).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             // set current user
             uc.info3 = response.data;
@@ -79,14 +85,31 @@ function getPlayerInfo3(){
 
 uc.info4 = [];
 uc.getPlayerInfo4 = getPlayerInfo4;
-uc.getPlayerInfo4();
 
 function getPlayerInfo4(){
     // use $http service to obtain data
-    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo4', uc.currentUser).then(function(response){
+    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo4', uc.userProfileID).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             // set current user
             uc.info4 = response.data;
+        }
+    },
+    function(err) { console.log(err);
+    });
+}
+
+uc.info5 = [];
+uc.getCoachInfo = getCoachInfo;
+
+function getCoachInfo(){
+
+    // use $http service to obtain data
+    $http.post('http://recruitchute.io/playerinfo/getCoachInfo', uc.userProfileID).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            // set current user
+            uc.info5 = response.data;
+            console.log("coach info:");
+            console.log(uc.info5);
         }
     },
     function(err) { console.log(err);

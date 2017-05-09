@@ -267,12 +267,12 @@ include('appHeader2.php');
                     <tr ng-repeat='item in ex.players track by $index'
                                         ng-show="item.subject==ex.subject.name">
                         <td class='col-xs-2'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
+                            <a ng-click='ex.viewProfile(item)'>
                                 <img class='searchImageLarge'src='{{item.Image | trustAsResourceUrl}}' />
                             </a>
                         </td>
                        <td class='col-xs-8'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
+                            <a ng-click='ex.viewProfile(item)'>
                                 <h4>{{item.first_name}} {{item.last_name}}</h4>
                             </a>
                             <p>{{item.city}}, {{item.state_name}}</p>
@@ -299,12 +299,12 @@ include('appHeader2.php');
                     <tr ng-repeat='item in ex.coaches track by $index'
                                         ng-show="item.subject==ex.subject.name">
                         <td class='col-xs-2'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
+                            <a ng-click='ex.viewProfile(item)'>
                                 <img class='searchImageLarge'src='{{item.image | trustAsResourceUrl}}' />
                             </a>
                         </td>
                        <td class='col-xs-8'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
+                            <a ng-click='ex.viewProfile(item)'>
                                 <h4>{{item.school}}</h4>
                             </a>
                             <p>{{item.city}}, {{item.state_name}}</p>

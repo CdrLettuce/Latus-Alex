@@ -36,7 +36,7 @@ class favoriteModel extends Model
                 /*  This method uses a prepared SQL statement to get multiple records from a table 
                 using an array of objects.
                 */
-                $sql = "SELECT u.first_name, u.last_name, u.city, s.state_name, u.user_id, p.graduation_date, o.position, p.Image
+                $sql = "SELECT u.role_id, u.first_name, u.last_name, u.city, s.state_name, u.user_id, p.graduation_date, o.position, p.Image
                         FROM `users` as u, `states` as s, `player_profile` as p, `position` as o
                         WHERE u.user_id = :user_id
                         AND u.state_id = s.state_id
@@ -93,7 +93,7 @@ class favoriteModel extends Model
                 /*  This method uses a prepared SQL statement to get multiple records from a table 
                 using an array of objects.
                 */
-                $sql = "SELECT u.first_name, u.last_name, u.city, s.state_name, u.user_id, c.image, c.division, c.college, c.head_coach
+                $sql = "SELECT u.role_id, u.first_name, u.last_name, u.city, s.state_name, u.user_id, c.image, c.division, c.college, c.head_coach
                         FROM `users` as u, `states` as s, `coach_profile` as c
                         WHERE u.user_id = :user_id
                         AND u.state_id = s.state_id

@@ -131,7 +131,7 @@ function advsearchForCoach(item2){
 ac.viewProfile = viewProfile;
 
 function viewProfile(item){
-    console.log("View profile being called");
+    console.log("in view profile, here is the item");
     console.log(item);
     DataService.setUserToView(item);
     $location.path('/userprofile');

@@ -18,21 +18,28 @@ function init(){
 var base_url = 'http://recruitchute.io/';
 
 ac.item =  {searchfirst : "", searchlast : "", position : "", gradYear : "", state : "", gender : ""};
+ac.item2 =  {school : "", state : "", division : ""};
         
 ac.advsearchForPlayer = advsearchForPlayer;
+ac.advsearchForCoach = advsearchForCoach;
 ac.players = [];
+ac.coaches = [];
 ac.displayPlayerSearchResults = false;
 ac.noPlayerResults = false;
-ac.playerSearchInputs = true;
-ac.schoolSearchInputs = false;
 ac.displayCoachSearchResults = false;
 ac.noCoachResults = false;
+ac.playerSearchInputs = true;
+ac.schoolSearchInputs = false;
+
 
 ac.showPlayerSearch = showPlayerSearch;
 
 function showPlayerSearch(){
     ac.playerSearchInputs = true;
     ac.schoolSearchInputs = false;
+    
+    ac.displayCoachSearchResults = false;
+    ac.noCoachResults = false;
 }
 
 ac.showCollegeSearch = showCollegeSearch;
@@ -40,10 +47,14 @@ ac.showCollegeSearch = showCollegeSearch;
 function showCollegeSearch(){
     ac.schoolSearchInputs = true;
     ac.playerSearchInputs = false;
+    
+    ac.displayPlayerSearchResults = false;
+    ac.noPlayerResults = false;
 }
 
 
 function advsearchForPlayer(item){
+
     if(!item.searchfirst){
         item.searchfirst = "";
     }
@@ -70,8 +81,7 @@ function advsearchForPlayer(item){
                 if(ac.players[i].Image == null){
                     ac.players[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
                 }
-            }
-            
+            }           
             if(response.data != -1){
                ac.displayPlayerSearchResults = true;
                ac.noPlayerResults = false;
@@ -79,9 +89,39 @@ function advsearchForPlayer(item){
             if(response.data == '-1'){
                 ac.noPlayerResults = true;
                 ac.displayPlayerSearchResults = false;
+            }           
+    },
+    function(err) { console.log(err);
+    });     
+}
+
+
+function advsearchForCoach(item2){
+    if(!item2.school){
+        item2.school = "";
+    }
+    if(!item2.state){
+        item2.state = "";
+    }
+    if(!item2.division){
+        item2.division = "";
+    }
+    var data_object = {school : item2.school, state : item2.state, division : item2.division};
+    $http.post('http://recruitchute.io/search/advsearchCoach', data_object ).then(function(response){
+            ac.coaches = response.data;
+            for(var i=0; i<ac.coaches.length; i++){
+                if(ac.coaches[i].image == null){
+                    ac.coaches[i].image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
+                }
+            }           
+            if(response.data != -1){
+               ac.displayCoachSearchResults = true;
+               ac.noCoachResults = false;
             }
-                
-            
+            if(response.data == '-1'){
+                ac.noCoachResults = true;
+                ac.displayCoachSearchResults = false;
+            }         
     },
     function(err) { console.log(err);
     });
@@ -95,6 +135,17 @@ function viewProfile(item){
     console.log(item);
     DataService.setUserToView(item);
     $location.path('/userprofile');
+}
+
+ac.favoriteSchool = favoriteSchool;
+
+function favoriteSchool(item){  
+    var data_object = {current_user : ac.currentUser.user_id, followed_id : item};
+    $http.post('http://recruitchute.io/favorite/favoriteSchool', data_object ).then(function(response){
+        getFavoritedPlayers();
+    },
+    function(err) { console.log(err);
+    });   
 }
 
 ac.favoritePlayer = favoritePlayer;

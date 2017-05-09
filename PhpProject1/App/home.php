@@ -319,7 +319,7 @@ include('appHeader2.php');
                         <p><b>Profile Picture:</b></p>
                     </div>
                     <div class="form-group col-md-3 col-sm-3 ">
-                        <p>{{ex.info2.Image}}</p>
+                        <img class='searchImageLarge'src='{{ex.info2.Image | trustAsResourceUrl}}' />
                     </div>   
                     <!-- Profile Picture input -->
                     <div class="form-group col-md-5 col-sm-5 ">
@@ -338,7 +338,10 @@ include('appHeader2.php');
                         <p><b>Video (URL):</b></p>
                     </div>
                     <div class="form-group col-md-3 col-sm-3 ">
-                        <p>{{ex.info2.youtube_urls}}</p>
+                        <div class="video-container">
+                            <iframe src="{{ex.info2.youtube_urls | trustAsResourceUrl}}" frameborder="0" allowfullscreen>                        
+                            </iframe>
+                        </div>
                     </div>
                     <!-- Video input -->
                     <div class="form-group col-md-5 col-sm-5 ">

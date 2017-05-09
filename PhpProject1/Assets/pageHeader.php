@@ -40,10 +40,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="http://recruitchute.io/index.php"><img src="<?php echo HOME;?>Assets/images/logo_trans.png" alt="logo" height="55" width="160"></a>
+                    <a class="navbar-brand" href="http://recruitchute.io/index.php" style='padding-top:10px;'><img src="../Assets/images/logo_trans.png" style="width:60%"></a>
                 </div>
                 <div class="container">
-                    <div id="navbar" class="navbar-collapse collapse">
+                    <div id="navbar" class="navbar-collapse collapse link2">
                         <form class="navbar-form navbar-right" action="<?php echo HOME;?>login/checkLogin" method="post">
                             <!--<button type="submit" id='sign-in' class="btn btn-success">Sign in</button>-->
                             <a class="btn btn-success" id="" href="<?php echo HOME;?>App/router.html#/login" role="button">Sign In</a>

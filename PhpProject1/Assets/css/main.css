@@ -72,25 +72,23 @@ Header
 ******************************************/
 
 .navbar{
-    height: 70px;
+    height: 100px;
    
 }
 .navbar-brand{
      padding-top: 10px;
 }
-.navbar-form{
-    margin-top: 15px;   
+
+.link2{
+    margin-top: 25px;
 }
 
 
 .link{
     text-align: center;
+    margin-top: 17px;
 }
 
-.navbar-brand .home{
-    position: absolute;
-    top: 5px;
-}
 
 .link p{
     color: white;
@@ -125,7 +123,7 @@ Jumbotron - Splash Page
 
 .jumbotron{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
     background-image: url("../images/coolField7.png");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -143,9 +141,9 @@ Jumbotron - Splash Page
     color: white;
     /*font-size: 1vw;*/
 }
-.jumbotron .container{
+/*.jumbotron .container{
     margin-top: 10px;
-}
+}*/
 
 /******************************************
 Sign up - Splash Page
@@ -324,7 +322,6 @@ Join the network - Splash Page
 }
 
 #join{
-    /*background-image: url("../images/wSoccer.png");*/
     background-image: url("../images/fieldBall.png");
     background-size: cover;
     background-position: bottom;
@@ -352,7 +349,7 @@ ul li:before{
 }
 
 .layer3{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 /******************************************
@@ -389,7 +386,7 @@ RecruitChute difference - Splash page
 }
 
 .layer2{
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .learnMore h1{
@@ -406,9 +403,9 @@ About US
     color: #ff9933;
 }
 
-.mission{
+/*.mission{
     padding-top: 10%;
-}
+}*/
 
 .started{
     padding-bottom: 5%;
@@ -419,15 +416,18 @@ About US
 }
 
 .quote{
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .title h4{
-    font-family: Wingdings;
     color: black;
 }
 
 .title p{
-    font-family: "Comic Sans MS", cursive, sans-serif;
     color: black;
+}
+
+#logo{
+    padding-top: 8%;
+    padding-bottom: 0%;
 }

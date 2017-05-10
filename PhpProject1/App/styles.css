@@ -28,6 +28,11 @@
  .xtra-top-marg{
      margin-top: 90px;
  }
+ 
+ .center-td{
+     margin-top: auto;
+     margin-bottom: auto;
+ }
 
  .sample-container{
      width: 100%;
@@ -142,6 +147,10 @@
     width: 100%;
 }
 
+.no-bigger img{
+    max-height: 220px;
+}
+
 /**** Message pop-up ****/
 /* The Modal (background) */
 .modal {
@@ -225,14 +234,16 @@
     background-color: #5cb85c;
     color: white;
 }*/
-
+/*
 #fav-results-table, #fav-results-table tr, #fav-results-table td{
     border: none;
 }
 
+
 #fav-school-results-table, #fav-school-results-table tr, #fav-school-results-table td{
     border: none;
 }
+*/
 
 #fav-results-table p, #fav-school-results-table p{
     text-align: left;

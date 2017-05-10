@@ -13,7 +13,7 @@ include('appHeader2.php');
                     <div>
                         <tr class='col-sm-12' ng-repeat='item in ex.favinfo track by $index'
                                             ng-show="item.subject==ex.subject.name">
-                            <td class='col-sm-4'>
+                            <td class='col-sm-4 no-bigger'>
                                 <a ng-click='ex.viewProfile(item)'>
                                     <img class='searchImageLarge'src='{{item.Image | trustAsResourceUrl}}' />
                                 </a>

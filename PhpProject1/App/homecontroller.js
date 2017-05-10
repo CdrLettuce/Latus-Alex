@@ -258,6 +258,7 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
         // When the user clicks on <span> (x), close the modal
         $(".close").click(function() {
                 $('#modalConfirm').css('display', 'none');
+                $location.path('/profile');
         });
     }
 

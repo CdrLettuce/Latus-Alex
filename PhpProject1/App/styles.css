@@ -30,8 +30,9 @@
  }
  
  .center-td{
-     margin-top: auto;
-     margin-bottom: auto;
+     padding-top: auto;
+     padding-bottom: auto;
+     
  }
 
  .sample-container{

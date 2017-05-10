@@ -16,9 +16,9 @@ include('appHeader2.php');
                     <h4> {{ex.info2.position}}</h4>
                     <h4> {{ex.info.city}}, {{ex.info.state_name}} </h4>
                     <a ng-click='ex.favoritePlayer(ex.info.user_id)'>
-                        <button style="margin-bottom:10px;" class="btn btn-primary">Favorite {{ex.info.first_name}}</button>
+                        <button style="margin-bottom:10px;" class="btn btn-primary">Favorite</button>
                     </a>
-                    <button id="msgbtn" ng-click='ex.showMessageContainer()' class="btn btn-primary">Send {{ex.info.first_name}} a message</button>
+                    <button id="msgbtn" ng-click='ex.showMessageContainer()' class="btn btn-primary">Send a message</button>
                 </div>
                 <!-- The Modal -->
                 <div id="myModal" class="modal">

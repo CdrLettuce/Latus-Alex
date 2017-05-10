@@ -271,17 +271,21 @@ include('appHeader2.php');
                                 <img class='searchImageLarge'src='{{item.Image | trustAsResourceUrl}}' />
                             </a>
                         </td>
-                       <td class='col-xs-8 center-td'>
-                            <a ng-click='ex.viewProfile(item)'>
-                                <h4>{{item.first_name}} {{item.last_name}}</h4>
-                            </a>
-                            <p>{{item.city}}, {{item.state_name}}</p>
-                            <p>{{item.position}}, Class of {{item.graduation_date}}</p>
+                       <td class='col-xs-8 '>
+                           <div class='center-td'>
+                                <a ng-click='ex.viewProfile(item)'>
+                                    <h4>{{item.first_name}} {{item.last_name}}</h4>
+                                </a>
+                                <p>{{item.city}}, {{item.state_name}}</p>
+                                <p>{{item.position}}, Class of {{item.graduation_date}}</p>
+                           </div>
                         </td>
-                        <td class='col-xs-2 center-td'>
-                            <a ng-click='ex.favoritePlayer(item.user_id)'>
-                                <button class="btn btn-primary">Favorite</button>
-                            </a>
+                        <td class='col-xs-2 '>
+                            <div class="center-td">
+                                <a ng-click='ex.favoritePlayer(item.user_id)'>
+                                    <button class="btn btn-primary">Favorite</button>
+                                </a>
+                            </div>
                         </td>
                     </tr>
                 </table>
@@ -303,18 +307,22 @@ include('appHeader2.php');
                                 <img class='searchImageLarge'src='{{item.image | trustAsResourceUrl}}' />
                             </a>
                         </td>
-                       <td class='col-xs-8 center-td'>
-                            <a ng-click='ex.viewProfile(item)'>
-                                <h4>{{item.college}}</h4>
-                            </a>
-                            <p>{{item.city}}, {{item.state_name}}</p>
-                            <p>Head Coach: {{item.head_coach}}</p>
-                            <p>{{item.division}}</p>
+                       <td class='col-xs-8 '>
+                            <div class='center-td'>
+                                <a ng-click='ex.viewProfile(item)'>
+                                    <h4>{{item.college}}</h4>
+                                </a>
+                                <p>{{item.city}}, {{item.state_name}}</p>
+                                <p>Head Coach: {{item.head_coach}}</p>
+                                <p>{{item.division}}</p>
+                            </div>
                         </td>
-                        <td class='col-xs-2 center-td'>
-                            <a ng-click='ex.favoriteSchool(item.user_id)'>
-                                <button class="btn btn-primary">Favorite</button>
-                            </a>
+                        <td class='col-xs-2 '>
+                            <div class='center-td'>
+                                <a ng-click='ex.favoriteSchool(item.user_id)'>
+                                    <button class="btn btn-primary">Favorite</button>
+                                </a>
+                            </div>
                         </td>
                     </tr>
                 </table>

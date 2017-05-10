@@ -73,8 +73,16 @@ Header
 
 .navbar{
     height: 100px;
-   
 }
+
+.navbarHead2{
+    height: 75px;
+}
+
+.navbarHead2 .link{
+    margin-top: 3px;
+}
+
 .navbar-brand{
      padding-top: 10px;
 }

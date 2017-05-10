@@ -62,9 +62,11 @@ class PlayerInfoModel extends Model
         }
         
         public function getCoachInfo(){
-                $sql = "SELECT c.youtube_urls, c.image, c.bio, c.college, c.head_coach, c.assistant_coach, c.division
-                        FROM `coach_profile` as c
-                        WHERE c.user_id = :userId";
+                $sql = "SELECT u.city, s.state_name, c.youtube_urls, c.image, c.bio, c.college, c.head_coach, c.assistant_coach, c.division
+                        FROM `coach_profile` as c, `users` as u, `states` as s
+                        WHERE u.user_id = :userId
+                        AND c.user_id = u.user_id
+                        AND u.state_id = s.state_id";
                 $this->setSql($sql);
                 $data = json_decode(file_get_contents('php://input'));
                 $values = array(':userId'=>$data->user_id);

@@ -78,7 +78,7 @@ function advsearchForPlayer(item){
     $http.post('http://recruitchute.io/search/advsearchPlayer', data_object ).then(function(response){
             ac.players = response.data;
             for(var i=0; i<ac.players.length; i++){
-                if(ac.players[i].Image == null){
+                if(ac.players[i].Image === null){
                     ac.players[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
                 }
             }           

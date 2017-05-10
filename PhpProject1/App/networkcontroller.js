@@ -60,7 +60,7 @@ function getFavoritedPlayersInfo(){
             // set current user
             nc.favinfo = response.data;
             for(var i=0; i<nc.favinfo.length; i++){
-                if(nc.favinfo[i].Image == null){
+                if(nc.favinfo[i].Image === null){
                     nc.favinfo[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
                 }
             }

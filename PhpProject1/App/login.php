@@ -26,7 +26,7 @@ include('appHeader1.php');
                         Please Sign In
                     </span>
                 </p>
-<div ng-show="lc.error" class="alert alert-danger">{{lc.error}}</div>
+                <div ng-show="lc.error" class="alert alert-danger">{{lc.error}}</div>
                 <!-- Login Form Module -->
                 <form name='form' class="form-horizontal" ng-submit="lc.login()" role="form">
                     <!--Username / Password -->

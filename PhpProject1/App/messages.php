@@ -61,15 +61,15 @@ include('appHeader2.php');
             <div  id='noBigMessage' ng-show='ex.noBigMessage' class='center-text'>
                 <h4>Please select a message to view.</h4>
             </div>
-            <div id ="current-message" class="row-container-fluid" ng-show="ex.showBigMessage">
+            <div id ="current-message" class="row-container-fluid col-sm-12" ng-show="ex.showBigMessage">
                 <div id='selected-message-content'>
                     <div id="message-subject"class="col-sm-12">
                         <h4>{{ex.bigMessage.subject}}</h4>
                     </div>
-                    <div id="message-sender/receiver" class="col-sm-12">
+                    <div id="message-sender/receiver" class="col-sm-5">
                         <h4>{{ex.bigMessage.first_name}} {{ex.bigMessage.last_name}}</h4>
                     </div>
-                    <div id="from-time" class="col-sm-12">
+                    <div id="from-time" class="col-sm-4 col-sm-offset-3">
                         <p>{{ex.bigMessage.time_sent}}</p>
                     </div>
                     <div id="the-message" class="col-sm-12">

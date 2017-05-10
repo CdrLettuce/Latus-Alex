@@ -153,9 +153,9 @@ include('appHeader2.php');
                     <h3> {{ex.info5.college}} </h3>
                     <h4> {{ex.info5.city}}, {{ex.info5.state_name}} </h4>
                     <a ng-click='ex.favoriteSchool(ex.info5.user_id)'>
-                        <button style="margin-bottom:10px;" class="btn btn-primary">Favorite {{ex.info5.college}}</button>
+                        <button style="margin-bottom:10px;" class="btn btn-primary">Favorite</button>
                     </a>
-                    <button id="msgbtn" ng-click='ex.showMessageContainer()' class="btn btn-primary">Send {{ex.info5.college}} a message</button>
+                    <button id="msgbtn" ng-click='ex.showMessageContainer()' class="btn btn-primary">Send a message</button>
                 </div>
                 <!-- The Modal -->
                 <div id="myModal" class="modal">

@@ -522,7 +522,7 @@ include('appHeader2.php');
                     <div class="form-group col-md-5 col-sm-5 ">
                             <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-film fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="video" id="video" ng-model='ex.item.video' />
+                                    <input type="text" class="form-control" name="video" id="video" ng-model='ex.item.youtube_urls' />
                             </div>
                     </div>
                 </div>

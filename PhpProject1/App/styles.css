@@ -351,6 +351,7 @@ body, html{
 
 #the-message{
     min-height: 35%;
+    padding: 10px;
 }
 
 .no-pad{
@@ -372,5 +373,9 @@ body, html{
 
 table a{
     cursor:pointer
+}
+
+messages-sidebar a:hover{
+    text-decoration: none;
 }
 

@@ -182,7 +182,7 @@ include('appHeader2.php');
                 <div class='row container-fluid'>
                     <!-- Birth Date  current -->
                     <div class="form-group col-md-4 col-sm-4 ">
-                        <p><b>Birth Date:</b></p>
+                        <p><b>Birth Date: (EX: YYYY-MM-DD)</b></p>
                     </div>
                     <div class="form-group col-md-3 col-sm-3 ">
                         <p>{{ex.info2.dob}}</p>

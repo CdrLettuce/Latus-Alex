@@ -2,7 +2,7 @@
 include('Assets/pageHeader.php');
 ?>
 
-<div  class="container topDiv center" style="margin-top: 70px; margin-bottom: 50px; padding-bottom: 35px; text-align: center; max-width: 80%;  ">
+<div  class="container topDiv center" style="margin-top: 110px; margin-bottom: 50px; padding-bottom: 35px; text-align: center; max-width: 80%;  ">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">

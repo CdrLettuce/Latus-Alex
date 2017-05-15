@@ -15,14 +15,32 @@ function init(){
     }
 }
 
+// boolean for ng-show player or team page
+uc.showPlayerProfile = false;
+uc.showCoachProfile = false;
+
 // Get the id of the profile that you want to view from the data service
 uc.userProfileID = {};
 getId();
 
+
+
 function getId(){
     uc.userProfileID = DataService.getUserToView();
-    getPlayerInfo();
-    getPlayerInfo2();
+    console.log("Checking user role id");
+    console.log(uc.userProfileID.role_id);
+    if(uc.userProfileID.role_id == 2){
+        console.log("In the if");
+        uc.showCoachProfile = true;
+        getCoachInfo();
+    }else if(uc.userProfileID.role_id == 1){
+        console.log("In the else if");
+        getPlayerInfo();
+        getPlayerInfo2();
+        getPlayerInfo3();
+        getPlayerInfo4();
+        uc.showPlayerProfile = true;
+    }
 }
 
 
@@ -32,8 +50,9 @@ uc.getPlayerInfo = getPlayerInfo;
 
 
 function getPlayerInfo(){
+    console.log("Get Player info is being called");
     // use $http service to obtain data
-    var data_object = {user_id : uc.userProfileID};
+    var data_object = {user_id : uc.userProfileID.user_id};
     $http.post(base_url + 'playerinfo/getPlayerInfo', data_object).then(function(response){
             if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
                 // set current user
@@ -50,7 +69,7 @@ uc.getPlayerInfo2 = getPlayerInfo2;
         
 function getPlayerInfo2(){
     // use $http service to obtain data
-    var data_object = {user_id : uc.userProfileID};
+    var data_object = {user_id : uc.userProfileID.user_id};
     $http.post(base_url + 'playerinfo/getPlayerInfo2', data_object).then(function(response){
             if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
                 // set current user
@@ -63,11 +82,11 @@ function getPlayerInfo2(){
 
 uc.info3 = [];
 uc.getPlayerInfo3 = getPlayerInfo3;
-uc.getPlayerInfo3();
+
 
 function getPlayerInfo3(){
     // use $http service to obtain data
-    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo3', uc.currentUser).then(function(response){
+    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo3', uc.userProfileID).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             // set current user
             uc.info3 = response.data;
@@ -79,14 +98,30 @@ function getPlayerInfo3(){
 
 uc.info4 = [];
 uc.getPlayerInfo4 = getPlayerInfo4;
-uc.getPlayerInfo4();
 
 function getPlayerInfo4(){
     // use $http service to obtain data
-    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo4', uc.currentUser).then(function(response){
+    $http.post('http://recruitchute.io/playerinfo/getPlayerInfo4', uc.userProfileID).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             // set current user
             uc.info4 = response.data;
+        }
+    },
+    function(err) { console.log(err);
+    });
+}
+
+uc.info5 = [];
+uc.getCoachInfo = getCoachInfo;
+
+function getCoachInfo(){
+    // use $http service to obtain data
+    $http.post('http://recruitchute.io/playerinfo/getCoachInfo', uc.userProfileID).then(function(response){
+        if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
+            // set current user
+            uc.info5 = response.data;
+            console.log("coach info:");
+            console.log(uc.info5);
         }
     },
     function(err) { console.log(err);
@@ -98,6 +133,17 @@ uc.favoritePlayer = favoritePlayer;
 function favoritePlayer(item){
     var data_object = {current_user : uc.currentUser.user_id, followed_id : item};
     $http.post('http://recruitchute.io/favorite/favoritePlayer', data_object ).then(function(response){
+    },
+    function(err) { console.log(err);
+    });   
+}
+
+uc.favoriteSchool = favoriteSchool;
+
+function favoriteSchool(item){  
+    var data_object = {current_user : uc.currentUser.user_id, followed_id : item};
+    $http.post('http://recruitchute.io/favorite/favoriteSchool', data_object ).then(function(response){
+        getFavoritedPlayers();
     },
     function(err) { console.log(err);
     });   

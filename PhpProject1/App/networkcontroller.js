@@ -28,10 +28,10 @@ nc.favorite_ids = [];
 nc.getFavoritedPlayers = getFavoritedPlayers;
 getFavoritedPlayers();
 
-nc.nofavs = true;
+nc.nofavs = false;
 nc.favResults = false;
 
-nc.noschoolfavs = true;
+nc.noschoolfavs = false;
 nc.favSchoolResults = false;
 
 function getFavoritedPlayers(){
@@ -41,6 +41,9 @@ function getFavoritedPlayers(){
             // set current user
             nc.favorite_ids = response.data;
             getFavoritedPlayersInfo();
+        }
+        else{
+            nc.nofavs = true;
         }
     },
     function(err) { console.log(err);
@@ -57,16 +60,14 @@ function getFavoritedPlayersInfo(){
             // set current user
             nc.favinfo = response.data;
             for(var i=0; i<nc.favinfo.length; i++){
-                if(nc.favinfo[i].Image == null){
+                if(nc.favinfo[i].Image === null){
                     nc.favinfo[i].Image = "http://recruitchute.io/Assets/images/soccer_player_icon.jpg";
                 }
             }
             nc.favResults = true;
             nc.nofavs = false;
         }
-        else{
-            nc.nofavs = true;
-        }
+        
     },
     function(err) { console.log(err);
     });
@@ -84,6 +85,9 @@ function getFavoritedSchools(){
             // set current user
             nc.favorite_school_ids = response.data;
             getFavoritedSchoolsInfo();
+        }
+        else{
+            nc.noschoolfavs = true;
         }
     },
     function(err) { console.log(err);
@@ -108,7 +112,7 @@ function getFavoritedSchoolsInfo(){
             nc.noschoolfavs = false;
         }
         else{
-            nc.noschoolfavs = true;
+            
         }
     },
     function(err) { console.log(err);

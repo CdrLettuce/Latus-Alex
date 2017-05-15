@@ -20,7 +20,7 @@ class SearchModel extends Model
         }
         
         public function advsearchPlayer(){           
-                $sql = "SELECT u.first_name, u.last_name, u.city, s.state_name, u.user_id, p.graduation_date, o.position, p.Image
+                $sql = "SELECT u.role_id, u.first_name, u.last_name, u.city, s.state_name, u.user_id, p.graduation_date, o.position, p.Image
                         FROM `users` as u, `states` as s, `player_profile` as p, `position` as o
                         WHERE u.first_name LIKE CONCAT('%', :first_name, '%')
                         AND u.last_name LIKE CONCAT('%', :last_name, '%')
@@ -47,7 +47,7 @@ class SearchModel extends Model
         }
         
         public function advsearchCoach(){           
-                $sql = "SELECT u.city, s.state_name, u.user_id, c.image, c.head_coach, c.division, c.college
+                $sql = "SELECT u.role_id, u.city, s.state_name, u.user_id, c.image, c.head_coach, c.division, c.college
                         FROM `users` as u, `states` as s, `coach_profile` as c
                         WHERE c.college LIKE CONCAT('%', :college, '%')
                         AND u.state_id LIKE CONCAT('%', :state_id)

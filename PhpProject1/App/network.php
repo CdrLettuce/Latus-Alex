@@ -13,13 +13,13 @@ include('appHeader2.php');
                     <div>
                         <tr class='col-sm-12' ng-repeat='item in ex.favinfo track by $index'
                                             ng-show="item.subject==ex.subject.name">
-                            <td class='col-sm-4'>
-                                <a ng-click='ex.viewProfile(item.user_id)'>
+                            <td class='col-sm-4 no-bigger'>
+                                <a ng-click='ex.viewProfile(item)'>
                                     <img class='searchImageLarge'src='{{item.Image | trustAsResourceUrl}}' />
                                 </a>
                             </td>
                            <td class='col-xs-8'>
-                                <a ng-click='ex.viewProfile(item.user_id)'>
+                                <a ng-click='ex.viewProfile(item)'>
                                     <h4>{{item.first_name}} {{item.last_name}}</h4>
                                 </a>
                                 <p>{{item.city}}, {{item.state_name}}</p>
@@ -41,12 +41,12 @@ include('appHeader2.php');
                         <tr class='col-sm-12' ng-repeat='item in ex.favschoolinfo track by $index'
                                             ng-show="item.subject==ex.subject.name">
                             <td class='col-sm-4 '>
-                                <a ng-click='ex.viewProfile(item.user_id)'>
+                                <a ng-click='ex.viewProfile(item)'>
                                     <img class='searchImageLarge'src='{{item.image | trustAsResourceUrl}}' />
                                 </a>
                             </td>
                            <td class='col-xs-8'>
-                                <a ng-click='ex.viewProfile(item.user_id)'>
+                                <a ng-click='ex.viewProfile(item)'>
                                     <h4>{{item.college}}</h4>
                                 </a>
                                 <p>{{item.city}}, {{item.state_name}}</p>

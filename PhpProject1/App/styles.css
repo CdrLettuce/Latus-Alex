@@ -13,8 +13,15 @@
      padding-top:50px;
  }
  
+ #login-holder{
+     margin-top: 60px; 
+ }
+ #login-holder p, #login-holder label {
+     text-align: center;
+ }
+ 
  .xtra-top-pad{
-     padding-top: 130px;
+     padding-top: 90px;
  }
  
  .med-top-marg{
@@ -23,6 +30,12 @@
  
  .xtra-top-marg{
      margin-top: 90px;
+ }
+ 
+ .center-td{
+     padding-top: auto;
+     padding-bottom: auto;
+     
  }
 
  .sample-container{
@@ -138,6 +151,10 @@
     width: 100%;
 }
 
+.no-bigger img{
+    max-height: 300px;
+}
+
 /**** Message pop-up ****/
 /* The Modal (background) */
 .modal {
@@ -221,14 +238,16 @@
     background-color: #5cb85c;
     color: white;
 }*/
-
+/*
 #fav-results-table, #fav-results-table tr, #fav-results-table td{
     border: none;
 }
 
+
 #fav-school-results-table, #fav-school-results-table tr, #fav-school-results-table td{
     border: none;
 }
+*/
 
 #fav-results-table p, #fav-school-results-table p{
     text-align: left;
@@ -289,7 +308,7 @@ body, html{
 
 #noBigMessage, #current-message{
     background-color: white;
-    border-top: 3px solid #28AFE0;
+    border-top: 4px solid #28AFE0;
     height: 95%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
@@ -299,11 +318,44 @@ body, html{
     
 }
 
+
+
+#messages-main p{
+    margin-bottom: 0px;
+}
+
+#message-subject, #message-sender-and-time, #the-message{
+    background-color: #fefefe;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
 #selected-message-content{
-    height: 60%;
+    padding: 10px 20px;
+    background-color: #eeeeee;
+    height: 57%;
+    margin-top: 10px;
+    margin-bottom:10px;
+    border-radius: 2px;
 }
 #selected-message-reply{
-    height: 40%;
+    height: 38%;
+}
+
+#message-sender-receiver, #from-time{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#the-message{
+    min-height: 35%;
+    padding: 10px;
+}
+
+.no-pad{
+    padding: 10px 0px;
 }
 
 .table-side-messages{
@@ -316,10 +368,14 @@ body, html{
 
 #noBigMessage h4{
     color: #888;
-    padding-top:45%
+    padding-top:37%
 }
 
 table a{
     cursor:pointer
+}
+
+messages-sidebar a:hover{
+    text-decoration: none;
 }
 

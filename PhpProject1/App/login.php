@@ -6,6 +6,16 @@ include('appHeader1.php');
 <div  class = "container-fluid top-marg" ng-controller='loginController as lc'>
 
     <div class = "row">
+        <!--Modal for sent confirmation-->
+        <div id="modalConfirm" class="modal">
+            <!-- Modal content -->
+            <div class="modal-confirm">
+                <div class="modal-body">
+                    <span class="close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+                    <h3>Incorrect login information, please try again</h3>
+                </div>
+            </div>
+        </div>  
 
         <!--Login Module-->
         <div id = "login-holder">
@@ -16,7 +26,7 @@ include('appHeader1.php');
                         Please Sign In
                     </span>
                 </p>
-<div ng-show="lc.error" class="alert alert-danger">{{lc.error}}</div>
+                <div ng-show="lc.error" class="alert alert-danger">{{lc.error}}</div>
                 <!-- Login Form Module -->
                 <form name='form' class="form-horizontal" ng-submit="lc.login()" role="form">
                     <!--Username / Password -->

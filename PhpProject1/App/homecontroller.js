@@ -123,55 +123,125 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
 
     function addPlayerInfo(item){
         if(!item.position1){
-            item.position1 = hc.info2.position_1;
+            if(hc.info2.position_1 != 0){
+                item.position1 = hc.info2.position_1;
+            }else {
+                item.position1 = " ";
+            }
         }
         if(!item.position2){
-            item.position2 = hc.info3.position_2;
+            if(hc.info3.position_2 != 0){
+                item.position2 = hc.info3.position_2;
+            }else {
+                item.position2 = " ";
+            }
         }
-        if(!item.position3){
-            item.position3 = hc.info4.position_3;
+        if(!item.position3){            
+            if(hc.info4.position_3 != 0){
+                item.position3 = hc.info4.position_3;
+            }else {
+                item.position3 = " ";
+            }
         }
         if(!item.bio){
-            item.bio = hc.info2.bio;
+            if(hc.info2.bio != 0){
+                item.bio = hc.info2.bio;
+            }else {
+                item.bio = " ";
+            }
         }
         if(!item.weight){
-            item.weight = hc.info2.weight;
+            if(hc.info2.weight != 0){
+                item.weight = hc.info2.weight;
+            }else {
+                item.weight = " ";
+            }
         }
         if(!item.school){
-            item.school = hc.info2.h_school;
+            if(hc.info2.h_school != 0){
+                item.school = hc.info2.h_school;
+            }else {
+                item.school = " ";
+            }
         }
         if(!item.gpa){
-            item.gpa = hc.info2.gpa;
+            if(hc.info2.gpa != 0){
+                item.gpa = hc.info2.gpa;
+            }else {
+                item.gpa = " ";
+            }
         }
         if(!item.grad){
-            item.grad = hc.info2.graduation_date;
+            if(hc.info2.graduation_date != 0){
+                item.grad = hc.info2.graduation_date;
+            }else {
+                item.grad = " ";
+            }
         }
         if(!item.video){
-            item.video = hc.info2.youtube_urls;
+            if(hc.info2.youtube_urls != 0){
+                item.video = hc.info2.youtube_urls;
+            }else {
+                item.video = " ";
+            }
         }
         if(!item.birth){
-            item.birth = hc.info2.dob;
+            if(hc.info2.dob != 0){
+                item.birth = hc.info2.dob;
+            }else {
+                item.birth = " ";
+            }
         }
         if(!item.feet){
-            item.feet = hc.info2.height_feet;
+            if(hc.info2.height_feet != 0){
+                item.feet = hc.info2.height_feet;
+            }else {
+                item.feet = " ";
+            }
         }
         if(!item.inches){
-            item.inches = hc.info2.height_inches;
+            if(hc.info2.height_inches != 0){
+                item.inches = hc.info2.height_inches;
+            }else {
+                item.inches = " ";
+            }
         }
         if(!item.bench){
-            item.bench = hc.info2.bench;
+            
+            if(hc.info2.bench != 0){
+                item.bench = hc.info2.bench;
+            }else {
+                item.bench = " ";
+            }
         }
         if(!item.squat){
-            item.squat = hc.info2.squat;
+            if(hc.info2.squat != 0){
+                item.squat = hc.info2.squat;
+            }else {
+                item.squat = " ";
+            }
         }
         if(!item.mile){
-            item.mile = hc.info2.mile_time;
+            if(hc.info2.mile_time != 0){
+                item.mile = hc.info2.mile_time;
+            }else {
+                item.mile = " ";
+            }
         }
         if(!item.yard){
-            item.yard = hc.info2.dash_time;
+            if(hc.info2.dash_time != 0){
+                item.yard = hc.info2.dash_time;
+            }else {
+                item.yard = " ";
+            }
         }
         if(!item.image){
             item.image = hc.info2.Image;
+            if(hc.info2.Image != 0){
+                item.image = hc.info2.Image;
+            }else {
+                item.image = " ";
+            }
         }
         
         var currentUser = hc.currentUser;
@@ -258,6 +328,7 @@ myApp.controller('homeController',['$http', 'DataService', '$location', function
         // When the user clicks on <span> (x), close the modal
         $(".close").click(function() {
                 $('#modalConfirm').css('display', 'none');
+                $location.path('/profile');
         });
     }
 

@@ -5,15 +5,15 @@ class profileupdateModel extends Model
 {
         public function updateProfile(){
                 $user_data = json_decode(file_get_contents('php://input'));
-                $values = $user_data;
-                $data = array(':user_id'=>$values->userID);
+                $values2 = $user_data;
+                $data2 = array(':user_id'=>$values2->userID);
                 
-                $sql = "SELECT *
+                $sql2 = "SELECT *
                         FROM `player_profile` 
                         WHERE user_id = :user_id";
                 
-                $this->setSql($sql);
-                $result = $this->getOne($data);
+                $this->setSql($sql2);
+                $result = $this->getOne($data2);
                 
                 if (!$result)
                     $result = -1;
@@ -28,7 +28,7 @@ class profileupdateModel extends Model
                     //define SQL statement
                     $values = $user_data;
                     $data = array('user_id'=>$values->userID,
-                                    'position_1'=>$values->position,
+                                    'position_1'=>$values->position1,
                                     'position_2'=>$values->position2,
                                     'position_3'=>$values->position3,   
                                     'bio'=>$values->bio,
@@ -41,7 +41,7 @@ class profileupdateModel extends Model
                                     'height_feet'=>$values->feet,
                                     'height_inches'=>$values->inches,
                                     'bench'=>$values->bench,
-                                    'squat'=>$values->sqaut,    
+                                    'squat'=>$values->squat,    
                                     'mile_time'=>$values->mile,
                                     'dash_time'=>$values->yard,
                                     'Image'=>$values->image);

@@ -16,9 +16,12 @@ function init(){
 }
 nc.bigMessage = {};
 nc.noBigMessage = true;
-nc.showBigMessage = false;
 
-nc.displayBigMessage = displayBigMessage;
+nc.inBoxBigMessage = false;
+nc.outboxBigMessage = false;
+
+nc.displayBigInboxMessage = displayBigInboxMessage;
+nc.displayBigOutboxMessage = displayBigOutboxMessage;
 
 nc.inboxMessages = [];
 nc.getInboxMessages = getInboxMessages;
@@ -77,12 +80,15 @@ nc.inboxReply = inboxReply;
 function inboxReply(item){
     console.log("Big messsage:");
     console.log(item);
-    var data_object = {sender_id : nc.currentUser.user_id, receiver_id : item.sender_id, message : item.replymessage, subject : item.replysubject};
+    var data_object = {sender_id : nc.currentUser.user_id, receiver_id : nc.bigMessage.sender_id, message : item.replymessage, subject : item.replysubject};
     // use $http service to obtain data
     $http.post('http://recruitchute.io/messages/sendMessage', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             nc.noBigMessage = true;
-            nc.showBigMessage = false;
+            nc.inboxBigMessage = false;
+            nc.outboxBigMessage = false;
+            getInboxMessages();
+            getOutboxMessages();
         }
     },
     function(err) { console.log(err);
@@ -99,12 +105,16 @@ nc.outboxReply = outboxReply;
 function outboxReply(item){
     console.log("Big messsage:");
     console.log(item);
-    var data_object = {sender_id : nc.currentUser.user_id, receiver_id : item.sender_id, message : item.replymessage, subject : item.replysubject};
+    var data_object = {sender_id : nc.currentUser.user_id, receiver_id : nc.bigMessage.receiver_id, message : item.replymessage, subject : item.replysubject};
     // use $http service to obtain data
     $http.post('http://recruitchute.io/messages/sendMessage', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             nc.noBigMessage = true;
-            nc.showBigMessage = false;
+            nc.inboxBigMessage = false;
+            nc.outboxBigMessage = false;
+            getInboxMessages();
+            getOutboxMessages();
+            
         }
     },
     function(err) { console.log(err);
@@ -122,6 +132,7 @@ function getInboxMessages(){
     $http.post('http://recruitchute.io/messages/getInboxMessages', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             nc.inboxMessages = response.data;
+            console.log(nc.inboxMessages);
         }
     },
     function(err) { console.log(err);
@@ -134,16 +145,31 @@ function getOutboxMessages(){
     $http.post('http://recruitchute.io/messages/getOutboxMessages', data_object).then(function(response){
         if (typeof response.data !== 'undefined' && parseInt(response.data) != -1){
             nc.outboxMessages = response.data;
+            console.log(nc.outboxMessages);
         }
     },
     function(err) { console.log(err);
     }); 
 }
 
-function displayBigMessage(item){
+function displayBigInboxMessage(item){
+    nc.bigMessage = item;
+    console.log("big message");
+    console.log(nc.bigMessage);
+    nc.noBigMessage = false;
+    nc.outboxBigMessage = false;
+    nc.inboxBigMessage = true;
+    
+}
+
+function displayBigOutboxMessage(item){
+    nc.bigMessage = item;
+    console.log("big message");
+    console.log(nc.bigMessage);
     nc.bigMessage = item;
     nc.noBigMessage = false;
-    nc.showBigMessage = true;
+    nc.inboxBigMessage = false;
+    nc.outboxBigMessage = true;
 }
 
 }]);

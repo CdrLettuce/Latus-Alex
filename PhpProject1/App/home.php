@@ -182,7 +182,7 @@ include('appHeader2.php');
                 <div class='row container-fluid'>
                     <!-- Birth Date  current -->
                     <div class="form-group col-md-4 col-sm-4 ">
-                        <p><b>Birth Date:</b></p>
+                        <p><b>Birth Date: (EX: YYYY-MM-DD)</b></p>
                     </div>
                     <div class="form-group col-md-3 col-sm-3 ">
                         <p>{{ex.info2.dob}}</p>
@@ -360,8 +360,7 @@ include('appHeader2.php');
                     <div class="form-group col-md-10 col-sm-10 ">
                         <p>{{ex.info2.bio}}</p>
                     </div>
-                </div>
-                <div class='row container-fluid'>
+               
                     <!-- Bio input -->
                     <div class="form-group col-md-12">
                             <div class="input-group">
@@ -493,7 +492,7 @@ include('appHeader2.php');
                         <p><b>Profile Picture:</b></p>
                     </div>
                     <div class="form-group col-md-3 col-sm-3 ">
-                        <p>{{ex.info5.image}}</p>
+                        <img class='searchImageLarge'src='{{ex.info5.image | trustAsResourceUrl}}' />
                     </div>   
                     <!-- Profile Picture input -->
                     <div class="form-group col-md-5 col-sm-5 ">
@@ -506,13 +505,18 @@ include('appHeader2.php');
                     </div>
                 </div>
                 
+         
+                
                 <div class='row container-fluid'>
                     <!-- Video URL current -->
                     <div class="form-group col-md-4 col-sm-4 ">
                         <p><b>Video (URL):</b></p>
                     </div>
                     <div class="form-group col-md-3 col-sm-3 ">
-                        <p>{{ex.info5.youtube_urls}}</p>
+                        <div class="video-container">
+                            <iframe src="{{ex.info5.youtube_urls | trustAsResourceUrl}}" frameborder="0" allowfullscreen>                        
+                            </iframe>
+                        </div>
                     </div>
                     <!-- Video input -->
                     <div class="form-group col-md-5 col-sm-5 ">
@@ -531,8 +535,6 @@ include('appHeader2.php');
                     <div class="form-group col-md-10 col-sm-10 ">
                         <p>{{ex.info5.bio}}</p>
                     </div>
-                </div>
-                <div class='row container-fluid'>
                     <!-- Bio input -->
                     <div class="form-group col-md-12">
                             <div class="input-group">

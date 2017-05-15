@@ -14,7 +14,7 @@ include('appHeader2.php');
                             <button class='btn btn-primary wide-button' ng-click='ex.showPlayerSearch()'>Search For Players</button>
                         </div>
                     </div>
-                    <div class="form-group col-sm-offset-2 col-md-offset-2 col-md-3 col-sm-3">
+                    <div class="form-group col-sm-offset-3 col-md-offset-3 col-md-3 col-sm-3">
                         <div class="input-group">
                                 <button class='btn btn-primary wide-button' ng-click='ex.showCollegeSearch()'>Search For College Teams</button>
                         </div>
@@ -266,22 +266,26 @@ include('appHeader2.php');
                 <table class='table'>
                     <tr ng-repeat='item in ex.players track by $index'
                                         ng-show="item.subject==ex.subject.name">
-                        <td class='col-xs-2'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
+                        <td class='col-xs-2 no-bigger'>
+                            <a ng-click='ex.viewProfile(item)'>
                                 <img class='searchImageLarge'src='{{item.Image | trustAsResourceUrl}}' />
                             </a>
                         </td>
-                       <td class='col-xs-8'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
-                                <h4>{{item.first_name}} {{item.last_name}}</h4>
-                            </a>
-                            <p>{{item.city}}, {{item.state_name}}</p>
-                            <p>{{item.position}}, Class of {{item.graduation_date}}</p>
+                       <td class='col-xs-8 '>
+                           <div class='center-td'>
+                                <a ng-click='ex.viewProfile(item)'>
+                                    <h4>{{item.first_name}} {{item.last_name}}</h4>
+                                </a>
+                                <p>{{item.city}}, {{item.state_name}}</p>
+                                <p>{{item.position}}, Class of {{item.graduation_date}}</p>
+                           </div>
                         </td>
-                        <td class='col-xs-2'>
-                            <a ng-click='ex.favoritePlayer(item.user_id)'>
-                                <button class="btn btn-primary">Favorite</button>
-                            </a>
+                        <td class='col-xs-2 '>
+                            <div class="center-td">
+                                <a ng-click='ex.favoritePlayer(item.user_id)'>
+                                    <button class="btn btn-primary">Favorite</button>
+                                </a>
+                            </div>
                         </td>
                     </tr>
                 </table>
@@ -298,23 +302,27 @@ include('appHeader2.php');
                 <table class='table'>
                     <tr ng-repeat='item in ex.coaches track by $index'
                                         ng-show="item.subject==ex.subject.name">
-                        <td class='col-xs-2'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
+                        <td class='col-xs-2 no-bigger'>
+                            <a ng-click='ex.viewProfile(item)'>
                                 <img class='searchImageLarge'src='{{item.image | trustAsResourceUrl}}' />
                             </a>
                         </td>
-                       <td class='col-xs-8'>
-                            <a ng-click='ex.viewProfile(item.user_id)'>
-                                <h4>{{item.school}}</h4>
-                            </a>
-                            <p>{{item.city}}, {{item.state_name}}</p>
-                            <p>Head Coach: {{item.head_coach}}</p>
-                            <p>{{item.division}}</p>
+                       <td class='col-xs-8 '>
+                            <div class='center-td'>
+                                <a ng-click='ex.viewProfile(item)'>
+                                    <h4>{{item.college}}</h4>
+                                </a>
+                                <p>{{item.city}}, {{item.state_name}}</p>
+                                <p>Head Coach: {{item.head_coach}}</p>
+                                <p>{{item.division}}</p>
+                            </div>
                         </td>
-                        <td class='col-xs-2'>
-                            <a ng-click='ex.favoriteSchool(item.user_id)'>
-                                <button class="btn btn-primary">Favorite</button>
-                            </a>
+                        <td class='col-xs-2 '>
+                            <div class='center-td'>
+                                <a ng-click='ex.favoriteSchool(item.user_id)'>
+                                    <button class="btn btn-primary">Favorite</button>
+                                </a>
+                            </div>
                         </td>
                     </tr>
                 </table>

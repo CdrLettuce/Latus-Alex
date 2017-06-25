@@ -7,7 +7,6 @@ myApp.controller('loginController',['$http','DataService','$location', function(
 
 
   // define the URL for your framework
-  // var base_url = 'http://washington.uww.edu/cs482/butlersj02/midterm/';
   var base_url = 'http://recruitchute.io/';
 
  // perform initial actions

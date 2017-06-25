@@ -1,8 +1,26 @@
-<?php
-include('appHeader1.php');
-?>
-
-
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://recruitchute.io/index.php" style='padding-top:10px;'><img src="../Assets/images/logo_trans.png" alt="logo" height="73" width="213"></a>
+                </div>
+                <div class="container">
+                    <div id="navbar" class="navbar-collapse collapse link2">
+                        <form class="navbar-form navbar-right" action="<?php echo HOME;?>login/checkLogin" method="post">
+                            <!--<button type="submit" id='sign-in' class="btn btn-success">Sign in</button>-->
+                            <a class="btn btn-success" id="" href="javascript:window.location.reload(true)" role="button">Sign In</a>
+                            <!--<button type="submit" class="btn btn-danger">Sign up</button>-->
+                            <a class="btn btn-danger" id="" href="http://recruitchute.io/pp/bothSignup" role="button">Sign Up</a>
+                        </form>
+                    </div><!--/.navbar-collapse -->
+                </div>
+            </div>
+        </nav>
 <div  class = "container-fluid top-marg" ng-controller='loginController as lc'>
 
     <div class = "row">
@@ -57,4 +75,3 @@ include('appHeader1.php');
 
             </div>
         </div>
-        

@@ -6,6 +6,9 @@ include('Assets/pageHeader.php');
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12 center-text">
+            <b><h1></h1></b>
+        </div>
+        <div class="col-md-12 center-text">
             <b><h1>Sign Up </h1></b>
         </div>
         <div class="col-md-6 icon">
